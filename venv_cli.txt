@@ -1,0 +1,2 @@
+python3.12.9 -m venv envClicker
+source envClicker/bin/activate 
