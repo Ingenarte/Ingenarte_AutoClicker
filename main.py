@@ -6,6 +6,7 @@ from pynput import mouse
 import threading
 from modal_input import open_input_modal  # Importa el modal
 from image_modal import open_image_modal  # Importa el modal
+from data_modal import open_data_modal  # Importa el modal
 
 # Configuración de CustomTkinter
 ctk.set_appearance_mode("dark")
@@ -154,7 +155,12 @@ for step in range(1, 11):
         command=lambda s=step: open_image_modal(s))    
     image_button.grid(row=step, column=4, padx=3, pady=5, sticky="ew")
     
-    data_button = ctk.CTkButton(draggable_frame, text="Data", width=80, height=30)
+    data_button = ctk.CTkButton(
+    draggable_frame, 
+    text="Data", 
+    width=80, 
+    height=30,
+    command=lambda s=step: open_data_modal(s))
     data_button.grid(row=step, column=5, padx=3, pady=5, sticky="ew")
 
 # Ajustar columnas para repartir el espacio
