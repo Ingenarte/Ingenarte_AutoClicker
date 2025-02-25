@@ -10,35 +10,35 @@ def open_input_modal(step_id):
     title = "Input " + str(step_id)
     modal.title(title)
     modal.geometry("500x450")
-    modal.grab_set()  # Bloquea la interacción con la ventana principal
+    modal.grab_set()  # Block interaction with main window
 
     main_frame = ctk.CTkFrame(modal)
     main_frame.pack(fill="both", expand=True, padx=20, pady=20)
 
-    # Título centrado
+    # Centered title
     title_label = ctk.CTkLabel(main_frame, text=title, font=("Arial", 18))
     title_label.pack(pady=(0, 10))
     title_label.component_id = f"step_{step_id}_title"
 
-    # Primer renglón: Switch Teclado / Mouse
-    switch = CustomSwitch(main_frame, options=["Teclado", "Mouse"])
+    # First row: Keyboard / Mouse switch
+    switch = CustomSwitch(main_frame, options=["Keyboard", "Mouse"])
     switch.pack(fill="x", pady=5)
     switch.component_id = f"step_{step_id}_switch"
 
-    # Contenedor para el contenido variable (Teclado o Mouse)
+    # Container for variable content (Keyboard or Mouse)
     content_frame = ctk.CTkFrame(main_frame)
     content_frame.pack(fill="both", expand=True, pady=5)
 
-    # --- Campos para Teclado ---
+    # --- Keyboard Fields ---
     keyboard_frame = ctk.CTkFrame(content_frame)
-    # Segundo renglón: Key
+    # Second row: Key
     kb_row = ctk.CTkFrame(keyboard_frame)
     kb_row.pack(fill="x", pady=5)
     key_label = ctk.CTkLabel(kb_row, text="Key:")
     key_label.pack(side="left")
     key_label.component_id = f"step_{step_id}_key_label"
 
-    # Lectura de teclado
+    # Clear default text when entry is focused
     def clear_default_text(event):
         default_text = "Press the key or key combination to be recorded"
         if key_entry.get() == default_text:
@@ -51,24 +51,23 @@ def open_input_modal(step_id):
 
     def on_key_press(event):
         combination = []
-
-        # Detectar modificadores según el estado (los valores pueden variar según el sistema)
+        # Detect modifiers (values may vary by system)
         if event.state & 0x0001:  # Shift
             combination.append("Shift")
         if event.state & 0x0004:  # Ctrl
             combination.append("Ctrl")
         if event.state & 0x0008:  # Alt
             combination.append("Alt")
-        # Agregar la tecla presionada
+        # Append pressed key
         combination.append(event.keysym.capitalize())
         
         combo_str = " + ".join(combination)
         key_entry.delete(0, tk.END)
         key_entry.insert(0, combo_str)
-        print("Combinación detectada:", combo_str)
-        return "break"  # Evita la inserción por defecto
+        print("Combination detected:", combo_str)
+        return "break"  # Prevent default insertion
 
-    # Vincular la captura de teclas solo cuando el textbox tenga el foco
+    # Bind key event only when entry is focused
     def bind_key_event(event):
         key_entry.bind("<KeyPress>", on_key_press)
 
@@ -79,7 +78,7 @@ def open_input_modal(step_id):
     key_entry.bind("<FocusIn>", bind_key_event)
     key_entry.bind("<FocusOut>", unbind_key_event)
 
-    # Tercer renglón: Repeat
+    # Third row: Repeat
     kb_repeat = ctk.CTkFrame(keyboard_frame)
     kb_repeat.pack(fill="x", pady=5)
     repeat_label = ctk.CTkLabel(kb_repeat, text="Repeat [0-20]:")
@@ -89,9 +88,9 @@ def open_input_modal(step_id):
     kb_spin.pack(side="left", padx=5)
     kb_spin.component_id = f"step_{step_id}_repeat_spinbox"
 
-    # --- Campos para Mouse ---
+    # --- Mouse Fields ---
     mouse_frame = ctk.CTkFrame(content_frame)
-    # Segundo renglón: Mouse Stitch
+    # Second row: Mouse Button
     mouse_row = ctk.CTkFrame(mouse_frame)
     mouse_row.pack(fill="x", pady=5)
     mouse_label = ctk.CTkLabel(mouse_row, text="Mouse Button:")
@@ -100,7 +99,7 @@ def open_input_modal(step_id):
     mouse_switch = CustomSwitch(mouse_row, options=["Left", "Middle", "Right"])
     mouse_switch.pack(side="left", fill="x", expand=True, padx=5)
     mouse_switch.component_id = f"step_{step_id}_mouse_switch"
-    # Tercer renglón: Clicking
+    # Third row: Clicking
     mouse_clicking = ctk.CTkFrame(mouse_frame)
     mouse_clicking.pack(fill="x", pady=5)
     clicking_label = ctk.CTkLabel(mouse_clicking, text="Clicking:")
@@ -109,7 +108,7 @@ def open_input_modal(step_id):
     clicking_switch = CustomSwitch(mouse_clicking, options=["One", "Two", "Three"])
     clicking_switch.pack(side="left", fill="x", expand=True, padx=5)
     clicking_switch.component_id = f"step_{step_id}_clicking_switch"
-    # Cuarto renglón: Moving
+    # Fourth row: Moving
     mouse_moving = ctk.CTkFrame(mouse_frame)
     mouse_moving.pack(fill="x", pady=5)
     moving_label = ctk.CTkLabel(mouse_moving, text="Moving [-left | +right][px]:")
@@ -119,27 +118,50 @@ def open_input_modal(step_id):
     moving_spin = tk.Spinbox(mouse_moving, from_=-1000, to=1000, textvariable=initial_value)
     moving_spin.pack(side="left", padx=5)
     moving_spin.component_id = f"step_{step_id}_moving_spinbox"
-    # Quinto renglón: Keep pressed when moving
+    # Fifth row: Keep pressed when moving
     keep_pressed = LabelCheckbox(mouse_frame, text="Keep pressed when moving?")
     keep_pressed.pack(fill="x", pady=5)
     keep_pressed.component_id = f"step_{step_id}_keep_pressed"
 
-    # Inicialmente mostramos el contenido de Teclado
+    # Initially show Keyboard content
     keyboard_frame.pack(fill="both", expand=True, pady=5)
 
-    # Función para actualizar el contenido en el contenedor según la selección
+    # Update content based on selection and clear fields
     def update_modal_fields(*args):
-        # Primero, eliminamos todo lo que hay en content_frame
         for widget in content_frame.winfo_children():
             widget.forget()
-        if switch.get_value() == "Teclado":
+        clear_fields()
+        # Debug: print the current value of the main switch
+        print("Main switch value:", switch.get_value())
+        if switch.get_value() == "Keyboard":
             keyboard_frame.pack(fill="both", expand=True, pady=5)
         else:
             mouse_frame.pack(fill="both", expand=True, pady=5)
 
+    def clear_fields():
+        # Clear fields in Keyboard frame
+        key_entry.delete(0, tk.END)
+        key_entry.insert(0, "Press the key or key combination to be recorded")
+        kb_spin.delete(0, tk.END)
+        kb_spin.insert(0, "0")
+        # Clear fields in Mouse frame
+        if hasattr(mouse_switch, "variable"):
+            mouse_switch.variable.set("")
+        if hasattr(clicking_switch, "variable"):
+            clicking_switch.variable.set("")
+        moving_spin.delete(0, tk.END)
+        moving_spin.insert(0, "0")
+        
+        # For LabelCheckbox, try to deselect it
+        if hasattr(keep_pressed, "deselect"):
+            keep_pressed.deselect()
+        elif hasattr(keep_pressed, "variable"):
+            keep_pressed.variable.set(False)
+
+    # Bind the trace for switch variable once (do not rebind inside clear_fields)
     switch.var.trace("w", update_modal_fields)
 
-    # --- Sexto renglón: Wait before next process [sec] (para ambos) ---
+    # Wait before next process [sec]
     wait_frame = ctk.CTkFrame(main_frame)
     wait_frame.pack(fill="x", pady=5)
     wait_label = ctk.CTkLabel(wait_frame, text="Wait before next process [sec]:")
@@ -149,7 +171,7 @@ def open_input_modal(step_id):
     wait_spin.pack(side="left", padx=5)
     wait_spin.component_id = f"step_{step_id}_wait_spinbox"
 
-    # --- Séptimo renglón: Botón OK ---
+    # OK Button
     ok_frame = ctk.CTkFrame(main_frame)
     ok_frame.pack(fill="x", pady=5)
     ok_button = ctk.CTkButton(ok_frame, text="Ok", command=modal.destroy)
@@ -160,6 +182,5 @@ def open_input_modal(step_id):
 
 
 if __name__ == "__main__":
-    # For independent testing, use a standard Tk root.
     root = tk.Tk()
     open_input_modal(1)
