@@ -37,10 +37,48 @@ def open_input_modal(step_id):
     key_label = ctk.CTkLabel(kb_row, text="Key:")
     key_label.pack(side="left")
     key_label.component_id = f"step_{step_id}_key_label"
+
+    # Lectura de teclado
+    def clear_default_text(event):
+        default_text = "Press the key or key combination to be recorded"
+        if key_entry.get() == default_text:
+            key_entry.delete(0, tk.END)
+
     key_entry = ctk.CTkEntry(kb_row)
     key_entry.insert(0, "Press the key or key combination to be recorded")
     key_entry.pack(side="left", fill="x", expand=True, padx=5)
     key_entry.component_id = f"step_{step_id}_key_entry"
+
+    def on_key_press(event):
+        combination = []
+
+        # Detectar modificadores según el estado (los valores pueden variar según el sistema)
+        if event.state & 0x0001:  # Shift
+            combination.append("Shift")
+        if event.state & 0x0004:  # Ctrl
+            combination.append("Ctrl")
+        if event.state & 0x0008:  # Alt
+            combination.append("Alt")
+        # Agregar la tecla presionada
+        combination.append(event.keysym.capitalize())
+        
+        combo_str = " + ".join(combination)
+        key_entry.delete(0, tk.END)
+        key_entry.insert(0, combo_str)
+        print("Combinación detectada:", combo_str)
+        return "break"  # Evita la inserción por defecto
+
+    # Vincular la captura de teclas solo cuando el textbox tenga el foco
+    def bind_key_event(event):
+        key_entry.bind("<KeyPress>", on_key_press)
+
+    def unbind_key_event(event):
+        key_entry.unbind("<KeyPress>")
+
+    key_entry.bind("<FocusIn>", clear_default_text)
+    key_entry.bind("<FocusIn>", bind_key_event)
+    key_entry.bind("<FocusOut>", unbind_key_event)
+
     # Tercer renglón: Repeat
     kb_repeat = ctk.CTkFrame(keyboard_frame)
     kb_repeat.pack(fill="x", pady=5)
@@ -56,7 +94,7 @@ def open_input_modal(step_id):
     # Segundo renglón: Mouse Stitch
     mouse_row = ctk.CTkFrame(mouse_frame)
     mouse_row.pack(fill="x", pady=5)
-    mouse_label = ctk.CTkLabel(mouse_row, text="Mouse Stitch:")
+    mouse_label = ctk.CTkLabel(mouse_row, text="Mouse Button:")
     mouse_label.pack(side="left")
     mouse_label.component_id = f"step_{step_id}_mouse_label"
     mouse_switch = CustomSwitch(mouse_row, options=["Left", "Middle", "Right"])
@@ -119,3 +157,9 @@ def open_input_modal(step_id):
     ok_button.component_id = f"step_{step_id}_ok_button"
 
     modal.mainloop()
+
+
+if __name__ == "__main__":
+    # For independent testing, use a standard Tk root.
+    root = tk.Tk()
+    open_input_modal(1)
