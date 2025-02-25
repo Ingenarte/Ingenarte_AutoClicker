@@ -137,6 +137,15 @@ def image_callback(step_id, data):
     print("Image configuration updated for", step_key)
     print(global_config)
 
+def data_callback(step_id, data):
+    """Update the global configuration when the data modal is closed."""
+    step_key = f"step_{step_id}"
+    if step_key not in global_config["tab_n"]:
+        global_config["tab_n"][step_key] = {}
+    global_config["tab_n"][step_key]["data"] = data
+    print("Data configuration updated for", step_key)
+    print(global_config)
+
 def open_input_for_step(step_id):
     """Open the input modal for a given step, preloading existing data if available."""
     step_key = f"step_{step_id}"
@@ -152,6 +161,14 @@ def open_image_for_step(step_id):
     if step_key in global_config["tab_n"]:
         existing_data = global_config["tab_n"][step_key].get("image")
     open_image_modal(step_id, image_callback, existing_data)
+
+def open_data_for_step(step_id):
+    """Open the data modal for a given step, preloading existing data if available."""
+    step_key = f"step_{step_id}"
+    existing_data = None
+    if step_key in global_config["tab_n"]:
+        existing_data = global_config["tab_n"][step_key].get("data")
+    open_data_modal(step_id, data_callback, existing_data)
 
 # --- Interface: Create 10 steps ---
 empty_label = ctk.CTkLabel(draggable_frame, text="")
@@ -193,13 +210,13 @@ for step in range(1, 11):
     )
     image_button.grid(row=step, column=4, padx=3, pady=5, sticky="ew")
     
-    # "Data" button
+    # "Data" button to open the data modal for this step
     data_button = ctk.CTkButton(
         draggable_frame, 
         text="Data", 
         width=80, 
         height=30,
-        command=lambda s=step: open_data_modal(s)
+        command=lambda s=step: open_data_for_step(s)
     )
     data_button.grid(row=step, column=5, padx=3, pady=5, sticky="ew")
 
