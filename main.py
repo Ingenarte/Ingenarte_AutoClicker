@@ -3,24 +3,29 @@ import pyautogui
 import pyperclip
 from pynput import mouse
 import threading
+import json
+import tkinter as tk
+from tkinter import filedialog
 from modal_input import open_input_modal  # Your modal implementations
 from image_modal import open_image_modal
 from data_modal import open_data_modal
-import tkinter as tk
 
+# -----------------------------
 # CustomTkinter configuration
+# -----------------------------
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
 
-# Create main window
+# -----------------------------
+# Main window
+# -----------------------------
 root = ctk.CTk()
 root.update_idletasks()
 
-# Dimensions and position of the window
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
-window_width = int(screen_width * 0.30)   # 30% of screen width
-window_height = int(screen_height * 0.60)  # 60% of screen height
+window_width = int(screen_width * 0.35)   # 35% of screen width
+window_height = int(screen_height * 0.70)  # 70% of screen height
 pos_x = int(screen_width * 0.60)           # 60% from left edge
 pos_y = int(screen_height * 0.20)          # 20% from top
 root.geometry(f"{window_width}x{window_height}+{pos_x}+{pos_y}")
@@ -28,7 +33,38 @@ root.attributes('-alpha', 1)
 root.title("Ingenarte AutoClicker")
 root.resizable(True, True)
 
-# Variables for dragging the window
+# -----------------------------
+# Main container: divided into a top frame, steps area, and tab bar
+# -----------------------------
+main_frame = ctk.CTkFrame(root)
+main_frame.pack(fill="both", expand=True)
+
+# Top frame for fixed controls (e.g. pointer and load config buttons)
+top_frame = ctk.CTkFrame(main_frame)
+top_frame.pack(side="top", fill="x", padx=10, pady=(10, 0))
+
+# Steps area (draggable container) for steps widgets
+draggable_frame = ctk.CTkFrame(main_frame, fg_color="#2E2E2E", corner_radius=20)
+draggable_frame.pack(side="top", fill="both", expand=True, padx=10, pady=(0, 0))
+
+# Tab bar (like a browser's)
+tab_bar_height = 40  # fixed height
+tabs_frame = ctk.CTkFrame(main_frame, height=tab_bar_height, fg_color="#444444")
+tabs_frame.pack(side="bottom", fill="x", padx=10, pady=(0, 10))
+tabs_frame.pack_propagate(0)
+
+# -----------------------------
+# Pointer and Load Config Buttons (in top_frame)
+# -----------------------------
+pointer_button = ctk.CTkButton(top_frame, text="Read Position", fg_color="#1F6AA5", command=lambda: read_position())
+pointer_button.pack(side="left", padx=5, pady=5)
+
+load_config_button = ctk.CTkButton(top_frame, text="Load Config", fg_color="#1F6AA5", command=lambda: load_config())
+load_config_button.pack(side="left", padx=5, pady=5)
+
+# -----------------------------
+# Variables for window dragging
+# -----------------------------
 start_x = 0
 start_y = 0
 def start_drag(e):
@@ -41,15 +77,14 @@ def move_app(e):
     y = e.y_root - start_y
     root.geometry(f"+{x}+{y}")
 
-# Draggable main frame
-draggable_frame = ctk.CTkFrame(root, fg_color="#2E2E2E", corner_radius=20)
-draggable_frame.pack(fill="both", expand=True)
 draggable_frame.bind('<Button-1>', start_drag)
 draggable_frame.bind('<B1-Motion>', move_app)
 
-# --- Global variables for click capture ---
-reading_mode = False         # True when waiting for a global click
-current_callback = None      # Function to execute on global click
+# -----------------------------
+# Global variables for click capture
+# -----------------------------
+reading_mode = False  # True while waiting for a global click
+current_callback = None  # Function to execute when a click is captured
 
 def capture_global_click():
     """Listen for a global click and execute the assigned callback."""
@@ -58,12 +93,14 @@ def capture_global_click():
         if pressed and reading_mode and current_callback:
             current_callback(x, y)
             reading_mode = False
-            return False  # stop listener
+            return False
     from pynput import mouse
     with mouse.Listener(on_click=on_click) as listener:
         listener.join()
 
-# --- Global "Read Position" functionality ---
+# -----------------------------
+# "Read Position" functionality
+# -----------------------------
 def global_position_callback(x, y):
     position = f"{int(x)}x{int(y)}"
     pyperclip.copy(position)
@@ -72,7 +109,6 @@ def global_position_callback(x, y):
     root.config(cursor="arrow")
 
 def read_position():
-    """Function for the global 'Read Position' button."""
     global reading_mode, current_callback
     if not reading_mode:
         pointer_button.configure(text="Reading...", fg_color="#FFA500")
@@ -81,17 +117,10 @@ def read_position():
         current_callback = global_position_callback
         threading.Thread(target=capture_global_click, daemon=True).start()
 
-# Global "Read Position" button
-pointer_button = ctk.CTkButton(
-    draggable_frame, 
-    text="Read Position", 
-    command=read_position, 
-    fg_color="#1F6AA5"
-)
-pointer_button.place(relx=0.3, rely=0.05, anchor="w")
-
-# --- Functionality for "Position" buttons in each step ---
-def step_position_callback(x, y, button, entry):
+# -----------------------------
+# Functionality for "Position" buttons for each step
+# -----------------------------
+def step_position_callback(x, y, button, entry, step_number):
     position = f"{int(x)}x{int(y)}"
     print(f"📍 Captured coordinates: {position}")
     def update():
@@ -99,138 +128,242 @@ def step_position_callback(x, y, button, entry):
         entry.insert(0, position)
         button.configure(text="Position", fg_color="green")
         root.config(cursor="arrow")
-        root.deiconify()  # restore window if minimized
+        root.deiconify()
+    # Save the position in global configuration
+    tab_key = f"Tab {current_tab_index}"
+    step_key = f"step_{step_number}"
+    if tab_key in global_config["tab_n"]:
+        if step_key not in global_config["tab_n"][tab_key]:
+            global_config["tab_n"][tab_key][step_key] = {}
+        global_config["tab_n"][tab_key][step_key]["position"] = position
+    else:
+        global_config["tab_n"][tab_key] = {step_key: {"position": position}}
     root.after(0, update)
 
-def step_read_position(button, entry):
-    """Activate global click capture for a step and minimize window."""
+def step_read_position(button, entry, step_number):
     global reading_mode, current_callback
     if not reading_mode:
         reading_mode = True
-        root.iconify()  # minimize window
-        current_callback = lambda x, y: step_position_callback(x, y, button, entry)
+        root.iconify()
+        current_callback = lambda x, y: step_position_callback(x, y, button, entry, step_number)
         button.configure(text="Reading...", fg_color="#FFA500")
         root.config(cursor="cross")
         threading.Thread(target=capture_global_click, daemon=True).start()
 
-# --- Global configuration dictionary ---
+# -----------------------------
+# Global configuration dictionary
+# -----------------------------
 global_config = {"tab_n": {}}
-# Dictionary to hold button references for each step
+
+# Dictionary to store references to step buttons per tab.
+# Structure: { "Tab 1": { "step_1": { "input": button, "image": button, "data": button }, ... }, ... }
 step_buttons = {}
 
+# -----------------------------
+# Modal callbacks
+# -----------------------------
 def input_callback(step_id, data):
-    """Update the global configuration when the input modal is closed."""
+    tab_key = f"Tab {current_tab_index}"
+    if tab_key not in global_config["tab_n"]:
+        global_config["tab_n"][tab_key] = {}
     step_key = f"step_{step_id}"
-    if step_key not in global_config["tab_n"]:
-        global_config["tab_n"][step_key] = {}
-    global_config["tab_n"][step_key]["input"] = data
-    print("Configuration updated for", step_key)
+    global_config["tab_n"][tab_key][step_key] = global_config["tab_n"][tab_key].get(step_key, {})
+    global_config["tab_n"][tab_key][step_key]["input"] = data
+    print("Configuration updated for", tab_key, step_key)
     print(global_config)
-    # Update the "Input" button's background
-    if step_key in step_buttons and "input" in step_buttons[step_key]:
-        step_buttons[step_key]["input"].configure(fg_color="green")
+    if tab_key in step_buttons and step_key in step_buttons[tab_key] and "input" in step_buttons[tab_key][step_key]:
+        step_buttons[tab_key][step_key]["input"].configure(fg_color="green")
 
 def image_callback(step_id, data):
-    """Update the global configuration when the image modal is closed."""
+    tab_key = f"Tab {current_tab_index}"
+    if tab_key not in global_config["tab_n"]:
+        global_config["tab_n"][tab_key] = {}
     step_key = f"step_{step_id}"
-    if step_key not in global_config["tab_n"]:
-        global_config["tab_n"][step_key] = {}
-    global_config["tab_n"][step_key]["image"] = data
-    print("Image configuration updated for", step_key)
+    global_config["tab_n"][tab_key][step_key] = global_config["tab_n"][tab_key].get(step_key, {})
+    global_config["tab_n"][tab_key][step_key]["image"] = data
+    print("Image configuration updated for", tab_key, step_key)
     print(global_config)
-    # Update the "Image" button's background
-    if step_key in step_buttons and "image" in step_buttons[step_key]:
-        step_buttons[step_key]["image"].configure(fg_color="green")
+    if tab_key in step_buttons and step_key in step_buttons[tab_key] and "image" in step_buttons[tab_key][step_key]:
+        step_buttons[tab_key][step_key]["image"].configure(fg_color="green")
 
 def data_callback(step_id, data):
-    """Update the global configuration when the data modal is closed."""
+    tab_key = f"Tab {current_tab_index}"
+    if tab_key not in global_config["tab_n"]:
+        global_config["tab_n"][tab_key] = {}
     step_key = f"step_{step_id}"
-    if step_key not in global_config["tab_n"]:
-        global_config["tab_n"][step_key] = {}
-    global_config["tab_n"][step_key]["data"] = data
-    print("Data configuration updated for", step_key)
+    global_config["tab_n"][tab_key][step_key] = global_config["tab_n"][tab_key].get(step_key, {})
+    global_config["tab_n"][tab_key][step_key]["data"] = data
+    print("Data configuration updated for", tab_key, step_key)
     print(global_config)
-    # Update the "Data" button's background
-    if step_key in step_buttons and "data" in step_buttons[step_key]:
-        step_buttons[step_key]["data"].configure(fg_color="green")
+    if tab_key in step_buttons and step_key in step_buttons[tab_key] and "data" in step_buttons[tab_key][step_key]:
+        step_buttons[tab_key][step_key]["data"].configure(fg_color="green")
 
 def open_input_for_step(step_id):
-    """Open the input modal for a given step, preloading existing data if available."""
+    tab_key = f"Tab {current_tab_index}"
     step_key = f"step_{step_id}"
     existing_data = None
-    if step_key in global_config["tab_n"]:
-        existing_data = global_config["tab_n"][step_key].get("input")
+    if tab_key in global_config["tab_n"]:
+        existing_data = global_config["tab_n"][tab_key].get(step_key, {}).get("input")
     open_input_modal(step_id, input_callback, existing_data)
 
 def open_image_for_step(step_id):
-    """Open the image modal for a given step, preloading existing image data if available."""
+    tab_key = f"Tab {current_tab_index}"
     step_key = f"step_{step_id}"
     existing_data = None
-    if step_key in global_config["tab_n"]:
-        existing_data = global_config["tab_n"][step_key].get("image")
+    if tab_key in global_config["tab_n"]:
+        existing_data = global_config["tab_n"][tab_key].get(step_key, {}).get("image")
     open_image_modal(step_id, image_callback, existing_data)
 
 def open_data_for_step(step_id):
-    """Open the data modal for a given step, preloading existing data if available."""
+    tab_key = f"Tab {current_tab_index}"
     step_key = f"step_{step_id}"
     existing_data = None
-    if step_key in global_config["tab_n"]:
-        existing_data = global_config["tab_n"][step_key].get("data")
+    if tab_key in global_config["tab_n"]:
+        existing_data = global_config["tab_n"][tab_key].get(step_key, {}).get("data")
     open_data_modal(step_id, data_callback, existing_data)
 
-# --- Interface: Create 10 steps ---
-empty_label = ctk.CTkLabel(draggable_frame, text="")
-empty_label.grid(row=0, column=0, pady=30)
+# -----------------------------
+# Function to update steps view based on current tab
+# -----------------------------
+def update_steps_view():
+    for widget in draggable_frame.winfo_children():
+        widget.destroy()
+    # Determine step range for current tab: For Tab i, steps from (i-1)*10+1 to i*10.
+    start_step = (current_tab_index - 1) * 10 + 1
+    end_step = current_tab_index * 10
+    tab_key = f"Tab {current_tab_index}"
+    if tab_key not in step_buttons:
+        step_buttons[tab_key] = {}
+    header = ctk.CTkLabel(draggable_frame, text=f"Steps for {tab_key}", font=("Arial", 16))
+    header.grid(row=0, column=0, columnspan=6, pady=10)
+    row = 1
+    for step in range(start_step, end_step + 1):
+        step_key = f"step_{step}"
+        if step_key not in step_buttons[tab_key]:
+            step_buttons[tab_key][step_key] = {}
+        step_label = ctk.CTkLabel(draggable_frame, text=f"Step {step}:", font=("Arial", 14))
+        step_label.grid(row=row, column=0, padx=5, pady=5, sticky="w")
+        # "Position" button and entry
+        pos_btn = ctk.CTkButton(draggable_frame, text="Position", width=100, height=30)
+        pos_btn.grid(row=row, column=1, padx=3, pady=5, sticky="ew")
+        step_buttons[tab_key][step_key]["position"] = pos_btn
+        pos_entry = ctk.CTkEntry(draggable_frame, width=90)
+        pos_entry.grid(row=row, column=2, padx=3, pady=5, sticky="ew")
+        pos_btn.configure(command=lambda b=pos_btn, t=pos_entry, s=step: step_read_position(b, t, s))
+        # Re-populate saved position if available
+        if tab_key in global_config["tab_n"] and step_key in global_config["tab_n"][tab_key]:
+            saved = global_config["tab_n"][tab_key][step_key]
+            if "position" in saved:
+                pos_entry.insert(0, saved["position"])
+                pos_btn.configure(text="Position", fg_color="green")
+        # "Input" button
+        inp_btn = ctk.CTkButton(draggable_frame, text="Input", width=80, height=30,
+                                command=lambda s=step: open_input_for_step(s))
+        inp_btn.grid(row=row, column=3, padx=3, pady=5, sticky="ew")
+        step_buttons[tab_key][step_key]["input"] = inp_btn
+        # "Image" button
+        img_btn = ctk.CTkButton(draggable_frame, text="Image", width=80, height=30,
+                                command=lambda s=step: open_image_for_step(s))
+        img_btn.grid(row=row, column=4, padx=3, pady=5, sticky="ew")
+        step_buttons[tab_key][step_key]["image"] = img_btn
+        # "Data" button
+        dat_btn = ctk.CTkButton(draggable_frame, text="Data", width=80, height=30,
+                                command=lambda s=step: open_data_for_step(s))
+        dat_btn.grid(row=row, column=5, padx=3, pady=5, sticky="ew")
+        step_buttons[tab_key][step_key]["data"] = dat_btn
+        row += 1
+    for i in range(6):
+        draggable_frame.grid_columnconfigure(i, weight=1)
+    # Re-add Save Config button
+    save_btn = ctk.CTkButton(draggable_frame, text="Save Config", command=save_config)
+    save_btn.place(relx=0.5, rely=0.95, anchor="center")
 
-# Create buttons for each step and store their references
-for step in range(1, 11):
-    step_key = f"step_{step}"
-    # Create a container dictionary for this step's buttons
-    step_buttons[step_key] = {}
+# -----------------------------
+# "Save Config" functionality
+# -----------------------------
+def save_config():
+    tab_key = f"Tab {current_tab_index}"
+    if tab_key not in global_config["tab_n"]:
+        print("No configuration for", tab_key)
+        return
+    with open("config.json", "w", encoding="utf-8") as f:
+        json.dump(global_config, f, ensure_ascii=False, indent=4, sort_keys=True)
+    print("⚙️ Configuration saved to config.json")
 
-    # Step label
-    step_label = ctk.CTkLabel(draggable_frame, text=f"Step {step}:", font=("Arial", 14))
-    step_label.grid(row=step, column=0, padx=5, pady=5, sticky="w")
+# -----------------------------
+# Tab Bar functionality
+# -----------------------------
+tabs = ["Tab 1"]
+current_tab_index = 1
 
-    # "Position" button and position entry
-    pos_btn = ctk.CTkButton(draggable_frame, text="Position", width=100, height=30)
-    pos_btn.grid(row=step, column=1, padx=3, pady=5, sticky="ew")
-    # Store the position button reference
-    step_buttons[step_key]["position"] = pos_btn
+def update_tab_bar():
+    for widget in tabs_frame.winfo_children():
+        widget.destroy()
+    tabs_frame.update_idletasks()
+    available_width = tabs_frame.winfo_width()
+    num_tabs = len(tabs)
+    padding = 10
+    if num_tabs == 1:
+        btn_width = max(int(available_width * 0.15), 50)
+    else:
+        btn_width = max(int((available_width - (num_tabs + 1) * padding) / num_tabs), 50)
+        btn_width = min(btn_width, 120)
+    for i, tab_name in enumerate(tabs, start=1):
+        if i == current_tab_index:
+            btn = ctk.CTkButton(tabs_frame, text=tab_name, fg_color="green", text_color="white",
+                                command=lambda idx=i: select_tab(idx), width=btn_width)
+        else:
+            btn = ctk.CTkButton(tabs_frame, text=tab_name, fg_color="gray", text_color="black",
+                                command=lambda idx=i: select_tab(idx), width=btn_width)
+        btn.pack(side="left", padx=5, pady=5)
+    plus_btn = ctk.CTkButton(tabs_frame, text="+", fg_color="green", command=add_tab, width=btn_width)
+    plus_btn.pack(side="left", padx=5, pady=5)
 
-    position_textbox = ctk.CTkEntry(draggable_frame, width=90)
-    position_textbox.grid(row=step, column=2, padx=3, pady=5, sticky="ew")
-    pos_btn.configure(
-        command=lambda b=pos_btn, t=position_textbox: step_read_position(b, t)
-    )
+def select_tab(index):
+    global current_tab_index
+    current_tab_index = index
+    update_tab_bar()
+    update_steps_view()
 
-    # "Input" button
-    inp_btn = ctk.CTkButton(draggable_frame, text="Input", width=80, height=30,
-                            command=lambda s=step: open_input_for_step(s))
-    inp_btn.grid(row=step, column=3, padx=3, pady=5, sticky="ew")
-    step_buttons[step_key]["input"] = inp_btn
+def add_tab():
+    global current_tab_index
+    new_tab = f"Tab {len(tabs) + 1}"
+    tabs.append(new_tab)
+    current_tab_index = len(tabs)
+    update_tab_bar()
+    if new_tab not in global_config["tab_n"]:
+        global_config["tab_n"][new_tab] = {}
+    update_steps_view()
 
-    # "Image" button
-    img_btn = ctk.CTkButton(draggable_frame, text="Image", width=80, height=30,
-                            command=lambda s=step: open_image_for_step(s))
-    img_btn.grid(row=step, column=4, padx=3, pady=5, sticky="ew")
-    step_buttons[step_key]["image"] = img_btn
+update_tab_bar()
+update_steps_view()
 
-    # "Data" button
-    dat_btn = ctk.CTkButton(draggable_frame, text="Data", width=80, height=30,
-                            command=lambda s=step: open_data_for_step(s))
-    dat_btn.grid(row=step, column=5, padx=3, pady=5, sticky="ew")
-    step_buttons[step_key]["data"] = dat_btn
+# -----------------------------
+# Load Config functionality
+# -----------------------------
+def load_config():
+    filename = tk.filedialog.askopenfilename(filetypes=[("JSON Files", "*.json")])
+    if filename:
+        with open(filename, "r", encoding="utf-8") as f:
+            loaded_config = json.load(f)
+        global global_config, tabs, current_tab_index
+        global_config = loaded_config
+        # Update tabs from the keys of global_config["tab_n"]
+        if "tab_n" in global_config:
+            new_tabs = list(global_config["tab_n"].keys())
+            new_tabs.sort(key=lambda x: int(x.split()[1]))
+            tabs = new_tabs
+            current_tab_index = 1
+        update_tab_bar()
+        update_steps_view()
+        print("⚙️ Configuration loaded from", filename)
 
-# Adjust columns to distribute space evenly.
-for i in range(6):
-    draggable_frame.grid_columnconfigure(i, weight=1)
+# Add Load Config button next to pointer_button in top_frame (already added above)
+load_config_button.configure(command=load_config)
 
-# "Save Config" button (original functionality)
-save_button = ctk.CTkButton(draggable_frame, text="Save Config",
-                            command=lambda: print("⚙️ Configuration saved"))
-save_button.place(relx=0.5, rely=0.95, anchor="center")
-
+# -----------------------------
+# Final initialization
+# -----------------------------
 def initialize_imkclient():
     root.focus_force()
 
