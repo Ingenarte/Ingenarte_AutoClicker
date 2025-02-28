@@ -3,9 +3,9 @@ import pyautogui
 import pyperclip
 from pynput import mouse
 import threading
-from modal_input import open_input_modal  # Import the input modal
-from image_modal import open_image_modal    # Import the image modal
-from data_modal import open_data_modal      # Import the data modal
+from modal_input import open_input_modal  # Your modal implementations
+from image_modal import open_image_modal
+from data_modal import open_data_modal
 import tkinter as tk
 
 # CustomTkinter configuration
@@ -31,7 +31,6 @@ root.resizable(True, True)
 # Variables for dragging the window
 start_x = 0
 start_y = 0
-
 def start_drag(e):
     global start_x, start_y
     start_x = e.x
@@ -98,7 +97,7 @@ def step_position_callback(x, y, button, entry):
     def update():
         entry.delete(0, "end")
         entry.insert(0, position)
-        button.configure(text="Position", fg_color="#333333")
+        button.configure(text="Position", fg_color="green")
         root.config(cursor="arrow")
         root.deiconify()  # restore window if minimized
     root.after(0, update)
@@ -115,9 +114,9 @@ def step_read_position(button, entry):
         threading.Thread(target=capture_global_click, daemon=True).start()
 
 # --- Global configuration dictionary ---
-global_config = {
-    "tab_n": {}
-}
+global_config = {"tab_n": {}}
+# Dictionary to hold button references for each step
+step_buttons = {}
 
 def input_callback(step_id, data):
     """Update the global configuration when the input modal is closed."""
@@ -127,6 +126,9 @@ def input_callback(step_id, data):
     global_config["tab_n"][step_key]["input"] = data
     print("Configuration updated for", step_key)
     print(global_config)
+    # Update the "Input" button's background
+    if step_key in step_buttons and "input" in step_buttons[step_key]:
+        step_buttons[step_key]["input"].configure(fg_color="green")
 
 def image_callback(step_id, data):
     """Update the global configuration when the image modal is closed."""
@@ -136,6 +138,9 @@ def image_callback(step_id, data):
     global_config["tab_n"][step_key]["image"] = data
     print("Image configuration updated for", step_key)
     print(global_config)
+    # Update the "Image" button's background
+    if step_key in step_buttons and "image" in step_buttons[step_key]:
+        step_buttons[step_key]["image"].configure(fg_color="green")
 
 def data_callback(step_id, data):
     """Update the global configuration when the data modal is closed."""
@@ -145,6 +150,9 @@ def data_callback(step_id, data):
     global_config["tab_n"][step_key]["data"] = data
     print("Data configuration updated for", step_key)
     print(global_config)
+    # Update the "Data" button's background
+    if step_key in step_buttons and "data" in step_buttons[step_key]:
+        step_buttons[step_key]["data"].configure(fg_color="green")
 
 def open_input_for_step(step_id):
     """Open the input modal for a given step, preloading existing data if available."""
@@ -174,62 +182,53 @@ def open_data_for_step(step_id):
 empty_label = ctk.CTkLabel(draggable_frame, text="")
 empty_label.grid(row=0, column=0, pady=30)
 
+# Create buttons for each step and store their references
 for step in range(1, 11):
+    step_key = f"step_{step}"
+    # Create a container dictionary for this step's buttons
+    step_buttons[step_key] = {}
+
     # Step label
     step_label = ctk.CTkLabel(draggable_frame, text=f"Step {step}:", font=("Arial", 14))
     step_label.grid(row=step, column=0, padx=5, pady=5, sticky="w")
-    
+
     # "Position" button and position entry
-    position_button = ctk.CTkButton(draggable_frame, text="Position", width=100, height=30)
-    position_button.grid(row=step, column=1, padx=3, pady=5, sticky="ew")
-    
+    pos_btn = ctk.CTkButton(draggable_frame, text="Position", width=100, height=30)
+    pos_btn.grid(row=step, column=1, padx=3, pady=5, sticky="ew")
+    # Store the position button reference
+    step_buttons[step_key]["position"] = pos_btn
+
     position_textbox = ctk.CTkEntry(draggable_frame, width=90)
     position_textbox.grid(row=step, column=2, padx=3, pady=5, sticky="ew")
-    
-    position_button.configure(
-        command=lambda b=position_button, t=position_textbox: step_read_position(b, t)
+    pos_btn.configure(
+        command=lambda b=pos_btn, t=position_textbox: step_read_position(b, t)
     )
-    
-    # "Input" button to open the input modal for this step
-    input_button = ctk.CTkButton(
-        draggable_frame, 
-        text="Input", 
-        width=80, 
-        height=30, 
-        command=lambda s=step: open_input_for_step(s)
-    )
-    input_button.grid(row=step, column=3, padx=3, pady=5, sticky="ew")
-    
-    # "Image" button to open the image modal for this step
-    image_button = ctk.CTkButton(
-        draggable_frame, 
-        text="Image", 
-        width=80, 
-        height=30,
-        command=lambda s=step: open_image_for_step(s)
-    )
-    image_button.grid(row=step, column=4, padx=3, pady=5, sticky="ew")
-    
-    # "Data" button to open the data modal for this step
-    data_button = ctk.CTkButton(
-        draggable_frame, 
-        text="Data", 
-        width=80, 
-        height=30,
-        command=lambda s=step: open_data_for_step(s)
-    )
-    data_button.grid(row=step, column=5, padx=3, pady=5, sticky="ew")
+
+    # "Input" button
+    inp_btn = ctk.CTkButton(draggable_frame, text="Input", width=80, height=30,
+                            command=lambda s=step: open_input_for_step(s))
+    inp_btn.grid(row=step, column=3, padx=3, pady=5, sticky="ew")
+    step_buttons[step_key]["input"] = inp_btn
+
+    # "Image" button
+    img_btn = ctk.CTkButton(draggable_frame, text="Image", width=80, height=30,
+                            command=lambda s=step: open_image_for_step(s))
+    img_btn.grid(row=step, column=4, padx=3, pady=5, sticky="ew")
+    step_buttons[step_key]["image"] = img_btn
+
+    # "Data" button
+    dat_btn = ctk.CTkButton(draggable_frame, text="Data", width=80, height=30,
+                            command=lambda s=step: open_data_for_step(s))
+    dat_btn.grid(row=step, column=5, padx=3, pady=5, sticky="ew")
+    step_buttons[step_key]["data"] = dat_btn
 
 # Adjust columns to distribute space evenly.
 for i in range(6):
     draggable_frame.grid_columnconfigure(i, weight=1)
 
 # "Save Config" button (original functionality)
-save_button = ctk.CTkButton(
-    draggable_frame,
-    text="Save Config",
-    command=lambda: print("⚙️ Configuration saved")
-)
+save_button = ctk.CTkButton(draggable_frame, text="Save Config",
+                            command=lambda: print("⚙️ Configuration saved"))
 save_button.place(relx=0.5, rely=0.95, anchor="center")
 
 def initialize_imkclient():
