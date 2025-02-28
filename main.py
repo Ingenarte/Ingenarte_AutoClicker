@@ -6,6 +6,7 @@ import threading
 import json
 import tkinter as tk
 from tkinter import filedialog
+import recursivity_modal  # Import the recursivity modal from recursivity_modal.py
 from modal_input import open_input_modal  # Your modal implementations
 from image_modal import open_image_modal
 from data_modal import open_data_modal
@@ -39,7 +40,7 @@ root.resizable(True, True)
 main_frame = ctk.CTkFrame(root)
 main_frame.pack(fill="both", expand=True)
 
-# Top frame for fixed controls (e.g. pointer and load config buttons)
+# Top frame for fixed controls (pointer and load config buttons)
 top_frame = ctk.CTkFrame(main_frame)
 top_frame.pack(side="top", fill="x", padx=10, pady=(10, 0))
 
@@ -129,7 +130,6 @@ def step_position_callback(x, y, button, entry, step_number):
         button.configure(text="Position", fg_color="green")
         root.config(cursor="arrow")
         root.deiconify()
-    # Save the position in global configuration
     tab_key = f"Tab {current_tab_index}"
     step_key = f"step_{step_number}"
     if tab_key in global_config["tab_n"]:
@@ -151,12 +151,23 @@ def step_read_position(button, entry, step_number):
         threading.Thread(target=capture_global_click, daemon=True).start()
 
 # -----------------------------
+# Partial Save: Update entry to config on focus out.
+# -----------------------------
+def update_position_config(event, tab_key, step_number, entry):
+    step_key = f"step_{step_number}"
+    if tab_key not in global_config["tab_n"]:
+        global_config["tab_n"][tab_key] = {}
+    if step_key not in global_config["tab_n"][tab_key]:
+        global_config["tab_n"][tab_key][step_key] = {}
+    global_config["tab_n"][tab_key][step_key]["position"] = entry.get()
+    print(f"Updated config for {tab_key} {step_key}: {entry.get()}")
+
+# -----------------------------
 # Global configuration dictionary
 # -----------------------------
 global_config = {"tab_n": {}}
 
 # Dictionary to store references to step buttons per tab.
-# Structure: { "Tab 1": { "step_1": { "input": button, "image": button, "data": button }, ... }, ... }
 step_buttons = {}
 
 # -----------------------------
@@ -170,9 +181,9 @@ def input_callback(step_id, data):
     global_config["tab_n"][tab_key][step_key] = global_config["tab_n"][tab_key].get(step_key, {})
     global_config["tab_n"][tab_key][step_key]["input"] = data
     print("Configuration updated for", tab_key, step_key)
-    print(global_config)
     if tab_key in step_buttons and step_key in step_buttons[tab_key] and "input" in step_buttons[tab_key][step_key]:
-        step_buttons[tab_key][step_key]["input"].configure(fg_color="green")
+        # Append a checkmark to indicate data is present.
+        step_buttons[tab_key][step_key]["input"].configure(text="Input ✓", fg_color="green")
 
 def image_callback(step_id, data):
     tab_key = f"Tab {current_tab_index}"
@@ -182,9 +193,8 @@ def image_callback(step_id, data):
     global_config["tab_n"][tab_key][step_key] = global_config["tab_n"][tab_key].get(step_key, {})
     global_config["tab_n"][tab_key][step_key]["image"] = data
     print("Image configuration updated for", tab_key, step_key)
-    print(global_config)
     if tab_key in step_buttons and step_key in step_buttons[tab_key] and "image" in step_buttons[tab_key][step_key]:
-        step_buttons[tab_key][step_key]["image"].configure(fg_color="green")
+        step_buttons[tab_key][step_key]["image"].configure(text="Image ✓", fg_color="green")
 
 def data_callback(step_id, data):
     tab_key = f"Tab {current_tab_index}"
@@ -194,9 +204,8 @@ def data_callback(step_id, data):
     global_config["tab_n"][tab_key][step_key] = global_config["tab_n"][tab_key].get(step_key, {})
     global_config["tab_n"][tab_key][step_key]["data"] = data
     print("Data configuration updated for", tab_key, step_key)
-    print(global_config)
     if tab_key in step_buttons and step_key in step_buttons[tab_key] and "data" in step_buttons[tab_key][step_key]:
-        step_buttons[tab_key][step_key]["data"].configure(fg_color="green")
+        step_buttons[tab_key][step_key]["data"].configure(text="Data ✓", fg_color="green")
 
 def open_input_for_step(step_id):
     tab_key = f"Tab {current_tab_index}"
@@ -250,7 +259,7 @@ def update_steps_view():
         pos_entry = ctk.CTkEntry(draggable_frame, width=90)
         pos_entry.grid(row=row, column=2, padx=3, pady=5, sticky="ew")
         pos_btn.configure(command=lambda b=pos_btn, t=pos_entry, s=step: step_read_position(b, t, s))
-        # Re-populate saved position if available
+        pos_entry.bind("<FocusOut>", lambda event, tab=tab_key, s=step, e=pos_entry: update_position_config(event, tab, s, e))
         if tab_key in global_config["tab_n"] and step_key in global_config["tab_n"][tab_key]:
             saved = global_config["tab_n"][tab_key][step_key]
             if "position" in saved:
@@ -261,31 +270,44 @@ def update_steps_view():
                                 command=lambda s=step: open_input_for_step(s))
         inp_btn.grid(row=row, column=3, padx=3, pady=5, sticky="ew")
         step_buttons[tab_key][step_key]["input"] = inp_btn
+        if tab_key in global_config["tab_n"] and step_key in global_config["tab_n"][tab_key]:
+            saved = global_config["tab_n"][tab_key][step_key]
+            if "input" in saved and saved["input"]:
+                inp_btn.configure(text="Input ✓", fg_color="green")
         # "Image" button
         img_btn = ctk.CTkButton(draggable_frame, text="Image", width=80, height=30,
                                 command=lambda s=step: open_image_for_step(s))
         img_btn.grid(row=row, column=4, padx=3, pady=5, sticky="ew")
         step_buttons[tab_key][step_key]["image"] = img_btn
+        if tab_key in global_config["tab_n"] and step_key in global_config["tab_n"][tab_key]:
+            saved = global_config["tab_n"][tab_key][step_key]
+            if "image" in saved and saved["image"]:
+                img_btn.configure(text="Image ✓", fg_color="green")
         # "Data" button
         dat_btn = ctk.CTkButton(draggable_frame, text="Data", width=80, height=30,
                                 command=lambda s=step: open_data_for_step(s))
         dat_btn.grid(row=row, column=5, padx=3, pady=5, sticky="ew")
         step_buttons[tab_key][step_key]["data"] = dat_btn
+        if tab_key in global_config["tab_n"] and step_key in global_config["tab_n"][tab_key]:
+            saved = global_config["tab_n"][tab_key][step_key]
+            if "data" in saved and saved["data"]:
+                dat_btn.configure(text="Data ✓", fg_color="green")
         row += 1
     for i in range(6):
         draggable_frame.grid_columnconfigure(i, weight=1)
-    # Re-add Save Config button
+    # Recursivity and Save Config buttons
+    rec_color = "green" if "recursivity" in global_config else "red"
+    rec_btn = ctk.CTkButton(draggable_frame, text="Recursivity", command=lambda: open_recursivity(), fg_color=rec_color)
+    rec_btn.place(relx=0.8, rely=0.88, anchor="center")
     save_btn = ctk.CTkButton(draggable_frame, text="Save Config", command=save_config)
-    save_btn.place(relx=0.5, rely=0.95, anchor="center")
+    save_btn.place(relx=0.8, rely=0.95, anchor="center")
 
 # -----------------------------
 # "Save Config" functionality
 # -----------------------------
 def save_config():
-    tab_key = f"Tab {current_tab_index}"
-    if tab_key not in global_config["tab_n"]:
-        print("No configuration for", tab_key)
-        return
+    if "recursivity" not in global_config:
+        print("No recursivity configuration to save.")
     with open("config.json", "w", encoding="utf-8") as f:
         json.dump(global_config, f, ensure_ascii=False, indent=4, sort_keys=True)
     print("⚙️ Configuration saved to config.json")
@@ -320,6 +342,8 @@ def update_tab_bar():
     plus_btn.pack(side="left", padx=5, pady=5)
 
 def select_tab(index):
+    # Force active widget to lose focus so FocusOut events trigger.
+    root.focus_force()
     global current_tab_index
     current_tab_index = index
     update_tab_bar()
@@ -339,6 +363,17 @@ update_tab_bar()
 update_steps_view()
 
 # -----------------------------
+# Recursivity functionality
+# -----------------------------
+def open_recursivity():
+    # Aggregate all steps data from all tabs.
+    steps_data_all = global_config["tab_n"]
+    result = recursivity_modal.open_recursivity_modal(steps_data_all)
+    if result:
+        global_config["recursivity"] = result
+        update_steps_view()
+
+# -----------------------------
 # Load Config functionality
 # -----------------------------
 def load_config():
@@ -348,7 +383,6 @@ def load_config():
             loaded_config = json.load(f)
         global global_config, tabs, current_tab_index
         global_config = loaded_config
-        # Update tabs from the keys of global_config["tab_n"]
         if "tab_n" in global_config:
             new_tabs = list(global_config["tab_n"].keys())
             new_tabs.sort(key=lambda x: int(x.split()[1]))
@@ -358,7 +392,6 @@ def load_config():
         update_steps_view()
         print("⚙️ Configuration loaded from", filename)
 
-# Add Load Config button next to pointer_button in top_frame (already added above)
 load_config_button.configure(command=load_config)
 
 # -----------------------------
