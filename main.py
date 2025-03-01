@@ -6,7 +6,7 @@ import threading
 import json
 import tkinter as tk
 from tkinter import filedialog
-import recursivity_modal  # Import the recursivity modal from recursivity_modal.py
+import recursivity_modal  # This module must define open_recursivity_modal(steps_data_all, prev_rec)
 from modal_input import open_input_modal  # Your modal implementations
 from image_modal import open_image_modal
 from data_modal import open_data_modal
@@ -35,7 +35,7 @@ root.title("Ingenarte AutoClicker")
 root.resizable(True, True)
 
 # -----------------------------
-# Main container: divided into a top frame, steps area, and tab bar
+# Main container: divided into top frame, steps area, and tab bar
 # -----------------------------
 main_frame = ctk.CTkFrame(root)
 main_frame.pack(fill="both", expand=True)
@@ -44,7 +44,7 @@ main_frame.pack(fill="both", expand=True)
 top_frame = ctk.CTkFrame(main_frame)
 top_frame.pack(side="top", fill="x", padx=10, pady=(10, 0))
 
-# Steps area (draggable container) for steps widgets
+# Steps area (draggable container)
 draggable_frame = ctk.CTkFrame(main_frame, fg_color="#2E2E2E", corner_radius=20)
 draggable_frame.pack(side="top", fill="both", expand=True, padx=10, pady=(0, 0))
 
@@ -295,7 +295,7 @@ def update_steps_view():
         row += 1
     for i in range(6):
         draggable_frame.grid_columnconfigure(i, weight=1)
-    # Recursivity and RUN buttons (placed in the bottom-right of the steps area)
+    # Recursivity and RUN buttons
     rec_color = "green" if "recursivity" in global_config else "#1F6AA5"
     rec_btn = ctk.CTkButton(draggable_frame, text="Recursivity", command=lambda: open_recursivity(), fg_color=rec_color)
     rec_btn.place(relx=0.8, rely=0.88, anchor="center")
@@ -310,14 +310,15 @@ def run_script():
     print(global_config)
 
 # -----------------------------
-# "Save Config" functionality
+# "Save Config" functionality – open Save As dialog and write JSON file.
 # -----------------------------
 def save_config():
-    if "recursivity" not in global_config:
-        print("No recursivity configuration to save.")
-    with open("config.json", "w", encoding="utf-8") as f:
+    filename = filedialog.asksaveasfilename(defaultextension=".json", filetypes=[("JSON Files", "*.json")])
+    if not filename:
+        return
+    with open(filename, "w", encoding="utf-8") as f:
         json.dump(global_config, f, ensure_ascii=False, indent=4, sort_keys=True)
-    print("⚙️ Configuration saved to config.json")
+    print("⚙️ Configuration saved to", filename)
 
 # -----------------------------
 # Tab Bar functionality
@@ -372,10 +373,11 @@ update_steps_view()
 # Recursivity functionality
 # -----------------------------
 def open_recursivity():
-    # Before opening the recursivity modal, pass previous rec configuration.
-    prev_rec = global_config.get("recursivity", {})
+    # Pass previous rec configuration (if any) to the modal via an attribute.
+    recursivity_modal.open_recursivity_modal.prev_rec = global_config.get("recursivity", {})
+    # Aggregate all steps data from all tabs.
     steps_data_all = global_config.get("tab_n", {})
-    result = recursivity_modal.open_recursivity_modal(steps_data_all, prev_rec)
+    result = recursivity_modal.open_recursivity_modal(steps_data_all, recursivity_modal.open_recursivity_modal.prev_rec)
     if result:
         global_config["recursivity"] = result
         update_steps_view()
@@ -384,12 +386,14 @@ def open_recursivity():
 # Load Config functionality
 # -----------------------------
 def load_config():
-    filename = tk.filedialog.askopenfilename(filetypes=[("JSON Files", "*.json")])
+    filename = filedialog.askopenfilename(filetypes=[("JSON Files", "*.json")])
     if filename:
         with open(filename, "r", encoding="utf-8") as f:
             loaded_config = json.load(f)
         global global_config, tabs, current_tab_index
         global_config = loaded_config
+        # Set previous rec configuration for recursivity modal.
+        recursivity_modal.open_recursivity_modal.prev_rec = global_config.get("recursivity", {})
         if "tab_n" in global_config:
             new_tabs = list(global_config["tab_n"].keys())
             new_tabs.sort(key=lambda x: int(x.split()[1]))
