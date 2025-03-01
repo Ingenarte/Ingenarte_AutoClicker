@@ -40,7 +40,7 @@ root.resizable(True, True)
 main_frame = ctk.CTkFrame(root)
 main_frame.pack(fill="both", expand=True)
 
-# Top frame for fixed controls (pointer and load config buttons)
+# Top frame for fixed controls (pointer, load config, and save config buttons)
 top_frame = ctk.CTkFrame(main_frame)
 top_frame.pack(side="top", fill="x", padx=10, pady=(10, 0))
 
@@ -55,13 +55,16 @@ tabs_frame.pack(side="bottom", fill="x", padx=10, pady=(0, 10))
 tabs_frame.pack_propagate(0)
 
 # -----------------------------
-# Pointer and Load Config Buttons (in top_frame)
+# Pointer, Load Config, and Save Config Buttons (in top_frame)
 # -----------------------------
 pointer_button = ctk.CTkButton(top_frame, text="Read Position", fg_color="#1F6AA5", command=lambda: read_position())
 pointer_button.pack(side="left", padx=5, pady=5)
 
 load_config_button = ctk.CTkButton(top_frame, text="Load Config", fg_color="#1F6AA5", command=lambda: load_config())
 load_config_button.pack(side="left", padx=5, pady=5)
+
+save_config_top_button = ctk.CTkButton(top_frame, text="Save Config", fg_color="#1F6AA5", command=lambda: save_config())
+save_config_top_button.pack(side="left", padx=5, pady=5)
 
 # -----------------------------
 # Variables for window dragging
@@ -84,8 +87,8 @@ draggable_frame.bind('<B1-Motion>', move_app)
 # -----------------------------
 # Global variables for click capture
 # -----------------------------
-reading_mode = False  # True while waiting for a global click
-current_callback = None  # Function to execute when a click is captured
+reading_mode = False
+current_callback = None
 
 def capture_global_click():
     """Listen for a global click and execute the assigned callback."""
@@ -163,15 +166,13 @@ def update_position_config(event, tab_key, step_number, entry):
     print(f"Updated config for {tab_key} {step_key}: {entry.get()}")
 
 # -----------------------------
-# Global configuration dictionary
+# Global configuration and step_buttons dictionaries
 # -----------------------------
 global_config = {"tab_n": {}}
-
-# Dictionary to store references to step buttons per tab.
 step_buttons = {}
 
 # -----------------------------
-# Modal callbacks
+# Modal callbacks for Input, Image, and Data
 # -----------------------------
 def input_callback(step_id, data):
     tab_key = f"Tab {current_tab_index}"
@@ -182,7 +183,6 @@ def input_callback(step_id, data):
     global_config["tab_n"][tab_key][step_key]["input"] = data
     print("Configuration updated for", tab_key, step_key)
     if tab_key in step_buttons and step_key in step_buttons[tab_key] and "input" in step_buttons[tab_key][step_key]:
-        # Append a checkmark to indicate data is present.
         step_buttons[tab_key][step_key]["input"].configure(text="Input ✓", fg_color="green")
 
 def image_callback(step_id, data):
@@ -237,7 +237,7 @@ def open_data_for_step(step_id):
 def update_steps_view():
     for widget in draggable_frame.winfo_children():
         widget.destroy()
-    # Determine step range for current tab: For Tab i, steps from (i-1)*10+1 to i*10.
+    # Determine step range for current tab (for Tab i, steps from (i-1)*10+1 to i*10)
     start_step = (current_tab_index - 1) * 10 + 1
     end_step = current_tab_index * 10
     tab_key = f"Tab {current_tab_index}"
@@ -295,12 +295,19 @@ def update_steps_view():
         row += 1
     for i in range(6):
         draggable_frame.grid_columnconfigure(i, weight=1)
-    # Recursivity and Save Config buttons
-    rec_color = "green" if "recursivity" in global_config else "red"
+    # Recursivity and RUN buttons (placed in the bottom-right of the steps area)
+    rec_color = "green" if "recursivity" in global_config else "#1F6AA5"
     rec_btn = ctk.CTkButton(draggable_frame, text="Recursivity", command=lambda: open_recursivity(), fg_color=rec_color)
     rec_btn.place(relx=0.8, rely=0.88, anchor="center")
-    save_btn = ctk.CTkButton(draggable_frame, text="Save Config", command=save_config)
-    save_btn.place(relx=0.8, rely=0.95, anchor="center")
+    run_btn = ctk.CTkButton(draggable_frame, text="RUN ▶", command=run_script, fg_color="OrangeRed3")
+    run_btn.place(relx=0.8, rely=0.95, anchor="center")
+
+# -----------------------------
+# "RUN" functionality (for testing, prints global_config)
+# -----------------------------
+def run_script():
+    print("Running script...")
+    print(global_config)
 
 # -----------------------------
 # "Save Config" functionality
@@ -342,8 +349,7 @@ def update_tab_bar():
     plus_btn.pack(side="left", padx=5, pady=5)
 
 def select_tab(index):
-    # Force active widget to lose focus so FocusOut events trigger.
-    root.focus_force()
+    root.focus_force()  # Force active widget to lose focus so FocusOut events trigger.
     global current_tab_index
     current_tab_index = index
     update_tab_bar()
@@ -366,9 +372,10 @@ update_steps_view()
 # Recursivity functionality
 # -----------------------------
 def open_recursivity():
-    # Aggregate all steps data from all tabs.
-    steps_data_all = global_config["tab_n"]
-    result = recursivity_modal.open_recursivity_modal(steps_data_all)
+    # Before opening the recursivity modal, pass previous rec configuration.
+    prev_rec = global_config.get("recursivity", {})
+    steps_data_all = global_config.get("tab_n", {})
+    result = recursivity_modal.open_recursivity_modal(steps_data_all, prev_rec)
     if result:
         global_config["recursivity"] = result
         update_steps_view()

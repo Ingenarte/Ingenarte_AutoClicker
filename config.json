@@ -1,7 +1,7 @@
 {
     "recursivity": {
-        "r_repeat": 6,
-        "r_steps": "1,21"
+        "r_repeat": 7,
+        "r_steps": "1,2"
     },
     "tab_n": {
         "Tab 1": {
@@ -26,6 +26,28 @@
                     "mouse_movement": "0"
                 },
                 "position": "asdadsa"
+            },
+            "step_2": {
+                "input": {
+                    "input_from": "Mouse",
+                    "input_sleep": "0",
+                    "keyboard_ascii": "",
+                    "keyboard_repeat": "",
+                    "mouse_click_qty": "Three",
+                    "mouse_event": "Right",
+                    "mouse_movement": "0"
+                }
+            },
+            "step_3": {
+                "input": {
+                    "input_from": "Mouse",
+                    "input_sleep": "0",
+                    "keyboard_ascii": "",
+                    "keyboard_repeat": "",
+                    "mouse_click_qty": "Three",
+                    "mouse_event": "Right",
+                    "mouse_movement": "0"
+                }
             }
         },
         "Tab 2": {
