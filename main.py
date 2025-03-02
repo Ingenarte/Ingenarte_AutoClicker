@@ -332,13 +332,13 @@ def run_script():
         return
 
     # Rename run.json to include a timestamp
-    try:
-        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-        new_filename = f"run_{timestamp}.json"
-        os.rename(run_filename, new_filename)
-        print(f"RUN: Configuration file renamed to {new_filename}.")
-    except Exception as e:
-        print(f"RUN: Error renaming configuration file: {e}")
+    # try:
+    #     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    #     new_filename = f"run_{timestamp}.json"
+    #     os.rename(run_filename, new_filename)
+    #     print(f"RUN: Configuration file renamed to {new_filename}.")
+    # except Exception as e:
+    #     print(f"RUN: Error renaming configuration file: {e}")
 
     print("RUN: Execution completed.")
 

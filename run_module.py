@@ -37,6 +37,28 @@ def log_action(message):
 # -----------------------------
 # Processing functions for steps
 # -----------------------------
+
+def get_clicks(value_str):
+    """Convert a numeric string or word to an integer."""
+    try:
+        # Try to convert directly if it's a numeric string
+        return int(value_str)
+    except ValueError:
+        # Otherwise, map known number words to integers
+        mapping = {
+            "one": 1,
+            "two": 2,
+            "three": 3,
+            "four": 4,
+            "five": 5,
+            "six": 6,
+            "seven": 7,
+            "eight": 8,
+            "nine": 9,
+            "ten": 10
+        }
+        return mapping.get(value_str.lower(), 1)
+
 def process_input_step(step_config, step_number, tab_name):
     action = step_config.get("input", {})
     log_action(f"[Tab {tab_name} | Step {step_number}] Processing input: {action}")
@@ -51,10 +73,8 @@ def process_input_step(step_config, step_number, tab_name):
                 log_action(f"Error parsing position: {e}")
                 return
             button = "left" if action.get("mouse_event", "Left").lower() == "left" else "right"
-            try:
-                clicks = int(action.get("mouse_click_qty", "1"))
-            except:
-                clicks = 1
+            value_str = action.get("mouse_click_qty", "1")
+            clicks = get_clicks(value_str)
             pyautogui.click(x=x, y=y, clicks=clicks, button=button)
             log_action(f"Mouse clicked at ({x}, {y}) {clicks} time(s) with {button} button.")
         else:

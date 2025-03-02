@@ -1566,3 +1566,51 @@
 2025-03-02 | 13:14:56 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
 2025-03-02 | 13:14:56 | Mouse clicked at (102, 99) 1 time(s) with left button.
 2025-03-02 | 13:14:56 | RUN: Execution completed.
+2025-03-02 | 13:16:14 | Loaded configuration from run.json
+2025-03-02 | 13:16:14 | RUN: Starting execution.
+2025-03-02 | 13:16:14 | RUN: Processing Tab 1
+2025-03-02 | 13:16:14 | [Tab Tab 1 | Step 1] Processing position: 409x96
+2025-03-02 | 13:16:14 | Moved mouse to (409, 96).
+2025-03-02 | 13:16:14 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 13:16:14 | Mouse clicked at (409, 96) 1 time(s) with left button.
+2025-03-02 | 13:16:14 | [Tab Tab 1 | Step 2] Processing position: 409x96
+2025-03-02 | 13:16:14 | Moved mouse to (409, 96).
+2025-03-02 | 13:16:14 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'P', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 13:16:14 | Keyboard input: P
+2025-03-02 | 13:16:14 | RUN: Execution completed.
+2025-03-02 | 13:17:09 | Loaded configuration from run.json
+2025-03-02 | 13:17:09 | RUN: Starting execution.
+2025-03-02 | 13:17:09 | RUN: Processing Tab 1
+2025-03-02 | 13:17:09 | [Tab Tab 1 | Step 1] Processing position: 409x96
+2025-03-02 | 13:17:09 | Moved mouse to (409, 96).
+2025-03-02 | 13:17:09 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 13:17:09 | Mouse clicked at (409, 96) 1 time(s) with left button.
+2025-03-02 | 13:17:09 | [Tab Tab 1 | Step 2] Processing position: 409x96
+2025-03-02 | 13:17:09 | Moved mouse to (409, 96).
+2025-03-02 | 13:17:09 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'P', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 13:17:09 | Keyboard input: P
+2025-03-02 | 13:17:09 | RUN: Execution completed.
+2025-03-02 | 13:19:59 | Loaded configuration from run.json
+2025-03-02 | 13:19:59 | RUN: Starting execution.
+2025-03-02 | 13:19:59 | RUN: Processing Tab 1
+2025-03-02 | 13:19:59 | [Tab Tab 1 | Step 1] Processing position: 409x96
+2025-03-02 | 13:19:59 | Moved mouse to (409, 96).
+2025-03-02 | 13:19:59 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 13:19:59 | Mouse clicked at (409, 96) 2 time(s) with left button.
+2025-03-02 | 13:19:59 | [Tab Tab 1 | Step 2] Processing position: 409x96
+2025-03-02 | 13:20:00 | Moved mouse to (409, 96).
+2025-03-02 | 13:20:00 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'P', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 13:20:00 | Keyboard input: P
+2025-03-02 | 13:20:00 | RUN: Execution completed.
+2025-03-02 | 13:20:11 | Loaded configuration from run.json
+2025-03-02 | 13:20:11 | RUN: Starting execution.
+2025-03-02 | 13:20:11 | RUN: Processing Tab 1
+2025-03-02 | 13:20:11 | [Tab Tab 1 | Step 1] Processing position: 409x96
+2025-03-02 | 13:20:12 | Moved mouse to (409, 96).
+2025-03-02 | 13:20:12 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 13:20:12 | Mouse clicked at (409, 96) 3 time(s) with left button.
+2025-03-02 | 13:20:12 | [Tab Tab 1 | Step 2] Processing position: 409x96
+2025-03-02 | 13:20:12 | Moved mouse to (409, 96).
+2025-03-02 | 13:20:12 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'P', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 13:20:12 | Keyboard input: P
+2025-03-02 | 13:20:12 | RUN: Execution completed.
