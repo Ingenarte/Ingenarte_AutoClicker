@@ -10,6 +10,10 @@ import recursivity_modal  # This module must define open_recursivity_modal(steps
 from modal_input import open_input_modal  # Your modal implementations
 from image_modal import open_image_modal
 from data_modal import open_data_modal
+import subprocess
+import sys
+import datetime
+import os
 
 # -----------------------------
 # CustomTkinter configuration
@@ -306,8 +310,37 @@ def update_steps_view():
 # "RUN" functionality (for testing, prints global_config)
 # -----------------------------
 def run_script():
-    print("Running script...")
-    print(global_config)
+    print("RUN: Starting execution.")
+
+    # Save the current configuration to run.json
+    run_filename = "run.json"
+    try:
+        with open(run_filename, "w", encoding="utf-8") as f:
+            json.dump(global_config, f, ensure_ascii=False, indent=4, sort_keys=True)
+        print(f"RUN: Configuration saved to {run_filename}.")
+    except Exception as e:
+        print(f"RUN: Error saving configuration: {e}")
+        return
+
+    # Execute run_module.py synchronously (blocking until finished)
+    try:
+        print("RUN: Executing run_module.py. This may take up to an hour...")
+        subprocess.run([sys.executable, "run_module.py", run_filename], check=True)
+        print("RUN: run_module.py executed successfully.")
+    except subprocess.CalledProcessError as e:
+        print(f"RUN: Error executing run_module.py: {e}")
+        return
+
+    # Rename run.json to include a timestamp
+    try:
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        new_filename = f"run_{timestamp}.json"
+        os.rename(run_filename, new_filename)
+        print(f"RUN: Configuration file renamed to {new_filename}.")
+    except Exception as e:
+        print(f"RUN: Error renaming configuration file: {e}")
+
+    print("RUN: Execution completed.")
 
 # -----------------------------
 # "Save Config" functionality – open Save As dialog and write JSON file.
