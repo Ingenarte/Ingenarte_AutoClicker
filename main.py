@@ -14,6 +14,7 @@ import subprocess
 import sys
 import datetime
 import os
+import time
 
 # -----------------------------
 # CustomTkinter configuration
@@ -26,6 +27,8 @@ ctk.set_default_color_theme("blue")
 # -----------------------------
 root = ctk.CTk()
 root.update_idletasks()
+icon_image = tk.PhotoImage(file="ingenarte_icon.png")
+root.iconphoto(False, icon_image)
 
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
@@ -309,38 +312,57 @@ def update_steps_view():
 # -----------------------------
 # "RUN" functionality (for testing, prints global_config)
 # -----------------------------
+
+
+def log_action(message):
+    """Append a log message with timestamp to run-log.txt and print it."""
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d | %H:%M:%S")
+    log_line = f"{timestamp} | {message}"
+    with open("run-log.txt", "a", encoding="utf-8") as log_file:
+        log_file.write(log_line + "\n")
+    print(log_line)
+
+
 def run_script():
-    print("RUN: Starting execution.")
+    # Minimize the window and force an update so the state changes
+    root.withdraw()
+    root.update()  # Force update to process events
+      
+    log_action("RUN: Starting execution.")
 
     # Save the current configuration to run.json
     run_filename = "run.json"
     try:
         with open(run_filename, "w", encoding="utf-8") as f:
             json.dump(global_config, f, ensure_ascii=False, indent=4, sort_keys=True)
-        print(f"RUN: Configuration saved to {run_filename}.")
+        log_action(f"RUN: Configuration saved to {run_filename}.")
     except Exception as e:
-        print(f"RUN: Error saving configuration: {e}")
+        log_action(f"RUN: Error saving configuration: {e}")
         return
 
     # Execute run_module.py synchronously (blocking until finished)
     try:
-        print("RUN: Executing run_module.py. This may take up to an hour...")
+        log_action("RUN: Executing run_module.py with run.json as argument. This may take up to an hour...")
         subprocess.run([sys.executable, "run_module.py", run_filename], check=True)
-        print("RUN: run_module.py executed successfully.")
+        log_action("RUN: run_module.py executed successfully.")
     except subprocess.CalledProcessError as e:
-        print(f"RUN: Error executing run_module.py: {e}")
+        log_action(f"RUN: Error executing run_module.py: {e}")
+        root.deiconify()  # Optionally restore window if an error occurs
         return
 
-    # Rename run.json to include a timestamp
+    # (Optional) Rename run.json to include a timestamp (if desired)
     # try:
     #     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     #     new_filename = f"run_{timestamp}.json"
     #     os.rename(run_filename, new_filename)
-    #     print(f"RUN: Configuration file renamed to {new_filename}.")
+    #     log_action(f"RUN: Configuration file renamed to {new_filename}.")
     # except Exception as e:
-    #     print(f"RUN: Error renaming configuration file: {e}")
+    #     log_action(f"RUN: Failed to rename run.json: {e}")
 
-    print("RUN: Execution completed.")
+    log_action("RUN: Execution completed.")
+
+    root.deiconify()
+    log_action("Window restored.")
 
 # -----------------------------
 # "Save Config" functionality – open Save As dialog and write JSON file.
@@ -445,4 +467,4 @@ def initialize_imkclient():
     root.focus_force()
 
 root.after(100, initialize_imkclient)
-root.mainloop()
+root.mainloop() 

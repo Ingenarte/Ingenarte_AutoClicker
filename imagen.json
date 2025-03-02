@@ -1,0 +1,18 @@
+{
+    "tab_n": {
+        "Tab 1": {
+            "step_1": {
+                "image": {
+                    "image_click": true,
+                    "image_click_LR": "Right",
+                    "image_confidence": "0.90",
+                    "image_path": "/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05 pm.png",
+                    "image_sleep": "0",
+                    "image_timeout": "0",
+                    "image_wait": false,
+                    "image_wait_sleep": "0"
+                }
+            }
+        }
+    }
+}

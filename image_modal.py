@@ -1,7 +1,7 @@
 import customtkinter as ctk
 import tkinter as tk
 from tkinter import filedialog
-from tkinterdnd2 import DND_FILES  # Requires tkinterdnd2 package
+from tkinterdnd2 import DND_FILES,TkinterDnD  # Requires tkinterdnd2 package
 from components.utils import get_next_id
 from components.switch_component import CustomSwitch
 
@@ -25,7 +25,7 @@ def open_image_modal(step_id, callback, existing_data=None):
         return
 
     # Create a new Toplevel window.
-    modal = tk.Toplevel()
+    modal = TkinterDnD.Tk()
     open_image_modals[step_id] = modal
     modal.title("Image Modal " + str(step_id))
     modal.geometry("600x500")

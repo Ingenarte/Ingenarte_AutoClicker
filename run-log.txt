@@ -1614,3 +1614,1735 @@
 2025-03-02 | 13:20:12 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'P', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
 2025-03-02 | 13:20:12 | Keyboard input: P
 2025-03-02 | 13:20:12 | RUN: Execution completed.
+2025-03-02 | 19:13:11 | Loaded configuration from run.json
+2025-03-02 | 19:13:11 | RUN: Starting execution.
+2025-03-02 | 19:13:11 | RUN: Processing Tab 1
+2025-03-02 | 19:13:11 | [Tab Tab 1 | Step 1] Processing position: 409x96
+2025-03-02 | 19:13:11 | Moved mouse to (409, 96).
+2025-03-02 | 19:13:11 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 19:13:12 | Mouse clicked at (409, 96) 3 time(s) with left button.
+2025-03-02 | 19:13:12 | [Tab Tab 1 | Step 2] Processing position: 409x96
+2025-03-02 | 19:13:12 | Moved mouse to (409, 96).
+2025-03-02 | 19:13:12 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'P', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 19:13:12 | Keyboard input: P
+2025-03-02 | 19:13:12 | RUN: Execution completed.
+2025-03-02 | 19:36:53 | Loaded configuration from run.json
+2025-03-02 | 19:36:53 | RUN: Starting execution.
+2025-03-02 | 19:36:53 | RUN: Processing Tab 1
+2025-03-02 | 19:36:53 | [Tab Tab 1 | Step 1] Processing position: 102x99
+2025-03-02 | 19:36:53 | Moved mouse to (102, 99).
+2025-03-02 | 19:36:53 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 19:36:54 | Mouse clicked at (102, 99) 1 time(s) with left button.
+2025-03-02 | 19:36:54 | RUN: Execution completed.
+2025-03-02 | 19:39:25 | Loaded configuration from run.json
+2025-03-02 | 19:39:25 | RUN: Starting execution.
+2025-03-02 | 19:39:25 | RUN: Processing Tab 1
+2025-03-02 | 19:39:25 | [Tab Tab 1 | Step 1] Processing position: 102x99
+2025-03-02 | 19:39:25 | Moved mouse to (102, 99).
+2025-03-02 | 19:39:25 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 19:39:25 | Mouse clicked at (102, 99) 1 time(s) with left button.
+2025-03-02 | 19:39:25 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '4'}
+2025-03-02 | 19:41:45 | Loaded configuration from run.json
+2025-03-02 | 19:41:45 | RUN: Starting execution.
+2025-03-02 | 19:41:45 | RUN: Processing Tab 1
+2025-03-02 | 19:41:45 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 19:42:16 | Loaded configuration from run.json
+2025-03-02 | 19:42:16 | RUN: Starting execution.
+2025-03-02 | 19:42:16 | RUN: Processing Tab 1
+2025-03-02 | 19:42:16 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 19:42:27 | Loaded configuration from run.json
+2025-03-02 | 19:42:27 | RUN: Starting execution.
+2025-03-02 | 19:42:27 | RUN: Processing Tab 1
+2025-03-02 | 19:42:27 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 19:43:43 | Loaded configuration from run.json
+2025-03-02 | 19:43:43 | RUN: Starting execution.
+2025-03-02 | 19:43:43 | RUN: Processing Tab 1
+2025-03-02 | 19:43:43 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 19:43:55 | Loaded configuration from run.json
+2025-03-02 | 19:43:55 | RUN: Starting execution.
+2025-03-02 | 19:43:55 | RUN: Processing Tab 1
+2025-03-02 | 19:43:55 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.60', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 19:43:56 | Clicked on image at Point(x=np.int64(2136), y=np.int64(359)).
+2025-03-02 | 19:43:56 | RUN: Execution completed.
+2025-03-02 | 19:44:22 | Loaded configuration from run.json
+2025-03-02 | 19:44:22 | RUN: Starting execution.
+2025-03-02 | 19:44:22 | RUN: Processing Tab 1
+2025-03-02 | 19:44:22 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 19:44:23 | Clicked on image at Point(x=np.int64(418), y=np.int64(627)).
+2025-03-02 | 19:44:23 | RUN: Execution completed.
+2025-03-02 | 19:44:30 | Loaded configuration from run.json
+2025-03-02 | 19:44:30 | RUN: Starting execution.
+2025-03-02 | 19:44:30 | RUN: Processing Tab 1
+2025-03-02 | 19:44:30 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 19:44:31 | Clicked on image at Point(x=np.int64(418), y=np.int64(627)).
+2025-03-02 | 19:44:31 | RUN: Execution completed.
+2025-03-02 | 19:47:34 | Loaded configuration from run.json
+2025-03-02 | 19:47:34 | RUN: Starting execution.
+2025-03-02 | 19:47:34 | RUN: Processing Tab 1
+2025-03-02 | 19:47:34 | [Tab Tab 1 | Step 1] Processing position: 102x99
+2025-03-02 | 19:47:34 | Moved mouse to (102, 99).
+2025-03-02 | 19:47:34 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 19:47:34 | Mouse clicked at (102, 99) 1 time(s) with left button.
+2025-03-02 | 19:47:34 | RUN: Execution completed.
+2025-03-02 | 19:48:07 | Loaded configuration from run.json
+2025-03-02 | 19:48:07 | RUN: Starting execution.
+2025-03-02 | 19:48:07 | RUN: Processing Tab 1
+2025-03-02 | 19:48:07 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Press the key or key combination to be recorded', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 19:48:08 | Keyboard input: Press the key or key combination to be recorded
+2025-03-02 | 19:48:08 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 19:48:09 | Clicked on image at Point(x=np.int64(418), y=np.int64(627)).
+2025-03-02 | 19:48:09 | RUN: Execution completed.
+2025-03-02 | 19:48:45 | Loaded configuration from run.json
+2025-03-02 | 19:48:45 | RUN: Starting execution.
+2025-03-02 | 19:48:45 | RUN: Processing Tab 1
+2025-03-02 | 19:48:45 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Press the key or key combination to be recorded', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 19:48:46 | Keyboard input: Press the key or key combination to be recorded
+2025-03-02 | 19:48:46 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png2.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 19:48:47 | Clicked on image at Point(x=np.int64(406), y=np.int64(633)).
+2025-03-02 | 19:48:47 | RUN: Execution completed.
+2025-03-02 | 20:05:46 | Loaded configuration from run.json
+2025-03-02 | 20:05:46 | RUN: Starting execution.
+2025-03-02 | 20:05:46 | RUN: Processing Tab 1
+2025-03-02 | 20:05:46 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imagen_folder.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:06:21 | Loaded configuration from run.json
+2025-03-02 | 20:06:21 | RUN: Starting execution.
+2025-03-02 | 20:06:21 | RUN: Processing Tab 1
+2025-03-02 | 20:06:21 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.70', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imagen_folder.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:06:21 | Clicked on image at Point(x=np.int64(2859), y=np.int64(149)).
+2025-03-02 | 20:06:21 | RUN: Execution completed.
+2025-03-02 | 20:08:30 | Loaded configuration from run.json
+2025-03-02 | 20:08:30 | RUN: Starting execution.
+2025-03-02 | 20:08:30 | RUN: Processing Tab 1
+2025-03-02 | 20:08:30 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.70', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imagen_folder.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:08:31 | Moved mouse to image at Point(x=np.int64(2859), y=np.int64(149)).
+2025-03-02 | 20:08:31 | Clicked 1 time(s) with left button at Point(x=np.int64(2859), y=np.int64(149)).
+2025-03-02 | 20:08:31 | RUN: Execution completed.
+2025-03-02 | 20:08:36 | Loaded configuration from run.json
+2025-03-02 | 20:08:36 | RUN: Starting execution.
+2025-03-02 | 20:08:36 | RUN: Processing Tab 1
+2025-03-02 | 20:08:36 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.70', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imagen_folder.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:08:36 | Moved mouse to image at Point(x=np.int64(2859), y=np.int64(149)).
+2025-03-02 | 20:08:37 | Clicked 1 time(s) with left button at Point(x=np.int64(2859), y=np.int64(149)).
+2025-03-02 | 20:08:37 | RUN: Execution completed.
+2025-03-02 | 20:08:46 | Loaded configuration from run.json
+2025-03-02 | 20:08:46 | RUN: Starting execution.
+2025-03-02 | 20:08:46 | RUN: Processing Tab 1
+2025-03-02 | 20:08:46 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.70', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imagen_folder.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:08:47 | Moved mouse to image at Point(x=np.int64(2859), y=np.int64(149)).
+2025-03-02 | 20:08:47 | Clicked 1 time(s) with left button at Point(x=np.int64(2859), y=np.int64(149)).
+2025-03-02 | 20:08:47 | RUN: Execution completed.
+2025-03-02 | 20:09:17 | Loaded configuration from run.json
+2025-03-02 | 20:09:17 | RUN: Starting execution.
+2025-03-02 | 20:09:17 | RUN: Processing Tab 1
+2025-03-02 | 20:09:17 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:09:17 | Moved mouse to image at Point(x=np.int64(675), y=np.int64(628)).
+2025-03-02 | 20:09:17 | Clicked 1 time(s) with left button at Point(x=np.int64(675), y=np.int64(628)).
+2025-03-02 | 20:09:17 | RUN: Execution completed.
+2025-03-02 | 20:09:33 | Loaded configuration from run.json
+2025-03-02 | 20:09:33 | RUN: Starting execution.
+2025-03-02 | 20:09:33 | RUN: Processing Tab 1
+2025-03-02 | 20:09:33 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:09:37 | Loaded configuration from run.json
+2025-03-02 | 20:09:37 | RUN: Starting execution.
+2025-03-02 | 20:09:37 | RUN: Processing Tab 1
+2025-03-02 | 20:09:37 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:09:44 | Loaded configuration from run.json
+2025-03-02 | 20:09:44 | RUN: Starting execution.
+2025-03-02 | 20:09:44 | RUN: Processing Tab 1
+2025-03-02 | 20:09:44 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:09:50 | Loaded configuration from run.json
+2025-03-02 | 20:09:50 | RUN: Starting execution.
+2025-03-02 | 20:09:50 | RUN: Processing Tab 1
+2025-03-02 | 20:09:50 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:09:51 | Moved mouse to image at Point(x=np.int64(674), y=np.int64(632)).
+2025-03-02 | 20:09:51 | Clicked 1 time(s) with left button at Point(x=np.int64(674), y=np.int64(632)).
+2025-03-02 | 20:09:51 | RUN: Execution completed.
+2025-03-02 | 20:10:02 | Loaded configuration from run.json
+2025-03-02 | 20:10:02 | RUN: Starting execution.
+2025-03-02 | 20:10:02 | RUN: Processing Tab 1
+2025-03-02 | 20:10:02 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.95', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:10:02 | Moved mouse to image at Point(x=np.int64(675), y=np.int64(632)).
+2025-03-02 | 20:10:02 | Clicked 1 time(s) with left button at Point(x=np.int64(675), y=np.int64(632)).
+2025-03-02 | 20:10:02 | RUN: Execution completed.
+2025-03-02 | 20:12:00 | Loaded configuration from run.json
+2025-03-02 | 20:12:00 | RUN: Starting execution.
+2025-03-02 | 20:12:00 | RUN: Processing Tab 1
+2025-03-02 | 20:12:00 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:12:01 | Moved mouse to image at Point(x=np.int64(675), y=np.int64(632)).
+2025-03-02 | 20:12:01 | Clicked 1 time(s) with left button at Point(x=np.int64(675), y=np.int64(632)).
+2025-03-02 | 20:12:01 | RUN: Execution completed.
+2025-03-02 | 20:13:21 | Loaded configuration from run.json
+2025-03-02 | 20:13:21 | RUN: Starting execution.
+2025-03-02 | 20:13:21 | RUN: Processing Tab 1
+2025-03-02 | 20:13:21 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:13:22 | Moved mouse to image at Point(x=np.int64(675), y=np.int64(632)).
+2025-03-02 | 20:13:22 | Clicked 1 time(s) with right button at Point(x=np.int64(675), y=np.int64(632)).
+2025-03-02 | 20:13:22 | RUN: Execution completed.
+2025-03-02 | 20:16:51 | Loaded configuration from run.json
+2025-03-02 | 20:16:51 | RUN: Starting execution.
+2025-03-02 | 20:16:51 | RUN: Processing Tab 1
+2025-03-02 | 20:16:51 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:16:56 | Loaded configuration from run.json
+2025-03-02 | 20:16:56 | RUN: Starting execution.
+2025-03-02 | 20:16:56 | RUN: Processing Tab 1
+2025-03-02 | 20:16:56 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.85', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:16:57 | Moved mouse to image at Point(x=np.int64(674), y=np.int64(631)).
+2025-03-02 | 20:16:57 | Clicked 1 time(s) with right button at Point(x=np.int64(674), y=np.int64(631)).
+2025-03-02 | 20:16:57 | RUN: Execution completed.
+2025-03-02 | 20:17:18 | Loaded configuration from run.json
+2025-03-02 | 20:17:18 | RUN: Starting execution.
+2025-03-02 | 20:17:18 | RUN: Processing Tab 1
+2025-03-02 | 20:17:18 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.85', 'image_path': '/Users/francorodrigo/Desktop/Screenshot 2025-03-02 at 8.09.00\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-02 | 20:17:19 | Waiting for 2.0 seconds before clicking.
+2025-03-02 | 20:17:21 | Moved mouse to image at Point(x=np.int64(674), y=np.int64(631)).
+2025-03-02 | 20:17:21 | Clicked 1 time(s) with right button at Point(x=np.int64(674), y=np.int64(631)).
+2025-03-02 | 20:17:21 | RUN: Execution completed.
+2025-03-02 | 20:17:48 | Loaded configuration from run.json
+2025-03-02 | 20:17:48 | RUN: Starting execution.
+2025-03-02 | 20:17:48 | RUN: Processing Tab 1
+2025-03-02 | 20:17:48 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.85', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png2.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-02 | 20:17:49 | Waiting for 2.0 seconds before clicking.
+2025-03-02 | 20:17:51 | Moved mouse to image at Point(x=np.int64(406), y=np.int64(635)).
+2025-03-02 | 20:17:51 | Clicked 1 time(s) with right button at Point(x=np.int64(406), y=np.int64(635)).
+2025-03-02 | 20:17:51 | RUN: Execution completed.
+2025-03-02 | 20:18:16 | Loaded configuration from run.json
+2025-03-02 | 20:18:16 | RUN: Starting execution.
+2025-03-02 | 20:18:16 | RUN: Processing Tab 1
+2025-03-02 | 20:18:16 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.85', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.18.07\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-02 | 20:18:17 | Waiting for 2.0 seconds before clicking.
+2025-03-02 | 20:18:19 | Moved mouse to image at Point(x=np.int64(421), y=np.int64(594)).
+2025-03-02 | 20:18:19 | Clicked 1 time(s) with right button at Point(x=np.int64(421), y=np.int64(594)).
+2025-03-02 | 20:18:19 | RUN: Execution completed.
+2025-03-02 | 20:18:30 | Loaded configuration from run.json
+2025-03-02 | 20:18:30 | RUN: Starting execution.
+2025-03-02 | 20:18:30 | RUN: Processing Tab 1
+2025-03-02 | 20:18:30 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.18.07\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-02 | 20:18:31 | Waiting for 2.0 seconds before clicking.
+2025-03-02 | 20:18:33 | Moved mouse to image at Point(x=np.int64(421), y=np.int64(594)).
+2025-03-02 | 20:18:33 | Clicked 1 time(s) with right button at Point(x=np.int64(421), y=np.int64(594)).
+2025-03-02 | 20:18:33 | RUN: Execution completed.
+2025-03-02 | 20:18:42 | Loaded configuration from run.json
+2025-03-02 | 20:18:42 | RUN: Starting execution.
+2025-03-02 | 20:18:42 | RUN: Processing Tab 1
+2025-03-02 | 20:18:42 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.18.07\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-03-02 | 20:18:55 | Loaded configuration from run.json
+2025-03-02 | 20:18:55 | RUN: Starting execution.
+2025-03-02 | 20:18:55 | RUN: Processing Tab 1
+2025-03-02 | 20:18:55 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.18.07\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-03-02 | 20:19:00 | Loaded configuration from run.json
+2025-03-02 | 20:19:00 | RUN: Starting execution.
+2025-03-02 | 20:19:00 | RUN: Processing Tab 1
+2025-03-02 | 20:19:00 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.18.07\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-03-02 | 20:19:17 | Loaded configuration from run.json
+2025-03-02 | 20:19:17 | RUN: Starting execution.
+2025-03-02 | 20:19:17 | RUN: Processing Tab 1
+2025-03-02 | 20:19:17 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-03-02 | 20:19:17 | Moved mouse to image at Point(x=np.int64(764), y=np.int64(842)).
+2025-03-02 | 20:19:17 | Clicked 1 time(s) with right button at Point(x=np.int64(764), y=np.int64(842)).
+2025-03-02 | 20:19:17 | RUN: Execution completed.
+2025-03-02 | 20:19:53 | Loaded configuration from run.json
+2025-03-02 | 20:19:53 | RUN: Starting execution.
+2025-03-02 | 20:19:53 | RUN: Processing Tab 1
+2025-03-02 | 20:19:53 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-03-02 | 20:19:53 | Moved mouse to image at Point(x=np.int64(764), y=np.int64(839)).
+2025-03-02 | 20:19:53 | Clicked 1 time(s) with right button at Point(x=np.int64(764), y=np.int64(839)).
+2025-03-02 | 20:19:53 | RUN: Execution completed.
+2025-03-02 | 20:24:07 | Loaded configuration from run.json
+2025-03-02 | 20:24:07 | RUN: Starting execution.
+2025-03-02 | 20:24:07 | RUN: Processing Tab 1
+2025-03-02 | 20:24:07 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-03-02 | 20:24:08 | Moved mouse to image at Point(x=np.int64(764), y=np.int64(839)).
+2025-03-02 | 20:24:08 | Clicked 1 time(s) with right button at Point(x=np.int64(764), y=np.int64(839)).
+2025-03-02 | 20:24:08 | RUN: Execution completed.
+2025-03-02 | 20:24:33 | Loaded configuration from run.json
+2025-03-02 | 20:24:33 | RUN: Starting execution.
+2025-03-02 | 20:24:33 | RUN: Processing Tab 1
+2025-03-02 | 20:24:34 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-03-02 | 20:24:34 | Moved mouse to image at Point(x=np.int64(764), y=np.int64(839)).
+2025-03-02 | 20:24:34 | Clicked 1 time(s) with right button at Point(x=np.int64(764), y=np.int64(839)).
+2025-03-02 | 20:24:34 | RUN: Execution completed.
+2025-03-02 | 20:26:10 | Loaded configuration from run.json
+2025-03-02 | 20:26:10 | RUN: Starting execution.
+2025-03-02 | 20:26:10 | RUN: Processing Tab 1
+2025-03-02 | 20:26:11 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-03-02 | 20:26:11 | Moved mouse to image at Point(x=np.int64(764), y=np.int64(839)).
+2025-03-02 | 20:26:11 | Clicked 1 time(s) with right button at Point(x=np.int64(764), y=np.int64(839)).
+2025-03-02 | 20:26:11 | RUN: Execution completed.
+2025-03-02 | 20:26:30 | Loaded configuration from run.json
+2025-03-02 | 20:26:30 | RUN: Starting execution.
+2025-03-02 | 20:26:30 | RUN: Processing Tab 1
+2025-03-02 | 20:26:31 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:26:32 | Moved mouse to image at Point(x=np.int64(764), y=np.int64(839)).
+2025-03-02 | 20:26:32 | Clicked 1 time(s) with right button at Point(x=np.int64(764), y=np.int64(839)).
+2025-03-02 | 20:26:32 | RUN: Execution completed.
+2025-03-02 | 20:27:54 | Loaded configuration from run.json
+2025-03-02 | 20:27:54 | RUN: Starting execution.
+2025-03-02 | 20:27:54 | RUN: Processing Tab 1
+2025-03-02 | 20:27:55 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '0.85', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:27:56 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(840)).
+2025-03-02 | 20:27:56 | Image click flag not set; no click performed.
+2025-03-02 | 20:27:56 | RUN: Execution completed.
+2025-03-02 | 20:28:35 | Loaded configuration from run.json
+2025-03-02 | 20:28:35 | RUN: Starting execution.
+2025-03-02 | 20:28:35 | RUN: Processing Tab 1
+2025-03-02 | 20:28:36 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:30:20 | Loaded configuration from run.json
+2025-03-02 | 20:30:20 | RUN: Starting execution.
+2025-03-02 | 20:30:20 | RUN: Processing Tab 1
+2025-03-02 | 20:30:21 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:30:22 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:30:22 | Image click flag not set; no click performed.
+2025-03-02 | 20:30:22 | RUN: Execution completed.
+2025-03-02 | 20:30:48 | Loaded configuration from run.json
+2025-03-02 | 20:30:48 | RUN: Starting execution.
+2025-03-02 | 20:30:48 | RUN: Processing Tab 1
+2025-03-02 | 20:30:49 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:30:49 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:30:49 | Image click flag not set; no click performed.
+2025-03-02 | 20:30:49 | RUN: Execution completed.
+2025-03-02 | 20:33:23 | Loaded configuration from run.json
+2025-03-02 | 20:33:23 | RUN: Starting execution.
+2025-03-02 | 20:33:23 | RUN: Processing Tab 1
+2025-03-02 | 20:33:23 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.18.07\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:36:56 | Loaded configuration from run.json
+2025-03-02 | 20:36:56 | RUN: Starting execution.
+2025-03-02 | 20:36:56 | RUN: Processing Tab 1
+2025-03-02 | 20:36:57 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.18.07\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:37:55 | Loaded configuration from run.json
+2025-03-02 | 20:37:55 | RUN: Starting execution.
+2025-03-02 | 20:37:55 | RUN: Processing Tab 1
+2025-03-02 | 20:37:55 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:38:44 | Loaded configuration from run.json
+2025-03-02 | 20:38:44 | RUN: Starting execution.
+2025-03-02 | 20:38:44 | RUN: Processing Tab 1
+2025-03-02 | 20:38:44 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:39:01 | Loaded configuration from run.json
+2025-03-02 | 20:39:01 | RUN: Starting execution.
+2025-03-02 | 20:39:01 | RUN: Processing Tab 1
+2025-03-02 | 20:39:02 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:39:28 | Loaded configuration from run.json
+2025-03-02 | 20:39:28 | RUN: Starting execution.
+2025-03-02 | 20:39:28 | RUN: Processing Tab 1
+2025-03-02 | 20:39:28 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.18.07\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:39:49 | Loaded configuration from run.json
+2025-03-02 | 20:39:49 | RUN: Starting execution.
+2025-03-02 | 20:39:49 | RUN: Processing Tab 1
+2025-03-02 | 20:39:50 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/prueba_png2.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:42:15 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:42:15 | Window minimized.
+2025-03-02 | 20:42:15 | RUN: Starting execution.
+2025-03-02 | 20:42:15 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:42:15 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:42:15 | Loaded configuration from run.json
+2025-03-02 | 20:42:15 | RUN: Starting execution.
+2025-03-02 | 20:42:15 | RUN: Processing Tab 1
+2025-03-02 | 20:42:16 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.18.07\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:42:17 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 20:42:46 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:42:46 | Window minimized.
+2025-03-02 | 20:42:46 | RUN: Starting execution.
+2025-03-02 | 20:42:46 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:42:46 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:42:46 | Loaded configuration from run.json
+2025-03-02 | 20:42:46 | RUN: Starting execution.
+2025-03-02 | 20:42:46 | RUN: Execution completed.
+2025-03-02 | 20:42:46 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:42:46 | RUN: Execution completed.
+2025-03-02 | 20:42:49 | Window restored.
+2025-03-02 | 20:42:51 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:42:51 | Window minimized.
+2025-03-02 | 20:42:51 | RUN: Starting execution.
+2025-03-02 | 20:42:51 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:42:51 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:42:51 | Loaded configuration from run.json
+2025-03-02 | 20:42:51 | RUN: Starting execution.
+2025-03-02 | 20:42:51 | RUN: Processing Tab 1
+2025-03-02 | 20:42:52 | [Tab Tab 1 | Step 1] Processing image: {'image_click': False, 'image_click_LR': 'Left', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/ingenarte_icon.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:42:52 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 20:43:52 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:43:52 | Window minimized.
+2025-03-02 | 20:43:52 | RUN: Starting execution.
+2025-03-02 | 20:43:52 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:43:52 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:43:53 | Loaded configuration from run.json
+2025-03-02 | 20:43:53 | RUN: Starting execution.
+2025-03-02 | 20:43:53 | RUN: Processing Tab 1
+2025-03-02 | 20:43:53 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:43:54 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:43:54 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:43:54 | RUN: Execution completed.
+2025-03-02 | 20:43:54 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:43:54 | RUN: Execution completed.
+2025-03-02 | 20:43:57 | Window restored.
+2025-03-02 | 20:44:14 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:44:14 | Window minimized.
+2025-03-02 | 20:44:14 | RUN: Starting execution.
+2025-03-02 | 20:44:14 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:44:14 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:44:15 | Loaded configuration from run.json
+2025-03-02 | 20:44:15 | RUN: Starting execution.
+2025-03-02 | 20:44:15 | RUN: Processing Tab 1
+2025-03-02 | 20:44:15 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:44:16 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:44:16 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:44:16 | RUN: Execution completed.
+2025-03-02 | 20:44:16 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:44:16 | RUN: Execution completed.
+2025-03-02 | 20:44:19 | Window restored.
+2025-03-02 | 20:44:40 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:44:40 | Window minimized.
+2025-03-02 | 20:44:40 | RUN: Starting execution.
+2025-03-02 | 20:44:40 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:44:40 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:44:41 | Loaded configuration from run.json
+2025-03-02 | 20:44:41 | RUN: Starting execution.
+2025-03-02 | 20:44:41 | RUN: Processing Tab 1
+2025-03-02 | 20:44:42 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:44:42 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:44:42 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:44:42 | RUN: Execution completed.
+2025-03-02 | 20:44:42 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:44:42 | RUN: Execution completed.
+2025-03-02 | 20:44:45 | Window restored.
+2025-03-02 | 20:45:12 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:45:14 | Window minimized.
+2025-03-02 | 20:45:14 | RUN: Starting execution.
+2025-03-02 | 20:45:14 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:45:14 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:45:15 | Loaded configuration from run.json
+2025-03-02 | 20:45:15 | RUN: Starting execution.
+2025-03-02 | 20:45:15 | RUN: Processing Tab 1
+2025-03-02 | 20:45:15 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:45:16 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:45:16 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:45:16 | RUN: Execution completed.
+2025-03-02 | 20:45:16 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:45:16 | RUN: Execution completed.
+2025-03-02 | 20:45:19 | Window restored.
+2025-03-02 | 20:46:32 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:46:34 | Window minimized.
+2025-03-02 | 20:46:34 | RUN: Starting execution.
+2025-03-02 | 20:46:34 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:46:34 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:46:35 | Loaded configuration from run.json
+2025-03-02 | 20:46:35 | RUN: Starting execution.
+2025-03-02 | 20:46:35 | RUN: Processing Tab 1
+2025-03-02 | 20:46:36 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:46:36 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:46:36 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:46:36 | RUN: Execution completed.
+2025-03-02 | 20:46:37 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:46:37 | RUN: Execution completed.
+2025-03-02 | 20:46:40 | Window restored.
+2025-03-02 | 20:47:13 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:47:15 | Window minimized.
+2025-03-02 | 20:47:15 | RUN: Starting execution.
+2025-03-02 | 20:47:15 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:47:15 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:47:15 | Loaded configuration from run.json
+2025-03-02 | 20:47:15 | RUN: Starting execution.
+2025-03-02 | 20:47:15 | RUN: Processing Tab 1
+2025-03-02 | 20:47:16 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:47:16 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:47:16 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:47:16 | RUN: Execution completed.
+2025-03-02 | 20:47:16 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:47:16 | RUN: Execution completed.
+2025-03-02 | 20:47:19 | Window restored.
+2025-03-02 | 20:50:26 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:50:28 | Window minimized.
+2025-03-02 | 20:50:28 | RUN: Starting execution.
+2025-03-02 | 20:50:53 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:50:55 | Window minimized.
+2025-03-02 | 20:50:55 | RUN: Starting execution.
+2025-03-02 | 20:52:49 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:52:51 | Window minimized.
+2025-03-02 | 20:52:51 | RUN: Starting execution.
+2025-03-02 | 20:53:19 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:53:21 | Window minimized.
+2025-03-02 | 20:53:21 | RUN: Starting execution.
+2025-03-02 | 20:53:21 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:53:21 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:53:22 | Loaded configuration from run.json
+2025-03-02 | 20:53:22 | RUN: Starting execution.
+2025-03-02 | 20:53:22 | RUN: Processing Tab 1
+2025-03-02 | 20:53:22 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:53:23 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:53:23 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:53:23 | RUN: Execution completed.
+2025-03-02 | 20:53:23 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:53:23 | RUN: Execution completed.
+2025-03-02 | 20:53:26 | Window restored.
+2025-03-02 | 20:55:08 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:55:10 | Window minimized.
+2025-03-02 | 20:55:10 | RUN: Starting execution.
+2025-03-02 | 20:55:10 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:55:10 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:55:11 | Loaded configuration from run.json
+2025-03-02 | 20:55:11 | RUN: Starting execution.
+2025-03-02 | 20:55:11 | RUN: Processing Tab 1
+2025-03-02 | 20:55:11 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:55:12 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:55:12 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:55:12 | RUN: Execution completed.
+2025-03-02 | 20:55:12 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:55:12 | RUN: Execution completed.
+2025-03-02 | 20:55:15 | Window restored.
+2025-03-02 | 20:56:16 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:56:18 | Window minimized.
+2025-03-02 | 20:56:18 | RUN: Starting execution.
+2025-03-02 | 20:56:18 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:56:18 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:56:18 | Loaded configuration from run.json
+2025-03-02 | 20:56:18 | RUN: Starting execution.
+2025-03-02 | 20:56:18 | RUN: Processing Tab 1
+2025-03-02 | 20:56:19 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:56:19 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:56:19 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:56:19 | RUN: Execution completed.
+2025-03-02 | 20:56:20 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:56:20 | RUN: Execution completed.
+2025-03-02 | 20:56:23 | Window restored.
+2025-03-02 | 20:59:00 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:59:02 | Window minimized.
+2025-03-02 | 20:59:02 | RUN: Starting execution.
+2025-03-02 | 20:59:02 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:59:02 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 20:59:03 | Loaded configuration from run.json
+2025-03-02 | 20:59:03 | RUN: Starting execution.
+2025-03-02 | 20:59:03 | RUN: Processing Tab 1
+2025-03-02 | 20:59:03 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 20:59:04 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:59:04 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 20:59:04 | RUN: Execution completed.
+2025-03-02 | 20:59:04 | RUN: run_module.py executed successfully.
+2025-03-02 | 20:59:04 | RUN: Execution completed.
+2025-03-02 | 20:59:07 | Window restored.
+2025-03-02 | 20:59:57 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 20:59:59 | Window minimized.
+2025-03-02 | 20:59:59 | RUN: Starting execution.
+2025-03-02 | 20:59:59 | RUN: Configuration saved to run.json.
+2025-03-02 | 20:59:59 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:00:00 | Loaded configuration from run.json
+2025-03-02 | 21:00:00 | RUN: Starting execution.
+2025-03-02 | 21:00:00 | RUN: Processing Tab 1
+2025-03-02 | 21:00:00 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:00:01 | Moved mouse to image at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 21:00:01 | Clicked 1 time(s) with right button at Point(x=np.int64(763), y=np.int64(841)).
+2025-03-02 | 21:00:01 | RUN: Execution completed.
+2025-03-02 | 21:00:01 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:00:01 | RUN: Execution completed.
+2025-03-02 | 21:00:04 | Window restored.
+2025-03-02 | 21:29:11 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 21:29:13 | Window minimized.
+2025-03-02 | 21:29:13 | RUN: Starting execution.
+2025-03-02 | 21:29:13 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:29:13 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:29:13 | Loaded configuration from run.json
+2025-03-02 | 21:29:13 | RUN: Starting execution.
+2025-03-02 | 21:29:13 | RUN: Processing Tab 1
+2025-03-02 | 21:29:13 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:29:14 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 21:33:13 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 21:33:15 | Window minimized.
+2025-03-02 | 21:33:15 | RUN: Starting execution.
+2025-03-02 | 21:33:15 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:33:15 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:33:15 | Loaded configuration from run.json
+2025-03-02 | 21:33:15 | RUN: Starting execution.
+2025-03-02 | 21:33:15 | RUN: Processing Tab 1
+2025-03-02 | 21:33:16 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:33:16 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 21:33:47 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 21:33:49 | Window minimized.
+2025-03-02 | 21:33:49 | RUN: Starting execution.
+2025-03-02 | 21:33:49 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:33:49 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:33:50 | Loaded configuration from run.json
+2025-03-02 | 21:33:50 | RUN: Starting execution.
+2025-03-02 | 21:33:50 | RUN: Processing Tab 1
+2025-03-02 | 21:33:50 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:33:51 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 21:34:04 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 21:34:06 | Window minimized.
+2025-03-02 | 21:34:06 | RUN: Starting execution.
+2025-03-02 | 21:34:06 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:34:06 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:34:06 | Loaded configuration from run.json
+2025-03-02 | 21:34:06 | RUN: Starting execution.
+2025-03-02 | 21:34:06 | RUN: Processing Tab 1
+2025-03-02 | 21:34:07 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:34:07 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 21:36:55 | Iconified the window. Waiting for it to minimize...
+2025-03-02 | 21:36:57 | Window minimized.
+2025-03-02 | 21:36:57 | RUN: Starting execution.
+2025-03-02 | 21:36:57 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:36:57 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:36:58 | Loaded configuration from run.json
+2025-03-02 | 21:36:58 | RUN: Starting execution.
+2025-03-02 | 21:36:58 | RUN: Processing Tab 1
+2025-03-02 | 21:36:58 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:36:59 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 21:38:40 | RUN: Starting execution.
+2025-03-02 | 21:38:40 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:38:40 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:38:40 | Loaded configuration from run.json
+2025-03-02 | 21:38:40 | RUN: Starting execution.
+2025-03-02 | 21:38:40 | RUN: Processing Tab 1
+2025-03-02 | 21:38:40 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:38:41 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 21:39:22 | RUN: Starting execution.
+2025-03-02 | 21:39:22 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:39:22 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:39:22 | Loaded configuration from run.json
+2025-03-02 | 21:39:22 | RUN: Starting execution.
+2025-03-02 | 21:39:22 | RUN: Processing Tab 1
+2025-03-02 | 21:39:22 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/vercel.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:39:23 | Moved mouse to image at Point(x=np.int64(652), y=np.int64(548)).
+2025-03-02 | 21:39:23 | Clicked 1 time(s) with right button at Point(x=np.int64(652), y=np.int64(548)).
+2025-03-02 | 21:39:23 | RUN: Execution completed.
+2025-03-02 | 21:39:23 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:39:23 | RUN: Execution completed.
+2025-03-02 | 21:39:23 | Window restored.
+2025-03-02 | 21:39:54 | RUN: Starting execution.
+2025-03-02 | 21:39:54 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:39:54 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:39:55 | Loaded configuration from run.json
+2025-03-02 | 21:39:55 | RUN: Starting execution.
+2025-03-02 | 21:39:55 | RUN: Processing Tab 1
+2025-03-02 | 21:39:55 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/vercel2.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:39:56 | Moved mouse to image at Point(x=np.int64(273), y=np.int64(547)).
+2025-03-02 | 21:39:56 | Clicked 1 time(s) with right button at Point(x=np.int64(273), y=np.int64(547)).
+2025-03-02 | 21:39:56 | RUN: Execution completed.
+2025-03-02 | 21:39:56 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:39:56 | RUN: Execution completed.
+2025-03-02 | 21:39:56 | Window restored.
+2025-03-02 | 21:40:27 | RUN: Starting execution.
+2025-03-02 | 21:40:27 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:40:27 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:40:27 | Loaded configuration from run.json
+2025-03-02 | 21:40:27 | RUN: Starting execution.
+2025-03-02 | 21:40:27 | RUN: Processing Tab 1
+2025-03-02 | 21:40:28 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/evernote.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:40:28 | Moved mouse to image at Point(x=np.int64(370), y=np.int64(761)).
+2025-03-02 | 21:40:28 | Clicked 1 time(s) with right button at Point(x=np.int64(370), y=np.int64(761)).
+2025-03-02 | 21:40:28 | RUN: Execution completed.
+2025-03-02 | 21:40:29 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:40:29 | RUN: Execution completed.
+2025-03-02 | 21:40:29 | Window restored.
+2025-03-02 | 21:40:38 | RUN: Starting execution.
+2025-03-02 | 21:40:38 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:40:38 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:40:39 | Loaded configuration from run.json
+2025-03-02 | 21:40:39 | RUN: Starting execution.
+2025-03-02 | 21:40:39 | RUN: Processing Tab 1
+2025-03-02 | 21:40:39 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/evernote.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:40:40 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 21:40:46 | RUN: Starting execution.
+2025-03-02 | 21:40:46 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:40:46 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:40:47 | Loaded configuration from run.json
+2025-03-02 | 21:40:47 | RUN: Starting execution.
+2025-03-02 | 21:40:47 | RUN: Processing Tab 1
+2025-03-02 | 21:40:47 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/evernote.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:40:48 | Moved mouse to image at Point(x=np.int64(361), y=np.int64(785)).
+2025-03-02 | 21:40:48 | Clicked 1 time(s) with right button at Point(x=np.int64(361), y=np.int64(785)).
+2025-03-02 | 21:40:48 | RUN: Execution completed.
+2025-03-02 | 21:40:48 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:40:48 | RUN: Execution completed.
+2025-03-02 | 21:40:48 | Window restored.
+2025-03-02 | 21:41:17 | RUN: Starting execution.
+2025-03-02 | 21:41:17 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:41:17 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:41:17 | Loaded configuration from run.json
+2025-03-02 | 21:41:17 | RUN: Starting execution.
+2025-03-02 | 21:41:17 | RUN: Processing Tab 1
+2025-03-02 | 21:41:18 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/evernote2.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:41:18 | Moved mouse to image at Point(x=np.int64(1497), y=np.int64(548)).
+2025-03-02 | 21:41:18 | Clicked 1 time(s) with right button at Point(x=np.int64(1497), y=np.int64(548)).
+2025-03-02 | 21:41:18 | RUN: Execution completed.
+2025-03-02 | 21:41:18 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:41:18 | RUN: Execution completed.
+2025-03-02 | 21:41:18 | Window restored.
+2025-03-02 | 21:41:25 | RUN: Starting execution.
+2025-03-02 | 21:41:25 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:41:25 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:41:25 | Loaded configuration from run.json
+2025-03-02 | 21:41:25 | RUN: Starting execution.
+2025-03-02 | 21:41:25 | RUN: Processing Tab 1
+2025-03-02 | 21:41:26 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/evernote2.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:41:26 | Moved mouse to image at Point(x=np.int64(1497), y=np.int64(548)).
+2025-03-02 | 21:41:26 | Clicked 1 time(s) with right button at Point(x=np.int64(1497), y=np.int64(548)).
+2025-03-02 | 21:41:26 | RUN: Execution completed.
+2025-03-02 | 21:41:26 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:41:26 | RUN: Execution completed.
+2025-03-02 | 21:41:26 | Window restored.
+2025-03-02 | 21:41:33 | RUN: Starting execution.
+2025-03-02 | 21:41:33 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:41:33 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:41:34 | Loaded configuration from run.json
+2025-03-02 | 21:41:34 | RUN: Starting execution.
+2025-03-02 | 21:41:34 | RUN: Processing Tab 1
+2025-03-02 | 21:41:34 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/evernote2.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:41:35 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 21:41:47 | RUN: Starting execution.
+2025-03-02 | 21:41:47 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:41:47 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:41:48 | Loaded configuration from run.json
+2025-03-02 | 21:41:48 | RUN: Starting execution.
+2025-03-02 | 21:41:48 | RUN: Processing Tab 1
+2025-03-02 | 21:41:48 | [Tab Tab 1 | Step 1] Processing position: 752x269
+2025-03-02 | 21:41:48 | Moved mouse to (752, 269).
+2025-03-02 | 21:41:48 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '1.00', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/evernote2.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:41:49 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 21:42:00 | RUN: Starting execution.
+2025-03-02 | 21:42:00 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:42:00 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:42:01 | Loaded configuration from run.json
+2025-03-02 | 21:42:01 | RUN: Starting execution.
+2025-03-02 | 21:42:01 | RUN: Processing Tab 1
+2025-03-02 | 21:42:01 | [Tab Tab 1 | Step 1] Processing position: 752x269
+2025-03-02 | 21:42:01 | Moved mouse to (752, 269).
+2025-03-02 | 21:42:01 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/evernote2.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-03-02 | 21:42:01 | Waiting for 1.0 seconds before clicking.
+2025-03-02 | 21:42:03 | Moved mouse to image at Point(x=np.int64(1495), y=np.int64(547)).
+2025-03-02 | 21:42:03 | Clicked 1 time(s) with right button at Point(x=np.int64(1495), y=np.int64(547)).
+2025-03-02 | 21:42:03 | RUN: Execution completed.
+2025-03-02 | 21:42:03 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:42:03 | RUN: Execution completed.
+2025-03-02 | 21:42:03 | Window restored.
+2025-03-02 | 21:49:43 | RUN: Starting execution.
+2025-03-02 | 21:49:43 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:49:43 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:49:43 | Loaded configuration from run.json
+2025-03-02 | 21:49:43 | RUN: Starting execution.
+2025-03-02 | 21:49:43 | RUN: Processing Tab 1
+2025-03-02 | 21:49:44 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:49:44 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-03-02 | 21:52:53 | RUN: Starting execution.
+2025-03-02 | 21:52:53 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:52:53 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:52:53 | Loaded configuration from run.json
+2025-03-02 | 21:52:53 | RUN: Starting execution.
+2025-03-02 | 21:52:53 | RUN: Processing Tab 1
+2025-03-02 | 21:52:54 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:52:54 | WARNING: Image not found on screen with confidence 0.9.
+2025-03-02 | 21:52:54 | RUN: Execution completed.
+2025-03-02 | 21:52:54 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:52:54 | RUN: Execution completed.
+2025-03-02 | 21:52:54 | Window restored.
+2025-03-02 | 21:53:30 | RUN: Starting execution.
+2025-03-02 | 21:53:30 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:53:30 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:53:30 | Loaded configuration from run.json
+2025-03-02 | 21:53:30 | RUN: Starting execution.
+2025-03-02 | 21:53:30 | RUN: Processing Tab 1
+2025-03-02 | 21:53:30 | [Tab Tab 1 | Step 1] Processing position: 627x474
+2025-03-02 | 21:53:30 | Moved mouse to (627, 474).
+2025-03-02 | 21:53:30 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 21:53:31 | Mouse clicked at (627, 474) 1 time(s) with left button.
+2025-03-02 | 21:53:31 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:53:31 | WARNING: Image not found on screen with confidence 0.9.
+2025-03-02 | 21:53:31 | RUN: Execution completed.
+2025-03-02 | 21:53:31 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:53:31 | RUN: Execution completed.
+2025-03-02 | 21:53:31 | Window restored.
+2025-03-02 | 21:53:44 | RUN: Starting execution.
+2025-03-02 | 21:53:44 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:53:44 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:53:44 | Loaded configuration from run.json
+2025-03-02 | 21:53:44 | RUN: Starting execution.
+2025-03-02 | 21:53:44 | RUN: Processing Tab 1
+2025-03-02 | 21:53:44 | [Tab Tab 1 | Step 1] Processing position: 627x474
+2025-03-02 | 21:53:44 | Moved mouse to (627, 474).
+2025-03-02 | 21:53:44 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 21:53:44 | Mouse clicked at (627, 474) 2 time(s) with left button.
+2025-03-02 | 21:53:45 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:53:45 | WARNING: Image not found on screen with confidence 0.9.
+2025-03-02 | 21:53:45 | RUN: Execution completed.
+2025-03-02 | 21:53:45 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:53:45 | RUN: Execution completed.
+2025-03-02 | 21:53:45 | Window restored.
+2025-03-02 | 21:54:38 | RUN: Starting execution.
+2025-03-02 | 21:54:38 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:54:38 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:54:38 | Loaded configuration from run.json
+2025-03-02 | 21:54:38 | RUN: Starting execution.
+2025-03-02 | 21:54:38 | RUN: Processing Tab 1
+2025-03-02 | 21:54:38 | [Tab Tab 1 | Step 1] Processing position: 556x95
+2025-03-02 | 21:54:39 | Moved mouse to (556, 95).
+2025-03-02 | 21:54:39 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 21:54:39 | Mouse clicked at (556, 95) 3 time(s) with left button.
+2025-03-02 | 21:54:39 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-03-02 at 8.19.05\u202fpm.png', 'image_sleep': '0', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-02 | 21:54:39 | WARNING: Image not found on screen with confidence 0.9.
+2025-03-02 | 21:54:39 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 21:54:39 | Data step: Invalid or missing file path.
+2025-03-02 | 21:54:39 | RUN: Execution completed.
+2025-03-02 | 21:54:39 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:54:39 | RUN: Execution completed.
+2025-03-02 | 21:54:40 | Window restored.
+2025-03-02 | 21:58:26 | RUN: Starting execution.
+2025-03-02 | 21:58:26 | RUN: Configuration saved to run.json.
+2025-03-02 | 21:58:26 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 21:58:26 | Loaded configuration from run.json
+2025-03-02 | 21:58:26 | RUN: Starting execution.
+2025-03-02 | 21:58:26 | RUN: Processing Tab 1
+2025-03-02 | 21:58:26 | [Tab Tab 1 | Step 1] Processing position: 358x96
+2025-03-02 | 21:58:26 | Moved mouse to (358, 96).
+2025-03-02 | 21:58:26 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 21:58:26 | Mouse clicked at (358, 96) 3 time(s) with left button.
+2025-03-02 | 21:58:26 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 21:58:26 | Copied value 'None' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 21:58:27 | Executed select all command.
+2025-03-02 | 21:58:27 | RUN: Execution completed.
+2025-03-02 | 21:58:27 | RUN: run_module.py executed successfully.
+2025-03-02 | 21:58:27 | RUN: Execution completed.
+2025-03-02 | 21:58:27 | Window restored.
+2025-03-02 | 22:05:09 | RUN: Starting execution.
+2025-03-02 | 22:05:09 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:05:09 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:05:10 | Loaded configuration from run.json
+2025-03-02 | 22:05:10 | RUN: Starting execution.
+2025-03-02 | 22:05:10 | RUN: Processing Tab 1
+2025-03-02 | 22:05:10 | [Tab Tab 1 | Step 1] Processing position: 322x95
+2025-03-02 | 22:05:10 | Moved mouse to (322, 95).
+2025-03-02 | 22:05:10 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:05:10 | Mouse clicked at (322, 95) 3 time(s) with left button.
+2025-03-02 | 22:05:10 | [Tab Tab 1 | Step 2] Processing position: 479x93
+2025-03-02 | 22:05:10 | Moved mouse to (479, 93).
+2025-03-02 | 22:05:10 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Alt + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:05:11 | Keyboard input: Alt + V
+2025-03-02 | 22:05:11 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:05:11 | Copied value 'None' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:05:11 | Executed select all command.
+2025-03-02 | 22:05:11 | RUN: Execution completed.
+2025-03-02 | 22:05:11 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:05:11 | RUN: Execution completed.
+2025-03-02 | 22:05:11 | Window restored.
+2025-03-02 | 22:06:35 | RUN: Starting execution.
+2025-03-02 | 22:06:35 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:06:35 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:06:36 | Loaded configuration from run.json
+2025-03-02 | 22:06:36 | RUN: Starting execution.
+2025-03-02 | 22:06:36 | RUN: Processing Tab 1
+2025-03-02 | 22:06:36 | [Tab Tab 1 | Step 1] Processing position: 322x95
+2025-03-02 | 22:06:36 | Moved mouse to (322, 95).
+2025-03-02 | 22:06:36 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:06:36 | Mouse clicked at (322, 95) 3 time(s) with left button.
+2025-03-02 | 22:06:36 | [Tab Tab 1 | Step 2] Processing position: 479x93
+2025-03-02 | 22:06:36 | Moved mouse to (479, 93).
+2025-03-02 | 22:06:36 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Ctrl + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:06:36 | Keyboard input: Ctrl + C
+2025-03-02 | 22:06:36 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:06:36 | Copied value 'None' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:06:37 | Executed select all command.
+2025-03-02 | 22:06:37 | RUN: Execution completed.
+2025-03-02 | 22:06:37 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:06:37 | RUN: Execution completed.
+2025-03-02 | 22:06:37 | Window restored.
+2025-03-02 | 22:07:09 | RUN: Starting execution.
+2025-03-02 | 22:07:09 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:07:09 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:07:09 | Loaded configuration from run.json
+2025-03-02 | 22:07:09 | RUN: Starting execution.
+2025-03-02 | 22:07:09 | RUN: Processing Tab 1
+2025-03-02 | 22:07:09 | [Tab Tab 1 | Step 1] Processing position: 322x95
+2025-03-02 | 22:07:09 | Moved mouse to (322, 95).
+2025-03-02 | 22:07:09 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:07:09 | Mouse clicked at (322, 95) 3 time(s) with left button.
+2025-03-02 | 22:07:09 | [Tab Tab 1 | Step 2] Processing position: 479x93
+2025-03-02 | 22:07:10 | Moved mouse to (479, 93).
+2025-03-02 | 22:07:10 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Alt + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:07:10 | Keyboard input: Alt + C
+2025-03-02 | 22:07:10 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:07:10 | Copied value 'None' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:07:10 | Executed select all command.
+2025-03-02 | 22:07:10 | RUN: Execution completed.
+2025-03-02 | 22:07:10 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:07:10 | RUN: Execution completed.
+2025-03-02 | 22:07:10 | Window restored.
+2025-03-02 | 22:09:37 | RUN: Starting execution.
+2025-03-02 | 22:09:37 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:09:37 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:09:38 | Loaded configuration from run.json
+2025-03-02 | 22:09:38 | RUN: Starting execution.
+2025-03-02 | 22:09:38 | RUN: Processing Tab 1
+2025-03-02 | 22:09:38 | [Tab Tab 1 | Step 1] Processing position: 241x97
+2025-03-02 | 22:09:38 | Moved mouse to (241, 97).
+2025-03-02 | 22:09:38 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:09:38 | Mouse clicked at (241, 97) 3 time(s) with left button.
+2025-03-02 | 22:09:38 | RUN: Execution completed.
+2025-03-02 | 22:09:38 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:09:38 | RUN: Execution completed.
+2025-03-02 | 22:09:38 | Window restored.
+2025-03-02 | 22:09:40 | RUN: Starting execution.
+2025-03-02 | 22:09:40 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:09:40 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:09:41 | Loaded configuration from run.json
+2025-03-02 | 22:09:41 | RUN: Starting execution.
+2025-03-02 | 22:09:41 | RUN: Processing Tab 1
+2025-03-02 | 22:09:41 | [Tab Tab 1 | Step 1] Processing position: 241x97
+2025-03-02 | 22:09:41 | Moved mouse to (241, 97).
+2025-03-02 | 22:09:41 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:09:41 | Mouse clicked at (241, 97) 3 time(s) with left button.
+2025-03-02 | 22:09:41 | RUN: Execution completed.
+2025-03-02 | 22:09:41 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:09:41 | RUN: Execution completed.
+2025-03-02 | 22:09:41 | Window restored.
+2025-03-02 | 22:10:00 | RUN: Starting execution.
+2025-03-02 | 22:10:00 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:10:00 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:10:01 | Loaded configuration from run.json
+2025-03-02 | 22:10:01 | RUN: Starting execution.
+2025-03-02 | 22:10:01 | RUN: Processing Tab 1
+2025-03-02 | 22:10:01 | [Tab Tab 1 | Step 1] Processing position: 241x97
+2025-03-02 | 22:10:01 | Moved mouse to (241, 97).
+2025-03-02 | 22:10:01 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:10:01 | Mouse clicked at (241, 97) 3 time(s) with left button.
+2025-03-02 | 22:10:01 | [Tab Tab 1 | Step 2] Processing position: 241x97
+2025-03-02 | 22:10:01 | Moved mouse to (241, 97).
+2025-03-02 | 22:10:01 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'K', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:10:01 | Keyboard input: K
+2025-03-02 | 22:10:01 | RUN: Execution completed.
+2025-03-02 | 22:10:01 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:10:01 | RUN: Execution completed.
+2025-03-02 | 22:10:01 | Window restored.
+2025-03-02 | 22:10:19 | RUN: Starting execution.
+2025-03-02 | 22:10:19 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:10:19 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:10:19 | Loaded configuration from run.json
+2025-03-02 | 22:10:19 | RUN: Starting execution.
+2025-03-02 | 22:10:19 | RUN: Processing Tab 1
+2025-03-02 | 22:10:19 | [Tab Tab 1 | Step 1] Processing position: 241x97
+2025-03-02 | 22:10:20 | Moved mouse to (241, 97).
+2025-03-02 | 22:10:20 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:10:20 | Mouse clicked at (241, 97) 3 time(s) with left button.
+2025-03-02 | 22:10:20 | [Tab Tab 1 | Step 2] Processing position: 241x97
+2025-03-02 | 22:10:20 | Moved mouse to (241, 97).
+2025-03-02 | 22:10:20 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Alt + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:10:20 | Keyboard input: Alt + C
+2025-03-02 | 22:10:20 | RUN: Execution completed.
+2025-03-02 | 22:10:20 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:10:20 | RUN: Execution completed.
+2025-03-02 | 22:10:20 | Window restored.
+2025-03-02 | 22:11:16 | RUN: Starting execution.
+2025-03-02 | 22:11:16 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:11:16 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:11:16 | Loaded configuration from run.json
+2025-03-02 | 22:11:16 | RUN: Starting execution.
+2025-03-02 | 22:11:16 | RUN: Processing Tab 1
+2025-03-02 | 22:11:16 | [Tab Tab 1 | Step 1] Processing position: 241x97
+2025-03-02 | 22:11:17 | Moved mouse to (241, 97).
+2025-03-02 | 22:11:17 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:11:17 | Mouse clicked at (241, 97) 3 time(s) with left button.
+2025-03-02 | 22:11:17 | [Tab Tab 1 | Step 2] Processing position: 241x97
+2025-03-02 | 22:11:17 | Moved mouse to (241, 97).
+2025-03-02 | 22:11:17 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Alt + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:11:17 | Keyboard input: Alt + C
+2025-03-02 | 22:11:17 | RUN: Execution completed.
+2025-03-02 | 22:11:17 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:11:17 | RUN: Execution completed.
+2025-03-02 | 22:11:17 | Window restored.
+2025-03-02 | 22:12:58 | RUN: Starting execution.
+2025-03-02 | 22:12:58 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:12:58 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:12:58 | Loaded configuration from run.json
+2025-03-02 | 22:12:58 | RUN: Starting execution.
+2025-03-02 | 22:12:58 | RUN: Processing Tab 1
+2025-03-02 | 22:12:58 | [Tab Tab 1 | Step 1] Processing position: 241x97
+2025-03-02 | 22:12:58 | Moved mouse to (241, 97).
+2025-03-02 | 22:12:58 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:12:58 | Mouse clicked at (241, 97) 3 time(s) with left button.
+2025-03-02 | 22:12:58 | [Tab Tab 1 | Step 2] Processing position: 241x97
+2025-03-02 | 22:12:58 | Moved mouse to (241, 97).
+2025-03-02 | 22:12:58 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Alt + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:12:58 | Processing key combination: ['Alt', 'V']
+2025-03-02 | 22:12:59 | Keyboard combination pressed: Alt + V
+2025-03-02 | 22:12:59 | RUN: Execution completed.
+2025-03-02 | 22:12:59 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:12:59 | RUN: Execution completed.
+2025-03-02 | 22:12:59 | Window restored.
+2025-03-02 | 22:13:18 | RUN: Starting execution.
+2025-03-02 | 22:13:18 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:13:18 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:13:18 | Loaded configuration from run.json
+2025-03-02 | 22:13:18 | RUN: Starting execution.
+2025-03-02 | 22:13:18 | RUN: Processing Tab 1
+2025-03-02 | 22:13:18 | [Tab Tab 1 | Step 1] Processing position: 241x97
+2025-03-02 | 22:13:18 | Moved mouse to (241, 97).
+2025-03-02 | 22:13:18 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:13:18 | Mouse clicked at (241, 97) 3 time(s) with left button.
+2025-03-02 | 22:13:18 | [Tab Tab 1 | Step 2] Processing position: 241x97
+2025-03-02 | 22:13:19 | Moved mouse to (241, 97).
+2025-03-02 | 22:13:19 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Alt + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:13:19 | Processing key combination: ['Alt', 'C']
+2025-03-02 | 22:13:19 | Keyboard combination pressed: Alt + C
+2025-03-02 | 22:13:19 | RUN: Execution completed.
+2025-03-02 | 22:13:19 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:13:19 | RUN: Execution completed.
+2025-03-02 | 22:13:19 | Window restored.
+2025-03-02 | 22:15:37 | RUN: Starting execution.
+2025-03-02 | 22:15:37 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:15:37 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:15:38 | Loaded configuration from run.json
+2025-03-02 | 22:15:38 | RUN: Starting execution.
+2025-03-02 | 22:15:38 | RUN: Processing Tab 1
+2025-03-02 | 22:15:38 | [Tab Tab 1 | Step 1] Processing position: 241x97
+2025-03-02 | 22:15:38 | Moved mouse to (241, 97).
+2025-03-02 | 22:15:38 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:15:38 | Mouse clicked at (241, 97) 3 time(s) with left button.
+2025-03-02 | 22:15:38 | [Tab Tab 1 | Step 2] Processing position: 241x97
+2025-03-02 | 22:15:38 | Moved mouse to (241, 97).
+2025-03-02 | 22:15:38 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Alt + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:15:38 | Processing key combination: ['Alt', 'C']
+2025-03-02 | 22:15:39 | Keyboard combination pressed: Alt + C
+2025-03-02 | 22:15:39 | RUN: Execution completed.
+2025-03-02 | 22:15:39 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:15:39 | RUN: Execution completed.
+2025-03-02 | 22:15:39 | Window restored.
+2025-03-02 | 22:20:36 | RUN: Starting execution.
+2025-03-02 | 22:20:36 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:20:36 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:20:37 | Loaded configuration from run.json
+2025-03-02 | 22:20:37 | RUN: Starting execution.
+2025-03-02 | 22:20:37 | RUN: Processing Tab 1
+2025-03-02 | 22:20:37 | [Tab Tab 1 | Step 1] Processing position: 241x91
+2025-03-02 | 22:20:37 | Moved mouse to (241, 91).
+2025-03-02 | 22:20:37 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:20:37 | Mouse clicked at (241, 91) 3 time(s) with left button.
+2025-03-02 | 22:20:37 | [Tab Tab 1 | Step 2] Processing position: 241x91
+2025-03-02 | 22:20:37 | Moved mouse to (241, 91).
+2025-03-02 | 22:20:37 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:20:37 | Processing key combination: ['Command', 'C']
+2025-03-02 | 22:20:38 | Keyboard combination pressed: Command + C
+2025-03-02 | 22:20:38 | RUN: Execution completed.
+2025-03-02 | 22:20:38 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:20:38 | RUN: Execution completed.
+2025-03-02 | 22:20:38 | Window restored.
+2025-03-02 | 22:21:04 | RUN: Starting execution.
+2025-03-02 | 22:21:04 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:21:04 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:21:05 | Loaded configuration from run.json
+2025-03-02 | 22:21:05 | RUN: Starting execution.
+2025-03-02 | 22:21:05 | RUN: Processing Tab 1
+2025-03-02 | 22:21:05 | [Tab Tab 1 | Step 1] Processing position: 241x91
+2025-03-02 | 22:21:05 | Moved mouse to (241, 91).
+2025-03-02 | 22:21:05 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:21:05 | Mouse clicked at (241, 91) 3 time(s) with left button.
+2025-03-02 | 22:21:05 | [Tab Tab 1 | Step 2] Processing position: 241x91
+2025-03-02 | 22:21:05 | Moved mouse to (241, 91).
+2025-03-02 | 22:21:05 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:21:05 | Processing key combination: ['Command', 'C']
+2025-03-02 | 22:21:06 | Keyboard combination pressed: Command + C
+2025-03-02 | 22:21:06 | RUN: Execution completed.
+2025-03-02 | 22:21:06 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:21:06 | RUN: Execution completed.
+2025-03-02 | 22:21:06 | Window restored.
+2025-03-02 | 22:21:54 | RUN: Starting execution.
+2025-03-02 | 22:21:54 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:21:54 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:21:54 | Loaded configuration from run.json
+2025-03-02 | 22:21:54 | RUN: Starting execution.
+2025-03-02 | 22:21:54 | RUN: Processing Tab 1
+2025-03-02 | 22:21:54 | [Tab Tab 1 | Step 1] Processing position: 241x91
+2025-03-02 | 22:21:54 | Moved mouse to (241, 91).
+2025-03-02 | 22:21:54 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:21:55 | Mouse clicked at (241, 91) 3 time(s) with left button.
+2025-03-02 | 22:21:55 | [Tab Tab 1 | Step 2] Processing position: 241x91
+2025-03-02 | 22:21:55 | Moved mouse to (241, 91).
+2025-03-02 | 22:21:55 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:21:55 | Processing key combination: ['Command', 'C']
+2025-03-02 | 22:21:55 | Keyboard combination pressed: Command + C
+2025-03-02 | 22:21:55 | RUN: Execution completed.
+2025-03-02 | 22:21:55 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:21:55 | RUN: Execution completed.
+2025-03-02 | 22:21:55 | Window restored.
+2025-03-02 | 22:24:53 | Loaded configuration from run.json
+2025-03-02 | 22:24:53 | RUN: Starting execution.
+2025-03-02 | 22:24:53 | RUN: Processing Tab 1
+2025-03-02 | 22:24:53 | [Tab Tab 1 | Step 1] Processing position: 241x91
+2025-03-02 | 22:24:54 | Moved mouse to (241, 91).
+2025-03-02 | 22:24:54 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:24:54 | Mouse clicked at (241, 91) 3 time(s) with left button.
+2025-03-02 | 22:24:54 | [Tab Tab 1 | Step 2] Processing position: 241x91
+2025-03-02 | 22:24:54 | Moved mouse to (241, 91).
+2025-03-02 | 22:24:54 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:24:54 | Processing key combination: ['command', 'c']
+2025-03-02 | 22:24:54 | Keyboard combination pressed: command + c
+2025-03-02 | 22:24:54 | RUN: Execution completed.
+2025-03-02 | 22:25:14 | RUN: Starting execution.
+2025-03-02 | 22:25:14 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:25:14 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:25:15 | Loaded configuration from run.json
+2025-03-02 | 22:25:15 | RUN: Starting execution.
+2025-03-02 | 22:25:15 | RUN: Processing Tab 1
+2025-03-02 | 22:25:15 | [Tab Tab 1 | Step 1] Processing position: 232x96
+2025-03-02 | 22:25:15 | Moved mouse to (232, 96).
+2025-03-02 | 22:25:15 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:25:15 | Mouse clicked at (232, 96) 3 time(s) with left button.
+2025-03-02 | 22:25:15 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:25:15 | Processing key combination: ['command', 'c']
+2025-03-02 | 22:25:16 | Keyboard combination pressed: command + c
+2025-03-02 | 22:25:16 | RUN: Execution completed.
+2025-03-02 | 22:25:16 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:25:16 | RUN: Execution completed.
+2025-03-02 | 22:25:16 | Window restored.
+2025-03-02 | 22:25:41 | RUN: Starting execution.
+2025-03-02 | 22:25:41 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:25:41 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:25:42 | Loaded configuration from run.json
+2025-03-02 | 22:25:42 | RUN: Starting execution.
+2025-03-02 | 22:25:42 | RUN: Processing Tab 1
+2025-03-02 | 22:25:42 | [Tab Tab 1 | Step 1] Processing position: 232x96
+2025-03-02 | 22:25:42 | Moved mouse to (232, 96).
+2025-03-02 | 22:25:42 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:25:42 | Mouse clicked at (232, 96) 3 time(s) with left button.
+2025-03-02 | 22:25:42 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:25:42 | Processing key combination: ['command', 'c']
+2025-03-02 | 22:25:42 | Keyboard combination pressed: command + c
+2025-03-02 | 22:25:42 | RUN: Execution completed.
+2025-03-02 | 22:25:43 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:25:43 | RUN: Execution completed.
+2025-03-02 | 22:25:43 | Window restored.
+2025-03-02 | 22:26:26 | RUN: Starting execution.
+2025-03-02 | 22:26:26 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:26:26 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:26:26 | Loaded configuration from run.json
+2025-03-02 | 22:26:26 | RUN: Starting execution.
+2025-03-02 | 22:26:26 | RUN: Processing Tab 1
+2025-03-02 | 22:26:26 | [Tab Tab 1 | Step 1] Processing position: 232x96
+2025-03-02 | 22:26:26 | Moved mouse to (232, 96).
+2025-03-02 | 22:26:26 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:26:26 | Mouse clicked at (232, 96) 3 time(s) with left button.
+2025-03-02 | 22:26:26 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:26:26 | Processing key combination: ['command', 'v']
+2025-03-02 | 22:26:27 | Keyboard combination pressed: command + v
+2025-03-02 | 22:26:27 | RUN: Execution completed.
+2025-03-02 | 22:26:27 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:26:27 | RUN: Execution completed.
+2025-03-02 | 22:26:27 | Window restored.
+2025-03-02 | 22:26:45 | RUN: Starting execution.
+2025-03-02 | 22:26:45 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:26:45 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:26:45 | Loaded configuration from run.json
+2025-03-02 | 22:26:45 | RUN: Starting execution.
+2025-03-02 | 22:26:45 | RUN: Processing Tab 1
+2025-03-02 | 22:26:45 | [Tab Tab 1 | Step 1] Processing position: 232x96
+2025-03-02 | 22:26:46 | Moved mouse to (232, 96).
+2025-03-02 | 22:26:46 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:26:46 | Mouse clicked at (232, 96) 3 time(s) with left button.
+2025-03-02 | 22:26:46 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:26:46 | Processing key combination: ['command', 'v']
+2025-03-02 | 22:26:46 | Keyboard combination pressed: command + v
+2025-03-02 | 22:26:46 | RUN: Execution completed.
+2025-03-02 | 22:26:46 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:26:46 | RUN: Execution completed.
+2025-03-02 | 22:26:46 | Window restored.
+2025-03-02 | 22:29:44 | RUN: Starting execution.
+2025-03-02 | 22:29:44 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:29:44 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:29:44 | Loaded configuration from run.json
+2025-03-02 | 22:29:44 | RUN: Starting execution.
+2025-03-02 | 22:29:44 | RUN: Processing Tab 1
+2025-03-02 | 22:29:44 | [Tab Tab 1 | Step 1] Processing position: 280x101
+2025-03-02 | 22:29:45 | Moved mouse to (280, 101).
+2025-03-02 | 22:29:45 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:29:45 | Mouse clicked at (280, 101) 3 time(s) with left button.
+2025-03-02 | 22:29:45 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '3', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:29:45 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:29:45 | Keyboard combination pressed: command + v
+2025-03-02 | 22:29:45 | RUN: Execution completed.
+2025-03-02 | 22:29:45 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:29:45 | RUN: Execution completed.
+2025-03-02 | 22:29:45 | Window restored.
+2025-03-02 | 22:30:06 | RUN: Starting execution.
+2025-03-02 | 22:30:06 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:30:06 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:30:06 | Loaded configuration from run.json
+2025-03-02 | 22:30:06 | RUN: Starting execution.
+2025-03-02 | 22:30:06 | RUN: Processing Tab 1
+2025-03-02 | 22:30:06 | [Tab Tab 1 | Step 1] Processing position: 280x101
+2025-03-02 | 22:30:06 | Moved mouse to (280, 101).
+2025-03-02 | 22:30:06 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:30:07 | Mouse clicked at (280, 101) 3 time(s) with left button.
+2025-03-02 | 22:30:07 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '3', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:30:07 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-02 | 22:30:07 | Keyboard combination pressed: command + c
+2025-03-02 | 22:30:07 | RUN: Execution completed.
+2025-03-02 | 22:30:07 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:30:07 | RUN: Execution completed.
+2025-03-02 | 22:30:07 | Window restored.
+2025-03-02 | 22:30:35 | RUN: Starting execution.
+2025-03-02 | 22:30:35 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:30:35 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:30:36 | Loaded configuration from run.json
+2025-03-02 | 22:30:36 | RUN: Starting execution.
+2025-03-02 | 22:30:36 | RUN: Processing Tab 1
+2025-03-02 | 22:30:36 | [Tab Tab 1 | Step 1] Processing position: 280x101
+2025-03-02 | 22:30:36 | Moved mouse to (280, 101).
+2025-03-02 | 22:30:36 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:30:36 | Mouse clicked at (280, 101) 3 time(s) with left button.
+2025-03-02 | 22:30:36 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:30:36 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-02 | 22:30:37 | Keyboard combination pressed: command + c
+2025-03-02 | 22:30:37 | RUN: Execution completed.
+2025-03-02 | 22:30:37 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:30:37 | RUN: Execution completed.
+2025-03-02 | 22:30:37 | Window restored.
+2025-03-02 | 22:31:02 | RUN: Starting execution.
+2025-03-02 | 22:31:02 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:31:02 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:31:03 | Loaded configuration from run.json
+2025-03-02 | 22:31:03 | RUN: Starting execution.
+2025-03-02 | 22:31:03 | RUN: Processing Tab 1
+2025-03-02 | 22:31:03 | [Tab Tab 1 | Step 1] Processing position: 280x101
+2025-03-02 | 22:31:03 | Moved mouse to (280, 101).
+2025-03-02 | 22:31:03 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:31:03 | Mouse clicked at (280, 101) 3 time(s) with left button.
+2025-03-02 | 22:31:03 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:31:03 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-02 | 22:31:04 | Keyboard combination pressed: command + c
+2025-03-02 | 22:31:04 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': False}
+2025-03-02 | 22:31:04 | Copied value 'None' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:31:04 | RUN: Execution completed.
+2025-03-02 | 22:31:04 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:31:04 | RUN: Execution completed.
+2025-03-02 | 22:31:04 | Window restored.
+2025-03-02 | 22:31:35 | RUN: Starting execution.
+2025-03-02 | 22:31:35 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:31:35 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:31:36 | Loaded configuration from run.json
+2025-03-02 | 22:31:36 | RUN: Starting execution.
+2025-03-02 | 22:31:36 | RUN: Processing Tab 1
+2025-03-02 | 22:31:36 | [Tab Tab 1 | Step 1] Processing position: 280x101
+2025-03-02 | 22:31:36 | Moved mouse to (280, 101).
+2025-03-02 | 22:31:36 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:31:36 | Mouse clicked at (280, 101) 3 time(s) with left button.
+2025-03-02 | 22:31:36 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:31:36 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-02 | 22:31:36 | Keyboard combination pressed: command + c
+2025-03-02 | 22:31:36 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': False}
+2025-03-02 | 22:31:36 | Copied value 'None' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:31:36 | RUN: Execution completed.
+2025-03-02 | 22:31:36 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:31:36 | RUN: Execution completed.
+2025-03-02 | 22:31:36 | Window restored.
+2025-03-02 | 22:34:53 | RUN: Starting execution.
+2025-03-02 | 22:34:53 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:34:53 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:34:54 | Loaded configuration from run.json
+2025-03-02 | 22:34:54 | RUN: Starting execution.
+2025-03-02 | 22:34:54 | RUN: Processing Tab 1
+2025-03-02 | 22:34:54 | [Tab Tab 1 | Step 1] Processing position: 280x101
+2025-03-02 | 22:34:54 | Moved mouse to (280, 101).
+2025-03-02 | 22:34:54 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:34:54 | Mouse clicked at (280, 101) 3 time(s) with left button.
+2025-03-02 | 22:34:54 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:34:54 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-02 | 22:34:55 | Keyboard combination pressed: command + c
+2025-03-02 | 22:34:55 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': False}
+2025-03-02 | 22:34:55 | Pasted clipboard value 'https://www.chollometro.com/' into cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx.
+2025-03-02 | 22:34:55 | RUN: Execution completed.
+2025-03-02 | 22:34:55 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:34:55 | RUN: Execution completed.
+2025-03-02 | 22:34:55 | Window restored.
+2025-03-02 | 22:36:25 | RUN: Starting execution.
+2025-03-02 | 22:36:25 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:36:25 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:36:26 | Loaded configuration from run.json
+2025-03-02 | 22:36:26 | RUN: Starting execution.
+2025-03-02 | 22:36:26 | RUN: Processing Tab 1
+2025-03-02 | 22:36:26 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:36:26 | Data step: Unknown data_copy_paste action 'Copy From'.
+2025-03-02 | 22:36:26 | Executed select all command.
+2025-03-02 | 22:36:26 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:36:26 | Moved mouse to (266, 96).
+2025-03-02 | 22:36:26 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:36:26 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:36:26 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': False}
+2025-03-02 | 22:36:26 | Data step: Unknown data_copy_paste action 'Copy From'.
+2025-03-02 | 22:36:26 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:36:27 | Moved mouse to (266, 96).
+2025-03-02 | 22:36:27 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:36:27 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:36:27 | Keyboard combination pressed: command + v
+2025-03-02 | 22:36:27 | RUN: Execution completed.
+2025-03-02 | 22:36:27 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:36:27 | RUN: Execution completed.
+2025-03-02 | 22:36:27 | Window restored.
+2025-03-02 | 22:36:44 | RUN: Starting execution.
+2025-03-02 | 22:36:44 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:36:44 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:36:44 | Loaded configuration from run.json
+2025-03-02 | 22:36:44 | RUN: Starting execution.
+2025-03-02 | 22:36:44 | RUN: Processing Tab 1
+2025-03-02 | 22:36:44 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:36:44 | Data step: Unknown data_copy_paste action 'Copy From'.
+2025-03-02 | 22:36:45 | Executed select all command.
+2025-03-02 | 22:36:45 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:36:45 | Moved mouse to (266, 96).
+2025-03-02 | 22:36:45 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:36:45 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:36:45 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': False}
+2025-03-02 | 22:36:45 | Data step: Unknown data_copy_paste action 'Copy From'.
+2025-03-02 | 22:36:45 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:36:45 | Moved mouse to (266, 96).
+2025-03-02 | 22:36:45 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:36:45 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:36:46 | Keyboard combination pressed: command + v
+2025-03-02 | 22:36:46 | RUN: Execution completed.
+2025-03-02 | 22:36:46 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:36:46 | RUN: Execution completed.
+2025-03-02 | 22:36:46 | Window restored.
+2025-03-02 | 22:37:00 | RUN: Starting execution.
+2025-03-02 | 22:37:00 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:37:00 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:37:01 | Loaded configuration from run.json
+2025-03-02 | 22:37:01 | RUN: Starting execution.
+2025-03-02 | 22:37:01 | RUN: Processing Tab 1
+2025-03-02 | 22:37:01 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:37:01 | Data step: Unknown data_copy_paste action 'Copy From'.
+2025-03-02 | 22:37:01 | Executed select all command.
+2025-03-02 | 22:37:01 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:37:01 | Moved mouse to (266, 96).
+2025-03-02 | 22:37:01 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:37:01 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:37:01 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:37:01 | Data step: Unknown data_copy_paste action 'Copy From'.
+2025-03-02 | 22:37:01 | Executed select all command.
+2025-03-02 | 22:37:01 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:37:02 | Moved mouse to (266, 96).
+2025-03-02 | 22:37:02 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:37:02 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:37:02 | Keyboard combination pressed: command + v
+2025-03-02 | 22:37:02 | RUN: Execution completed.
+2025-03-02 | 22:37:02 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:37:02 | RUN: Execution completed.
+2025-03-02 | 22:37:02 | Window restored.
+2025-03-02 | 22:37:44 | RUN: Starting execution.
+2025-03-02 | 22:37:44 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:37:44 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:37:44 | Loaded configuration from run.json
+2025-03-02 | 22:37:44 | RUN: Starting execution.
+2025-03-02 | 22:37:44 | RUN: Processing Tab 1
+2025-03-02 | 22:37:44 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:37:44 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:37:44 | Executed select all command.
+2025-03-02 | 22:37:44 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:37:44 | Moved mouse to (266, 96).
+2025-03-02 | 22:37:44 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:37:45 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:37:45 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:37:45 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:37:45 | Executed select all command.
+2025-03-02 | 22:37:45 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:37:45 | Moved mouse to (266, 96).
+2025-03-02 | 22:37:45 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:37:45 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:37:45 | Keyboard combination pressed: command + v
+2025-03-02 | 22:37:45 | RUN: Execution completed.
+2025-03-02 | 22:37:45 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:37:45 | RUN: Execution completed.
+2025-03-02 | 22:37:45 | Window restored.
+2025-03-02 | 22:37:52 | RUN: Starting execution.
+2025-03-02 | 22:37:52 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:37:52 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:37:52 | Loaded configuration from run.json
+2025-03-02 | 22:37:52 | RUN: Starting execution.
+2025-03-02 | 22:37:52 | RUN: Processing Tab 1
+2025-03-02 | 22:37:52 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:37:52 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:37:52 | Executed select all command.
+2025-03-02 | 22:37:52 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:37:52 | Moved mouse to (266, 96).
+2025-03-02 | 22:37:52 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:37:53 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:37:53 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:37:53 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:37:53 | Executed select all command.
+2025-03-02 | 22:37:53 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:37:53 | Moved mouse to (266, 96).
+2025-03-02 | 22:37:53 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:37:53 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:37:53 | Keyboard combination pressed: command + v
+2025-03-02 | 22:37:53 | RUN: Execution completed.
+2025-03-02 | 22:37:53 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:37:53 | RUN: Execution completed.
+2025-03-02 | 22:37:53 | Window restored.
+2025-03-02 | 22:38:09 | RUN: Starting execution.
+2025-03-02 | 22:38:09 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:38:09 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:38:10 | Loaded configuration from run.json
+2025-03-02 | 22:38:10 | RUN: Starting execution.
+2025-03-02 | 22:38:10 | RUN: Processing Tab 1
+2025-03-02 | 22:38:10 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:38:10 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:38:10 | Executed select all command.
+2025-03-02 | 22:38:10 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:38:10 | Moved mouse to (266, 96).
+2025-03-02 | 22:38:10 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:38:10 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:38:10 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:38:10 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:38:11 | Executed select all command.
+2025-03-02 | 22:38:11 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:38:11 | Moved mouse to (266, 96).
+2025-03-02 | 22:38:11 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:38:11 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:38:11 | Keyboard combination pressed: command + v
+2025-03-02 | 22:38:11 | [Tab Tab 1 | Step 4] Processing position: 266x96
+2025-03-02 | 22:38:11 | Moved mouse to (266, 96).
+2025-03-02 | 22:38:11 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Kp_enter', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:38:12 | Keyboard input: Kp_enter
+2025-03-02 | 22:38:12 | RUN: Execution completed.
+2025-03-02 | 22:38:12 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:38:12 | RUN: Execution completed.
+2025-03-02 | 22:38:12 | Window restored.
+2025-03-02 | 22:41:46 | RUN: Starting execution.
+2025-03-02 | 22:41:46 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:41:46 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:41:47 | Loaded configuration from run.json
+2025-03-02 | 22:41:47 | RUN: Starting execution.
+2025-03-02 | 22:41:47 | RUN: Processing Tab 1
+2025-03-02 | 22:41:47 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:41:47 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:41:47 | Executed select all command.
+2025-03-02 | 22:41:47 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:41:47 | Moved mouse to (266, 96).
+2025-03-02 | 22:41:47 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:41:47 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:41:47 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:41:47 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:41:47 | Executed select all command.
+2025-03-02 | 22:41:47 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:41:48 | Moved mouse to (266, 96).
+2025-03-02 | 22:41:48 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:41:48 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:41:48 | Keyboard combination pressed: command + v
+2025-03-02 | 22:41:48 | [Tab Tab 1 | Step 4] Processing position: 266x96
+2025-03-02 | 22:41:48 | Moved mouse to (266, 96).
+2025-03-02 | 22:41:48 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Kp_enter', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:41:48 | Keyboard input: Kp_enter
+2025-03-02 | 22:41:48 | RUN: Execution completed.
+2025-03-02 | 22:41:48 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:41:48 | RUN: Execution completed.
+2025-03-02 | 22:41:48 | Window restored.
+2025-03-02 | 22:42:08 | RUN: Starting execution.
+2025-03-02 | 22:42:08 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:42:08 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:42:09 | Loaded configuration from run.json
+2025-03-02 | 22:42:09 | RUN: Starting execution.
+2025-03-02 | 22:42:09 | RUN: Processing Tab 1
+2025-03-02 | 22:42:09 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:42:09 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:42:09 | Executed select all command.
+2025-03-02 | 22:42:09 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:42:09 | Moved mouse to (266, 96).
+2025-03-02 | 22:42:09 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:42:09 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:42:09 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:42:09 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:42:09 | Executed select all command.
+2025-03-02 | 22:42:09 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:42:10 | Moved mouse to (266, 96).
+2025-03-02 | 22:42:10 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:42:10 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:42:10 | Keyboard combination pressed: command + v
+2025-03-02 | 22:42:10 | [Tab Tab 1 | Step 4] Processing position: 266x96
+2025-03-02 | 22:42:10 | Moved mouse to (266, 96).
+2025-03-02 | 22:42:10 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:42:10 | Keyboard input: Return
+2025-03-02 | 22:42:10 | RUN: Execution completed.
+2025-03-02 | 22:42:10 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:42:10 | RUN: Execution completed.
+2025-03-02 | 22:42:10 | Window restored.
+2025-03-02 | 22:42:13 | RUN: Starting execution.
+2025-03-02 | 22:42:13 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:42:13 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:42:13 | Loaded configuration from run.json
+2025-03-02 | 22:42:13 | RUN: Starting execution.
+2025-03-02 | 22:42:13 | RUN: Processing Tab 1
+2025-03-02 | 22:42:13 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:42:13 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:42:14 | Executed select all command.
+2025-03-02 | 22:42:14 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:42:14 | Moved mouse to (266, 96).
+2025-03-02 | 22:42:14 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:42:14 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:42:14 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:42:14 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:42:14 | Executed select all command.
+2025-03-02 | 22:42:14 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:42:14 | Moved mouse to (266, 96).
+2025-03-02 | 22:42:14 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:42:14 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:42:15 | Keyboard combination pressed: command + v
+2025-03-02 | 22:42:15 | [Tab Tab 1 | Step 4] Processing position: 266x96
+2025-03-02 | 22:42:15 | Moved mouse to (266, 96).
+2025-03-02 | 22:42:15 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:42:15 | Keyboard input: Return
+2025-03-02 | 22:42:15 | RUN: Execution completed.
+2025-03-02 | 22:42:15 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:42:15 | RUN: Execution completed.
+2025-03-02 | 22:42:15 | Window restored.
+2025-03-02 | 22:42:27 | RUN: Starting execution.
+2025-03-02 | 22:42:27 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:42:27 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:42:28 | Loaded configuration from run.json
+2025-03-02 | 22:42:28 | RUN: Starting execution.
+2025-03-02 | 22:42:28 | RUN: Processing Tab 1
+2025-03-02 | 22:42:28 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:42:28 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:42:28 | Executed select all command.
+2025-03-02 | 22:42:28 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:42:28 | Moved mouse to (266, 96).
+2025-03-02 | 22:42:28 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:42:28 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:42:28 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:42:28 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:42:28 | Executed select all command.
+2025-03-02 | 22:42:28 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:42:28 | Moved mouse to (266, 96).
+2025-03-02 | 22:42:28 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:42:28 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:42:29 | Keyboard combination pressed: command + v
+2025-03-02 | 22:42:29 | [Tab Tab 1 | Step 4] Processing position: a
+2025-03-02 | 22:42:29 | Error processing position: not enough values to unpack (expected 2, got 1)
+2025-03-02 | 22:42:29 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Kp_enter', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:42:29 | Keyboard input: Kp_enter
+2025-03-02 | 22:42:29 | RUN: Execution completed.
+2025-03-02 | 22:42:29 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:42:29 | RUN: Execution completed.
+2025-03-02 | 22:42:29 | Window restored.
+2025-03-02 | 22:42:47 | RUN: Starting execution.
+2025-03-02 | 22:42:47 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:42:47 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:42:48 | Loaded configuration from run.json
+2025-03-02 | 22:42:48 | RUN: Starting execution.
+2025-03-02 | 22:42:48 | RUN: Processing Tab 1
+2025-03-02 | 22:42:48 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:42:48 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:42:48 | Executed select all command.
+2025-03-02 | 22:42:48 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:42:48 | Moved mouse to (266, 96).
+2025-03-02 | 22:42:48 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:42:48 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:42:48 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:42:48 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:42:48 | Executed select all command.
+2025-03-02 | 22:42:48 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:42:48 | Moved mouse to (266, 96).
+2025-03-02 | 22:42:48 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:42:48 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:42:49 | Keyboard combination pressed: command + v
+2025-03-02 | 22:42:49 | [Tab Tab 1 | Step 4] Processing position: a
+2025-03-02 | 22:42:49 | Error processing position: not enough values to unpack (expected 2, got 1)
+2025-03-02 | 22:42:49 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:42:49 | Keyboard input: Return
+2025-03-02 | 22:42:49 | RUN: Execution completed.
+2025-03-02 | 22:42:49 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:42:49 | RUN: Execution completed.
+2025-03-02 | 22:42:49 | Window restored.
+2025-03-02 | 22:44:07 | RUN: Starting execution.
+2025-03-02 | 22:44:07 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:44:07 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:44:07 | Loaded configuration from run.json
+2025-03-02 | 22:44:07 | RUN: Starting execution.
+2025-03-02 | 22:44:07 | RUN: Processing Tab 1
+2025-03-02 | 22:44:07 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:44:07 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:44:07 | Executed select all command.
+2025-03-02 | 22:44:07 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:44:08 | Moved mouse to (266, 96).
+2025-03-02 | 22:44:08 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:44:08 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:44:08 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:44:08 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:44:08 | Executed select all command.
+2025-03-02 | 22:44:08 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:44:08 | Moved mouse to (266, 96).
+2025-03-02 | 22:44:08 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:44:08 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:44:09 | Keyboard combination pressed: command + v
+2025-03-02 | 22:44:09 | [Tab Tab 1 | Step 4] Processing position: a
+2025-03-02 | 22:44:09 | Error processing position: not enough values to unpack (expected 2, got 1)
+2025-03-02 | 22:44:09 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:44:09 | Keyboard input: Return
+2025-03-02 | 22:44:09 | RUN: Execution completed.
+2025-03-02 | 22:44:09 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:44:09 | RUN: Execution completed.
+2025-03-02 | 22:44:09 | Window restored.
+2025-03-02 | 22:44:27 | RUN: Starting execution.
+2025-03-02 | 22:44:27 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:44:27 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:44:28 | Loaded configuration from run.json
+2025-03-02 | 22:44:28 | RUN: Starting execution.
+2025-03-02 | 22:44:28 | RUN: Processing Tab 1
+2025-03-02 | 22:44:28 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:44:28 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:44:28 | Executed select all command.
+2025-03-02 | 22:44:28 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:44:28 | Moved mouse to (266, 96).
+2025-03-02 | 22:44:28 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:44:28 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:44:28 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:44:28 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:44:29 | Executed select all command.
+2025-03-02 | 22:44:29 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:44:29 | Moved mouse to (266, 96).
+2025-03-02 | 22:44:29 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:44:29 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:44:29 | Keyboard combination pressed: command + v
+2025-03-02 | 22:44:29 | [Tab Tab 1 | Step 4] Processing position: a
+2025-03-02 | 22:44:29 | Error processing position: not enough values to unpack (expected 2, got 1)
+2025-03-02 | 22:44:29 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:44:29 | Keyboard input: Return
+2025-03-02 | 22:44:29 | RUN: Execution completed.
+2025-03-02 | 22:44:29 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:44:29 | RUN: Execution completed.
+2025-03-02 | 22:44:29 | Window restored.
+2025-03-02 | 22:44:53 | RUN: Starting execution.
+2025-03-02 | 22:44:53 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:44:53 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:44:54 | Loaded configuration from run.json
+2025-03-02 | 22:44:54 | RUN: Starting execution.
+2025-03-02 | 22:44:54 | RUN: Processing Tab 1
+2025-03-02 | 22:44:54 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:44:54 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:44:54 | Executed select all command.
+2025-03-02 | 22:44:54 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:44:54 | Moved mouse to (266, 96).
+2025-03-02 | 22:44:54 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:44:54 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:44:54 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:44:54 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:44:55 | Executed select all command.
+2025-03-02 | 22:44:55 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:44:55 | Moved mouse to (266, 96).
+2025-03-02 | 22:44:55 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:44:55 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:44:55 | Keyboard combination pressed: command + v
+2025-03-02 | 22:44:55 | [Tab Tab 1 | Step 4] Processing position: a
+2025-03-02 | 22:44:55 | Error processing position: not enough values to unpack (expected 2, got 1)
+2025-03-02 | 22:44:55 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:44:55 | Keyboard input: Return
+2025-03-02 | 22:44:55 | RUN: Execution completed.
+2025-03-02 | 22:44:55 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:44:55 | RUN: Execution completed.
+2025-03-02 | 22:44:55 | Window restored.
+2025-03-02 | 22:45:09 | RUN: Starting execution.
+2025-03-02 | 22:45:09 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:45:09 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:45:10 | Loaded configuration from run.json
+2025-03-02 | 22:45:10 | RUN: Starting execution.
+2025-03-02 | 22:45:10 | RUN: Processing Tab 1
+2025-03-02 | 22:45:10 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:45:10 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:45:10 | Executed select all command.
+2025-03-02 | 22:45:10 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:45:10 | Moved mouse to (266, 96).
+2025-03-02 | 22:45:10 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:45:10 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:45:10 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:45:10 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:45:10 | Executed select all command.
+2025-03-02 | 22:45:10 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:45:10 | Moved mouse to (266, 96).
+2025-03-02 | 22:45:10 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:45:10 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:45:11 | Keyboard combination pressed: command + v
+2025-03-02 | 22:45:11 | [Tab Tab 1 | Step 4] Processing position: 
+2025-03-02 | 22:45:11 | Position step: No position provided.
+2025-03-02 | 22:45:11 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:45:11 | Keyboard input: Return
+2025-03-02 | 22:45:11 | RUN: Execution completed.
+2025-03-02 | 22:45:11 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:45:11 | RUN: Execution completed.
+2025-03-02 | 22:45:11 | Window restored.
+2025-03-02 | 22:45:47 | RUN: Starting execution.
+2025-03-02 | 22:45:47 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:45:47 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:45:47 | Loaded configuration from run.json
+2025-03-02 | 22:45:47 | RUN: Starting execution.
+2025-03-02 | 22:45:47 | RUN: Processing Tab 1
+2025-03-02 | 22:45:47 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:45:47 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:45:48 | Executed select all command.
+2025-03-02 | 22:45:48 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:45:48 | Moved mouse to (266, 96).
+2025-03-02 | 22:45:48 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:45:48 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:45:48 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:45:48 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:45:48 | Executed select all command.
+2025-03-02 | 22:45:48 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:45:48 | Moved mouse to (266, 96).
+2025-03-02 | 22:45:48 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:45:48 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:45:49 | Keyboard combination pressed: command + v
+2025-03-02 | 22:45:49 | [Tab Tab 1 | Step 4] Processing position: 1040x460
+2025-03-02 | 22:45:49 | Moved mouse to (1040, 460).
+2025-03-02 | 22:45:49 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:45:49 | Keyboard input: Return
+2025-03-02 | 22:45:49 | RUN: Execution completed.
+2025-03-02 | 22:45:49 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:45:49 | RUN: Execution completed.
+2025-03-02 | 22:45:49 | Window restored.
+2025-03-02 | 22:46:21 | RUN: Starting execution.
+2025-03-02 | 22:46:21 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:46:21 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:46:22 | Loaded configuration from run.json
+2025-03-02 | 22:46:22 | RUN: Starting execution.
+2025-03-02 | 22:46:22 | RUN: Processing Tab 1
+2025-03-02 | 22:46:22 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:46:22 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:46:22 | Executed select all command.
+2025-03-02 | 22:46:22 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:46:22 | Moved mouse to (266, 96).
+2025-03-02 | 22:46:22 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:46:22 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:46:22 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:46:22 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:46:23 | Executed select all command.
+2025-03-02 | 22:46:23 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:46:23 | Moved mouse to (266, 96).
+2025-03-02 | 22:46:23 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:46:23 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:46:23 | Keyboard combination pressed: command + v
+2025-03-02 | 22:46:23 | [Tab Tab 1 | Step 4] Processing position: 266x96a
+2025-03-02 | 22:46:23 | Error processing position: invalid literal for int() with base 10: '96a'
+2025-03-02 | 22:46:23 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:46:23 | Keyboard input: Return
+2025-03-02 | 22:46:23 | RUN: Execution completed.
+2025-03-02 | 22:46:23 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:46:23 | RUN: Execution completed.
+2025-03-02 | 22:46:23 | Window restored.
+2025-03-02 | 22:46:37 | RUN: Starting execution.
+2025-03-02 | 22:46:37 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:46:37 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:46:37 | Loaded configuration from run.json
+2025-03-02 | 22:46:37 | RUN: Starting execution.
+2025-03-02 | 22:46:37 | RUN: Processing Tab 1
+2025-03-02 | 22:46:37 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:46:38 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:46:38 | Executed select all command.
+2025-03-02 | 22:46:38 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:46:38 | Moved mouse to (266, 96).
+2025-03-02 | 22:46:38 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:46:38 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:46:38 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:46:38 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:46:38 | Executed select all command.
+2025-03-02 | 22:46:38 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:46:38 | Moved mouse to (266, 96).
+2025-03-02 | 22:46:38 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:46:38 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:46:39 | Keyboard combination pressed: command + v
+2025-03-02 | 22:46:39 | [Tab Tab 1 | Step 4] Processing position: 266x96
+2025-03-02 | 22:46:39 | Moved mouse to (266, 96).
+2025-03-02 | 22:46:39 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:46:39 | Keyboard input: Return
+2025-03-02 | 22:46:39 | RUN: Execution completed.
+2025-03-02 | 22:46:39 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:46:39 | RUN: Execution completed.
+2025-03-02 | 22:46:39 | Window restored.

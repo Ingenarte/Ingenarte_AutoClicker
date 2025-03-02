@@ -1,7 +1,7 @@
 import customtkinter as ctk
 import tkinter as tk
 from tkinter import filedialog
-from tkinterdnd2 import DND_FILES  # Requiere tkinterdnd2 package
+from tkinterdnd2 import DND_FILES,TkinterDnD  # Requiere tkinterdnd2 package
 from components.utils import get_next_id
 from components.switch_component import CustomSwitch
 import traceback
@@ -28,7 +28,7 @@ def open_data_modal(step_id, callback, existing_data=None):
             return
 
         # Usamos Toplevel para crear la ventana modal.
-        modal = tk.Toplevel()
+        modal = TkinterDnD.Tk()
         open_data_modals[step_id] = modal
         modal.title("Data Modal " + str(step_id))
         modal.geometry("500x400")
@@ -144,6 +144,7 @@ def open_data_modal(step_id, callback, existing_data=None):
         row5.pack(fill="x", pady=5)
         def on_ok():
             try:
+                # Gather the data from the modal fields.
                 data = {}
                 data["data_path"] = excel_path_value.cget("text")
                 data["data_cell"] = cell_entry.get().upper()
@@ -154,16 +155,24 @@ def open_data_modal(step_id, callback, existing_data=None):
                     data["data_select_all"] = False
                 data["data_copy_paste"] = cell_switch.get_value()
                 logging.info(f"Collected data for step {step_id}: {data}")
+                # Call the callback function with the collected data.
                 callback(step_id, data)
             except Exception as e:
                 logging.error(f"Error in on_ok function: {e}")
                 logging.error(traceback.format_exc())
             finally:
                 try:
-                    modal.withdraw()  # Oculta el modal para cancelar callbacks pendientes
+                    # Withdraw (hide) the modal to cancel any pending callbacks.
+                    modal.withdraw()
                     logging.debug("Modal withdrawn")
+                    # Destroy the modal.
                     modal.destroy()
                     logging.debug("Modal destroyed")
+                    # **IMPORTANT:** Remove the modal from the global dictionary to avoid
+                    # future calls to winfo_exists() on a destroyed widget.
+                    if step_id in open_data_modals:
+                        del open_data_modals[step_id]
+                        logging.debug(f"Modal for step {step_id} removed from open_data_modals.")
                 except Exception as e:
                     logging.error(f"Error destroying modal: {e}")
                     logging.error(traceback.format_exc())
