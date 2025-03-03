@@ -27,7 +27,7 @@ ctk.set_default_color_theme("blue")
 # -----------------------------
 root = ctk.CTk()
 root.update_idletasks()
-icon_image = tk.PhotoImage(file="ingenarte_icon.png")
+icon_image = tk.PhotoImage(file="public/ingenarte_icon.png")
 root.iconphoto(False, icon_image)
 
 screen_width = root.winfo_screenwidth()
@@ -64,7 +64,7 @@ tabs_frame.pack_propagate(0)
 # -----------------------------
 # Pointer, Load Config, and Save Config Buttons (in top_frame)
 # -----------------------------
-pointer_button = ctk.CTkButton(top_frame, text="Read Position", fg_color="#1F6AA5", command=lambda: read_position())
+pointer_button = ctk.CTkButton(top_frame, text="Get Mouse Position", fg_color="#1F6AA5", command=lambda: read_position())
 pointer_button.pack(side="left", padx=5, pady=5)
 
 load_config_button = ctk.CTkButton(top_frame, text="Load Config", fg_color="#1F6AA5", command=lambda: load_config())
@@ -118,12 +118,20 @@ def global_position_callback(x, y):
     print(f"📍 Coordinates copied to clipboard: {position}")
     pointer_button.configure(text=position, fg_color="#333333")
     root.config(cursor="arrow")
+    # Restore the window
+    root.deiconify()
+    # On Windows, maximize the window if desired.
+    if sys.platform == "win32":
+        root.state("zoomed")
+    # On other platforms (macOS, Linux), you may simply deiconify.
 
 def read_position():
     global reading_mode, current_callback
     if not reading_mode:
         pointer_button.configure(text="Reading...", fg_color="#FFA500")
         root.config(cursor="cross")
+        # Hide the main window so the click is not blocked
+        root.withdraw()
         reading_mode = True
         current_callback = global_position_callback
         threading.Thread(target=capture_global_click, daemon=True).start()
@@ -241,6 +249,13 @@ def open_data_for_step(step_id):
 # -----------------------------
 # Function to update steps view based on current tab
 # -----------------------------
+def clear_steps():
+    global global_config
+    # Clear the steps for all tabs (or for the current tab if preferred)
+    global_config["tab_n"] = {}
+    log_action("All steps cleared.")
+    update_steps_view()
+
 def update_steps_view():
     for widget in draggable_frame.winfo_children():
         widget.destroy()
@@ -248,14 +263,26 @@ def update_steps_view():
     start_step = (current_tab_index - 1) * 10 + 1
     end_step = current_tab_index * 10
     tab_key = f"Tab {current_tab_index}"
-    if tab_key not in step_buttons:
-        step_buttons[tab_key] = {}
-    header = ctk.CTkLabel(draggable_frame, text=f"Steps for {tab_key}", font=("Arial", 16))
-    header.grid(row=0, column=0, columnspan=6, pady=10)
+    
+    # Create a header frame for the title and the "Clear Steps" button
+    header_frame = ctk.CTkFrame(draggable_frame)
+    header_frame.grid(row=0, column=0, columnspan=7, pady=10, sticky="ew")
+    header_frame.grid_columnconfigure(0, weight=1)
+    header_frame.grid_columnconfigure(1, weight=0)
+    
+    header = ctk.CTkLabel(header_frame, text=f"Steps for {tab_key}", font=("Arial", 16))
+    header.grid(row=0, column=0, sticky="w")
+    
+    clear_button = ctk.CTkButton(header_frame, text="Clear Steps", fg_color="OrangeRed3", command=clear_steps)
+    clear_button.grid(row=0, column=1, sticky="e", padx=5)
+    
+    # Now create the steps starting from row 1
     row = 1
     for step in range(start_step, end_step + 1):
         step_key = f"step_{step}"
-        if step_key not in step_buttons[tab_key]:
+        if step_key not in step_buttons.get(tab_key, {}):
+            if tab_key not in step_buttons:
+                step_buttons[tab_key] = {}
             step_buttons[tab_key][step_key] = {}
         step_label = ctk.CTkLabel(draggable_frame, text=f"Step {step}:", font=("Arial", 14))
         step_label.grid(row=row, column=0, padx=5, pady=5, sticky="w")
@@ -300,6 +327,7 @@ def update_steps_view():
             if "data" in saved and saved["data"]:
                 dat_btn.configure(text="Data ✓", fg_color="green")
         row += 1
+
     for i in range(6):
         draggable_frame.grid_columnconfigure(i, weight=1)
     # Recursivity and RUN buttons

@@ -3346,3 +3346,284 @@
 2025-03-02 | 22:46:39 | RUN: run_module.py executed successfully.
 2025-03-02 | 22:46:39 | RUN: Execution completed.
 2025-03-02 | 22:46:39 | Window restored.
+2025-03-02 | 22:48:34 | RUN: Starting execution.
+2025-03-02 | 22:48:34 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:48:34 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:48:34 | Loaded configuration from run.json
+2025-03-02 | 22:48:34 | RUN: Starting execution.
+2025-03-02 | 22:48:34 | RUN: Processing Tab 1
+2025-03-02 | 22:48:34 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:48:34 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:48:34 | Executed select all command.
+2025-03-02 | 22:48:34 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:48:35 | Moved mouse to (266, 96).
+2025-03-02 | 22:48:35 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:48:35 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:48:35 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:48:35 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:48:35 | Executed select all command.
+2025-03-02 | 22:48:35 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:48:35 | Moved mouse to (266, 96).
+2025-03-02 | 22:48:35 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:48:35 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:48:35 | Keyboard combination pressed: command + v
+2025-03-02 | 22:48:36 | [Tab Tab 1 | Step 4] Processing position: a
+2025-03-02 | 22:48:36 | Error processing position: not enough values to unpack (expected 2, got 1)
+2025-03-02 | 22:48:36 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:48:36 | Keyboard input: Return
+2025-03-02 | 22:48:36 | RUN: Execution completed.
+2025-03-02 | 22:48:36 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:48:36 | RUN: Execution completed.
+2025-03-02 | 22:48:36 | Window restored.
+2025-03-02 | 22:49:33 | RUN: Starting execution.
+2025-03-02 | 22:49:33 | RUN: Configuration saved to run.json.
+2025-03-02 | 22:49:33 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-02 | 22:49:33 | Loaded configuration from run.json
+2025-03-02 | 22:49:33 | RUN: Starting execution.
+2025-03-02 | 22:49:33 | RUN: Processing Tab 1
+2025-03-02 | 22:49:33 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:49:33 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:49:33 | Executed select all command.
+2025-03-02 | 22:49:33 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-02 | 22:49:34 | Moved mouse to (266, 96).
+2025-03-02 | 22:49:34 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-02 | 22:49:34 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-02 | 22:49:34 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-02 | 22:49:34 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-02 | 22:49:34 | Executed select all command.
+2025-03-02 | 22:49:34 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-02 | 22:49:34 | Moved mouse to (266, 96).
+2025-03-02 | 22:49:34 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:49:34 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-02 | 22:49:34 | Keyboard combination pressed: command + v
+2025-03-02 | 22:49:34 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-02 | 22:49:35 | Keyboard input: Return
+2025-03-02 | 22:49:35 | RUN: Execution completed.
+2025-03-02 | 22:49:35 | RUN: run_module.py executed successfully.
+2025-03-02 | 22:49:35 | RUN: Execution completed.
+2025-03-02 | 22:49:35 | Window restored.
+2025-03-03 | 12:41:43 | RUN: Starting execution.
+2025-03-03 | 12:41:43 | RUN: Configuration saved to run.json.
+2025-03-03 | 12:41:43 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-03 | 12:41:45 | Loaded configuration from run.json
+2025-03-03 | 12:41:45 | RUN: Starting execution.
+2025-03-03 | 12:41:45 | RUN: Processing Tab 1
+2025-03-03 | 12:41:45 | [Tab Tab 1 | Step 1] Processing position: 288x94
+2025-03-03 | 12:41:45 | Moved mouse to (288, 94).
+2025-03-03 | 12:41:45 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-03 | 12:41:45 | Mouse clicked at (288, 94) 3 time(s) with left button.
+2025-03-03 | 12:41:45 | [Tab Tab 1 | Step 2] Processing position: 288x94
+2025-03-03 | 12:41:45 | Moved mouse to (288, 94).
+2025-03-03 | 12:41:45 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Shift + P', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 12:41:45 | Processing key combination: modifiers=['shift'], keys=['p']
+2025-03-03 | 12:41:46 | Keyboard combination pressed: shift + p
+2025-03-03 | 12:41:46 | RUN: Execution completed.
+2025-03-03 | 12:41:46 | RUN: run_module.py executed successfully.
+2025-03-03 | 12:41:46 | RUN: Execution completed.
+2025-03-03 | 12:41:46 | Window restored.
+2025-03-03 | 12:41:52 | RUN: Starting execution.
+2025-03-03 | 12:41:52 | RUN: Configuration saved to run.json.
+2025-03-03 | 12:41:52 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-03 | 12:41:52 | Loaded configuration from run.json
+2025-03-03 | 12:41:52 | RUN: Starting execution.
+2025-03-03 | 12:41:52 | RUN: Processing Tab 1
+2025-03-03 | 12:41:52 | [Tab Tab 1 | Step 1] Processing position: 288x94
+2025-03-03 | 12:41:52 | Moved mouse to (288, 94).
+2025-03-03 | 12:41:52 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-03 | 12:41:53 | Mouse clicked at (288, 94) 3 time(s) with left button.
+2025-03-03 | 12:41:53 | [Tab Tab 1 | Step 2] Processing position: 288x94
+2025-03-03 | 12:41:53 | Moved mouse to (288, 94).
+2025-03-03 | 12:41:53 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Shift + K', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 12:41:53 | Processing key combination: modifiers=['shift'], keys=['k']
+2025-03-03 | 12:41:53 | Keyboard combination pressed: shift + k
+2025-03-03 | 12:41:53 | RUN: Execution completed.
+2025-03-03 | 12:41:53 | RUN: run_module.py executed successfully.
+2025-03-03 | 12:41:53 | RUN: Execution completed.
+2025-03-03 | 12:41:53 | Window restored.
+2025-03-03 | 12:45:34 | All steps cleared.
+2025-03-03 | 12:45:54 | All steps cleared.
+2025-03-03 | 12:45:55 | All steps cleared.
+2025-03-03 | 12:46:08 | All steps cleared.
+2025-03-03 | 12:48:41 | RUN: Starting execution.
+2025-03-03 | 12:48:41 | RUN: Configuration saved to run.json.
+2025-03-03 | 12:48:41 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-03 | 12:48:41 | Loaded configuration from run.json
+2025-03-03 | 12:48:41 | RUN: Starting execution.
+2025-03-03 | 12:48:41 | RUN: Processing Tab 1
+2025-03-03 | 12:48:41 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-03 | 12:48:41 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-03 | 12:48:41 | Executed select all command.
+2025-03-03 | 12:48:41 | [Tab Tab 1 | Step 2] Processing position: 266x96
+2025-03-03 | 12:48:41 | Moved mouse to (266, 96).
+2025-03-03 | 12:48:41 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-03 | 12:48:42 | Mouse clicked at (266, 96) 3 time(s) with left button.
+2025-03-03 | 12:48:42 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-03-03 | 12:48:42 | Copied value 'https://www.chollometro.com/' from cell A3 in Sheet1 of /Users/francorodrigo/Desktop/testpython.xlsx to clipboard.
+2025-03-03 | 12:48:42 | Executed select all command.
+2025-03-03 | 12:48:42 | [Tab Tab 1 | Step 3] Processing position: 266x96
+2025-03-03 | 12:48:42 | Moved mouse to (266, 96).
+2025-03-03 | 12:48:42 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 12:48:42 | Processing key combination: modifiers=['command'], keys=['v']
+2025-03-03 | 12:48:42 | Keyboard combination pressed: command + v
+2025-03-03 | 12:48:42 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 12:48:43 | Keyboard input: Return
+2025-03-03 | 12:48:43 | RUN: Execution completed.
+2025-03-03 | 12:48:43 | RUN: run_module.py executed successfully.
+2025-03-03 | 12:48:43 | RUN: Execution completed.
+2025-03-03 | 12:48:43 | Window restored.
+2025-03-03 | 13:19:03 | RUN: Starting execution.
+2025-03-03 | 13:19:03 | RUN: Configuration saved to run.json.
+2025-03-03 | 13:19:03 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-03 | 13:19:03 | Loaded configuration from run.json
+2025-03-03 | 13:19:03 | RUN: Starting execution.
+2025-03-03 | 13:19:03 | RUN: Processing Tab 2
+2025-03-03 | 13:19:03 | RUN: Processing Tab 3
+2025-03-03 | 13:19:03 | RUN: Execution completed.
+2025-03-03 | 13:19:03 | RUN: run_module.py executed successfully.
+2025-03-03 | 13:19:03 | RUN: Execution completed.
+2025-03-03 | 13:19:03 | Window restored.
+2025-03-03 | 13:22:09 | RUN: Starting execution.
+2025-03-03 | 13:22:09 | RUN: Configuration saved to run.json.
+2025-03-03 | 13:22:09 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-03 | 13:22:10 | Loaded configuration from run.json
+2025-03-03 | 13:22:10 | RUN: Starting execution.
+2025-03-03 | 13:22:10 | RUN: Processing Tab 1
+2025-03-03 | 13:22:10 | [Tab Tab 1 | Step 1] Processing position: 765x309
+2025-03-03 | 13:22:10 | Moved mouse to (765, 309).
+2025-03-03 | 13:22:10 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Right', 'mouse_movement': '0'}
+2025-03-03 | 13:22:10 | Mouse clicked at (765, 309) 3 time(s) with right button.
+2025-03-03 | 13:22:12 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': 'test.png', 'image_sleep': '1', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-03 | 13:22:12 | WARNING: Image not found on screen with confidence 0.95.
+2025-03-03 | 13:22:12 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '1', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 13:22:12 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-03 | 13:22:13 | Keyboard combination pressed: command + c
+2025-03-03 | 13:22:13 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-03 | 13:22:13 | Input step: No position specified for mouse click.
+2025-03-03 | 13:22:13 | RUN: Processing Tab 2
+2025-03-03 | 13:22:13 | [Tab Tab 2 | Step 11] Processing position: 311x351
+2025-03-03 | 13:22:13 | Moved mouse to (311, 351).
+2025-03-03 | 13:22:13 | RUN: Processing Tab 3
+2025-03-03 | 13:22:14 | [Tab Tab 3 | Step 21] Processing image: {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': 'test.png', 'image_sleep': '0', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-03 | 13:22:20 | WARNING: Image not found on screen within timeout period.
+2025-03-03 | 13:22:20 | RUN: Processing Tab 4
+2025-03-03 | 13:22:20 | [Tab Tab 4 | Step 31] Processing data: {'data_cell': 'B2', 'data_copy_paste': 'Copy To', 'data_path': 'text.xlsx', 'data_select_all': False}
+2025-03-03 | 13:22:20 | Data step: Invalid or missing file path.
+2025-03-03 | 13:22:20 | [Tab Tab 4 | Step 32] Processing data: {'data_cell': 'C3', 'data_copy_paste': 'Paste To', 'data_path': 'text.xlsx', 'data_select_all': True}
+2025-03-03 | 13:22:20 | Data step: Invalid or missing file path.
+2025-03-03 | 13:22:20 | Recursivity: Repeating steps 1, 2 3 times
+2025-03-03 | 13:22:20 | Recursivity iteration 1 started.
+2025-03-03 | 13:22:20 | [Tab Tab 1 | Step 1] Processing position: 765x309
+2025-03-03 | 13:22:20 | Moved mouse to (765, 309).
+2025-03-03 | 13:22:20 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Right', 'mouse_movement': '0'}
+2025-03-03 | 13:22:20 | Mouse clicked at (765, 309) 3 time(s) with right button.
+2025-03-03 | 13:22:21 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': 'test.png', 'image_sleep': '1', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-03 | 13:22:22 | WARNING: Image not found on screen with confidence 0.95.
+2025-03-03 | 13:22:22 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '1', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 13:22:22 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-03 | 13:22:22 | Keyboard combination pressed: command + c
+2025-03-03 | 13:22:22 | Recursivity iteration 1 completed.
+2025-03-03 | 13:22:22 | Recursivity iteration 2 started.
+2025-03-03 | 13:22:22 | [Tab Tab 1 | Step 1] Processing position: 765x309
+2025-03-03 | 13:22:22 | Moved mouse to (765, 309).
+2025-03-03 | 13:22:22 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Right', 'mouse_movement': '0'}
+2025-03-03 | 13:22:22 | Mouse clicked at (765, 309) 3 time(s) with right button.
+2025-03-03 | 13:22:24 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': 'test.png', 'image_sleep': '1', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-03 | 13:22:24 | WARNING: Image not found on screen with confidence 0.95.
+2025-03-03 | 13:22:24 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '1', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 13:22:24 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-03 | 13:22:25 | Keyboard combination pressed: command + c
+2025-03-03 | 13:22:25 | Recursivity iteration 2 completed.
+2025-03-03 | 13:22:25 | Recursivity iteration 3 started.
+2025-03-03 | 13:22:25 | [Tab Tab 1 | Step 1] Processing position: 765x309
+2025-03-03 | 13:22:25 | Moved mouse to (765, 309).
+2025-03-03 | 13:22:25 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Right', 'mouse_movement': '0'}
+2025-03-03 | 13:22:25 | Mouse clicked at (765, 309) 3 time(s) with right button.
+2025-03-03 | 13:22:26 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': 'test.png', 'image_sleep': '1', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-03 | 13:22:27 | WARNING: Image not found on screen with confidence 0.95.
+2025-03-03 | 13:22:27 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '1', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 13:22:27 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-03 | 13:22:27 | Keyboard combination pressed: command + c
+2025-03-03 | 13:22:27 | Recursivity iteration 3 completed.
+2025-03-03 | 13:22:27 | RUN: Execution completed.
+2025-03-03 | 13:22:27 | RUN: run_module.py executed successfully.
+2025-03-03 | 13:22:27 | RUN: Execution completed.
+2025-03-03 | 13:22:27 | Window restored.
+2025-03-03 | 13:27:25 | All steps cleared.
+2025-03-03 | 13:28:14 | RUN: Starting execution.
+2025-03-03 | 13:28:14 | RUN: Configuration saved to run.json.
+2025-03-03 | 13:28:14 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-03-03 | 13:28:15 | Loaded configuration from run.json
+2025-03-03 | 13:28:15 | RUN: Starting execution.
+2025-03-03 | 13:28:15 | RUN: Processing Tab 1
+2025-03-03 | 13:28:15 | [Tab Tab 1 | Step 1] Processing position: 765x309
+2025-03-03 | 13:28:15 | Moved mouse to (765, 309).
+2025-03-03 | 13:28:15 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Right', 'mouse_movement': '0'}
+2025-03-03 | 13:28:15 | Mouse clicked at (765, 309) 3 time(s) with right button.
+2025-03-03 | 13:28:16 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': 'test.png', 'image_sleep': '1', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-03 | 13:28:17 | WARNING: Image not found on screen with confidence 0.95.
+2025-03-03 | 13:28:17 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '1', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 13:28:17 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-03 | 13:28:17 | Keyboard combination pressed: command + c
+2025-03-03 | 13:28:17 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-03-03 | 13:28:17 | Input step: No position specified for mouse click.
+2025-03-03 | 13:28:17 | RUN: Processing Tab 2
+2025-03-03 | 13:28:17 | [Tab Tab 2 | Step 11] Processing position: 311x351
+2025-03-03 | 13:28:17 | Moved mouse to (311, 351).
+2025-03-03 | 13:28:17 | RUN: Processing Tab 3
+2025-03-03 | 13:28:18 | [Tab Tab 3 | Step 21] Processing image: {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': 'test.png', 'image_sleep': '0', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '0'}
+2025-03-03 | 13:28:25 | WARNING: Image not found on screen within timeout period.
+2025-03-03 | 13:28:25 | RUN: Processing Tab 4
+2025-03-03 | 13:28:25 | [Tab Tab 4 | Step 31] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy To', 'data_path': 'text.xlsx', 'data_select_all': False, 'data_value': 'P'}
+2025-03-03 | 13:28:25 | Data step: Invalid or missing file path.
+2025-03-03 | 13:28:25 | [Tab Tab 4 | Step 32] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Paste To', 'data_path': 'text.xlsx', 'data_select_all': False}
+2025-03-03 | 13:28:25 | Data step: Invalid or missing file path.
+2025-03-03 | 13:28:25 | [Tab Tab 4 | Step 33] Processing data: {'data_cell': 'C1', 'data_copy_paste': 'Copy To', 'data_path': 'text.xlsx', 'data_select_all': False, 'data_value': ''}
+2025-03-03 | 13:28:25 | Data step: Invalid or missing file path.
+2025-03-03 | 13:28:25 | [Tab Tab 4 | Step 34] Processing data: {'data_cell': 'C1', 'data_copy_paste': 'Paste To', 'data_path': 'text.xlsx', 'data_select_all': False}
+2025-03-03 | 13:28:25 | Data step: Invalid or missing file path.
+2025-03-03 | 13:28:25 | [Tab Tab 4 | Step 35] Processing data: {'data_cell': 'C1', 'data_copy_paste': 'Copy To', 'data_path': 'text.xlsx', 'data_select_all': False, 'data_value': 'J'}
+2025-03-03 | 13:28:25 | Data step: Invalid or missing file path.
+2025-03-03 | 13:28:25 | [Tab Tab 4 | Step 36] Processing data: {'data_cell': 'C1', 'data_copy_paste': 'Paste To', 'data_path': 'text.xlsx', 'data_select_all': False}
+2025-03-03 | 13:28:25 | Data step: Invalid or missing file path.
+2025-03-03 | 13:28:25 | [Tab Tab 4 | Step 37] Processing data: {'data_cell': 'D1', 'data_copy_paste': 'Copy To', 'data_path': 'text.xlsx', 'data_select_all': False}
+2025-03-03 | 13:28:25 | Data step: Invalid or missing file path.
+2025-03-03 | 13:28:25 | [Tab Tab 4 | Step 38] Processing data: {'data_cell': 'D1', 'data_copy_paste': 'Paste To', 'data_path': 'text.xlsx', 'data_select_all': False}
+2025-03-03 | 13:28:25 | Data step: Invalid or missing file path.
+2025-03-03 | 13:28:25 | Recursivity: Repeating steps 1, 2 3 times
+2025-03-03 | 13:28:25 | Recursivity iteration 1 started.
+2025-03-03 | 13:28:25 | [Tab Tab 1 | Step 1] Processing position: 765x309
+2025-03-03 | 13:28:25 | Moved mouse to (765, 309).
+2025-03-03 | 13:28:25 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Right', 'mouse_movement': '0'}
+2025-03-03 | 13:28:25 | Mouse clicked at (765, 309) 3 time(s) with right button.
+2025-03-03 | 13:28:26 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': 'test.png', 'image_sleep': '1', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-03 | 13:28:27 | WARNING: Image not found on screen with confidence 0.95.
+2025-03-03 | 13:28:27 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '1', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 13:28:27 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-03 | 13:28:27 | Keyboard combination pressed: command + c
+2025-03-03 | 13:28:27 | Recursivity iteration 1 completed.
+2025-03-03 | 13:28:27 | Recursivity iteration 2 started.
+2025-03-03 | 13:28:27 | [Tab Tab 1 | Step 1] Processing position: 765x309
+2025-03-03 | 13:28:28 | Moved mouse to (765, 309).
+2025-03-03 | 13:28:28 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Right', 'mouse_movement': '0'}
+2025-03-03 | 13:28:28 | Mouse clicked at (765, 309) 3 time(s) with right button.
+2025-03-03 | 13:28:29 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': 'test.png', 'image_sleep': '1', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-03 | 13:28:29 | WARNING: Image not found on screen with confidence 0.95.
+2025-03-03 | 13:28:29 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '1', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 13:28:29 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-03 | 13:28:30 | Keyboard combination pressed: command + c
+2025-03-03 | 13:28:30 | Recursivity iteration 2 completed.
+2025-03-03 | 13:28:30 | Recursivity iteration 3 started.
+2025-03-03 | 13:28:30 | [Tab Tab 1 | Step 1] Processing position: 765x309
+2025-03-03 | 13:28:30 | Moved mouse to (765, 309).
+2025-03-03 | 13:28:30 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Right', 'mouse_movement': '0'}
+2025-03-03 | 13:28:30 | Mouse clicked at (765, 309) 3 time(s) with right button.
+2025-03-03 | 13:28:31 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.95', 'image_path': 'test.png', 'image_sleep': '1', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-03-03 | 13:28:32 | WARNING: Image not found on screen with confidence 0.95.
+2025-03-03 | 13:28:32 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '1', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-03-03 | 13:28:32 | Processing key combination: modifiers=['command'], keys=['c']
+2025-03-03 | 13:28:32 | Keyboard combination pressed: command + c
+2025-03-03 | 13:28:32 | Recursivity iteration 3 completed.
+2025-03-03 | 13:28:32 | RUN: Execution completed.
+2025-03-03 | 13:28:32 | RUN: run_module.py executed successfully.
+2025-03-03 | 13:28:33 | RUN: Execution completed.
+2025-03-03 | 13:28:33 | Window restored.
