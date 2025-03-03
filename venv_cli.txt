@@ -1,2 +1,14 @@
+-- MacOs
+rm -rf envClicker
 python3.12.9 -m venv envClicker
 source envClicker/bin/activate 
+pip install -r requirements.txt
+
+
+
+-- Windows PS
+if (Test-Path envClicker) { Remove-Item -Recurse -Force envClicker }
+python -m venv envClicker
+Set-ExecutionPolicy Unrestricted -Scope Process
+.envClicker\Scripts\Activate.ps1
+pip install -r requirements.txt
