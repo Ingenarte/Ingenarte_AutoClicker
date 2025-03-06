@@ -20,6 +20,15 @@ import datetime
 import os
 import time
 
+# Global variable to store the repetition interval (in seconds)
+global_repetition_interval = None
+# Global reference for the repetition button
+global_repetition_btn = None
+# Global variable to store the scheduled datetime.
+global_schedule_time = None
+# Global reference for the schedule button.
+global_schedule_btn = None
+
 # -----------------------------
 # CustomTkinter configuration
 # -----------------------------
@@ -348,14 +357,14 @@ def update_steps_view():
     draggable_frame, 
     text="Schedule", 
     command=lambda: open_schedule_modal(root, global_config, set_schedule_time),
-    fg_color="#1F6AA5")
+    fg_color="green" if global_schedule_time else "#1F6AA5")
     global_schedule_btn.place(relx=0.5, rely=0.88, anchor="center")
 
     global_repetition_btn = ctk.CTkButton(
     draggable_frame,
     text="Repetition",
     command=lambda: open_repetition_modal(root, global_config, set_repetition_time),
-    fg_color="#1F6AA5")
+    fg_color="green" if global_repetition_interval else "#1F6AA5")
     global_repetition_btn.place(relx=0.8, rely=0.88, anchor="center")
 
     run_btn = ctk.CTkButton(draggable_frame, text="RUN ▶", command=run_script, fg_color="OrangeRed3")
@@ -440,6 +449,8 @@ def update_tab_bar():
     available_width = tabs_frame.winfo_width()
     num_tabs = len(tabs)
     padding = 10
+    if num_tabs == 0:
+        num_tabs = 1
     if num_tabs == 1:
         btn_width = max(int(available_width * 0.15), 50)
     else:
@@ -478,10 +489,6 @@ update_steps_view()
 
 
 
-# Global variable to store the scheduled datetime.
-global_schedule_time = None
-# Global reference for the schedule button.
-global_schedule_btn = None
 
 def set_schedule_time(scheduled_datetime):
     global global_schedule_time, global_schedule_btn
@@ -505,10 +512,7 @@ def set_schedule_time(scheduled_datetime):
 
 
 
-# Global variable to store the repetition interval (in seconds)
-global_repetition_interval = None
-# Global reference for the repetition button
-global_repetition_btn = None
+
 
 def set_repetition_time(repetition_seconds):
     global global_repetition_interval, global_repetition_btn
@@ -543,15 +547,45 @@ def load_config():
     if filename:
         with open(filename, "r", encoding="utf-8") as f:
             loaded_config = json.load(f)
-        global global_config, tabs, current_tab_index
+        global global_config, tabs, current_tab_index, global_schedule_time, global_repetition_interval
         global_config = loaded_config
         # Set previous rec configuration for recursivity modal.
         recursivity_modal.open_recursivity_modal.prev_rec = global_config.get("recursivity", {})
+
+        # If there's a schedule configuration, update global_schedule_time.
+        if "schedule" in global_config:
+            sched = global_config["schedule"]
+            try:
+                dt = datetime.datetime.strptime(f"{sched['date']} {sched['time']}", "%Y-%m-%d %H:%M:%S")
+                global_schedule_time = dt
+            except Exception as e:
+                print("Error parsing schedule:", e)
+                global_schedule_time = None
+        else:
+            global_schedule_time = None
+
+        # If there's a repetition configuration, update global_repetition_interval.
+        if "repetition" in global_config:
+            rep = global_config["repetition"]
+            try:
+                hours = int(rep.get("hours", 0))
+                minutes = int(rep.get("minutes", 0))
+                seconds = int(rep.get("seconds", 0))
+                total_seconds = hours * 3600 + minutes * 60 + seconds
+                global_repetition_interval = total_seconds if total_seconds > 0 else None
+            except Exception as e:
+                print("Error parsing repetition:", e)
+                global_repetition_interval = None
+        else:
+            global_repetition_interval = None
+
+        # Update tabs if available.
         if "tab_n" in global_config:
             new_tabs = list(global_config["tab_n"].keys())
             new_tabs.sort(key=lambda x: int(x.split()[1]))
             tabs = new_tabs
             current_tab_index = 1
+
         update_tab_bar()
         update_steps_view()
         print("⚙️ Configuration loaded from", filename)

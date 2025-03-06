@@ -1,6 +1,6 @@
 -- MacOs
 rm -rf envClicker
-python3.12.9 -m venv envClicker
+python3 -m venv envClicker
 source envClicker/bin/activate 
 pip install -r requirements.txt
 
