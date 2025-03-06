@@ -1,13 +1,12 @@
 {
+    "repetition": {
+        "hours": 0,
+        "minutes": 0,
+        "seconds": 60
+    },
     "schedule": {
         "date": "2025-03-06",
-        "time": "13:25:59"
+        "time": "13:55:13"
     },
-    "tab_n": {
-        "Tab 1": {
-            "step_1": {
-                "position": "572x320"
-            }
-        }
-    }
+    "tab_n": {}
 }

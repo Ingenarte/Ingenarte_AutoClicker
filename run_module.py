@@ -11,13 +11,11 @@ import datetime
 import os
 import subprocess
 import sys
-from openpyxl import load_workbook  # For data processing
-
-# Import your other modules (ensure these are correctly implemented)
+from openpyxl import load_workbook  
 from modals import recursivity_modal
-from modal_input import open_input_modal
-from image_modal import open_image_modal
-from data_modal import open_data_modal
+from modals.modal_input import open_input_modal 
+from modals.image_modal import open_image_modal
+from modals.data_modal import open_data_modal
 
 import logging
 logging.getLogger("PIL").setLevel(logging.DEBUG)

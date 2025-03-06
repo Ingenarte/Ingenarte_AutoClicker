@@ -13,6 +13,7 @@ from modals import recursivity_modal
 from modals.modal_input import open_input_modal  # Your modal implementations
 from modals.image_modal import open_image_modal
 from modals.data_modal import open_data_modal
+from modals.repetition_modal import open_repetition_modal
 import subprocess
 import sys
 import datetime
@@ -260,6 +261,7 @@ def clear_steps():
     update_steps_view()
 
 def update_steps_view():
+    global global_schedule_btn, global_repetition_btn 
     for widget in draggable_frame.winfo_children():
         widget.destroy()
     # Determine step range for current tab (for Tab i, steps from (i-1)*10+1 to i*10)
@@ -341,6 +343,21 @@ def update_steps_view():
     # rec_btn.place(relx=0.5, rely=0.88, anchor="center")
     # rec_btn = ctk.CTkButton(draggable_frame, text="Repetition", command=lambda: open_recursivity(), fg_color=rec_color)
     # rec_btn.place(relx=0.8, rely=0.88, anchor="center")
+
+    global_schedule_btn = ctk.CTkButton(
+    draggable_frame, 
+    text="Schedule", 
+    command=lambda: open_schedule_modal(root, global_config, set_schedule_time),
+    fg_color="#1F6AA5")
+    global_schedule_btn.place(relx=0.5, rely=0.88, anchor="center")
+
+    global_repetition_btn = ctk.CTkButton(
+    draggable_frame,
+    text="Repetition",
+    command=lambda: open_repetition_modal(root, global_config, set_repetition_time),
+    fg_color="#1F6AA5")
+    global_repetition_btn.place(relx=0.8, rely=0.88, anchor="center")
+
     run_btn = ctk.CTkButton(draggable_frame, text="RUN ▶", command=run_script, fg_color="OrangeRed3")
     run_btn.place(relx=0.8, rely=0.95, anchor="center")
 
@@ -485,15 +502,24 @@ def set_schedule_time(scheduled_datetime):
         ).start()
     print(f"Program scheduled for {scheduled_datetime}.")
 
-# When creating your Schedule button in update_steps_view() or elsewhere:
-global_schedule_btn = ctk.CTkButton(
-    draggable_frame, 
-    text="Schedule", 
-    command=lambda: open_schedule_modal(root, global_config, set_schedule_time),
-    fg_color="#1F6AA5"
-)
-global_schedule_btn.place(relx=0.5, rely=0.88, anchor="center")
 
+
+
+# Global variable to store the repetition interval (in seconds)
+global_repetition_interval = None
+# Global reference for the repetition button
+global_repetition_btn = None
+
+def set_repetition_time(repetition_seconds):
+    global global_repetition_interval, global_repetition_btn
+    global_repetition_interval = repetition_seconds
+    # Update the button appearance based on whether repetition is set.
+    if global_repetition_btn:
+        if repetition_seconds is None:
+            global_repetition_btn.configure(fg_color="#1F6AA5")
+        else:
+            global_repetition_btn.configure(fg_color="green")
+    print(f"Repetition interval set to: {repetition_seconds} seconds.")
 
 
 # -----------------------------
