@@ -6,10 +6,13 @@ import threading
 import json
 import tkinter as tk
 from tkinter import filedialog
-import recursivity_modal  # This module must define open_recursivity_modal(steps_data_all, prev_rec)
-from modal_input import open_input_modal  # Your modal implementations
-from image_modal import open_image_modal
-from data_modal import open_data_modal
+import threading
+from modals.schedule_modal import open_schedule_modal
+from modals.schedule_runner import schedule_runner
+from modals import recursivity_modal
+from modals.modal_input import open_input_modal  # Your modal implementations
+from modals.image_modal import open_image_modal
+from modals.data_modal import open_data_modal
 import subprocess
 import sys
 import datetime
@@ -333,7 +336,11 @@ def update_steps_view():
     # Recursivity and RUN buttons
     rec_color = "green" if "recursivity" in global_config else "#1F6AA5"
     rec_btn = ctk.CTkButton(draggable_frame, text="Recursivity", command=lambda: open_recursivity(), fg_color=rec_color)
-    rec_btn.place(relx=0.8, rely=0.88, anchor="center")
+    rec_btn.place(relx=0.2, rely=0.88, anchor="center")
+    # rec_btn = ctk.CTkButton(draggable_frame, text="Schedule", command=lambda: open_recursivity(), fg_color=rec_color)
+    # rec_btn.place(relx=0.5, rely=0.88, anchor="center")
+    # rec_btn = ctk.CTkButton(draggable_frame, text="Repetition", command=lambda: open_recursivity(), fg_color=rec_color)
+    # rec_btn.place(relx=0.8, rely=0.88, anchor="center")
     run_btn = ctk.CTkButton(draggable_frame, text="RUN ▶", command=run_script, fg_color="OrangeRed3")
     run_btn.place(relx=0.8, rely=0.95, anchor="center")
 
@@ -451,6 +458,43 @@ def add_tab():
 
 update_tab_bar()
 update_steps_view()
+
+
+
+# Global variable to store the scheduled datetime.
+global_schedule_time = None
+# Global reference for the schedule button.
+global_schedule_btn = None
+
+def set_schedule_time(scheduled_datetime):
+    global global_schedule_time, global_schedule_btn
+    global_schedule_time = scheduled_datetime
+    # Update the button's appearance based on whether a schedule is set.
+    if global_schedule_btn:
+        if scheduled_datetime is None:
+            global_schedule_btn.configure(fg_color="#1F6AA5")
+        else:
+            global_schedule_btn.configure(fg_color="green")
+    # Only start the runner thread if we have a valid datetime.
+    if scheduled_datetime is not None:
+        import threading
+        threading.Thread(
+            target=schedule_runner,
+            args=(global_schedule_time, run_script, global_config),
+            daemon=True
+        ).start()
+    print(f"Program scheduled for {scheduled_datetime}.")
+
+# When creating your Schedule button in update_steps_view() or elsewhere:
+global_schedule_btn = ctk.CTkButton(
+    draggable_frame, 
+    text="Schedule", 
+    command=lambda: open_schedule_modal(root, global_config, set_schedule_time),
+    fg_color="#1F6AA5"
+)
+global_schedule_btn.place(relx=0.5, rely=0.88, anchor="center")
+
+
 
 # -----------------------------
 # Recursivity functionality

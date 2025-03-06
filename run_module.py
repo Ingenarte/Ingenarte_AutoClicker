@@ -14,7 +14,7 @@ import sys
 from openpyxl import load_workbook  # For data processing
 
 # Import your other modules (ensure these are correctly implemented)
-import recursivity_modal  # must provide open_recursivity_modal(steps_data_all, prev_rec)
+from modals import recursivity_modal
 from modal_input import open_input_modal
 from image_modal import open_image_modal
 from data_modal import open_data_modal
