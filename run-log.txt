@@ -3708,3 +3708,318 @@
 2025-03-06 | 13:55:13 | RUN: run_module.py executed successfully.
 2025-03-06 | 13:55:13 | RUN: Execution completed.
 2025-03-06 | 13:55:13 | Window restored.
+2025-04-12 | 01:21:54 | Loaded configuration from run.json
+2025-04-12 | 01:21:54 | RUN: Starting execution.
+2025-04-12 | 01:21:54 | RUN: Execution completed.
+2025-05-28 | 02:03:46 | All steps cleared.
+2025-05-28 | 02:04:30 | RUN: Starting execution.
+2025-05-28 | 02:04:30 | RUN: Configuration saved to run.json.
+2025-05-28 | 02:04:30 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-28 | 02:04:31 | Loaded configuration from run.json
+2025-05-28 | 02:04:31 | RUN: Starting execution.
+2025-05-28 | 02:04:31 | RUN: Processing Tab 1
+2025-05-28 | 02:04:31 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-05-28 | 02:04:31 | Data step: Invalid or missing file path.
+2025-05-28 | 02:04:31 | [Tab Tab 1 | Step 2] Processing position: -1723x-21
+2025-05-28 | 02:04:32 | Moved mouse to (-1723, -21).
+2025-05-28 | 02:04:32 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:04:32 | Mouse clicked at (-1723, -21) 3 time(s) with left button.
+2025-05-28 | 02:04:32 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-05-28 | 02:04:32 | Data step: Invalid or missing file path.
+2025-05-28 | 02:04:32 | [Tab Tab 1 | Step 3] Processing position: -1636x-26
+2025-05-28 | 02:04:32 | Moved mouse to (-1636, -26).
+2025-05-28 | 02:04:32 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:04:32 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-28 | 02:04:32 | Keyboard combination pressed: command + v
+2025-05-28 | 02:04:32 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:04:32 | Keyboard input: Return
+2025-05-28 | 02:04:32 | RUN: Execution completed.
+2025-05-28 | 02:04:33 | RUN: run_module.py executed successfully.
+2025-05-28 | 02:04:33 | RUN: Execution completed.
+2025-05-28 | 02:04:33 | Window restored.
+2025-05-28 | 02:06:37 | RUN: Starting execution.
+2025-05-28 | 02:06:37 | RUN: Configuration saved to run.json.
+2025-05-28 | 02:06:37 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-28 | 02:06:37 | Loaded configuration from run.json
+2025-05-28 | 02:06:37 | RUN: Starting execution.
+2025-05-28 | 02:06:37 | RUN: Processing Tab 1
+2025-05-28 | 02:06:37 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-28 | 02:06:37 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-28 | 02:06:38 | Executed select all command.
+2025-05-28 | 02:06:38 | [Tab Tab 1 | Step 2] Processing position: -1723x-21
+2025-05-28 | 02:06:38 | Moved mouse to (-1723, -21).
+2025-05-28 | 02:06:38 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:06:38 | Mouse clicked at (-1723, -21) 3 time(s) with left button.
+2025-05-28 | 02:06:38 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-05-28 | 02:06:38 | Data step: Invalid or missing file path.
+2025-05-28 | 02:06:38 | [Tab Tab 1 | Step 3] Processing position: -1636x-26
+2025-05-28 | 02:06:38 | Moved mouse to (-1636, -26).
+2025-05-28 | 02:06:38 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:06:38 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-28 | 02:06:39 | Keyboard combination pressed: command + v
+2025-05-28 | 02:06:39 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:06:39 | Keyboard input: Return
+2025-05-28 | 02:06:39 | RUN: Execution completed.
+2025-05-28 | 02:06:39 | RUN: run_module.py executed successfully.
+2025-05-28 | 02:06:39 | RUN: Execution completed.
+2025-05-28 | 02:06:39 | Window restored.
+2025-05-28 | 02:09:39 | RUN: Starting execution.
+2025-05-28 | 02:09:39 | RUN: Configuration saved to run.json.
+2025-05-28 | 02:09:39 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-28 | 02:09:40 | Loaded configuration from run.json
+2025-05-28 | 02:09:40 | RUN: Starting execution.
+2025-05-28 | 02:09:40 | RUN: Processing Tab 1
+2025-05-28 | 02:09:40 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-28 | 02:09:40 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-28 | 02:09:40 | Executed select all command.
+2025-05-28 | 02:09:40 | [Tab Tab 1 | Step 2] Processing position: -1723x-21
+2025-05-28 | 02:09:40 | Moved mouse to (-1723, -21).
+2025-05-28 | 02:09:40 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:09:40 | Mouse clicked at (-1723, -21) 3 time(s) with left button.
+2025-05-28 | 02:09:40 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-05-28 | 02:09:40 | Data step: Invalid or missing file path.
+2025-05-28 | 02:09:40 | [Tab Tab 1 | Step 3] Processing position: -1636x-26
+2025-05-28 | 02:09:40 | Moved mouse to (-1636, -26).
+2025-05-28 | 02:09:40 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:09:40 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-28 | 02:09:41 | Keyboard combination pressed: command + v
+2025-05-28 | 02:09:41 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:09:41 | Keyboard input: Return
+2025-05-28 | 02:09:41 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Down', 'keyboard_repeat': '4', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:09:41 | Keyboard input: Down
+2025-05-28 | 02:09:41 | [Tab Tab 1 | Step 6] Processing position: -1290x809
+2025-05-28 | 02:09:41 | Moved mouse to (-1290, 809).
+2025-05-28 | 02:09:41 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:09:41 | Mouse clicked at (-1290, 809) 1 time(s) with left button.
+2025-05-28 | 02:09:41 | RUN: Execution completed.
+2025-05-28 | 02:09:41 | RUN: run_module.py executed successfully.
+2025-05-28 | 02:09:41 | RUN: Execution completed.
+2025-05-28 | 02:09:41 | Window restored.
+2025-05-28 | 02:10:08 | RUN: Starting execution.
+2025-05-28 | 02:10:08 | RUN: Configuration saved to run.json.
+2025-05-28 | 02:10:08 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-28 | 02:10:08 | Loaded configuration from run.json
+2025-05-28 | 02:10:08 | RUN: Starting execution.
+2025-05-28 | 02:10:08 | RUN: Processing Tab 1
+2025-05-28 | 02:10:08 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-28 | 02:10:08 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-28 | 02:10:08 | Executed select all command.
+2025-05-28 | 02:10:08 | [Tab Tab 1 | Step 2] Processing position: -1723x-21
+2025-05-28 | 02:10:09 | Moved mouse to (-1723, -21).
+2025-05-28 | 02:10:09 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:10:09 | Mouse clicked at (-1723, -21) 3 time(s) with left button.
+2025-05-28 | 02:10:09 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-05-28 | 02:10:09 | Data step: Invalid or missing file path.
+2025-05-28 | 02:10:09 | [Tab Tab 1 | Step 3] Processing position: -1636x-26
+2025-05-28 | 02:10:09 | Moved mouse to (-1636, -26).
+2025-05-28 | 02:10:09 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:10:09 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-28 | 02:10:09 | Keyboard combination pressed: command + v
+2025-05-28 | 02:10:09 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:10:09 | Keyboard input: Return
+2025-05-28 | 02:10:09 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Down', 'keyboard_repeat': '4', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:10:10 | Keyboard input: Down
+2025-05-28 | 02:10:10 | [Tab Tab 1 | Step 6] Processing position: -1290x809
+2025-05-28 | 02:10:10 | Moved mouse to (-1290, 809).
+2025-05-28 | 02:10:10 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:10:10 | Mouse clicked at (-1290, 809) 1 time(s) with left button.
+2025-05-28 | 02:10:10 | RUN: Execution completed.
+2025-05-28 | 02:10:10 | RUN: run_module.py executed successfully.
+2025-05-28 | 02:10:10 | RUN: Execution completed.
+2025-05-28 | 02:10:10 | Window restored.
+2025-05-28 | 02:11:07 | RUN: Starting execution.
+2025-05-28 | 02:11:07 | RUN: Configuration saved to run.json.
+2025-05-28 | 02:11:07 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-28 | 02:11:07 | Loaded configuration from run.json
+2025-05-28 | 02:11:07 | RUN: Starting execution.
+2025-05-28 | 02:11:07 | RUN: Processing Tab 1
+2025-05-28 | 02:11:07 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-28 | 02:11:07 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-28 | 02:11:07 | Executed select all command.
+2025-05-28 | 02:11:07 | [Tab Tab 1 | Step 2] Processing position: -1723x-21
+2025-05-28 | 02:11:08 | Moved mouse to (-1723, -21).
+2025-05-28 | 02:11:08 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:11:08 | Mouse clicked at (-1723, -21) 3 time(s) with left button.
+2025-05-28 | 02:11:08 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-05-28 | 02:11:08 | Data step: Invalid or missing file path.
+2025-05-28 | 02:11:08 | [Tab Tab 1 | Step 3] Processing position: -1636x-26
+2025-05-28 | 02:11:08 | Moved mouse to (-1636, -26).
+2025-05-28 | 02:11:08 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:11:08 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-28 | 02:11:08 | Keyboard combination pressed: command + v
+2025-05-28 | 02:11:08 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:11:08 | Keyboard input: Return
+2025-05-28 | 02:11:08 | [Tab Tab 1 | Step 5] Processing position: -1769x315
+2025-05-28 | 02:11:09 | Moved mouse to (-1769, 315).
+2025-05-28 | 02:11:09 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:11:09 | Mouse clicked at (-1769, 315) 1 time(s) with left button.
+2025-05-28 | 02:11:09 | [Tab Tab 1 | Step 6] Processing position: -1290x809
+2025-05-28 | 02:11:09 | Moved mouse to (-1290, 809).
+2025-05-28 | 02:11:09 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Down', 'keyboard_repeat': '4', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:11:09 | Keyboard input: Down
+2025-05-28 | 02:11:09 | [Tab Tab 1 | Step 7] Processing position: -1290x809
+2025-05-28 | 02:11:09 | Moved mouse to (-1290, 809).
+2025-05-28 | 02:11:09 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:11:09 | Mouse clicked at (-1290, 809) 1 time(s) with left button.
+2025-05-28 | 02:11:09 | RUN: Execution completed.
+2025-05-28 | 02:11:09 | RUN: run_module.py executed successfully.
+2025-05-28 | 02:11:09 | RUN: Execution completed.
+2025-05-28 | 02:11:09 | Window restored.
+2025-05-28 | 02:11:21 | RUN: Starting execution.
+2025-05-28 | 02:11:21 | RUN: Configuration saved to run.json.
+2025-05-28 | 02:11:21 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-28 | 02:11:22 | Loaded configuration from run.json
+2025-05-28 | 02:11:22 | RUN: Starting execution.
+2025-05-28 | 02:11:22 | RUN: Processing Tab 1
+2025-05-28 | 02:11:22 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-28 | 02:11:22 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-28 | 02:11:22 | Executed select all command.
+2025-05-28 | 02:11:22 | [Tab Tab 1 | Step 2] Processing position: -1723x-21
+2025-05-28 | 02:11:22 | Moved mouse to (-1723, -21).
+2025-05-28 | 02:11:22 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:11:22 | Mouse clicked at (-1723, -21) 3 time(s) with left button.
+2025-05-28 | 02:11:22 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-05-28 | 02:11:22 | Data step: Invalid or missing file path.
+2025-05-28 | 02:11:22 | [Tab Tab 1 | Step 3] Processing position: -1636x-26
+2025-05-28 | 02:11:22 | Moved mouse to (-1636, -26).
+2025-05-28 | 02:11:22 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:11:22 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-28 | 02:11:23 | Keyboard combination pressed: command + v
+2025-05-28 | 02:11:23 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:11:23 | Keyboard input: Return
+2025-05-28 | 02:11:23 | [Tab Tab 1 | Step 5] Processing position: -1769x315
+2025-05-28 | 02:11:23 | Moved mouse to (-1769, 315).
+2025-05-28 | 02:11:23 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:11:23 | Mouse clicked at (-1769, 315) 1 time(s) with left button.
+2025-05-28 | 02:11:23 | [Tab Tab 1 | Step 6] Processing position: -1290x809
+2025-05-28 | 02:11:23 | Moved mouse to (-1290, 809).
+2025-05-28 | 02:11:23 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Down', 'keyboard_repeat': '4', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:11:23 | Keyboard input: Down
+2025-05-28 | 02:11:23 | [Tab Tab 1 | Step 7] Processing position: -1290x809
+2025-05-28 | 02:11:24 | Moved mouse to (-1290, 809).
+2025-05-28 | 02:11:24 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:11:24 | Mouse clicked at (-1290, 809) 1 time(s) with left button.
+2025-05-28 | 02:11:24 | RUN: Execution completed.
+2025-05-28 | 02:11:24 | RUN: run_module.py executed successfully.
+2025-05-28 | 02:11:24 | RUN: Execution completed.
+2025-05-28 | 02:11:24 | Window restored.
+2025-05-28 | 02:11:49 | RUN: Starting execution.
+2025-05-28 | 02:11:49 | RUN: Configuration saved to run.json.
+2025-05-28 | 02:11:49 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-28 | 02:11:50 | Loaded configuration from run.json
+2025-05-28 | 02:11:50 | RUN: Starting execution.
+2025-05-28 | 02:11:50 | RUN: Processing Tab 1
+2025-05-28 | 02:11:50 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-28 | 02:11:50 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-28 | 02:11:50 | Executed select all command.
+2025-05-28 | 02:11:50 | [Tab Tab 1 | Step 2] Processing position: -1723x-21
+2025-05-28 | 02:11:50 | Moved mouse to (-1723, -21).
+2025-05-28 | 02:11:50 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:11:50 | Mouse clicked at (-1723, -21) 3 time(s) with left button.
+2025-05-28 | 02:11:50 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-05-28 | 02:11:50 | Data step: Invalid or missing file path.
+2025-05-28 | 02:11:50 | [Tab Tab 1 | Step 3] Processing position: -1636x-26
+2025-05-28 | 02:11:50 | Moved mouse to (-1636, -26).
+2025-05-28 | 02:11:50 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:11:50 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-28 | 02:11:51 | Keyboard combination pressed: command + v
+2025-05-28 | 02:11:51 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '8', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:11:51 | Keyboard input: Return
+2025-05-28 | 02:11:51 | [Tab Tab 1 | Step 5] Processing position: -1769x315
+2025-05-28 | 02:11:51 | Moved mouse to (-1769, 315).
+2025-05-28 | 02:11:51 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:11:51 | Mouse clicked at (-1769, 315) 1 time(s) with left button.
+2025-05-28 | 02:11:51 | [Tab Tab 1 | Step 6] Processing position: -1290x809
+2025-05-28 | 02:11:51 | Moved mouse to (-1290, 809).
+2025-05-28 | 02:11:51 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Down', 'keyboard_repeat': '4', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:11:51 | Keyboard input: Down
+2025-05-28 | 02:11:51 | [Tab Tab 1 | Step 7] Processing position: -1290x809
+2025-05-28 | 02:11:52 | Moved mouse to (-1290, 809).
+2025-05-28 | 02:11:52 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:11:52 | Mouse clicked at (-1290, 809) 1 time(s) with left button.
+2025-05-28 | 02:11:52 | RUN: Execution completed.
+2025-05-28 | 02:11:52 | RUN: run_module.py executed successfully.
+2025-05-28 | 02:11:52 | RUN: Execution completed.
+2025-05-28 | 02:11:52 | Window restored.
+2025-05-28 | 02:12:57 | RUN: Starting execution.
+2025-05-28 | 02:12:57 | RUN: Configuration saved to run.json.
+2025-05-28 | 02:12:57 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-28 | 02:12:57 | Loaded configuration from run.json
+2025-05-28 | 02:12:57 | RUN: Starting execution.
+2025-05-28 | 02:12:57 | RUN: Processing Tab 1
+2025-05-28 | 02:12:57 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-28 | 02:12:57 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-28 | 02:12:58 | Executed select all command.
+2025-05-28 | 02:12:58 | [Tab Tab 1 | Step 2] Processing position: -1723x-21
+2025-05-28 | 02:12:58 | Moved mouse to (-1723, -21).
+2025-05-28 | 02:12:58 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:12:58 | Mouse clicked at (-1723, -21) 3 time(s) with left button.
+2025-05-28 | 02:12:58 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-05-28 | 02:12:58 | Data step: Invalid or missing file path.
+2025-05-28 | 02:12:58 | [Tab Tab 1 | Step 3] Processing position: -1636x-26
+2025-05-28 | 02:12:58 | Moved mouse to (-1636, -26).
+2025-05-28 | 02:12:58 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:12:58 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-28 | 02:12:59 | Keyboard combination pressed: command + v
+2025-05-28 | 02:12:59 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '8', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:12:59 | Keyboard input: Return
+2025-05-28 | 02:12:59 | [Tab Tab 1 | Step 5] Processing position: -1769x315
+2025-05-28 | 02:12:59 | Moved mouse to (-1769, 315).
+2025-05-28 | 02:12:59 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '1'}
+2025-05-28 | 02:12:59 | Mouse clicked at (-1769, 315) 1 time(s) with left button.
+2025-05-28 | 02:12:59 | [Tab Tab 1 | Step 6] Processing position: -1290x809
+2025-05-28 | 02:12:59 | Moved mouse to (-1290, 809).
+2025-05-28 | 02:12:59 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Down', 'keyboard_repeat': '4', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:12:59 | Keyboard input: Down
+2025-05-28 | 02:12:59 | [Tab Tab 1 | Step 7] Processing position: -203x206
+2025-05-28 | 02:12:59 | Moved mouse to (-203, 206).
+2025-05-28 | 02:12:59 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:12:59 | Mouse clicked at (-203, 206) 1 time(s) with left button.
+2025-05-28 | 02:12:59 | RUN: Execution completed.
+2025-05-28 | 02:12:59 | RUN: run_module.py executed successfully.
+2025-05-28 | 02:12:59 | RUN: Execution completed.
+2025-05-28 | 02:12:59 | Window restored.
+2025-05-28 | 02:13:26 | RUN: Starting execution.
+2025-05-28 | 02:13:26 | RUN: Configuration saved to run.json.
+2025-05-28 | 02:13:26 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-28 | 02:13:27 | Loaded configuration from run.json
+2025-05-28 | 02:13:27 | RUN: Starting execution.
+2025-05-28 | 02:13:27 | RUN: Processing Tab 1
+2025-05-28 | 02:13:27 | [Tab Tab 1 | Step 1] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-28 | 02:13:27 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-28 | 02:13:27 | Executed select all command.
+2025-05-28 | 02:13:27 | [Tab Tab 1 | Step 2] Processing position: -1723x-21
+2025-05-28 | 02:13:27 | Moved mouse to (-1723, -21).
+2025-05-28 | 02:13:27 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:13:27 | Mouse clicked at (-1723, -21) 3 time(s) with left button.
+2025-05-28 | 02:13:27 | [Tab Tab 1 | Step 2] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Desktop/testpython.xlsx', 'data_select_all': True}
+2025-05-28 | 02:13:27 | Data step: Invalid or missing file path.
+2025-05-28 | 02:13:27 | [Tab Tab 1 | Step 3] Processing position: -1636x-26
+2025-05-28 | 02:13:27 | Moved mouse to (-1636, -26).
+2025-05-28 | 02:13:27 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:13:27 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-28 | 02:13:28 | Keyboard combination pressed: command + v
+2025-05-28 | 02:13:28 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '15', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:13:28 | Keyboard input: Return
+2025-05-28 | 02:13:28 | [Tab Tab 1 | Step 5] Processing position: -1769x315
+2025-05-28 | 02:13:28 | Moved mouse to (-1769, 315).
+2025-05-28 | 02:13:28 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '1'}
+2025-05-28 | 02:13:28 | Mouse clicked at (-1769, 315) 1 time(s) with left button.
+2025-05-28 | 02:13:28 | [Tab Tab 1 | Step 6] Processing position: -1290x809
+2025-05-28 | 02:13:28 | Moved mouse to (-1290, 809).
+2025-05-28 | 02:13:28 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '2', 'keyboard_ascii': 'Down', 'keyboard_repeat': '4', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:13:28 | Keyboard input: Down
+2025-05-28 | 02:13:28 | [Tab Tab 1 | Step 7] Processing position: -203x206
+2025-05-28 | 02:13:28 | Moved mouse to (-203, 206).
+2025-05-28 | 02:13:28 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-28 | 02:13:29 | Mouse clicked at (-203, 206) 1 time(s) with left button.
+2025-05-28 | 02:13:29 | RUN: Execution completed.
+2025-05-28 | 02:13:29 | RUN: run_module.py executed successfully.
+2025-05-28 | 02:13:29 | RUN: Execution completed.
+2025-05-28 | 02:13:29 | Window restored.
+2025-05-28 | 02:52:59 | [Tab tab-test | Step 1] Processing data: {'file_path': 'demo.xlsx', 'sheet': 'Sheet1'}
+2025-05-28 | 02:52:59 | Data step: Invalid or missing file path.
+2025-05-28 | 02:53:09 | [Tab tab-test | Step 1] Processing input: {'input_from': 'Keyboard', 'keyboard_ascii': 'Ctrl + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-28 | 02:53:09 | Processing key combination: modifiers=['ctrl'], keys=['c']
+2025-05-28 | 02:53:14 | [Tab tab-test | Step 1] Processing input: {'input_from': 'Mouse', 'position': '120x300', 'mouse_click_qty': '2', 'mouse_event': 'Left', 'keyboard_ascii': '', 'keyboard_repeat': ''}
+2025-05-28 | 02:53:14 | Input step: No position specified for mouse click.
