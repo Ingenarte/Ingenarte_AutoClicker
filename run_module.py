@@ -66,81 +66,109 @@ def process_input_step(step_config, step_number, tab_name):
     """
     Processes an input step for either mouse or keyboard actions.
     
-    For keyboard input, if the 'keyboard_ascii' value contains a combination (delimited by " + "),
-    the function will hold down any modifier keys (such as Command, Ctrl, Alt, Shift) while pressing
-    the other keys, with a 200ms delay between the normal keys.
+    For mouse input:
+      • Uses `position` ("100x200") or falls back to current pointer.
+      • Optionally moves by `mouse_movement` ("dx×dy") before clicking.
+      • Clicks `mouse_click_qty` times with the specified button.
+
+    For keyboard input:
+      • If 'keyboard_ascii' contains " + ", holds modifiers and presses the rest.
+      • Repeats the press sequence `keyboard_repeat` times (default 1).
+
+    Finally sleeps for `input_sleep` seconds if given.
     """
     action = step_config.get("input", {})
     log_action(f"[Tab {tab_name} | Step {step_number}] Processing input: {action}")
-    input_from = action.get("input_from", "").lower()
+    src = action.get("input_from", "").strip().lower()
 
-    if input_from == "mouse":
+    # ─── MOUSE ───────────────────────────────────────────────────────────────
+    if src == "mouse":
         pos = step_config.get("position", "").strip()
         if pos:
-            # existing behaviour
-            x_str, y_str = pos.split("x")
-            x, y = int(x_str), int(y_str)
+            try:
+                x_str, y_str = pos.split("x")
+                x, y = int(x_str), int(y_str)
+            except:
+                x, y = pyautogui.position()
+                log_action(f"⚠️ Bad position '{pos}', using current mouse ({x},{y})")
         else:
-            # FALLBACK to current mouse position
             x, y = pyautogui.position()
-            log_action(f"⚠️ No position specified – using current mouse position ({x},{y})")
+            log_action(f"⚠️ No position specified – using current mouse ({x},{y})")
 
-        button = "left" if action.get("mouse_event", "Left").lower() == "left" else "right"
-        clicks = get_clicks(action.get("mouse_click_qty", "1"))
-        pyautogui.click(x=x, y=y, clicks=clicks, button=button)
-        log_action(f"Mouse clicked at ({x}, {y}) {clicks}× {button}")
-        return
-    
-        
-    elif input_from == "keyboard":
-        text = action.get("keyboard_ascii", "")
-        # If the text is a key combination (e.g. "Command + C")
-        if " + " in text:
-            # Split the combination into parts.
-            keys = [key.strip() for key in text.split(" + ")]
-            # Separate modifiers from normal keys.
-            modifiers = []
-            non_modifiers = []
-            for key in keys:
-                # On macOS, if the key is "Command" (or "Meta") use the name "command" for pyautogui.
-                if key.lower() in ["shift", "ctrl", "alt", "command", "meta"]:
-                    if key.lower() in ["command", "meta"]:
-                        modifiers.append("command")
-                    else:
-                        modifiers.append(key.lower())
+        # optional movement offset "dx×dy"
+        mv = action.get("mouse_movement", "").strip()
+        if mv:
+            try:
+                if "×" in mv:
+                    dx, dy = map(int, mv.split("×"))
+                elif "x" in mv:
+                    dx, dy = map(int, mv.split("x"))
                 else:
-                    non_modifiers.append(key.lower())
+                    # no separator → horizontal move only
+                    dx, dy = int(mv), 0
 
-            log_action(f"Processing key combination: modifiers={modifiers}, keys={non_modifiers}")
-            # Press and hold all modifier keys.
-            for mod in modifiers:
-                pyautogui.keyDown(mod)
-            # Press each non-modifier key with a short delay.
-            for key in non_modifiers:
-                pyautogui.press(key)
-                time.sleep(0.2)
-            # Release all modifier keys.
-            for mod in modifiers:
-                pyautogui.keyUp(mod)
-            log_action(f"Keyboard combination pressed: {' + '.join(modifiers + non_modifiers)}")
+                x += dx
+                y += dy
+                log_action(f"Moved by offset ({dx},{dy}) → ({x},{y})")
+            except Exception:
+                log_action(f"⚠️ Invalid mouse_movement '{mv}' – skipping offset")
+
+        btn = action.get("mouse_event", "Left").strip().lower()
+        btn = "left" if btn == "left" else "right"
+        clicks = get_clicks(action.get("mouse_click_qty", "1"))
+        pyautogui.click(x=x, y=y, clicks=clicks, button=btn)
+        log_action(f"Mouse clicked at ({x},{y}) {clicks}× {btn}")
+
+    # ─── KEYBOARD ────────────────────────────────────────────────────────────
+    elif src == "keyboard":
+        text = action.get("keyboard_ascii", "").strip()
+
+        # clamp repeat to ≥1
+        try:
+            repeat = int(action.get("keyboard_repeat", "") or 1)
+        except:
+            repeat = 1
+        if repeat < 1:
+            repeat = 1
+
+        if " + " in text:
+            parts = [k.strip() for k in text.split(" + ")]
+            modifiers, keys = [], []
+            for k in parts:
+                kl = k.lower()
+                if kl in ("shift","ctrl","alt","command","meta"):
+                    modifiers.append("command" if kl in ("command","meta") else kl)
+                else:
+                    keys.append(kl)
+
+            log_action(f"Key combo {text} ×{repeat}")
+            for _ in range(repeat):
+                for mod in modifiers:
+                    pyautogui.keyDown(mod)
+                for k in keys:
+                    pyautogui.press(k)
+                    time.sleep(0.2)
+                for mod in modifiers:
+                    pyautogui.keyUp(mod)
+
         else:
-             # For a single key, check if it's alphabetic.
-            key = text.strip()
-            # if key.isalpha() and len(key) == 1:
-            #     key = key.lower()
-            pyautogui.press(key)
-            log_action(f"Keyboard input: {text}")
+            key = text.lower()
+            log_action(f"Key press {key} ×{repeat}")
+            for _ in range(repeat):
+                pyautogui.press(key)
+
     else:
-        log_action("Input step: Unknown input source.")
+        log_action("Input step: Unknown input_from, skipping.")
 
-
+    # ─── SLEEP ────────────────────────────────────────────────────────────────
     try:
         sleep_after = float(action.get("input_sleep", "0") or 0)
-    except ValueError:
+    except:
         sleep_after = 0
     if sleep_after > 0:
         log_action(f"Waiting {sleep_after}s after input.")
         time.sleep(sleep_after)
+
 
 def process_image_step(step_config, step_number, tab_name):
     """

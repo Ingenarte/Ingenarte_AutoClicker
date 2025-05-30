@@ -4430,3 +4430,792 @@
 2025-05-30 | 16:09:05 | RUN: run_module.py executed successfully.
 2025-05-30 | 16:09:05 | RUN: Execution completed.
 2025-05-30 | 16:09:05 | Window restored.
+2025-05-30 | 16:11:56 | RUN: Starting execution.
+2025-05-30 | 16:11:56 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:11:56 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:11:57 | Loaded configuration from run.json
+2025-05-30 | 16:11:57 | RUN: Starting execution.
+2025-05-30 | 16:11:57 | RUN: Processing Tab 1
+2025-05-30 | 16:11:57 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:12:08 | ✅ Found on monitor 2 → logical=(-1581,429) size=(527×252)
+2025-05-30 | 16:12:08 | Moved mouse to (-1318,555)
+2025-05-30 | 16:12:09 | Clicked 1× left at (-1318,555)
+2025-05-30 | 16:12:09 | Sleeping 3.0s after click…
+2025-05-30 | 16:12:12 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:12:12 | ⚠️ No position specified – using current mouse position (-1318,555)
+2025-05-30 | 16:12:12 | Mouse clicked at (-1318, 555) 2× left
+2025-05-30 | 16:12:12 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:12:12 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:12:12 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:12:12 | Mouse clicked at (-1671, -28) 1× left
+2025-05-30 | 16:12:12 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:12:12 | ⚠️ No position specified – using current mouse position (-1671,-28)
+2025-05-30 | 16:12:12 | Mouse clicked at (-1671, -28) 3× left
+2025-05-30 | 16:12:12 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:12:12 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:12:12 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:12:12 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-30 | 16:12:13 | Keyboard combination pressed: command + v
+2025-05-30 | 16:12:13 | Waiting 1.0s after input.
+2025-05-30 | 16:12:14 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:12:14 | Keyboard input: Return
+2025-05-30 | 16:12:14 | Waiting 1.0s after input.
+2025-05-30 | 16:12:15 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:12:15 | Keyboard input: Down
+2025-05-30 | 16:12:15 | RUN: Execution completed.
+2025-05-30 | 16:12:15 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:12:15 | RUN: Execution completed.
+2025-05-30 | 16:12:15 | Window restored.
+2025-05-30 | 16:13:00 | RUN: Starting execution.
+2025-05-30 | 16:13:00 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:13:00 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:13:00 | Loaded configuration from run.json
+2025-05-30 | 16:13:00 | RUN: Starting execution.
+2025-05-30 | 16:13:00 | RUN: Processing Tab 1
+2025-05-30 | 16:13:00 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:13:33 | ⚠️ Image not found within timeout (0.0s) at confidence≥0.8
+2025-05-30 | 16:13:33 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:13:33 | ⚠️ No position specified – using current mouse position (1320,821)
+2025-05-30 | 16:13:33 | Mouse clicked at (1320, 821) 2× left
+2025-05-30 | 16:13:33 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:13:33 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:13:33 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:13:33 | Mouse clicked at (-1671, -28) 1× left
+2025-05-30 | 16:13:33 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:13:33 | ⚠️ No position specified – using current mouse position (-1671,-28)
+2025-05-30 | 16:13:33 | Mouse clicked at (-1671, -28) 3× left
+2025-05-30 | 16:13:33 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:13:33 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:13:33 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:13:33 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-30 | 16:13:34 | Keyboard combination pressed: command + v
+2025-05-30 | 16:13:34 | Waiting 1.0s after input.
+2025-05-30 | 16:13:35 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:13:35 | Keyboard input: Return
+2025-05-30 | 16:13:35 | Waiting 1.0s after input.
+2025-05-30 | 16:13:36 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:13:36 | Keyboard input: Down
+2025-05-30 | 16:13:36 | RUN: Execution completed.
+2025-05-30 | 16:13:36 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:13:36 | RUN: Execution completed.
+2025-05-30 | 16:13:36 | Window restored.
+2025-05-30 | 16:14:04 | RUN: Starting execution.
+2025-05-30 | 16:14:04 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:14:04 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:14:04 | Loaded configuration from run.json
+2025-05-30 | 16:14:04 | RUN: Starting execution.
+2025-05-30 | 16:14:04 | RUN: Processing Tab 1
+2025-05-30 | 16:14:04 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:14:15 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:14:15 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:14:15 | ⚠️ No position specified – using current mouse position (1059,779)
+2025-05-30 | 16:14:15 | Mouse clicked at (1059, 779) 2× left
+2025-05-30 | 16:14:15 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:14:15 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:14:15 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:14:15 | Mouse clicked at (-1671, -28) 1× left
+2025-05-30 | 16:14:15 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:14:15 | ⚠️ No position specified – using current mouse position (-1671,-28)
+2025-05-30 | 16:14:15 | Mouse clicked at (-1671, -28) 3× left
+2025-05-30 | 16:14:15 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:14:15 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:14:15 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:14:15 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-30 | 16:14:16 | Keyboard combination pressed: command + v
+2025-05-30 | 16:14:16 | Waiting 1.0s after input.
+2025-05-30 | 16:14:17 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:14:17 | Keyboard input: Return
+2025-05-30 | 16:14:17 | Waiting 1.0s after input.
+2025-05-30 | 16:14:18 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:14:18 | Keyboard input: Down
+2025-05-30 | 16:14:18 | RUN: Execution completed.
+2025-05-30 | 16:14:18 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:14:18 | RUN: Execution completed.
+2025-05-30 | 16:14:18 | Window restored.
+2025-05-30 | 16:14:27 | RUN: Starting execution.
+2025-05-30 | 16:14:27 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:14:27 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:14:27 | Loaded configuration from run.json
+2025-05-30 | 16:14:27 | RUN: Starting execution.
+2025-05-30 | 16:14:27 | RUN: Processing Tab 1
+2025-05-30 | 16:14:27 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:14:38 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:14:38 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:14:38 | ⚠️ No position specified – using current mouse position (1975,978)
+2025-05-30 | 16:14:38 | Mouse clicked at (1975, 978) 2× left
+2025-05-30 | 16:14:38 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:14:39 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:14:39 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:14:39 | Mouse clicked at (-1671, -28) 1× left
+2025-05-30 | 16:14:39 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:14:39 | ⚠️ No position specified – using current mouse position (-1671,-28)
+2025-05-30 | 16:14:39 | Mouse clicked at (-1671, -28) 3× left
+2025-05-30 | 16:14:39 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:14:39 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:14:39 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:14:39 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-30 | 16:14:39 | Keyboard combination pressed: command + v
+2025-05-30 | 16:14:39 | Waiting 1.0s after input.
+2025-05-30 | 16:14:40 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:14:40 | Keyboard input: Return
+2025-05-30 | 16:14:40 | Waiting 1.0s after input.
+2025-05-30 | 16:14:41 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:14:42 | Keyboard input: Down
+2025-05-30 | 16:14:42 | RUN: Execution completed.
+2025-05-30 | 16:14:42 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:14:42 | RUN: Execution completed.
+2025-05-30 | 16:14:42 | Window restored.
+2025-05-30 | 16:15:53 | RUN: Starting execution.
+2025-05-30 | 16:15:53 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:15:53 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:15:53 | Loaded configuration from run.json
+2025-05-30 | 16:15:53 | RUN: Starting execution.
+2025-05-30 | 16:15:53 | RUN: Processing Tab 1
+2025-05-30 | 16:15:53 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:16:05 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:16:05 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:16:05 | ⚠️ No position specified – using current mouse position (1115,762)
+2025-05-30 | 16:16:05 | Mouse clicked at (1115, 762) 2× left
+2025-05-30 | 16:16:05 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:16:05 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:16:05 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:16:05 | Mouse clicked at (-1671, -28) 1× left
+2025-05-30 | 16:16:05 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '10', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:16:05 | ⚠️ No position specified – using current mouse position (-1671,-28)
+2025-05-30 | 16:16:05 | Mouse clicked at (-1671, -28) 3× left
+2025-05-30 | 16:16:05 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:16:05 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:16:05 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:16:05 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-30 | 16:16:06 | Keyboard combination pressed: command + v
+2025-05-30 | 16:16:06 | Waiting 1.0s after input.
+2025-05-30 | 16:16:07 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:16:07 | Keyboard input: Return
+2025-05-30 | 16:16:07 | Waiting 1.0s after input.
+2025-05-30 | 16:16:08 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:16:08 | Keyboard input: Down
+2025-05-30 | 16:16:08 | RUN: Execution completed.
+2025-05-30 | 16:16:08 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:16:08 | RUN: Execution completed.
+2025-05-30 | 16:16:08 | Window restored.
+2025-05-30 | 16:16:53 | RUN: Starting execution.
+2025-05-30 | 16:16:53 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:16:53 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:16:54 | Loaded configuration from run.json
+2025-05-30 | 16:16:54 | RUN: Starting execution.
+2025-05-30 | 16:16:54 | RUN: Processing Tab 1
+2025-05-30 | 16:16:54 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:17:04 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:17:04 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:17:04 | ⚠️ No position specified – using current mouse position (1126,768)
+2025-05-30 | 16:17:04 | Mouse clicked at (1126, 768) 2× left
+2025-05-30 | 16:17:04 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:17:04 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:17:04 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '9', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:17:05 | Mouse clicked at (-1671, -28) 1× left
+2025-05-30 | 16:17:05 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:17:05 | ⚠️ No position specified – using current mouse position (-1671,-28)
+2025-05-30 | 16:17:05 | Mouse clicked at (-1671, -28) 3× left
+2025-05-30 | 16:17:05 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:17:05 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:17:05 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:17:05 | Processing key combination: modifiers=['command'], keys=['v']
+2025-05-30 | 16:17:05 | Keyboard combination pressed: command + v
+2025-05-30 | 16:17:05 | Waiting 1.0s after input.
+2025-05-30 | 16:17:06 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:17:06 | Keyboard input: Return
+2025-05-30 | 16:17:06 | Waiting 1.0s after input.
+2025-05-30 | 16:17:07 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:17:07 | Keyboard input: Down
+2025-05-30 | 16:17:07 | RUN: Execution completed.
+2025-05-30 | 16:17:08 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:17:08 | RUN: Execution completed.
+2025-05-30 | 16:17:08 | Window restored.
+2025-05-30 | 16:21:17 | RUN: Starting execution.
+2025-05-30 | 16:21:17 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:21:17 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:21:18 | Loaded configuration from run.json
+2025-05-30 | 16:21:18 | RUN: Starting execution.
+2025-05-30 | 16:21:18 | RUN: Processing Tab 1
+2025-05-30 | 16:21:18 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:21:28 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:21:28 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:21:28 | ⚠️ No position specified – using current mouse (1045,778)
+2025-05-30 | 16:21:28 | Mouse clicked at (1045,778) 2× left
+2025-05-30 | 16:21:28 | Waiting 2.0s after input.
+2025-05-30 | 16:21:30 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:21:30 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:21:30 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '9', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:21:30 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:21:30 | Waiting 9.0s after input.
+2025-05-30 | 16:21:39 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:21:39 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:21:40 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:21:40 | Waiting 5.0s after input.
+2025-05-30 | 16:21:45 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:21:45 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:21:45 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:21:45 | Key combo Command + V ×0
+2025-05-30 | 16:21:45 | Waiting 1.0s after input.
+2025-05-30 | 16:21:46 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:21:46 | Key press return ×0
+2025-05-30 | 16:21:46 | Waiting 1.0s after input.
+2025-05-30 | 16:21:47 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:21:47 | Key press down ×10
+2025-05-30 | 16:21:48 | RUN: Execution completed.
+2025-05-30 | 16:21:48 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:21:48 | RUN: Execution completed.
+2025-05-30 | 16:21:48 | Window restored.
+2025-05-30 | 16:22:59 | RUN: Starting execution.
+2025-05-30 | 16:22:59 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:22:59 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:23:00 | Loaded configuration from run.json
+2025-05-30 | 16:23:00 | RUN: Starting execution.
+2025-05-30 | 16:23:00 | RUN: Processing Tab 1
+2025-05-30 | 16:23:00 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:23:10 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:23:10 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:23:10 | ⚠️ No position specified – using current mouse (1363,726)
+2025-05-30 | 16:23:10 | Mouse clicked at (1363,726) 2× left
+2025-05-30 | 16:23:10 | Waiting 2.0s after input.
+2025-05-30 | 16:23:12 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:23:13 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:23:13 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:23:13 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:23:13 | Waiting 4.0s after input.
+2025-05-30 | 16:23:17 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '50'}
+2025-05-30 | 16:23:17 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:23:17 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:23:17 | Waiting 5.0s after input.
+2025-05-30 | 16:23:22 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-30 | 16:23:22 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:23:22 | Executed select all command.
+2025-05-30 | 16:23:22 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:23:22 | Key combo Command + V ×0
+2025-05-30 | 16:23:22 | Waiting 1.0s after input.
+2025-05-30 | 16:23:23 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:23:23 | Key press return ×0
+2025-05-30 | 16:23:23 | Waiting 1.0s after input.
+2025-05-30 | 16:23:24 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:23:24 | Key press down ×10
+2025-05-30 | 16:23:25 | RUN: Execution completed.
+2025-05-30 | 16:23:25 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:23:25 | RUN: Execution completed.
+2025-05-30 | 16:23:25 | Window restored.
+2025-05-30 | 16:24:36 | RUN: Starting execution.
+2025-05-30 | 16:24:36 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:24:36 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:24:36 | Loaded configuration from run.json
+2025-05-30 | 16:24:36 | RUN: Starting execution.
+2025-05-30 | 16:24:36 | RUN: Processing Tab 1
+2025-05-30 | 16:24:36 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:24:47 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:24:47 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:24:47 | ⚠️ No position specified – using current mouse (1919,1048)
+2025-05-30 | 16:24:47 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:24:47 | Mouse clicked at (1919,1048) 2× left
+2025-05-30 | 16:24:47 | Waiting 2.0s after input.
+2025-05-30 | 16:24:49 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:24:49 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:24:49 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:24:49 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:24:49 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:24:49 | Waiting 4.0s after input.
+2025-05-30 | 16:24:53 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '50'}
+2025-05-30 | 16:24:53 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:24:53 | ⚠️ Invalid mouse_movement '50' – skipping offset
+2025-05-30 | 16:24:53 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:24:53 | Waiting 5.0s after input.
+2025-05-30 | 16:24:58 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-30 | 16:24:58 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:24:58 | Executed select all command.
+2025-05-30 | 16:24:58 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:24:58 | Key combo Command + V ×1
+2025-05-30 | 16:24:59 | Waiting 1.0s after input.
+2025-05-30 | 16:25:00 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:25:00 | Key press return ×1
+2025-05-30 | 16:25:00 | Waiting 1.0s after input.
+2025-05-30 | 16:25:01 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:25:01 | Key press down ×10
+2025-05-30 | 16:25:02 | RUN: Execution completed.
+2025-05-30 | 16:25:02 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:25:02 | RUN: Execution completed.
+2025-05-30 | 16:25:02 | Window restored.
+2025-05-30 | 16:25:16 | RUN: Starting execution.
+2025-05-30 | 16:25:16 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:25:16 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:25:17 | Loaded configuration from run.json
+2025-05-30 | 16:25:17 | RUN: Starting execution.
+2025-05-30 | 16:25:17 | RUN: Processing Tab 1
+2025-05-30 | 16:25:17 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:25:27 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:25:27 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:25:27 | ⚠️ No position specified – using current mouse (1172,767)
+2025-05-30 | 16:25:27 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:25:27 | Mouse clicked at (1172,767) 2× left
+2025-05-30 | 16:25:27 | Waiting 2.0s after input.
+2025-05-30 | 16:25:29 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:25:29 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:25:29 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:25:29 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:25:30 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:25:30 | Waiting 4.0s after input.
+2025-05-30 | 16:25:34 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '50'}
+2025-05-30 | 16:25:34 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:25:34 | ⚠️ Invalid mouse_movement '50' – skipping offset
+2025-05-30 | 16:25:34 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:25:34 | Waiting 5.0s after input.
+2025-05-30 | 16:25:39 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-30 | 16:25:39 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:25:39 | Executed select all command.
+2025-05-30 | 16:25:39 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:25:39 | Key combo Command + V ×1
+2025-05-30 | 16:25:39 | Waiting 1.0s after input.
+2025-05-30 | 16:25:40 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '7', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:25:40 | Key press return ×1
+2025-05-30 | 16:25:40 | Waiting 7.0s after input.
+2025-05-30 | 16:25:47 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:25:47 | Key press down ×10
+2025-05-30 | 16:25:49 | RUN: Execution completed.
+2025-05-30 | 16:25:49 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:25:49 | RUN: Execution completed.
+2025-05-30 | 16:25:49 | Window restored.
+2025-05-30 | 16:26:17 | RUN: Starting execution.
+2025-05-30 | 16:26:17 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:26:17 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:26:17 | Loaded configuration from run.json
+2025-05-30 | 16:26:17 | RUN: Starting execution.
+2025-05-30 | 16:26:17 | RUN: Processing Tab 1
+2025-05-30 | 16:26:17 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:26:28 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:26:28 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:26:28 | ⚠️ No position specified – using current mouse (1116,770)
+2025-05-30 | 16:26:28 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:26:28 | Mouse clicked at (1116,770) 2× left
+2025-05-30 | 16:26:28 | Waiting 2.0s after input.
+2025-05-30 | 16:26:30 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:26:30 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:26:30 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:26:30 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:26:30 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:26:30 | Waiting 4.0s after input.
+2025-05-30 | 16:26:34 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '50'}
+2025-05-30 | 16:26:34 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:26:34 | ⚠️ Invalid mouse_movement '50' – skipping offset
+2025-05-30 | 16:26:34 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:26:34 | Waiting 5.0s after input.
+2025-05-30 | 16:26:39 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-30 | 16:26:39 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:26:40 | Executed select all command.
+2025-05-30 | 16:26:40 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:26:40 | Key combo Command + V ×1
+2025-05-30 | 16:26:40 | Waiting 1.0s after input.
+2025-05-30 | 16:26:41 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '7', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:26:41 | Key press return ×1
+2025-05-30 | 16:26:41 | Waiting 7.0s after input.
+2025-05-30 | 16:26:48 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:26:48 | Key press down ×10
+2025-05-30 | 16:26:49 | [Tab Tab 1 | Step 9] Processing position: -1026x508
+2025-05-30 | 16:26:50 | Moved mouse to (-1026, 508).
+2025-05-30 | 16:26:50 | [Tab Tab 1 | Step 9] Processing input: {'input_from': 'Mouse', 'input_sleep': '6', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:26:50 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:26:50 | Mouse clicked at (-1026,508) 2× left
+2025-05-30 | 16:26:50 | Waiting 6.0s after input.
+2025-05-30 | 16:26:56 | RUN: Execution completed.
+2025-05-30 | 16:26:56 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:26:56 | RUN: Execution completed.
+2025-05-30 | 16:26:56 | Window restored.
+2025-05-30 | 16:27:41 | RUN: Starting execution.
+2025-05-30 | 16:27:41 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:27:41 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:27:41 | Loaded configuration from run.json
+2025-05-30 | 16:27:41 | RUN: Starting execution.
+2025-05-30 | 16:27:41 | RUN: Processing Tab 1
+2025-05-30 | 16:27:41 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:27:53 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:27:53 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:27:53 | ⚠️ No position specified – using current mouse (1121,775)
+2025-05-30 | 16:27:53 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:27:53 | Mouse clicked at (1121,775) 2× left
+2025-05-30 | 16:27:53 | Waiting 2.0s after input.
+2025-05-30 | 16:27:55 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:27:55 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:27:55 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:27:55 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:27:55 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:27:55 | Waiting 4.0s after input.
+2025-05-30 | 16:27:59 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '50'}
+2025-05-30 | 16:27:59 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:27:59 | ⚠️ Invalid mouse_movement '50' – skipping offset
+2025-05-30 | 16:27:59 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:27:59 | Waiting 5.0s after input.
+2025-05-30 | 16:28:04 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-30 | 16:28:04 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:28:04 | Executed select all command.
+2025-05-30 | 16:28:04 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:28:04 | Key combo Command + V ×1
+2025-05-30 | 16:28:05 | Waiting 1.0s after input.
+2025-05-30 | 16:28:06 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '7', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:28:06 | Key press return ×1
+2025-05-30 | 16:28:06 | Waiting 7.0s after input.
+2025-05-30 | 16:28:13 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:28:13 | Key press down ×10
+2025-05-30 | 16:28:14 | [Tab Tab 1 | Step 9] Processing position: -1026x508
+2025-05-30 | 16:28:14 | Moved mouse to (-1026, 508).
+2025-05-30 | 16:28:14 | [Tab Tab 1 | Step 9] Processing input: {'input_from': 'Mouse', 'input_sleep': '6', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:28:14 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:28:15 | Mouse clicked at (-1026,508) 2× left
+2025-05-30 | 16:28:15 | Waiting 6.0s after input.
+2025-05-30 | 16:28:21 | [Tab Tab 1 | Step 10] IMAGE → {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.27.18\u202fpm.png', 'image_sleep': '2', 'image_timeout': '2', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-05-30 | 16:28:30 | ⚠️ Image not found within timeout (2.0s) at confidence≥0.9
+2025-05-30 | 16:28:30 | RUN: Execution completed.
+2025-05-30 | 16:28:30 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:28:30 | RUN: Execution completed.
+2025-05-30 | 16:28:30 | Window restored.
+2025-05-30 | 16:28:48 | RUN: Starting execution.
+2025-05-30 | 16:28:48 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:28:48 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:28:49 | Loaded configuration from run.json
+2025-05-30 | 16:28:49 | RUN: Starting execution.
+2025-05-30 | 16:28:49 | RUN: Processing Tab 1
+2025-05-30 | 16:28:49 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:28:59 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:28:59 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:28:59 | ⚠️ No position specified – using current mouse (1118,779)
+2025-05-30 | 16:28:59 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:28:59 | Mouse clicked at (1118,779) 2× left
+2025-05-30 | 16:28:59 | Waiting 2.0s after input.
+2025-05-30 | 16:29:01 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:29:02 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:29:02 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:29:02 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:29:02 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:29:02 | Waiting 4.0s after input.
+2025-05-30 | 16:29:06 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '50'}
+2025-05-30 | 16:29:06 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:29:06 | ⚠️ Invalid mouse_movement '50' – skipping offset
+2025-05-30 | 16:29:06 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:29:06 | Waiting 5.0s after input.
+2025-05-30 | 16:29:11 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-30 | 16:29:11 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:29:11 | Executed select all command.
+2025-05-30 | 16:29:11 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:29:11 | Key combo Command + V ×1
+2025-05-30 | 16:29:12 | Waiting 1.0s after input.
+2025-05-30 | 16:29:13 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '7', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:29:13 | Key press return ×1
+2025-05-30 | 16:29:13 | Waiting 7.0s after input.
+2025-05-30 | 16:29:20 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:29:20 | Key press down ×10
+2025-05-30 | 16:29:21 | [Tab Tab 1 | Step 9] Processing position: -1026x508
+2025-05-30 | 16:29:21 | Moved mouse to (-1026, 508).
+2025-05-30 | 16:29:21 | [Tab Tab 1 | Step 9] Processing input: {'input_from': 'Mouse', 'input_sleep': '6', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:29:21 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:29:21 | Mouse clicked at (-1026,508) 2× left
+2025-05-30 | 16:29:21 | Waiting 6.0s after input.
+2025-05-30 | 16:29:27 | [Tab Tab 1 | Step 10] IMAGE → {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.27.18\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-05-30 | 16:29:38 | ✅ Found on monitor 2 → logical=(-1470,685) size=(613×282)
+2025-05-30 | 16:29:38 | Waiting 2.0s before click…
+2025-05-30 | 16:29:40 | Moved mouse to (-1164,826)
+2025-05-30 | 16:29:40 | ❎ image_click flag is False — no click performed.
+2025-05-30 | 16:29:40 | Sleeping 2.0s after click…
+2025-05-30 | 16:29:42 | RUN: Execution completed.
+2025-05-30 | 16:29:42 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:29:42 | RUN: Execution completed.
+2025-05-30 | 16:29:42 | Window restored.
+2025-05-30 | 16:30:09 | RUN: Starting execution.
+2025-05-30 | 16:30:09 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:30:09 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:30:10 | Loaded configuration from run.json
+2025-05-30 | 16:30:10 | RUN: Starting execution.
+2025-05-30 | 16:30:10 | RUN: Processing Tab 1
+2025-05-30 | 16:30:10 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:30:20 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:30:20 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:30:20 | ⚠️ No position specified – using current mouse (1121,766)
+2025-05-30 | 16:30:20 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:30:21 | Mouse clicked at (1121,766) 2× left
+2025-05-30 | 16:30:21 | Waiting 2.0s after input.
+2025-05-30 | 16:30:23 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:30:23 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:30:23 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:30:23 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:30:23 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:30:23 | Waiting 4.0s after input.
+2025-05-30 | 16:30:27 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '50'}
+2025-05-30 | 16:30:27 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:30:27 | ⚠️ Invalid mouse_movement '50' – skipping offset
+2025-05-30 | 16:30:27 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:30:27 | Waiting 5.0s after input.
+2025-05-30 | 16:30:32 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-30 | 16:30:32 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:30:32 | Executed select all command.
+2025-05-30 | 16:30:32 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:30:32 | Key combo Command + V ×1
+2025-05-30 | 16:30:33 | Waiting 1.0s after input.
+2025-05-30 | 16:30:34 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '7', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:30:34 | Key press return ×1
+2025-05-30 | 16:30:34 | Waiting 7.0s after input.
+2025-05-30 | 16:30:41 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:30:41 | Key press down ×10
+2025-05-30 | 16:30:42 | [Tab Tab 1 | Step 9] Processing position: -1026x508
+2025-05-30 | 16:30:42 | Moved mouse to (-1026, 508).
+2025-05-30 | 16:30:42 | [Tab Tab 1 | Step 9] Processing input: {'input_from': 'Mouse', 'input_sleep': '6', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:30:42 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:30:42 | Mouse clicked at (-1026,508) 2× left
+2025-05-30 | 16:30:42 | Waiting 6.0s after input.
+2025-05-30 | 16:30:48 | [Tab Tab 1 | Step 10] IMAGE → {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.27.18\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-05-30 | 16:31:00 | ✅ Found on monitor 2 → logical=(-1470,685) size=(613×282)
+2025-05-30 | 16:31:00 | Waiting 2.0s before click…
+2025-05-30 | 16:31:02 | Moved mouse to (-1164,826)
+2025-05-30 | 16:31:02 | ❎ image_click flag is False — no click performed.
+2025-05-30 | 16:31:02 | Sleeping 2.0s after click…
+2025-05-30 | 16:31:04 | RUN: Processing Tab 2
+2025-05-30 | 16:31:04 | [Tab Tab 2 | Step 11] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Right', 'mouse_movement': '0'}
+2025-05-30 | 16:31:04 | ⚠️ No position specified – using current mouse (-1164,826)
+2025-05-30 | 16:31:04 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:31:04 | Mouse clicked at (-1164,826) 1× right
+2025-05-30 | 16:31:04 | RUN: Execution completed.
+2025-05-30 | 16:31:04 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:31:04 | RUN: Execution completed.
+2025-05-30 | 16:31:04 | Window restored.
+2025-05-30 | 16:31:23 | RUN: Starting execution.
+2025-05-30 | 16:31:23 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:31:23 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:31:23 | Loaded configuration from run.json
+2025-05-30 | 16:31:23 | RUN: Starting execution.
+2025-05-30 | 16:31:23 | RUN: Processing Tab 1
+2025-05-30 | 16:31:23 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:31:34 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:31:34 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:31:34 | ⚠️ No position specified – using current mouse (1118,775)
+2025-05-30 | 16:31:34 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:31:34 | Mouse clicked at (1118,775) 2× left
+2025-05-30 | 16:31:34 | Waiting 2.0s after input.
+2025-05-30 | 16:31:36 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:31:36 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:31:36 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:31:36 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:31:37 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:31:37 | Waiting 4.0s after input.
+2025-05-30 | 16:31:41 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '50'}
+2025-05-30 | 16:31:41 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:31:41 | ⚠️ Invalid mouse_movement '50' – skipping offset
+2025-05-30 | 16:31:41 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:31:41 | Waiting 5.0s after input.
+2025-05-30 | 16:31:46 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-30 | 16:31:46 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:31:46 | Executed select all command.
+2025-05-30 | 16:31:46 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:31:46 | Key combo Command + V ×1
+2025-05-30 | 16:31:46 | Waiting 1.0s after input.
+2025-05-30 | 16:31:47 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '7', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:31:47 | Key press return ×1
+2025-05-30 | 16:31:47 | Waiting 7.0s after input.
+2025-05-30 | 16:31:54 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:31:54 | Key press down ×10
+2025-05-30 | 16:31:56 | [Tab Tab 1 | Step 9] Processing position: -1026x508
+2025-05-30 | 16:31:56 | Moved mouse to (-1026, 508).
+2025-05-30 | 16:31:56 | [Tab Tab 1 | Step 9] Processing input: {'input_from': 'Mouse', 'input_sleep': '6', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:31:56 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:31:56 | Mouse clicked at (-1026,508) 2× left
+2025-05-30 | 16:31:56 | Waiting 6.0s after input.
+2025-05-30 | 16:32:02 | [Tab Tab 1 | Step 10] IMAGE → {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.27.18\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-05-30 | 16:32:32 | ⚠️ Image not found within timeout (0.0s) at confidence≥0.9
+2025-05-30 | 16:32:32 | RUN: Processing Tab 2
+2025-05-30 | 16:32:32 | [Tab Tab 2 | Step 11] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:32:32 | ⚠️ No position specified – using current mouse (-1026,508)
+2025-05-30 | 16:32:32 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:32:32 | Mouse clicked at (-1026,508) 2× left
+2025-05-30 | 16:32:32 | RUN: Execution completed.
+2025-05-30 | 16:32:32 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:32:32 | RUN: Execution completed.
+2025-05-30 | 16:32:32 | Window restored.
+2025-05-30 | 16:32:40 | RUN: Starting execution.
+2025-05-30 | 16:32:40 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:32:40 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:32:41 | Loaded configuration from run.json
+2025-05-30 | 16:32:41 | RUN: Starting execution.
+2025-05-30 | 16:32:41 | RUN: Processing Tab 1
+2025-05-30 | 16:32:41 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:32:52 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:32:52 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:32:52 | ⚠️ No position specified – using current mouse (1084,765)
+2025-05-30 | 16:32:52 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:32:52 | Mouse clicked at (1084,765) 2× left
+2025-05-30 | 16:32:52 | Waiting 2.0s after input.
+2025-05-30 | 16:32:54 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:32:55 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:32:55 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:32:55 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:32:55 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:32:55 | Waiting 4.0s after input.
+2025-05-30 | 16:32:59 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '50'}
+2025-05-30 | 16:32:59 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:32:59 | ⚠️ Invalid mouse_movement '50' – skipping offset
+2025-05-30 | 16:32:59 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:32:59 | Waiting 5.0s after input.
+2025-05-30 | 16:33:04 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-30 | 16:33:04 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:33:04 | Executed select all command.
+2025-05-30 | 16:33:04 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:33:04 | Key combo Command + V ×1
+2025-05-30 | 16:33:05 | Waiting 1.0s after input.
+2025-05-30 | 16:33:06 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '7', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:33:06 | Key press return ×1
+2025-05-30 | 16:33:06 | Waiting 7.0s after input.
+2025-05-30 | 16:33:13 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:33:13 | Key press down ×10
+2025-05-30 | 16:33:14 | [Tab Tab 1 | Step 9] Processing position: -1026x508
+2025-05-30 | 16:33:14 | Moved mouse to (-1026, 508).
+2025-05-30 | 16:33:14 | [Tab Tab 1 | Step 9] Processing input: {'input_from': 'Mouse', 'input_sleep': '6', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:33:14 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:33:14 | Mouse clicked at (-1026,508) 2× left
+2025-05-30 | 16:33:14 | Waiting 6.0s after input.
+2025-05-30 | 16:33:20 | [Tab Tab 1 | Step 10] IMAGE → {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.27.18\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-05-30 | 16:33:31 | ✅ Found on monitor 2 → logical=(-1470,685) size=(613×282)
+2025-05-30 | 16:33:31 | Waiting 2.0s before click…
+2025-05-30 | 16:33:33 | Moved mouse to (-1164,826)
+2025-05-30 | 16:33:33 | ❎ image_click flag is False — no click performed.
+2025-05-30 | 16:33:33 | Sleeping 2.0s after click…
+2025-05-30 | 16:33:35 | RUN: Processing Tab 2
+2025-05-30 | 16:33:35 | [Tab Tab 2 | Step 11] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:33:35 | ⚠️ No position specified – using current mouse (-1164,826)
+2025-05-30 | 16:33:35 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:33:35 | Mouse clicked at (-1164,826) 2× left
+2025-05-30 | 16:33:35 | RUN: Execution completed.
+2025-05-30 | 16:33:36 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:33:36 | RUN: Execution completed.
+2025-05-30 | 16:33:36 | Window restored.
+2025-05-30 | 16:34:00 | RUN: Starting execution.
+2025-05-30 | 16:34:00 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:34:00 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:34:01 | Loaded configuration from run.json
+2025-05-30 | 16:34:01 | RUN: Starting execution.
+2025-05-30 | 16:34:01 | RUN: Processing Tab 1
+2025-05-30 | 16:34:01 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '5', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:34:12 | ⚠️ Image not found within timeout (5.0s) at confidence≥0.8
+2025-05-30 | 16:34:12 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:34:12 | ⚠️ No position specified – using current mouse (1125,767)
+2025-05-30 | 16:34:12 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:34:12 | Mouse clicked at (1125,767) 2× left
+2025-05-30 | 16:34:12 | Waiting 2.0s after input.
+2025-05-30 | 16:34:14 | [Tab Tab 1 | Step 3] Processing position: -1671x-28
+2025-05-30 | 16:34:14 | Moved mouse to (-1671, -28).
+2025-05-30 | 16:34:14 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '4', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:34:14 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:34:14 | Mouse clicked at (-1671,-28) 1× left
+2025-05-30 | 16:34:14 | Waiting 4.0s after input.
+2025-05-30 | 16:34:18 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Mouse', 'input_sleep': '5', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '50'}
+2025-05-30 | 16:34:18 | ⚠️ No position specified – using current mouse (-1671,-28)
+2025-05-30 | 16:34:18 | ⚠️ Invalid mouse_movement '50' – skipping offset
+2025-05-30 | 16:34:18 | Mouse clicked at (-1671,-28) 3× left
+2025-05-30 | 16:34:18 | Waiting 5.0s after input.
+2025-05-30 | 16:34:23 | [Tab Tab 1 | Step 5] Processing data: {'data_cell': 'A1', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': True}
+2025-05-30 | 16:34:23 | Copied value 'www.yahoo.com.ar' from cell A1 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:34:24 | Executed select all command.
+2025-05-30 | 16:34:24 | [Tab Tab 1 | Step 6] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:34:24 | Key combo Command + V ×1
+2025-05-30 | 16:34:24 | Waiting 1.0s after input.
+2025-05-30 | 16:34:25 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '7', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:34:25 | Key press return ×1
+2025-05-30 | 16:34:25 | Waiting 7.0s after input.
+2025-05-30 | 16:34:32 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Down', 'keyboard_repeat': '10', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:34:32 | Key press down ×10
+2025-05-30 | 16:34:33 | [Tab Tab 1 | Step 9] Processing position: -1026x508
+2025-05-30 | 16:34:34 | Moved mouse to (-1026, 508).
+2025-05-30 | 16:34:34 | [Tab Tab 1 | Step 9] Processing input: {'input_from': 'Mouse', 'input_sleep': '6', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:34:34 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:34:34 | Mouse clicked at (-1026,508) 2× left
+2025-05-30 | 16:34:34 | Waiting 6.0s after input.
+2025-05-30 | 16:34:40 | [Tab Tab 1 | Step 10] IMAGE → {'image_click': False, 'image_click_LR': 'Right', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.27.18\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-05-30 | 16:34:51 | ✅ Found on monitor 2 → logical=(-1470,685) size=(613×282)
+2025-05-30 | 16:34:51 | Waiting 2.0s before click…
+2025-05-30 | 16:34:53 | Moved mouse to (-1164,826)
+2025-05-30 | 16:34:53 | ❎ image_click flag is False — no click performed.
+2025-05-30 | 16:34:53 | Sleeping 2.0s after click…
+2025-05-30 | 16:34:55 | RUN: Processing Tab 2
+2025-05-30 | 16:34:55 | [Tab Tab 2 | Step 11] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:34:55 | ⚠️ No position specified – using current mouse (-1164,826)
+2025-05-30 | 16:34:55 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:34:55 | Mouse clicked at (-1164,826) 1× left
+2025-05-30 | 16:34:55 | Waiting 2.0s after input.
+2025-05-30 | 16:34:57 | [Tab Tab 2 | Step 12] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:34:57 | ⚠️ No position specified – using current mouse (-1164,826)
+2025-05-30 | 16:34:57 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-30 | 16:34:57 | Mouse clicked at (-1164,826) 1× left
+2025-05-30 | 16:34:57 | Waiting 1.0s after input.
+2025-05-30 | 16:34:58 | RUN: Execution completed.
+2025-05-30 | 16:34:58 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:34:58 | RUN: Execution completed.
+2025-05-30 | 16:34:58 | Window restored.
+2025-05-30 | 16:46:18 | All steps cleared.
+2025-05-30 | 16:46:46 | RUN: Starting execution.
+2025-05-30 | 16:46:46 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:46:46 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:46:46 | Loaded configuration from run.json
+2025-05-30 | 16:46:46 | RUN: Starting execution.
+2025-05-30 | 16:46:46 | RUN: Processing Tab 1
+2025-05-30 | 16:46:46 | [Tab Tab 1 | Step 1] Processing position: -1364x355
+2025-05-30 | 16:46:47 | Moved mouse to (-1364, 355).
+2025-05-30 | 16:46:47 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:46:47 | Moved by offset (0,0) → (-1364,355)
+2025-05-30 | 16:46:47 | Mouse clicked at (-1364,355) 1× left
+2025-05-30 | 16:46:47 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Right', 'mouse_movement': '1000'}
+2025-05-30 | 16:46:47 | ⚠️ No position specified – using current mouse (-1364,355)
+2025-05-30 | 16:46:47 | Moved by offset (1000,0) → (-364,355)
+2025-05-30 | 16:46:47 | Mouse clicked at (-364,355) 1× right
+2025-05-30 | 16:46:47 | RUN: Execution completed.
+2025-05-30 | 16:46:47 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:46:47 | RUN: Execution completed.
+2025-05-30 | 16:46:47 | Window restored.
+2025-05-30 | 16:47:07 | RUN: Starting execution.
+2025-05-30 | 16:47:07 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:47:07 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:47:08 | Loaded configuration from run.json
+2025-05-30 | 16:47:08 | RUN: Starting execution.
+2025-05-30 | 16:47:08 | RUN: Processing Tab 1
+2025-05-30 | 16:47:08 | [Tab Tab 1 | Step 1] Processing position: -1364x355
+2025-05-30 | 16:47:08 | Moved mouse to (-1364, 355).
+2025-05-30 | 16:47:08 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:47:08 | Moved by offset (0,0) → (-1364,355)
+2025-05-30 | 16:47:08 | Mouse clicked at (-1364,355) 1× left
+2025-05-30 | 16:47:08 | Waiting 1.0s after input.
+2025-05-30 | 16:47:09 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Right', 'mouse_movement': '1000'}
+2025-05-30 | 16:47:09 | ⚠️ No position specified – using current mouse (-1364,355)
+2025-05-30 | 16:47:09 | Moved by offset (1000,0) → (-364,355)
+2025-05-30 | 16:47:09 | Mouse clicked at (-364,355) 1× right
+2025-05-30 | 16:47:09 | Waiting 1.0s after input.
+2025-05-30 | 16:47:10 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '-500'}
+2025-05-30 | 16:47:10 | ⚠️ No position specified – using current mouse (-364,355)
+2025-05-30 | 16:47:10 | Moved by offset (-500,0) → (-864,355)
+2025-05-30 | 16:47:10 | Mouse clicked at (-864,355) 1× left
+2025-05-30 | 16:47:10 | RUN: Execution completed.
+2025-05-30 | 16:47:10 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:47:10 | RUN: Execution completed.
+2025-05-30 | 16:47:10 | Window restored.
+2025-05-30 | 16:47:17 | RUN: Starting execution.
+2025-05-30 | 16:47:17 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:47:17 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:47:18 | Loaded configuration from run.json
+2025-05-30 | 16:47:18 | RUN: Starting execution.
+2025-05-30 | 16:47:18 | RUN: Processing Tab 1
+2025-05-30 | 16:47:18 | [Tab Tab 1 | Step 1] Processing position: -1364x355
+2025-05-30 | 16:47:18 | Moved mouse to (-1364, 355).
+2025-05-30 | 16:47:18 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:47:18 | Moved by offset (0,0) → (-1364,355)
+2025-05-30 | 16:47:18 | Mouse clicked at (-1364,355) 1× left
+2025-05-30 | 16:47:18 | Waiting 1.0s after input.
+2025-05-30 | 16:47:19 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Right', 'mouse_movement': '1000'}
+2025-05-30 | 16:47:19 | ⚠️ No position specified – using current mouse (-1364,355)
+2025-05-30 | 16:47:19 | Moved by offset (1000,0) → (-364,355)
+2025-05-30 | 16:47:19 | Mouse clicked at (-364,355) 1× right
+2025-05-30 | 16:47:19 | Waiting 1.0s after input.
+2025-05-30 | 16:47:20 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Right', 'mouse_movement': '-500'}
+2025-05-30 | 16:47:20 | ⚠️ No position specified – using current mouse (-364,355)
+2025-05-30 | 16:47:20 | Moved by offset (-500,0) → (-864,355)
+2025-05-30 | 16:47:20 | Mouse clicked at (-864,355) 1× right
+2025-05-30 | 16:47:20 | RUN: Execution completed.
+2025-05-30 | 16:47:20 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:47:20 | RUN: Execution completed.
+2025-05-30 | 16:47:20 | Window restored.
