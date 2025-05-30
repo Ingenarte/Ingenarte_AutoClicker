@@ -131,6 +131,15 @@ def process_input_step(step_config, step_number, tab_name):
     else:
         log_action("Input step: Unknown input source.")
 
+
+    try:
+        sleep_after = float(action.get("input_sleep", "0") or 0)
+    except ValueError:
+        sleep_after = 0
+    if sleep_after > 0:
+        log_action(f"Waiting {sleep_after}s after input.")
+        time.sleep(sleep_after)
+
 def process_image_step(step_config, step_number, tab_name):
     # Save a screenshot for debugging purposes.
     screenshot = pyautogui.screenshot()

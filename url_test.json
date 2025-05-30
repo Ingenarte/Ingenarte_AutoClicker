@@ -53,7 +53,7 @@
             "step_5": {
                 "input": {
                     "input_from": "Keyboard",
-                    "input_sleep": "10",
+                    "input_sleep": "0",
                     "keyboard_ascii": "Return",
                     "keyboard_repeat": "0",
                     "mouse_click_qty": "",
