@@ -263,6 +263,11 @@ def input_callback(step_id, data):
     global_config["tab_n"][tab_key][step_key] = global_config["tab_n"][tab_key].get(step_key, {})
     global_config["tab_n"][tab_key][step_key]["input"] = data
     print("Configuration updated for", tab_key, step_key)
+
+    # if the modal payload still matches its defaults, do nothing
+    if not _input_is_populated(data):
+        return
+
     if tab_key in step_buttons and step_key in step_buttons[tab_key] and "input" in step_buttons[tab_key][step_key]:
         step_buttons[tab_key][step_key]["input"].configure(text="Input ✓", fg_color="green")
 
@@ -274,6 +279,11 @@ def image_callback(step_id, data):
     global_config["tab_n"][tab_key][step_key] = global_config["tab_n"][tab_key].get(step_key, {})
     global_config["tab_n"][tab_key][step_key]["image"] = data
     print("Image configuration updated for", tab_key, step_key)
+    
+    # if the modal payload still matches its defaults, do nothing
+    if not _image_is_populated(data):
+        return
+
     if tab_key in step_buttons and step_key in step_buttons[tab_key] and "image" in step_buttons[tab_key][step_key]:
         step_buttons[tab_key][step_key]["image"].configure(text="Image ✓", fg_color="green")
 
@@ -285,6 +295,11 @@ def data_callback(step_id, data):
     global_config["tab_n"][tab_key][step_key] = global_config["tab_n"][tab_key].get(step_key, {})
     global_config["tab_n"][tab_key][step_key]["data"] = data
     print("Data configuration updated for", tab_key, step_key)
+
+        # if the modal payload still matches its defaults, do nothing
+    if not _data_is_populated(data):
+        return
+    
     if tab_key in step_buttons and step_key in step_buttons[tab_key] and "data" in step_buttons[tab_key][step_key]:
         step_buttons[tab_key][step_key]["data"].configure(text="Data ✓", fg_color="green")
 
@@ -321,6 +336,49 @@ def clear_steps():
     global_config["tab_n"] = {}
     log_action("All steps cleared.")
     update_steps_view()
+
+
+# ─── Defaults for each modal ───────────────────────────────────────────────────
+_default_input = {
+    "input_from":    "Keyboard",
+    "keyboard_ascii": "Press the key or combination...",
+    "keyboard_repeat":"0",
+    "input_sleep":    "0",
+    "mouse_event":    "",
+    "mouse_click_qty":"",
+    "mouse_movement":""
+}
+
+_default_image = {
+    "image_click":      False,
+    "image_click_LR":   "Left",
+    "image_confidence": "1.00",
+    "image_path":       "",
+    "image_sleep":      "0",
+    "image_timeout":    "0",
+    "image_wait":       False,
+    "image_wait_sleep": "0"
+}
+
+_default_data = {
+    "data_cell":         "",
+    "data_copy_paste":   "Copy From",
+    "data_path":         "",
+    "data_select_all":   False
+}
+
+def _input_is_populated(data):
+    # True if _any_ value differs from our empty defaults
+    return any(data.get(k) != v for k, v in _default_input.items())
+
+def _image_is_populated(data):
+    return any(data.get(k) != v for k, v in _default_image.items())
+
+def _data_is_populated(data):
+    return any(data.get(k) != v for k, v in _default_data.items())
+
+
+
 
 def update_steps_view():
     global global_schedule_btn, global_repetition_btn 
