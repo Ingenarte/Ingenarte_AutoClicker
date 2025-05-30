@@ -5219,3 +5219,1048 @@
 2025-05-30 | 16:47:20 | RUN: run_module.py executed successfully.
 2025-05-30 | 16:47:20 | RUN: Execution completed.
 2025-05-30 | 16:47:20 | Window restored.
+2025-05-30 | 16:52:22 | RUN: Starting execution.
+2025-05-30 | 16:52:22 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:52:22 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:52:23 | Loaded configuration from run.json
+2025-05-30 | 16:52:23 | RUN: Starting execution.
+2025-05-30 | 16:52:23 | RUN: Processing Tab 1
+2025-05-30 | 16:52:23 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 16:52:23 | Moved mouse to (-1680, -22).
+2025-05-30 | 16:52:23 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:52:23 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 16:52:23 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 16:52:23 | Waiting 1.0s after input.
+2025-05-30 | 16:52:24 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '200'}
+2025-05-30 | 16:52:24 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 16:52:24 | Moved by offset (200,0) → (-1480,-22)
+2025-05-30 | 16:52:24 | Mouse clicked at (-1480,-22) 3× left
+2025-05-30 | 16:52:24 | Waiting 1.0s after input.
+2025-05-30 | 16:52:25 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Press the key or combination...', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:52:25 | Key press press the key or combination... ×1
+2025-05-30 | 16:52:25 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:52:25 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:52:25 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:52:25 | Key combo Command + V ×1
+2025-05-30 | 16:52:26 | Waiting 1.0s after input.
+2025-05-30 | 16:52:27 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Kp_enter', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:52:27 | Key press kp_enter ×1
+2025-05-30 | 16:52:27 | Waiting 5.0s after input.
+2025-05-30 | 16:52:32 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 16:52:39 | ✅ Found on monitor 2 → logical=(-999,499) size=(76×34)
+2025-05-30 | 16:52:39 | Waiting 1.0s before click…
+2025-05-30 | 16:52:40 | Moved mouse to (-961,516)
+2025-05-30 | 16:52:40 | Clicked 1× left at (-961,516)
+2025-05-30 | 16:52:40 | Sleeping 2.0s after click…
+2025-05-30 | 16:52:42 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 16:52:42 | Data step: Invalid or missing file path.
+2025-05-30 | 16:52:42 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '3', 'keyboard_ascii': 'Left', 'keyboard_repeat': '2', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:52:42 | Key press left ×2
+2025-05-30 | 16:52:42 | Waiting 3.0s after input.
+2025-05-30 | 16:52:45 | RUN: Execution completed.
+2025-05-30 | 16:52:45 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:52:45 | RUN: Execution completed.
+2025-05-30 | 16:52:45 | Window restored.
+2025-05-30 | 16:52:53 | RUN: Starting execution.
+2025-05-30 | 16:52:53 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:52:53 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:52:54 | Loaded configuration from run.json
+2025-05-30 | 16:52:54 | RUN: Starting execution.
+2025-05-30 | 16:52:54 | RUN: Processing Tab 1
+2025-05-30 | 16:52:54 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 16:52:54 | Moved mouse to (-1680, -22).
+2025-05-30 | 16:52:54 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:52:54 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 16:52:54 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 16:52:54 | Waiting 1.0s after input.
+2025-05-30 | 16:52:55 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '200'}
+2025-05-30 | 16:52:55 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 16:52:55 | Moved by offset (200,0) → (-1480,-22)
+2025-05-30 | 16:52:55 | Mouse clicked at (-1480,-22) 3× left
+2025-05-30 | 16:52:55 | Waiting 1.0s after input.
+2025-05-30 | 16:52:56 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Press the key or combination...', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:52:56 | Key press press the key or combination... ×1
+2025-05-30 | 16:52:57 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:52:57 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:52:57 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:52:57 | Key combo Command + V ×1
+2025-05-30 | 16:52:57 | Waiting 1.0s after input.
+2025-05-30 | 16:52:58 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Kp_enter', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:52:58 | Key press kp_enter ×1
+2025-05-30 | 16:52:58 | Waiting 5.0s after input.
+2025-05-30 | 16:53:03 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 16:53:29 | ⚠️ Image not found within timeout (0.0s) at confidence≥0.9
+2025-05-30 | 16:53:29 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 16:53:29 | Data step: Invalid or missing file path.
+2025-05-30 | 16:53:29 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '3', 'keyboard_ascii': 'Left', 'keyboard_repeat': '2', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:53:29 | Key press left ×2
+2025-05-30 | 16:53:29 | Waiting 3.0s after input.
+2025-05-30 | 16:53:32 | RUN: Execution completed.
+2025-05-30 | 16:53:32 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:53:32 | RUN: Execution completed.
+2025-05-30 | 16:53:32 | Window restored.
+2025-05-30 | 16:54:17 | RUN: Starting execution.
+2025-05-30 | 16:54:17 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:54:17 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:54:17 | Loaded configuration from run.json
+2025-05-30 | 16:54:17 | RUN: Starting execution.
+2025-05-30 | 16:54:17 | RUN: Processing Tab 1
+2025-05-30 | 16:54:17 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 16:54:18 | Moved mouse to (-1680, -22).
+2025-05-30 | 16:54:18 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:54:18 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 16:54:18 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 16:54:18 | Waiting 1.0s after input.
+2025-05-30 | 16:54:19 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '200'}
+2025-05-30 | 16:54:19 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 16:54:19 | Moved by offset (200,0) → (-1480,-22)
+2025-05-30 | 16:54:19 | Mouse clicked at (-1480,-22) 3× left
+2025-05-30 | 16:54:19 | Waiting 1.0s after input.
+2025-05-30 | 16:54:20 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:54:20 | ⚠️ No position specified – using current mouse (-1480,-22)
+2025-05-30 | 16:54:20 | Moved by offset (0,0) → (-1480,-22)
+2025-05-30 | 16:54:20 | Mouse clicked at (-1480,-22) 1× left
+2025-05-30 | 16:54:20 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:54:20 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:54:20 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:54:20 | Key combo Command + V ×1
+2025-05-30 | 16:54:21 | Waiting 1.0s after input.
+2025-05-30 | 16:54:22 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:54:22 | Key press return ×1
+2025-05-30 | 16:54:22 | Waiting 5.0s after input.
+2025-05-30 | 16:54:27 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 16:54:52 | ⚠️ Image not found within timeout (0.0s) at confidence≥0.9
+2025-05-30 | 16:54:52 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 16:54:52 | Data step: Invalid or missing file path.
+2025-05-30 | 16:54:52 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '3', 'keyboard_ascii': 'Left', 'keyboard_repeat': '2', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:54:52 | Key press left ×2
+2025-05-30 | 16:54:52 | Waiting 3.0s after input.
+2025-05-30 | 16:54:55 | RUN: Execution completed.
+2025-05-30 | 16:54:56 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:54:56 | RUN: Execution completed.
+2025-05-30 | 16:54:56 | Window restored.
+2025-05-30 | 16:56:17 | RUN: Starting execution.
+2025-05-30 | 16:56:17 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:56:17 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:56:18 | Loaded configuration from run.json
+2025-05-30 | 16:56:18 | RUN: Starting execution.
+2025-05-30 | 16:56:18 | RUN: Processing Tab 1
+2025-05-30 | 16:56:18 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 16:56:18 | Moved mouse to (-1680, -22).
+2025-05-30 | 16:56:18 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:56:18 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 16:56:18 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 16:56:18 | Waiting 1.0s after input.
+2025-05-30 | 16:56:19 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:56:19 | Key press space ×1
+2025-05-30 | 16:56:19 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:56:19 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 16:56:19 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 16:56:20 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 16:56:20 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:56:20 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:56:20 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:56:20 | Key combo Command + V ×1
+2025-05-30 | 16:56:20 | Waiting 1.0s after input.
+2025-05-30 | 16:56:21 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:56:21 | Key press return ×1
+2025-05-30 | 16:56:21 | Waiting 5.0s after input.
+2025-05-30 | 16:56:26 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 16:56:33 | ✅ Found on monitor 2 → logical=(-999,499) size=(76×34)
+2025-05-30 | 16:56:33 | Waiting 1.0s before click…
+2025-05-30 | 16:56:34 | Moved mouse to (-961,516)
+2025-05-30 | 16:56:34 | Clicked 1× left at (-961,516)
+2025-05-30 | 16:56:34 | Sleeping 2.0s after click…
+2025-05-30 | 16:56:36 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 16:56:36 | Data step: Invalid or missing file path.
+2025-05-30 | 16:56:36 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '3', 'keyboard_ascii': 'Left', 'keyboard_repeat': '2', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:56:36 | Key press left ×2
+2025-05-30 | 16:56:37 | Waiting 3.0s after input.
+2025-05-30 | 16:56:40 | RUN: Execution completed.
+2025-05-30 | 16:56:40 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:56:40 | RUN: Execution completed.
+2025-05-30 | 16:56:40 | Window restored.
+2025-05-30 | 16:56:51 | RUN: Starting execution.
+2025-05-30 | 16:56:51 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:56:51 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:56:52 | Loaded configuration from run.json
+2025-05-30 | 16:56:52 | RUN: Starting execution.
+2025-05-30 | 16:56:52 | RUN: Processing Tab 1
+2025-05-30 | 16:56:52 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 16:56:52 | Moved mouse to (-1680, -22).
+2025-05-30 | 16:56:52 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:56:52 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 16:56:52 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 16:56:52 | Waiting 1.0s after input.
+2025-05-30 | 16:56:53 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:56:53 | Key press space ×1
+2025-05-30 | 16:56:53 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:56:53 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 16:56:53 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 16:56:53 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 16:56:53 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 16:56:53 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 16:56:53 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:56:53 | Key combo Command + V ×1
+2025-05-30 | 16:56:54 | Waiting 1.0s after input.
+2025-05-30 | 16:56:55 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:56:55 | Key press return ×1
+2025-05-30 | 16:56:55 | Waiting 5.0s after input.
+2025-05-30 | 16:57:00 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 16:57:07 | ✅ Found on monitor 2 → logical=(-999,499) size=(76×34)
+2025-05-30 | 16:57:07 | Waiting 1.0s before click…
+2025-05-30 | 16:57:08 | Moved mouse to (-961,516)
+2025-05-30 | 16:57:08 | Clicked 1× left at (-961,516)
+2025-05-30 | 16:57:08 | Sleeping 2.0s after click…
+2025-05-30 | 16:57:10 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 16:57:10 | Data step: Invalid or missing file path.
+2025-05-30 | 16:57:10 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:57:10 | Key press left ×3
+2025-05-30 | 16:57:10 | Waiting 4.0s after input.
+2025-05-30 | 16:57:14 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 16:57:14 | Key press space ×1
+2025-05-30 | 16:57:14 | RUN: Execution completed.
+2025-05-30 | 16:57:14 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:57:14 | RUN: Execution completed.
+2025-05-30 | 16:57:14 | Window restored.
+2025-05-30 | 17:21:01 | RUN: Starting execution.
+2025-05-30 | 17:21:01 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:21:01 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 17:21:02 | Loaded configuration from run.json
+2025-05-30 | 17:21:02 | RUN: Starting execution.
+2025-05-30 | 17:21:02 | RUN: Processing Tab 1
+2025-05-30 | 17:21:02 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:21:02 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:21:02 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:21:02 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:21:02 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:21:02 | Waiting 1.0s after input.
+2025-05-30 | 17:21:03 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:21:03 | Key press space ×1
+2025-05-30 | 17:21:03 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:21:03 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:21:03 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:21:03 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:21:03 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:21:03 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:21:03 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:21:03 | Key combo Command + V ×1
+2025-05-30 | 17:21:04 | Waiting 1.0s after input.
+2025-05-30 | 17:21:05 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:21:05 | Key press return ×1
+2025-05-30 | 17:21:05 | Waiting 5.0s after input.
+2025-05-30 | 17:21:10 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:21:17 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:21:17 | Waiting 1.0s before click…
+2025-05-30 | 17:21:18 | Moved mouse to (-961,533)
+2025-05-30 | 17:21:18 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:21:18 | Sleeping 2.0s after click…
+2025-05-30 | 17:21:20 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:21:20 | Data step: Invalid or missing file path.
+2025-05-30 | 17:21:20 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:21:20 | Key press left ×3
+2025-05-30 | 17:21:21 | Waiting 4.0s after input.
+2025-05-30 | 17:21:25 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:21:25 | Key press space ×1
+2025-05-30 | 17:21:25 | RUN: Execution completed.
+2025-05-30 | 17:21:25 | RUN: run_module.py executed successfully.
+2025-05-30 | 17:21:25 | RUN: Execution completed.
+2025-05-30 | 17:21:25 | Window restored.
+2025-05-30 | 17:23:55 | RUN: Starting execution.
+2025-05-30 | 17:23:55 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:23:55 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 17:23:56 | Loaded configuration from run.json
+2025-05-30 | 17:23:56 | RUN: Starting execution.
+2025-05-30 | 17:23:56 | RUN: Processing Tab 1
+2025-05-30 | 17:23:56 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:23:56 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:23:56 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:23:56 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:23:56 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:23:56 | Waiting 1.0s after input.
+2025-05-30 | 17:23:57 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:23:57 | Key press space ×1
+2025-05-30 | 17:23:57 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:23:57 | ⚠️ No position specified – using current mouse (-1659,-27)
+2025-05-30 | 17:23:57 | Moved by offset (0,0) → (-1659,-27)
+2025-05-30 | 17:23:57 | Mouse clicked at (-1659,-27) 1× left
+2025-05-30 | 17:23:57 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:23:57 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:23:57 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:23:57 | Key combo Command + V ×1
+2025-05-30 | 17:23:58 | Waiting 1.0s after input.
+2025-05-30 | 17:23:59 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:23:59 | Key press return ×1
+2025-05-30 | 17:23:59 | Waiting 5.0s after input.
+2025-05-30 | 17:24:04 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:24:31 | ⚠️ Image not found within timeout (0.0s) at confidence≥0.9
+2025-05-30 | 17:24:31 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:24:31 | Data step: Invalid or missing file path.
+2025-05-30 | 17:24:31 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:24:31 | Key press left ×3
+2025-05-30 | 17:24:32 | Waiting 4.0s after input.
+2025-05-30 | 17:24:36 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:24:36 | Key press space ×1
+2025-05-30 | 17:24:36 | RUN: Execution completed.
+2025-05-30 | 17:24:36 | RUN: run_module.py executed successfully.
+2025-05-30 | 17:24:36 | RUN: Execution completed.
+2025-05-30 | 17:24:36 | Window restored.
+2025-05-30 | 17:26:18 | RUN: Starting execution.
+2025-05-30 | 17:26:18 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:26:18 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 17:26:19 | Loaded configuration from run.json
+2025-05-30 | 17:26:19 | RUN: Starting execution.
+2025-05-30 | 17:26:19 | RUN: Processing Tab 1
+2025-05-30 | 17:26:19 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:26:19 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:26:19 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:26:19 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:26:19 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:26:19 | Waiting 1.0s after input.
+2025-05-30 | 17:26:20 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:26:20 | Key press space ×1
+2025-05-30 | 17:26:20 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:26:20 | ⚠️ No position specified – using current mouse (-1387,71)
+2025-05-30 | 17:26:20 | Moved by offset (0,0) → (-1387,71)
+2025-05-30 | 17:26:20 | Mouse clicked at (-1387,71) 1× left
+2025-05-30 | 17:26:20 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:26:20 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:26:20 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:26:20 | Key combo Command + V ×1
+2025-05-30 | 17:26:21 | Waiting 1.0s after input.
+2025-05-30 | 17:26:22 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:26:22 | Key press return ×1
+2025-05-30 | 17:26:22 | Waiting 5.0s after input.
+2025-05-30 | 17:26:27 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:26:53 | RUN: Starting execution.
+2025-05-30 | 17:26:53 | 🚩 Cancelled by master hotkey before start — returning to UI
+2025-05-30 | 17:26:57 | RUN: Starting execution.
+2025-05-30 | 17:26:57 | 🚩 Cancelled by master hotkey before start — returning to UI
+2025-05-30 | 17:26:59 | RUN: Starting execution.
+2025-05-30 | 17:26:59 | 🚩 Cancelled by master hotkey before start — returning to UI
+2025-05-30 | 17:27:36 | RUN: Starting execution.
+2025-05-30 | 17:27:36 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:27:36 | RUN: Launching run_module.py…
+2025-05-30 | 17:27:36 | Loaded configuration from run.json
+2025-05-30 | 17:27:36 | RUN: Starting execution.
+2025-05-30 | 17:27:36 | RUN: Processing Tab 1
+2025-05-30 | 17:27:36 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 17:27:39 | 🚩 Cancelled by master hotkey — terminating run_module.py
+2025-05-30 | 17:28:19 | RUN: Starting execution.
+2025-05-30 | 17:28:19 | 🚩 Cancelled by master hotkey before start — returning to UI
+2025-05-30 | 17:28:22 | RUN: Starting execution.
+2025-05-30 | 17:28:22 | 🚩 Cancelled by master hotkey before start — returning to UI
+2025-05-30 | 17:28:23 | RUN: Starting execution.
+2025-05-30 | 17:28:23 | 🚩 Cancelled by master hotkey before start — returning to UI
+2025-05-30 | 17:29:27 | RUN: Starting execution.
+2025-05-30 | 17:29:27 | 🚩 Cancelled by master hotkey before start — returning to UI
+2025-05-30 | 17:29:28 | RUN: Starting execution.
+2025-05-30 | 17:29:28 | 🚩 Cancelled by master hotkey before start — returning to UI
+2025-05-30 | 17:29:28 | RUN: Starting execution.
+2025-05-30 | 17:29:28 | 🚩 Cancelled by master hotkey before start — returning to UI
+2025-05-30 | 17:29:43 | RUN: Starting execution.
+2025-05-30 | 17:29:43 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:29:43 | RUN: Launching run_module.py…
+2025-05-30 | 17:29:44 | Loaded configuration from run.json
+2025-05-30 | 17:29:44 | RUN: Starting execution.
+2025-05-30 | 17:29:44 | RUN: Processing Tab 1
+2025-05-30 | 17:29:44 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:29:44 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:29:44 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:29:44 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:29:44 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:29:44 | Waiting 1.0s after input.
+2025-05-30 | 17:29:45 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:29:45 | Key press space ×1
+2025-05-30 | 17:29:45 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:29:45 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:29:45 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:29:45 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:29:45 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:29:45 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:29:45 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:29:45 | Key combo Command + V ×1
+2025-05-30 | 17:29:46 | Waiting 1.0s after input.
+2025-05-30 | 17:29:47 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:29:47 | Key press return ×1
+2025-05-30 | 17:29:47 | Waiting 5.0s after input.
+2025-05-30 | 17:29:50 | 🚩 Cancelled by master hotkey — terminating run_module.py
+2025-05-30 | 17:29:52 | RUN: Starting execution.
+2025-05-30 | 17:29:52 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:29:52 | RUN: Launching run_module.py…
+2025-05-30 | 17:29:52 | Loaded configuration from run.json
+2025-05-30 | 17:29:52 | RUN: Starting execution.
+2025-05-30 | 17:29:52 | RUN: Processing Tab 1
+2025-05-30 | 17:29:52 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:29:52 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:29:52 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:29:52 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:29:53 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:29:53 | Waiting 1.0s after input.
+2025-05-30 | 17:29:54 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:29:54 | Key press space ×1
+2025-05-30 | 17:29:54 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:29:54 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:29:54 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:29:54 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:29:54 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:29:54 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:29:54 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:29:54 | Key combo Command + V ×1
+2025-05-30 | 17:29:54 | Waiting 1.0s after input.
+2025-05-30 | 17:29:55 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:29:55 | Key press return ×1
+2025-05-30 | 17:29:56 | Waiting 5.0s after input.
+2025-05-30 | 17:30:01 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:30:08 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:30:08 | Waiting 1.0s before click…
+2025-05-30 | 17:30:09 | Moved mouse to (-961,533)
+2025-05-30 | 17:30:09 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:30:09 | Sleeping 2.0s after click…
+2025-05-30 | 17:30:11 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:30:11 | Data step: Invalid or missing file path.
+2025-05-30 | 17:30:11 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:30:11 | Key press left ×3
+2025-05-30 | 17:30:11 | Waiting 4.0s after input.
+2025-05-30 | 17:30:15 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:30:15 | Key press space ×1
+2025-05-30 | 17:30:15 | RUN: Execution completed.
+2025-05-30 | 17:30:15 | RUN: run_module.py executed successfully.
+2025-05-30 | 17:30:15 | RUN: Execution completed.
+2025-05-30 | 17:30:15 | Window restored.
+2025-05-30 | 17:32:13 | RUN: Starting execution.
+2025-05-30 | 17:32:13 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:32:13 | RUN: Launching run_module.py …
+2025-05-30 | 17:32:13 | Loaded configuration from run.json
+2025-05-30 | 17:32:13 | RUN: Starting execution.
+2025-05-30 | 17:32:13 | RUN: Processing Tab 1
+2025-05-30 | 17:32:13 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:32:14 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:32:14 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:32:14 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:32:14 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:32:14 | Waiting 1.0s after input.
+2025-05-30 | 17:32:15 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:15 | Key press space ×1
+2025-05-30 | 17:32:15 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:32:15 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:32:15 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:32:15 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:32:15 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:32:15 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:32:15 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:15 | Key combo Command + V ×1
+2025-05-30 | 17:32:16 | Waiting 1.0s after input.
+2025-05-30 | 17:32:17 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:17 | Key press return ×1
+2025-05-30 | 17:32:17 | Waiting 5.0s after input.
+2025-05-30 | 17:32:22 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:32:28 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:32:28 | Waiting 1.0s before click…
+2025-05-30 | 17:32:30 | Moved mouse to (-961,533)
+2025-05-30 | 17:32:30 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:32:30 | Sleeping 2.0s after click…
+2025-05-30 | 17:32:32 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:32:32 | Data step: Invalid or missing file path.
+2025-05-30 | 17:32:32 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:32 | Key press left ×3
+2025-05-30 | 17:32:32 | Waiting 4.0s after input.
+2025-05-30 | 17:32:36 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:36 | Key press space ×1
+2025-05-30 | 17:32:36 | RUN: Execution completed.
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:13 | Loaded configuration from run.json
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:13 | RUN: Starting execution.
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:13 | RUN: Processing Tab 1
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:13 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:14 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:14 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:14 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:14 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:14 | Waiting 1.0s after input.
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:15 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:15 | Key press space ×1
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:15 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:15 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:15 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:15 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:15 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:15 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:15 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:15 | Key combo Command + V ×1
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:16 | Waiting 1.0s after input.
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:17 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:17 | Key press return ×1
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:17 | Waiting 5.0s after input.
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:22 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:22 | 🔍 Starting search | base_conf=0.90 timeout=∞s monitors=5
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:22 | 🔍 Looking in monitor 1 bounds=(0,0)..(1496,967)
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:22 | [attempt 01] conf≥0.95 sc=1.00 → 0.611
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:22 | [attempt 02] conf≥0.95 sc=0.90 → 0.586
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:23 | [attempt 03] conf≥0.95 sc=1.10 → 0.655
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:23 | [attempt 04] conf≥0.95 sc=0.80 → 0.559
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:23 | [attempt 05] conf≥0.95 sc=1.20 → 0.627
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:24 | [attempt 06] conf≥0.90 sc=1.00 → 0.611
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:24 | [attempt 07] conf≥0.90 sc=0.90 → 0.586
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:24 | [attempt 08] conf≥0.90 sc=1.10 → 0.655
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:25 | [attempt 09] conf≥0.90 sc=0.80 → 0.559
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:25 | [attempt 10] conf≥0.90 sc=1.20 → 0.627
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:25 | [attempt 11] conf≥0.85 sc=1.00 → 0.611
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:25 | [attempt 12] conf≥0.85 sc=0.90 → 0.586
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:26 | [attempt 13] conf≥0.85 sc=1.10 → 0.655
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:26 | [attempt 14] conf≥0.85 sc=0.80 → 0.559
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:26 | [attempt 15] conf≥0.85 sc=1.20 → 0.627
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:27 | [attempt 16] conf≥0.80 sc=1.00 → 0.611
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:27 | [attempt 17] conf≥0.80 sc=0.90 → 0.586
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:27 | [attempt 18] conf≥0.80 sc=1.10 → 0.655
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:28 | [attempt 19] conf≥0.80 sc=0.80 → 0.559
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:28 | [attempt 20] conf≥0.80 sc=1.20 → 0.627
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:28 | 🔍 Looking in monitor 2 bounds=(-1920,-113)..(0,967)
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:28 | [attempt 01] conf≥0.95 sc=1.00 → 1.000
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:28 | ✅ FOUND in monitor 2 at absolute (-999,516) size=(76×34)
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:28 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:28 | Waiting 1.0s before click…
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:30 | Moved mouse to (-961,533)
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:30 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:30 | Sleeping 2.0s after click…
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:32 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:32 | Data step: Invalid or missing file path.
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:32 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:32 | Key press left ×3
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:32 | Waiting 4.0s after input.
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:36 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:36 | Key press space ×1
+2025-05-30 | 17:32:36 | OUT: 2025-05-30 | 17:32:36 | RUN: Execution completed.
+2025-05-30 | 17:32:36 | RUN: run_module.py executed successfully.
+2025-05-30 | 17:32:36 | RUN: Execution completed.
+2025-05-30 | 17:32:36 | Window restored.
+2025-05-30 | 17:32:54 | RUN: Starting execution.
+2025-05-30 | 17:32:54 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:32:54 | RUN: Launching run_module.py …
+2025-05-30 | 17:32:55 | Loaded configuration from run.json
+2025-05-30 | 17:32:55 | RUN: Starting execution.
+2025-05-30 | 17:32:55 | RUN: Processing Tab 1
+2025-05-30 | 17:32:55 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:32:55 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:32:55 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:32:55 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:32:55 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:32:55 | Waiting 1.0s after input.
+2025-05-30 | 17:32:56 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:56 | Key press space ×1
+2025-05-30 | 17:32:56 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:32:56 | ⚠️ No position specified – using current mouse (0,-27)
+2025-05-30 | 17:32:56 | Moved by offset (0,0) → (0,-27)
+2025-05-30 | 17:32:56 | Mouse clicked at (0,-27) 1× left
+2025-05-30 | 17:32:56 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:32:56 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:32:56 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:56 | Key combo Command + V ×1
+2025-05-30 | 17:32:57 | Waiting 1.0s after input.
+2025-05-30 | 17:32:58 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:32:58 | Key press return ×1
+2025-05-30 | 17:32:58 | Waiting 5.0s after input.
+2025-05-30 | 17:33:03 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:33:29 | ⚠️ Image not found within timeout (0.0s) at confidence≥0.9
+2025-05-30 | 17:33:29 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:33:29 | Data step: Invalid or missing file path.
+2025-05-30 | 17:33:29 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:33:29 | Key press left ×3
+2025-05-30 | 17:33:30 | Waiting 4.0s after input.
+2025-05-30 | 17:33:34 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:33:34 | Key press space ×1
+2025-05-30 | 17:33:34 | RUN: Execution completed.
+2025-05-30 | 17:33:34 | OUT: 2025-05-30 | 17:32:55 | Loaded configuration from run.json
+2025-05-30 | 17:33:34 | 🚩 Cancelled by master hotkey — terminating run_module.py
+2025-05-30 | 17:33:38 | RUN: Starting execution.
+2025-05-30 | 17:33:38 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:33:38 | RUN: Launching run_module.py …
+2025-05-30 | 17:33:38 | Loaded configuration from run.json
+2025-05-30 | 17:33:38 | RUN: Starting execution.
+2025-05-30 | 17:33:38 | RUN: Processing Tab 1
+2025-05-30 | 17:33:38 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:33:38 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:33:38 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:33:38 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:33:39 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:33:39 | Waiting 1.0s after input.
+2025-05-30 | 17:33:40 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:33:40 | Key press space ×1
+2025-05-30 | 17:33:40 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:33:40 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:33:40 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:33:40 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:33:40 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:33:40 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:33:40 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:33:40 | Key combo Command + V ×1
+2025-05-30 | 17:33:40 | Waiting 1.0s after input.
+2025-05-30 | 17:33:41 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:33:41 | Key press return ×1
+2025-05-30 | 17:33:41 | Waiting 5.0s after input.
+2025-05-30 | 17:33:46 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:33:53 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:33:53 | Waiting 1.0s before click…
+2025-05-30 | 17:33:55 | Moved mouse to (-961,533)
+2025-05-30 | 17:33:55 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:33:55 | Sleeping 2.0s after click…
+2025-05-30 | 17:33:57 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:33:57 | Data step: Invalid or missing file path.
+2025-05-30 | 17:33:57 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:33:57 | Key press left ×3
+2025-05-30 | 17:33:57 | Waiting 4.0s after input.
+2025-05-30 | 17:34:01 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:34:01 | Key press space ×1
+2025-05-30 | 17:34:01 | RUN: Execution completed.
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:38 | Loaded configuration from run.json
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:38 | RUN: Starting execution.
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:38 | RUN: Processing Tab 1
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:38 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:38 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:38 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:38 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:39 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:39 | Waiting 1.0s after input.
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | Key press space ×1
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | Key combo Command + V ×1
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:40 | Waiting 1.0s after input.
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:41 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:41 | Key press return ×1
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:41 | Waiting 5.0s after input.
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:46 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:46 | 🔍 Starting search | base_conf=0.90 timeout=∞s monitors=5
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:46 | 🔍 Looking in monitor 1 bounds=(0,0)..(1496,967)
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:47 | [attempt 01] conf≥0.95 sc=1.00 → 0.611
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:47 | [attempt 02] conf≥0.95 sc=0.90 → 0.586
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:48 | [attempt 03] conf≥0.95 sc=1.10 → 0.655
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:48 | [attempt 04] conf≥0.95 sc=0.80 → 0.559
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:48 | [attempt 05] conf≥0.95 sc=1.20 → 0.627
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:48 | [attempt 06] conf≥0.90 sc=1.00 → 0.611
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:49 | [attempt 07] conf≥0.90 sc=0.90 → 0.586
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:49 | [attempt 08] conf≥0.90 sc=1.10 → 0.655
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:49 | [attempt 09] conf≥0.90 sc=0.80 → 0.559
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:50 | [attempt 10] conf≥0.90 sc=1.20 → 0.627
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:50 | [attempt 11] conf≥0.85 sc=1.00 → 0.611
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:50 | [attempt 12] conf≥0.85 sc=0.90 → 0.586
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:51 | [attempt 13] conf≥0.85 sc=1.10 → 0.655
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:51 | [attempt 14] conf≥0.85 sc=0.80 → 0.559
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:51 | [attempt 15] conf≥0.85 sc=1.20 → 0.627
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:51 | [attempt 16] conf≥0.80 sc=1.00 → 0.611
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:52 | [attempt 17] conf≥0.80 sc=0.90 → 0.586
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:52 | [attempt 18] conf≥0.80 sc=1.10 → 0.655
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:52 | [attempt 19] conf≥0.80 sc=0.80 → 0.559
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:53 | [attempt 20] conf≥0.80 sc=1.20 → 0.627
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:53 | 🔍 Looking in monitor 2 bounds=(-1920,-113)..(0,967)
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:53 | [attempt 01] conf≥0.95 sc=1.00 → 1.000
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:53 | ✅ FOUND in monitor 2 at absolute (-999,516) size=(76×34)
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:53 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:53 | Waiting 1.0s before click…
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:55 | Moved mouse to (-961,533)
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:55 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:55 | Sleeping 2.0s after click…
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:57 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:57 | Data step: Invalid or missing file path.
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:57 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:57 | Key press left ×3
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:33:57 | Waiting 4.0s after input.
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:34:01 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:34:01 | Key press space ×1
+2025-05-30 | 17:34:01 | OUT: 2025-05-30 | 17:34:01 | RUN: Execution completed.
+2025-05-30 | 17:34:01 | RUN: run_module.py executed successfully.
+2025-05-30 | 17:34:01 | RUN: Execution completed.
+2025-05-30 | 17:34:01 | Window restored.
+2025-05-30 | 17:36:21 | RUN: Starting execution.
+2025-05-30 | 17:36:21 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:36:21 | RUN: Launching run_module.py …
+2025-05-30 | 17:36:22 | Loaded configuration from run.json
+2025-05-30 | 17:36:22 | RUN: Starting execution.
+2025-05-30 | 17:36:22 | RUN: Processing Tab 1
+2025-05-30 | 17:36:22 | OUT: 2025-05-30 | 17:36:22 | Loaded configuration from run.json
+2025-05-30 | 17:36:22 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:36:22 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:36:22 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:36:22 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:36:22 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:36:22 | Waiting 1.0s after input.
+2025-05-30 | 17:36:23 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:36:23 | Key press space ×1
+2025-05-30 | 17:36:23 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:36:23 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:36:23 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:36:23 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:36:23 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:36:24 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:36:24 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:36:24 | Key combo Command + V ×1
+2025-05-30 | 17:36:24 | Waiting 1.0s after input.
+2025-05-30 | 17:36:25 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:36:25 | Key press return ×1
+2025-05-30 | 17:36:25 | Waiting 5.0s after input.
+2025-05-30 | 17:36:30 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:36:37 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:36:37 | Waiting 1.0s before click…
+2025-05-30 | 17:36:38 | Moved mouse to (-961,533)
+2025-05-30 | 17:36:38 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:36:38 | Sleeping 2.0s after click…
+2025-05-30 | 17:36:40 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:36:40 | Data step: Invalid or missing file path.
+2025-05-30 | 17:36:40 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:36:40 | Key press left ×3
+2025-05-30 | 17:36:41 | Waiting 4.0s after input.
+2025-05-30 | 17:36:45 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:36:45 | Key press space ×1
+2025-05-30 | 17:36:45 | RUN: Execution completed.
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:22 | RUN: Starting execution.
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:22 | RUN: Processing Tab 1
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:22 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:22 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:22 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:22 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:22 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:22 | Waiting 1.0s after input.
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:23 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:23 | Key press space ×1
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:23 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:23 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:23 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:23 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:23 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:24 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:24 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:24 | Key combo Command + V ×1
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:24 | Waiting 1.0s after input.
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:25 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:25 | Key press return ×1
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:25 | Waiting 5.0s after input.
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:30 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:30 | 🔍 Starting search | base_conf=0.90 timeout=∞s monitors=5
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:30 | 🔍 Looking in monitor 1 bounds=(0,0)..(1496,967)
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:31 | [attempt 01] conf≥0.95 sc=1.00 → 0.611
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:31 | [attempt 02] conf≥0.95 sc=0.90 → 0.586
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:31 | [attempt 03] conf≥0.95 sc=1.10 → 0.655
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:32 | [attempt 04] conf≥0.95 sc=0.80 → 0.513
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:32 | [attempt 05] conf≥0.95 sc=1.20 → 0.627
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:32 | [attempt 06] conf≥0.90 sc=1.00 → 0.611
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:33 | [attempt 07] conf≥0.90 sc=0.90 → 0.586
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:33 | [attempt 08] conf≥0.90 sc=1.10 → 0.655
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:33 | [attempt 09] conf≥0.90 sc=0.80 → 0.513
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:33 | [attempt 10] conf≥0.90 sc=1.20 → 0.627
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:34 | [attempt 11] conf≥0.85 sc=1.00 → 0.611
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:34 | [attempt 12] conf≥0.85 sc=0.90 → 0.586
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:34 | [attempt 13] conf≥0.85 sc=1.10 → 0.655
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:35 | [attempt 14] conf≥0.85 sc=0.80 → 0.513
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:35 | [attempt 15] conf≥0.85 sc=1.20 → 0.627
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:35 | [attempt 16] conf≥0.80 sc=1.00 → 0.611
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:36 | [attempt 17] conf≥0.80 sc=0.90 → 0.586
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:36 | [attempt 18] conf≥0.80 sc=1.10 → 0.655
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:36 | [attempt 19] conf≥0.80 sc=0.80 → 0.513
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:36 | [attempt 20] conf≥0.80 sc=1.20 → 0.627
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:37 | 🔍 Looking in monitor 2 bounds=(-1920,-113)..(0,967)
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:37 | [attempt 01] conf≥0.95 sc=1.00 → 1.000
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:37 | ✅ FOUND in monitor 2 at absolute (-999,516) size=(76×34)
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:37 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:37 | Waiting 1.0s before click…
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:38 | Moved mouse to (-961,533)
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:38 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:38 | Sleeping 2.0s after click…
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:40 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:40 | Data step: Invalid or missing file path.
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:40 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:40 | Key press left ×3
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:41 | Waiting 4.0s after input.
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:45 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:45 | Key press space ×1
+2025-05-30 | 17:36:45 | OUT: 2025-05-30 | 17:36:45 | RUN: Execution completed.
+2025-05-30 | 17:36:45 | RUN: run_module.py executed successfully.
+2025-05-30 | 17:36:45 | 🚩 Cancelled by master hotkey after run_module — returning to UI
+2025-05-30 | 17:37:22 | RUN: Starting execution.
+2025-05-30 | 17:37:22 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:37:22 | RUN: Launching run_module.py …
+2025-05-30 | 17:37:23 | Loaded configuration from run.json
+2025-05-30 | 17:37:23 | RUN: Starting execution.
+2025-05-30 | 17:37:23 | RUN: Processing Tab 1
+2025-05-30 | 17:37:23 | OUT: 2025-05-30 | 17:37:23 | Loaded configuration from run.json
+2025-05-30 | 17:37:23 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:37:23 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:37:23 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:37:23 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:37:23 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:37:23 | Waiting 1.0s after input.
+2025-05-30 | 17:37:24 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:37:24 | Key press space ×1
+2025-05-30 | 17:37:24 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:37:24 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:37:24 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:37:24 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:37:24 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:37:24 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:37:24 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:37:24 | Key combo Command + V ×1
+2025-05-30 | 17:37:25 | Waiting 1.0s after input.
+2025-05-30 | 17:37:26 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:37:26 | Key press return ×1
+2025-05-30 | 17:37:26 | Waiting 5.0s after input.
+2025-05-30 | 17:37:31 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:37:38 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:37:38 | Waiting 1.0s before click…
+2025-05-30 | 17:37:39 | Moved mouse to (-961,533)
+2025-05-30 | 17:37:39 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:37:39 | Sleeping 2.0s after click…
+2025-05-30 | 17:37:41 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:37:41 | Data step: Invalid or missing file path.
+2025-05-30 | 17:37:41 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:37:41 | Key press left ×3
+2025-05-30 | 17:37:41 | Waiting 4.0s after input.
+2025-05-30 | 17:37:45 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:37:45 | Key press space ×1
+2025-05-30 | 17:37:45 | RUN: Execution completed.
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:23 | RUN: Starting execution.
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:23 | RUN: Processing Tab 1
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:23 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:23 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:23 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:23 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:23 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:23 | Waiting 1.0s after input.
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:24 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:24 | Key press space ×1
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:24 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:24 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:24 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:24 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:24 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:24 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:24 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:24 | Key combo Command + V ×1
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:25 | Waiting 1.0s after input.
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:26 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:26 | Key press return ×1
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:26 | Waiting 5.0s after input.
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:31 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:31 | 🔍 Starting search | base_conf=0.90 timeout=∞s monitors=5
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:31 | 🔍 Looking in monitor 1 bounds=(0,0)..(1496,967)
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:31 | [attempt 01] conf≥0.95 sc=1.00 → 0.611
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:32 | [attempt 02] conf≥0.95 sc=0.90 → 0.586
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:32 | [attempt 03] conf≥0.95 sc=1.10 → 0.655
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:32 | [attempt 04] conf≥0.95 sc=0.80 → 0.513
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:32 | [attempt 05] conf≥0.95 sc=1.20 → 0.627
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:33 | [attempt 06] conf≥0.90 sc=1.00 → 0.611
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:33 | [attempt 07] conf≥0.90 sc=0.90 → 0.586
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:33 | [attempt 08] conf≥0.90 sc=1.10 → 0.655
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:34 | [attempt 09] conf≥0.90 sc=0.80 → 0.513
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:34 | [attempt 10] conf≥0.90 sc=1.20 → 0.627
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:34 | [attempt 11] conf≥0.85 sc=1.00 → 0.611
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:35 | [attempt 12] conf≥0.85 sc=0.90 → 0.586
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:35 | [attempt 13] conf≥0.85 sc=1.10 → 0.655
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:35 | [attempt 14] conf≥0.85 sc=0.80 → 0.513
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:35 | [attempt 15] conf≥0.85 sc=1.20 → 0.627
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:36 | [attempt 16] conf≥0.80 sc=1.00 → 0.611
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:36 | [attempt 17] conf≥0.80 sc=0.90 → 0.586
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:36 | [attempt 18] conf≥0.80 sc=1.10 → 0.655
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:37 | [attempt 19] conf≥0.80 sc=0.80 → 0.513
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:37 | [attempt 20] conf≥0.80 sc=1.20 → 0.627
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:37 | 🔍 Looking in monitor 2 bounds=(-1920,-113)..(0,967)
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:38 | [attempt 01] conf≥0.95 sc=1.00 → 1.000
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:38 | ✅ FOUND in monitor 2 at absolute (-999,516) size=(76×34)
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:38 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:38 | Waiting 1.0s before click…
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:39 | Moved mouse to (-961,533)
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:39 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:39 | Sleeping 2.0s after click…
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:41 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:41 | Data step: Invalid or missing file path.
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:41 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:41 | Key press left ×3
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:41 | Waiting 4.0s after input.
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:45 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:45 | Key press space ×1
+2025-05-30 | 17:37:45 | OUT: 2025-05-30 | 17:37:45 | RUN: Execution completed.
+2025-05-30 | 17:37:45 | RUN: run_module.py executed successfully.
+2025-05-30 | 17:37:45 | RUN: Execution completed.
+2025-05-30 | 17:37:45 | Window restored.
+2025-05-30 | 17:43:05 | RUN: Starting execution.
+2025-05-30 | 17:43:05 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:43:05 | RUN: Launching run_module.py …
+2025-05-30 | 17:43:06 | Loaded configuration from run.json
+2025-05-30 | 17:43:06 | RUN: Starting execution.
+2025-05-30 | 17:43:06 | RUN: Processing Tab 1
+2025-05-30 | 17:43:06 | OUT: 2025-05-30 | 17:43:06 | Loaded configuration from run.json
+2025-05-30 | 17:43:06 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:43:06 | OUT: 2025-05-30 | 17:43:06 | RUN: Starting execution.
+2025-05-30 | 17:43:06 | OUT: 2025-05-30 | 17:43:06 | RUN: Processing Tab 1
+2025-05-30 | 17:43:06 | OUT: 2025-05-30 | 17:43:06 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:43:06 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:43:06 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:43:06 | OUT: 2025-05-30 | 17:43:06 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:43:06 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:43:06 | OUT: 2025-05-30 | 17:43:06 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:43:06 | OUT: 2025-05-30 | 17:43:06 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:43:06 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:43:06 | Waiting 1.0s after input.
+2025-05-30 | 17:43:06 | OUT: 2025-05-30 | 17:43:06 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:43:06 | OUT: 2025-05-30 | 17:43:06 | Waiting 1.0s after input.
+2025-05-30 | 17:43:07 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:07 | Key press space ×1
+2025-05-30 | 17:43:07 | OUT: 2025-05-30 | 17:43:07 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:07 | OUT: 2025-05-30 | 17:43:07 | Key press space ×1
+2025-05-30 | 17:43:07 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:43:07 | OUT: 2025-05-30 | 17:43:07 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:43:07 | ⚠️ No position specified – using current mouse (-788,220)
+2025-05-30 | 17:43:07 | Moved by offset (0,0) → (-788,220)
+2025-05-30 | 17:43:07 | OUT: 2025-05-30 | 17:43:07 | ⚠️ No position specified – using current mouse (-788,220)
+2025-05-30 | 17:43:07 | OUT: 2025-05-30 | 17:43:07 | Moved by offset (0,0) → (-788,220)
+2025-05-30 | 17:43:07 | Mouse clicked at (-788,220) 1× left
+2025-05-30 | 17:43:07 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:43:07 | OUT: 2025-05-30 | 17:43:07 | Mouse clicked at (-788,220) 1× left
+2025-05-30 | 17:43:07 | OUT: 2025-05-30 | 17:43:07 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:43:07 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:43:07 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:07 | OUT: 2025-05-30 | 17:43:07 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:43:07 | Key combo Command + V ×1
+2025-05-30 | 17:43:07 | OUT: 2025-05-30 | 17:43:07 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:07 | OUT: 2025-05-30 | 17:43:07 | Key combo Command + V ×1
+2025-05-30 | 17:43:08 | Waiting 1.0s after input.
+2025-05-30 | 17:43:08 | OUT: 2025-05-30 | 17:43:08 | Waiting 1.0s after input.
+2025-05-30 | 17:43:09 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:09 | OUT: 2025-05-30 | 17:43:09 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:09 | Key press return ×1
+2025-05-30 | 17:43:09 | OUT: 2025-05-30 | 17:43:09 | Key press return ×1
+2025-05-30 | 17:43:09 | Waiting 5.0s after input.
+2025-05-30 | 17:43:09 | OUT: 2025-05-30 | 17:43:09 | Waiting 5.0s after input.
+2025-05-30 | 17:43:14 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:43:14 | OUT: 2025-05-30 | 17:43:14 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:43:14 | OUT: 2025-05-30 | 17:43:14 | 🔍 Starting search | base_conf=0.90 timeout=∞s monitors=5
+2025-05-30 | 17:43:14 | OUT: 2025-05-30 | 17:43:14 | 🔍 Looking in monitor 1 bounds=(0,0)..(1496,967)
+2025-05-30 | 17:43:14 | OUT: 2025-05-30 | 17:43:14 | [attempt 01] conf≥0.95 sc=1.00 → 0.611
+2025-05-30 | 17:43:15 | OUT: 2025-05-30 | 17:43:15 | [attempt 02] conf≥0.95 sc=0.90 → 0.586
+2025-05-30 | 17:43:15 | OUT: 2025-05-30 | 17:43:15 | [attempt 03] conf≥0.95 sc=1.10 → 0.655
+2025-05-30 | 17:43:15 | OUT: 2025-05-30 | 17:43:15 | [attempt 04] conf≥0.95 sc=0.80 → 0.544
+2025-05-30 | 17:43:15 | OUT: 2025-05-30 | 17:43:15 | [attempt 05] conf≥0.95 sc=1.20 → 0.627
+2025-05-30 | 17:43:16 | OUT: 2025-05-30 | 17:43:16 | [attempt 06] conf≥0.90 sc=1.00 → 0.611
+2025-05-30 | 17:43:16 | OUT: 2025-05-30 | 17:43:16 | [attempt 07] conf≥0.90 sc=0.90 → 0.586
+2025-05-30 | 17:43:16 | OUT: 2025-05-30 | 17:43:16 | [attempt 08] conf≥0.90 sc=1.10 → 0.655
+2025-05-30 | 17:43:17 | OUT: 2025-05-30 | 17:43:17 | [attempt 09] conf≥0.90 sc=0.80 → 0.544
+2025-05-30 | 17:43:17 | OUT: 2025-05-30 | 17:43:17 | [attempt 10] conf≥0.90 sc=1.20 → 0.627
+2025-05-30 | 17:43:17 | OUT: 2025-05-30 | 17:43:17 | [attempt 11] conf≥0.85 sc=1.00 → 0.611
+2025-05-30 | 17:43:18 | OUT: 2025-05-30 | 17:43:18 | [attempt 12] conf≥0.85 sc=0.90 → 0.586
+2025-05-30 | 17:43:18 | OUT: 2025-05-30 | 17:43:18 | [attempt 13] conf≥0.85 sc=1.10 → 0.655
+2025-05-30 | 17:43:18 | OUT: 2025-05-30 | 17:43:18 | [attempt 14] conf≥0.85 sc=0.80 → 0.544
+2025-05-30 | 17:43:18 | OUT: 2025-05-30 | 17:43:18 | [attempt 15] conf≥0.85 sc=1.20 → 0.627
+2025-05-30 | 17:43:19 | OUT: 2025-05-30 | 17:43:19 | [attempt 16] conf≥0.80 sc=1.00 → 0.611
+2025-05-30 | 17:43:19 | OUT: 2025-05-30 | 17:43:19 | [attempt 17] conf≥0.80 sc=0.90 → 0.586
+2025-05-30 | 17:43:19 | OUT: 2025-05-30 | 17:43:19 | [attempt 18] conf≥0.80 sc=1.10 → 0.655
+2025-05-30 | 17:43:20 | OUT: 2025-05-30 | 17:43:20 | [attempt 19] conf≥0.80 sc=0.80 → 0.544
+2025-05-30 | 17:43:20 | 🚩 Hotkey pressed — terminating run_module.py
+2025-05-30 | 17:43:20 | RUN: run_module.py exited with code -15
+2025-05-30 | 17:43:20 | Window restored.
+2025-05-30 | 17:43:22 | RUN: Starting execution.
+2025-05-30 | 17:43:22 | RUN: Configuration saved to run.json.
+2025-05-30 | 17:43:22 | RUN: Launching run_module.py …
+2025-05-30 | 17:43:22 | Loaded configuration from run.json
+2025-05-30 | 17:43:22 | RUN: Starting execution.
+2025-05-30 | 17:43:22 | RUN: Processing Tab 1
+2025-05-30 | 17:43:22 | OUT: 2025-05-30 | 17:43:22 | Loaded configuration from run.json
+2025-05-30 | 17:43:22 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:43:22 | OUT: 2025-05-30 | 17:43:22 | RUN: Starting execution.
+2025-05-30 | 17:43:22 | OUT: 2025-05-30 | 17:43:22 | RUN: Processing Tab 1
+2025-05-30 | 17:43:22 | OUT: 2025-05-30 | 17:43:22 | [Tab Tab 1 | Step 1] Processing position: -1680x-22
+2025-05-30 | 17:43:23 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:43:23 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:43:23 | OUT: 2025-05-30 | 17:43:23 | Moved mouse to (-1680, -22).
+2025-05-30 | 17:43:23 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:43:23 | OUT: 2025-05-30 | 17:43:23 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '1', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:43:23 | OUT: 2025-05-30 | 17:43:23 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:43:23 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:43:23 | Waiting 1.0s after input.
+2025-05-30 | 17:43:23 | OUT: 2025-05-30 | 17:43:23 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:43:23 | OUT: 2025-05-30 | 17:43:23 | Waiting 1.0s after input.
+2025-05-30 | 17:43:24 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:24 | Key press space ×1
+2025-05-30 | 17:43:24 | OUT: 2025-05-30 | 17:43:24 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:24 | OUT: 2025-05-30 | 17:43:24 | Key press space ×1
+2025-05-30 | 17:43:24 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:43:24 | OUT: 2025-05-30 | 17:43:24 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 17:43:24 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:43:24 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:43:24 | OUT: 2025-05-30 | 17:43:24 | ⚠️ No position specified – using current mouse (-1680,-22)
+2025-05-30 | 17:43:24 | OUT: 2025-05-30 | 17:43:24 | Moved by offset (0,0) → (-1680,-22)
+2025-05-30 | 17:43:24 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:43:24 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:43:24 | OUT: 2025-05-30 | 17:43:24 | Mouse clicked at (-1680,-22) 1× left
+2025-05-30 | 17:43:24 | OUT: 2025-05-30 | 17:43:24 | [Tab Tab 1 | Step 3] Processing data: {'data_cell': 'A3', 'data_copy_paste': 'Copy From', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-30 | 17:43:24 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:43:24 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:24 | OUT: 2025-05-30 | 17:43:24 | Copied value 'https://ingenarte.github.io/react-tetris2/' from cell A3 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx to clipboard.
+2025-05-30 | 17:43:24 | Key combo Command + V ×1
+2025-05-30 | 17:43:24 | OUT: 2025-05-30 | 17:43:24 | [Tab Tab 1 | Step 4] Processing input: {'input_from': 'Keyboard', 'input_sleep': '1', 'keyboard_ascii': 'Command + V', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:24 | OUT: 2025-05-30 | 17:43:24 | Key combo Command + V ×1
+2025-05-30 | 17:43:25 | Waiting 1.0s after input.
+2025-05-30 | 17:43:25 | OUT: 2025-05-30 | 17:43:25 | Waiting 1.0s after input.
+2025-05-30 | 17:43:26 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:26 | Key press return ×1
+2025-05-30 | 17:43:26 | OUT: 2025-05-30 | 17:43:26 | [Tab Tab 1 | Step 5] Processing input: {'input_from': 'Keyboard', 'input_sleep': '5', 'keyboard_ascii': 'Return', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:26 | OUT: 2025-05-30 | 17:43:26 | Key press return ×1
+2025-05-30 | 17:43:26 | Waiting 5.0s after input.
+2025-05-30 | 17:43:26 | OUT: 2025-05-30 | 17:43:26 | Waiting 5.0s after input.
+2025-05-30 | 17:43:31 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:43:31 | OUT: 2025-05-30 | 17:43:31 | [Tab Tab 1 | Step 6] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.90', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-30 at 4.51.45\u202fpm.png', 'image_sleep': '2', 'image_timeout': '0', 'image_wait': True, 'image_wait_sleep': '1'}
+2025-05-30 | 17:43:31 | OUT: 2025-05-30 | 17:43:31 | 🔍 Starting search | base_conf=0.90 timeout=∞s monitors=5
+2025-05-30 | 17:43:31 | OUT: 2025-05-30 | 17:43:31 | 🔍 Looking in monitor 1 bounds=(0,0)..(1496,967)
+2025-05-30 | 17:43:31 | OUT: 2025-05-30 | 17:43:31 | [attempt 01] conf≥0.95 sc=1.00 → 0.611
+2025-05-30 | 17:43:31 | OUT: 2025-05-30 | 17:43:31 | [attempt 02] conf≥0.95 sc=0.90 → 0.586
+2025-05-30 | 17:43:32 | OUT: 2025-05-30 | 17:43:32 | [attempt 03] conf≥0.95 sc=1.10 → 0.655
+2025-05-30 | 17:43:32 | OUT: 2025-05-30 | 17:43:32 | [attempt 04] conf≥0.95 sc=0.80 → 0.544
+2025-05-30 | 17:43:32 | OUT: 2025-05-30 | 17:43:32 | [attempt 05] conf≥0.95 sc=1.20 → 0.627
+2025-05-30 | 17:43:33 | OUT: 2025-05-30 | 17:43:33 | [attempt 06] conf≥0.90 sc=1.00 → 0.611
+2025-05-30 | 17:43:33 | OUT: 2025-05-30 | 17:43:33 | [attempt 07] conf≥0.90 sc=0.90 → 0.586
+2025-05-30 | 17:43:33 | OUT: 2025-05-30 | 17:43:33 | [attempt 08] conf≥0.90 sc=1.10 → 0.655
+2025-05-30 | 17:43:34 | OUT: 2025-05-30 | 17:43:34 | [attempt 09] conf≥0.90 sc=0.80 → 0.544
+2025-05-30 | 17:43:34 | OUT: 2025-05-30 | 17:43:34 | [attempt 10] conf≥0.90 sc=1.20 → 0.627
+2025-05-30 | 17:43:34 | OUT: 2025-05-30 | 17:43:34 | [attempt 11] conf≥0.85 sc=1.00 → 0.611
+2025-05-30 | 17:43:35 | OUT: 2025-05-30 | 17:43:35 | [attempt 12] conf≥0.85 sc=0.90 → 0.586
+2025-05-30 | 17:43:35 | OUT: 2025-05-30 | 17:43:35 | [attempt 13] conf≥0.85 sc=1.10 → 0.655
+2025-05-30 | 17:43:35 | OUT: 2025-05-30 | 17:43:35 | [attempt 14] conf≥0.85 sc=0.80 → 0.544
+2025-05-30 | 17:43:35 | OUT: 2025-05-30 | 17:43:35 | [attempt 15] conf≥0.85 sc=1.20 → 0.627
+2025-05-30 | 17:43:36 | OUT: 2025-05-30 | 17:43:36 | [attempt 16] conf≥0.80 sc=1.00 → 0.611
+2025-05-30 | 17:43:36 | OUT: 2025-05-30 | 17:43:36 | [attempt 17] conf≥0.80 sc=0.90 → 0.586
+2025-05-30 | 17:43:36 | OUT: 2025-05-30 | 17:43:36 | [attempt 18] conf≥0.80 sc=1.10 → 0.655
+2025-05-30 | 17:43:37 | OUT: 2025-05-30 | 17:43:37 | [attempt 19] conf≥0.80 sc=0.80 → 0.544
+2025-05-30 | 17:43:37 | OUT: 2025-05-30 | 17:43:37 | [attempt 20] conf≥0.80 sc=1.20 → 0.627
+2025-05-30 | 17:43:37 | OUT: 2025-05-30 | 17:43:37 | 🔍 Looking in monitor 2 bounds=(-1920,-113)..(0,967)
+2025-05-30 | 17:43:38 | OUT: 2025-05-30 | 17:43:38 | [attempt 01] conf≥0.95 sc=1.00 → 1.000
+2025-05-30 | 17:43:38 | OUT: 2025-05-30 | 17:43:38 | ✅ FOUND in monitor 2 at absolute (-999,516) size=(76×34)
+2025-05-30 | 17:43:38 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:43:38 | Waiting 1.0s before click…
+2025-05-30 | 17:43:38 | OUT: 2025-05-30 | 17:43:38 | ✅ Found on monitor 2 → logical=(-999,516) size=(76×34)
+2025-05-30 | 17:43:38 | OUT: 2025-05-30 | 17:43:38 | Waiting 1.0s before click…
+2025-05-30 | 17:43:39 | Moved mouse to (-961,533)
+2025-05-30 | 17:43:39 | OUT: 2025-05-30 | 17:43:39 | Moved mouse to (-961,533)
+2025-05-30 | 17:43:39 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:43:39 | Sleeping 2.0s after click…
+2025-05-30 | 17:43:39 | OUT: 2025-05-30 | 17:43:39 | Clicked 1× left at (-961,533)
+2025-05-30 | 17:43:39 | OUT: 2025-05-30 | 17:43:39 | Sleeping 2.0s after click…
+2025-05-30 | 17:43:41 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:43:41 | Data step: Invalid or missing file path.
+2025-05-30 | 17:43:41 | OUT: 2025-05-30 | 17:43:41 | [Tab Tab 1 | Step 6] Processing data: {'data_cell': '', 'data_copy_paste': 'Copy From', 'data_path': 'Please drop a .xlsx file.', 'data_select_all': False}
+2025-05-30 | 17:43:41 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:41 | OUT: 2025-05-30 | 17:43:41 | Data step: Invalid or missing file path.
+2025-05-30 | 17:43:41 | Key press left ×3
+2025-05-30 | 17:43:41 | OUT: 2025-05-30 | 17:43:41 | [Tab Tab 1 | Step 7] Processing input: {'input_from': 'Keyboard', 'input_sleep': '4', 'keyboard_ascii': 'Left', 'keyboard_repeat': '3', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:41 | OUT: 2025-05-30 | 17:43:41 | Key press left ×3
+2025-05-30 | 17:43:41 | Waiting 4.0s after input.
+2025-05-30 | 17:43:41 | OUT: 2025-05-30 | 17:43:41 | Waiting 4.0s after input.
+2025-05-30 | 17:43:45 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:45 | Key press space ×1
+2025-05-30 | 17:43:45 | OUT: 2025-05-30 | 17:43:45 | [Tab Tab 1 | Step 8] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Space', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-30 | 17:43:45 | OUT: 2025-05-30 | 17:43:45 | Key press space ×1
+2025-05-30 | 17:43:45 | RUN: Execution completed.
+2025-05-30 | 17:43:45 | OUT: 2025-05-30 | 17:43:45 | RUN: Execution completed.
+2025-05-30 | 17:43:45 | RUN: run_module.py executed successfully.
+2025-05-30 | 17:43:45 | Window restored.

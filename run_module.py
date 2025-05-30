@@ -35,7 +35,7 @@ def log_action(message):
     log_line = f"{timestamp} | {message}"
     with open("run-log.txt", "a", encoding="utf-8") as log_file:
         log_file.write(log_line + "\n")
-    print(log_line)
+    print(log_line,flush=True)
 
 # -----------------------------
 # Processing functions for steps

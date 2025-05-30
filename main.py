@@ -24,6 +24,8 @@ import time
 
 
 
+
+
 # Global variable to store the repetition interval (in seconds)
 global_repetition_interval = None
 # Global reference for the repetition button
@@ -32,6 +34,53 @@ global_repetition_btn = None
 global_schedule_time = None
 # Global reference for the schedule button.
 global_schedule_btn = None
+
+
+
+### Listener HotKey for process stoping and coming back to main window
+
+import threading
+from pynput import keyboard
+
+# ——————————————————————————————————————————————————————————————
+# Master hotkey: Ctrl+Shift+Q para cancelar la ejecución
+# ——————————————————————————————————————————————————————————————
+
+stop_event = threading.Event()
+_current_mods = set()
+
+def _on_key_press(key):
+    # guardamos modifier keys
+    if key in (keyboard.Key.ctrl_l, keyboard.Key.ctrl_r,
+               keyboard.Key.shift,  keyboard.Key.shift_r):
+        _current_mods.add(key)
+    # si están Ctrl+Shift y presionamos 'q'
+    if ((keyboard.Key.ctrl_l in _current_mods or keyboard.Key.ctrl_r in _current_mods)
+        and (keyboard.Key.shift in _current_mods or keyboard.Key.shift_r in _current_mods)
+        and getattr(key, "char", "").lower() == "q"):
+        stop_event.set()
+        return False  # detiene el listener
+
+def _on_key_release(key):
+    if key in _current_mods:
+        _current_mods.remove(key)
+
+def start_master_listener():
+    listener = keyboard.Listener(
+        on_press=_on_key_press,
+        on_release=_on_key_release
+    )
+    listener.daemon = True
+    listener.start()
+
+# Arrancamos el listener ANTES del mainloop
+start_master_listener()
+
+### ---- Listener HotKey for process stoping and coming back to main window
+
+
+
+
 
 # -----------------------------
 # CustomTkinter configuration
@@ -389,13 +438,13 @@ def log_action(message):
 
 
 def run_script():
-    # Minimize the window and force an update so the state changes
+    # 1) Oculta la UI y limpia el flag de cancelación
     root.withdraw()
-    root.update()  # Force update to process events
-      
+    root.update()
+    stop_event.clear()
     log_action("RUN: Starting execution.")
 
-    # Save the current configuration to run.json
+    # 2) Guarda la configuración a run.json
     run_filename = "run.json"
     try:
         with open(run_filename, "w", encoding="utf-8") as f:
@@ -403,32 +452,49 @@ def run_script():
         log_action(f"RUN: Configuration saved to {run_filename}.")
     except Exception as e:
         log_action(f"RUN: Error saving configuration: {e}")
+        root.deiconify()
         return
 
-    # Execute run_module.py synchronously (blocking until finished)
+    # 3) Último chequeo antes de lanzar
+    if stop_event.is_set():
+        log_action("🚩 Cancelled by hotkey before launch — returning to UI")
+        root.deiconify()
+        return
+
+    # 4) Lanza run_module.py sin búfer (-u) y con stderr→stdout
+    log_action("RUN: Launching run_module.py …")
+    proc = subprocess.Popen(
+        [sys.executable, "-u", "run_module.py", run_filename],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,   # <-- stderr unido a stdout
+        text=True,
+        bufsize=1                   # <-- line-buffered
+    )
+
+    # 5) Lee la salida en vivo y vigila la tecla mágica
+    for line in iter(proc.stdout.readline, ''):   # sale '' cuando el pipe se cierra
+        if stop_event.is_set():
+            log_action("🚩 Hotkey pressed — terminating run_module.py")
+            proc.terminate()
+            break
+        log_action("OUT: " + line.rstrip())
+
+    # 6) Espera a que el sub-proceso termine del todo
+    proc.stdout.close()
     try:
-        log_action("RUN: Executing run_module.py with run.json as argument. This may take up to an hour...")
-        subprocess.run([sys.executable, "run_module.py", run_filename], check=True)
+        proc.wait(timeout=5)
+    except subprocess.TimeoutExpired:
+        proc.kill()
+
+    # 7) Código de retorno
+    if proc.returncode != 0:
+        log_action(f"RUN: run_module.py exited with code {proc.returncode}")
+    else:
         log_action("RUN: run_module.py executed successfully.")
-    except subprocess.CalledProcessError as e:
-        log_action(f"RUN: Error executing run_module.py: {e}")
-        root.deiconify()  # Optionally restore window if an error occurs
-        return
 
-    # (Optional) Rename run.json to include a timestamp (if desired)
-    # try:
-    #     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    #     new_filename = f"run_{timestamp}.json"
-    #     os.rename(run_filename, new_filename)
-    #     log_action(f"RUN: Configuration file renamed to {new_filename}.")
-    # except Exception as e:
-    #     log_action(f"RUN: Failed to rename run.json: {e}")
-
-    log_action("RUN: Execution completed.")
-
+    # 8) Restaura la ventana principal
     root.deiconify()
     log_action("Window restored.")
-
 # -----------------------------
 # "Save Config" functionality – open Save As dialog and write JSON file.
 # -----------------------------
