@@ -16,9 +16,10 @@ from modals import recursivity_modal
 from modals.modal_input import open_input_modal 
 from modals.image_modal import open_image_modal
 from modals.data_modal import open_data_modal
+from image_engine import find_image
 
 import logging
-logging.getLogger("PIL").setLevel(logging.DEBUG)
+# logging.getLogger("PIL").setLevel(logging.DEBUG)
 
 # -----------------------------
 # Global configuration (will be loaded from run.json if it exists)
@@ -74,22 +75,23 @@ def process_input_step(step_config, step_number, tab_name):
     input_from = action.get("input_from", "").lower()
 
     if input_from == "mouse":
-        pos = step_config.get("position", "")
+        pos = step_config.get("position", "").strip()
         if pos:
-            try:
-                x_str, y_str = pos.split("x")
-                x, y = int(x_str), int(y_str)
-            except Exception as e:
-                log_action(f"Error parsing position: {e}")
-                return
-            button = "left" if action.get("mouse_event", "Left").lower() == "left" else "right"
-            value_str = action.get("mouse_click_qty", "1")
-            clicks = get_clicks(value_str)
-            pyautogui.click(x=x, y=y, clicks=clicks, button=button)
-            log_action(f"Mouse clicked at ({x}, {y}) {clicks} time(s) with {button} button.")
+            # existing behaviour
+            x_str, y_str = pos.split("x")
+            x, y = int(x_str), int(y_str)
         else:
-            log_action("Input step: No position specified for mouse click.")
+            # FALLBACK to current mouse position
+            x, y = pyautogui.position()
+            log_action(f"⚠️ No position specified – using current mouse position ({x},{y})")
 
+        button = "left" if action.get("mouse_event", "Left").lower() == "left" else "right"
+        clicks = get_clicks(action.get("mouse_click_qty", "1"))
+        pyautogui.click(x=x, y=y, clicks=clicks, button=button)
+        log_action(f"Mouse clicked at ({x}, {y}) {clicks}× {button}")
+        return
+    
+        
     elif input_from == "keyboard":
         text = action.get("keyboard_ascii", "")
         # If the text is a key combination (e.g. "Command + C")
@@ -141,97 +143,88 @@ def process_input_step(step_config, step_number, tab_name):
         time.sleep(sleep_after)
 
 def process_image_step(step_config, step_number, tab_name):
-    # Save a screenshot for debugging purposes.
-    screenshot = pyautogui.screenshot()
-    screenshot.save("debug_screenshot.png")
-    
+    """
+    Executes one “image” step using our new image_engine:
+      • Captures a debug screenshot via PyAutoGUI (all-monitors stitch).
+      • Calls find_image() to locate the template on any monitor.
+      • Optionally waits before clicking, then moves & clicks.
+      • Sleeps afterwards if requested.
+    """
+    # 1) debug screenshot
+    # dbg = pyautogui.screenshot()
+    # dbg.save("debug_screenshot.png")
+
     action = step_config.get("image", {})
-    log_action(f"[Tab {tab_name} | Step {step_number}] Processing image: {action}")
-    image_path = action.get("image_path", "")
-    if not image_path:
-        log_action("Image step: No image path specified.")
+    log_action(f"[Tab {tab_name} | Step {step_number}] IMAGE → {action}")
+
+    img_path = action.get("image_path", "")
+    if not img_path:
+        log_action("⚠️ Image step: No image_path specified.")
         return
 
-    # Get the confidence value.
+    # parse params
     try:
-        confidence = float(action.get("image_confidence", "1.0"))
-    except Exception as e:
-        log_action(f"Error parsing image_confidence: {e}. Using 1.0")
-        confidence = 1.0
+        conf = float(action.get("image_confidence", 1.0))
+    except:
+        log_action("⚠️ Invalid image_confidence; defaulting to 1.0")
+        conf = 1.0
 
-    # Get the timeout value.
     try:
-        timeout = float(action.get("image_timeout", "0"))
-    except Exception as e:
-        log_action(f"Error parsing image_timeout: {e}. Using 0")
-        timeout = 0
+        to = float(action.get("image_timeout", 0))
+    except:
+        log_action("⚠️ Invalid image_timeout; defaulting to 0")
+        to = 0
 
-    start_time = time.time()
-    location = None
+    # 2) locate via our engine
+    loc = find_image(
+        img_path,
+        base_confidence=conf,
+        timeout=None if to <= 0 else to,
+        poll_every=0.5,
+        max_attempts=20
+    )
+    if not loc:
+        log_action(f"⚠️ Image not found within timeout ({to}s) at confidence≥{conf}")
+        return
 
-    if timeout > 0:
-        # Loop until the image is found or timeout expires.
-        while (time.time() - start_time) < timeout:
-            try:
-                location = pyautogui.locateOnScreen(image_path, confidence=confidence)
-            except pyautogui.ImageNotFoundException:
-                location = None
-            if location:
-                break
-            time.sleep(0.5)
-        if not location:
-            log_action("WARNING: Image not found on screen within timeout period.")
-            return
-    else:
+    x, y, w, h, mon_idx = loc
+    log_action(f"✅ Found on monitor {mon_idx} → logical=({x},{y}) size=({w}×{h})")
+
+    # 3) optional pre-click wait
+    if action.get("image_wait", False):
         try:
-            location = pyautogui.locateOnScreen(image_path, confidence=confidence)
-        except pyautogui.ImageNotFoundException:
-            location = None
+            ws = float(action.get("image_wait_sleep", 0))
+        except:
+            ws = 0
+        log_action(f"Waiting {ws}s before click…")
+        time.sleep(ws)
 
-    if location:
-        center = pyautogui.center(location)
-        # If image_wait is True, wait for the specified sleep time before clicking.
-        if action.get("image_wait", False):
-            try:
-                wait_sleep = float(action.get("image_wait_sleep", "0"))
-            except Exception as e:
-                log_action(f"Error parsing image_wait_sleep: {e}. Using 0")
-                wait_sleep = 0
-            log_action(f"Waiting for {wait_sleep} seconds before clicking.")
-            time.sleep(wait_sleep)
-        # Move the mouse to the center of the located image.
-        pyautogui.moveTo(center)
-        log_action(f"Moved mouse to image at {center}.")
-        # If image_click is True, perform a click.
-        if action.get("image_click", False):
-            # Determine which button to click.
-            if "mouse_event" in action:
-                button = "left" if action.get("mouse_event", "Left").lower() == "left" else "right"
-            elif "image_click_LR" in action:
-                button = "left" if action.get("image_click_LR", "Left").lower() == "left" else "right"
-            else:
-                button = "left"
-            # Determine the number of clicks.
-            try:
-                clicks = int(action.get("mouse_click_qty", "1"))
-            except ValueError:
-                clicks = get_clicks(action.get("mouse_click_qty", "1"))
-            pyautogui.click(clicks=clicks, button=button)
-            log_action(f"Clicked {clicks} time(s) with {button} button at {center}.")
-        else:
-            log_action("Image click flag not set; no click performed.")
-        # Wait after clicking if image_sleep is specified.
+    # 4) move & click
+    center_x = x + w//2
+    center_y = y + h//2
+    pyautogui.moveTo(center_x, center_y)
+    log_action(f"Moved mouse to ({center_x},{center_y})")
+
+    if action.get("image_click", False):
+        btn = action.get("image_click_LR", "Left").lower()
+        btn = "left" if btn == "left" else "right"
         try:
-            sleep_time = float(action.get("image_sleep", "0"))
-        except Exception as e:
-            log_action(f"Error parsing image_sleep: {e}. Using 0")
-            sleep_time = 0
-        if sleep_time > 0:
-            log_action(f"Sleeping for {sleep_time} seconds after clicking.")
-            time.sleep(sleep_time)
+            clicks = int(action.get("mouse_click_qty", 1))
+        except:
+            clicks = get_clicks(action.get("mouse_click_qty", "1"))
+        pyautogui.click(clicks=clicks, button=btn)
+        log_action(f"Clicked {clicks}× {btn} at ({center_x},{center_y})")
     else:
-        log_action(f"WARNING: Image not found on screen with confidence {confidence}.")
+        log_action("❎ image_click flag is False — no click performed.")
 
+    # 5) post-click sleep
+    try:
+        ss = float(action.get("image_sleep", 0))
+    except:
+        ss = 0
+    if ss > 0:
+        log_action(f"Sleeping {ss}s after click…")
+        time.sleep(ss)
 
 def process_data_step(step_config, step_number, tab_name):
     """

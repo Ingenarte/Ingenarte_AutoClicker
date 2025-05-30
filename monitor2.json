@@ -6,9 +6,9 @@
                     "image_click": true,
                     "image_click_LR": "Left",
                     "image_confidence": "0.80",
-                    "image_path": "/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png",
+                    "image_path": "/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png",
                     "image_sleep": "3",
-                    "image_timeout": "0",
+                    "image_timeout": "10",
                     "image_wait": false,
                     "image_wait_sleep": "2"
                 }

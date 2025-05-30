@@ -1,0 +1,18 @@
+{
+    "tab_n": {
+        "Tab 1": {
+            "step_1": {
+                "image": {
+                    "image_click": true,
+                    "image_click_LR": "Left",
+                    "image_confidence": "0.80",
+                    "image_path": "/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgmacos.png",
+                    "image_sleep": "3",
+                    "image_timeout": "10",
+                    "image_wait": true,
+                    "image_wait_sleep": "2"
+                }
+            }
+        }
+    }
+}

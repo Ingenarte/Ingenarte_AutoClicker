@@ -4054,3 +4054,379 @@
 2025-05-30 | 11:51:34 | RUN: run_module.py executed successfully.
 2025-05-30 | 11:51:34 | RUN: Execution completed.
 2025-05-30 | 11:51:34 | Window restored.
+2025-05-30 | 13:09:45 | RUN: Starting execution.
+2025-05-30 | 13:09:45 | RUN: Configuration saved to run.json.
+2025-05-30 | 13:09:45 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 13:09:45 | Loaded configuration from run.json
+2025-05-30 | 13:09:45 | RUN: Starting execution.
+2025-05-30 | 13:09:45 | RUN: Processing Tab 1
+2025-05-30 | 13:09:46 | [Tab Tab 1 | Step 1] Processing image: {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.85', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgmacos.png', 'image_sleep': '1', 'image_timeout': '6', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 13:09:46 | Moved mouse to image at Point(x=np.int64(781), y=np.int64(1347)).
+2025-05-30 | 13:09:46 | Clicked 1 time(s) with right button at Point(x=np.int64(781), y=np.int64(1347)).
+2025-05-30 | 13:09:46 | Sleeping for 1.0 seconds after clicking.
+2025-05-30 | 13:09:47 | RUN: Execution completed.
+2025-05-30 | 13:09:48 | RUN: run_module.py executed successfully.
+2025-05-30 | 13:09:48 | RUN: Execution completed.
+2025-05-30 | 13:09:48 | Window restored.
+2025-05-30 | 15:30:37 | RUN: Starting execution.
+2025-05-30 | 15:30:37 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:30:37 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:30:37 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 2.
+2025-05-30 | 15:33:22 | RUN: Starting execution.
+2025-05-30 | 15:33:22 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:33:22 | RUN: Executing run_module.py from engine/ with run.json as argument. This may take up to an hour…
+2025-05-30 | 15:33:22 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/engine/run_module.py', 'run.json']' returned non-zero exit status 2.
+2025-05-30 | 15:33:52 | RUN: Starting execution.
+2025-05-30 | 15:33:52 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:33:52 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:33:53 | Loaded configuration from run.json
+2025-05-30 | 15:33:53 | RUN: Starting execution.
+2025-05-30 | 15:33:53 | RUN: Processing Tab 1
+2025-05-30 | 15:33:54 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': True, 'image_wait_sleep': '2'}
+2025-05-30 | 15:34:04 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:34:04 | Waiting 2.0s before click…
+2025-05-30 | 15:34:06 | Moved mouse to (-1314,557)
+2025-05-30 | 15:34:06 | Clicked 1× left at (-1314,557)
+2025-05-30 | 15:34:06 | Sleeping 3.0s after click…
+2025-05-30 | 15:34:09 | RUN: Execution completed.
+2025-05-30 | 15:34:09 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:34:09 | RUN: Execution completed.
+2025-05-30 | 15:34:09 | Window restored.
+2025-05-30 | 15:34:23 | RUN: Starting execution.
+2025-05-30 | 15:34:23 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:34:23 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:34:23 | Loaded configuration from run.json
+2025-05-30 | 15:34:23 | RUN: Starting execution.
+2025-05-30 | 15:34:23 | RUN: Processing Tab 1
+2025-05-30 | 15:34:24 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:34:34 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:34:34 | Moved mouse to (-1314,557)
+2025-05-30 | 15:34:34 | Clicked 1× right at (-1314,557)
+2025-05-30 | 15:34:34 | Sleeping 3.0s after click…
+2025-05-30 | 15:34:37 | RUN: Execution completed.
+2025-05-30 | 15:34:37 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:34:37 | RUN: Execution completed.
+2025-05-30 | 15:34:37 | Window restored.
+2025-05-30 | 15:36:17 | RUN: Starting execution.
+2025-05-30 | 15:36:17 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:36:17 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:36:18 | Loaded configuration from run.json
+2025-05-30 | 15:36:18 | RUN: Starting execution.
+2025-05-30 | 15:36:18 | RUN: Processing Tab 1
+2025-05-30 | 15:36:18 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Right', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:36:28 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:36:28 | Moved mouse to (-1314,557)
+2025-05-30 | 15:36:28 | Clicked 1× right at (-1314,557)
+2025-05-30 | 15:36:28 | Sleeping 3.0s after click…
+2025-05-30 | 15:36:31 | RUN: Execution completed.
+2025-05-30 | 15:36:31 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:36:31 | RUN: Execution completed.
+2025-05-30 | 15:36:31 | Window restored.
+2025-05-30 | 15:36:44 | RUN: Starting execution.
+2025-05-30 | 15:36:44 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:36:44 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:36:44 | Loaded configuration from run.json
+2025-05-30 | 15:36:44 | RUN: Starting execution.
+2025-05-30 | 15:36:44 | RUN: Processing Tab 1
+2025-05-30 | 15:36:44 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:36:54 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:36:54 | Moved mouse to (-1314,557)
+2025-05-30 | 15:36:54 | Clicked 1× left at (-1314,557)
+2025-05-30 | 15:36:54 | Sleeping 3.0s after click…
+2025-05-30 | 15:36:57 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:36:57 | Input step: No position specified for mouse click.
+2025-05-30 | 15:36:57 | RUN: Execution completed.
+2025-05-30 | 15:36:57 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:36:57 | RUN: Execution completed.
+2025-05-30 | 15:36:57 | Window restored.
+2025-05-30 | 15:37:13 | RUN: Starting execution.
+2025-05-30 | 15:37:13 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:37:13 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:37:14 | Loaded configuration from run.json
+2025-05-30 | 15:37:14 | RUN: Starting execution.
+2025-05-30 | 15:37:14 | RUN: Processing Tab 1
+2025-05-30 | 15:37:14 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:37:23 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:37:23 | Moved mouse to (-1314,557)
+2025-05-30 | 15:37:23 | Clicked 1× left at (-1314,557)
+2025-05-30 | 15:37:23 | Sleeping 3.0s after click…
+2025-05-30 | 15:37:26 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:37:26 | Input step: No position specified for mouse click.
+2025-05-30 | 15:37:26 | RUN: Execution completed.
+2025-05-30 | 15:37:26 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:37:26 | RUN: Execution completed.
+2025-05-30 | 15:37:26 | Window restored.
+2025-05-30 | 15:41:54 | RUN: Starting execution.
+2025-05-30 | 15:41:54 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:41:54 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:41:55 | Loaded configuration from run.json
+2025-05-30 | 15:41:55 | RUN: Starting execution.
+2025-05-30 | 15:41:55 | RUN: Processing Tab 1
+2025-05-30 | 15:41:55 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:42:05 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:42:05 | Moved mouse to (-1314,557)
+2025-05-30 | 15:42:05 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' died with <Signals.SIGABRT: 6>.
+2025-05-30 | 15:43:21 | RUN: Starting execution.
+2025-05-30 | 15:43:21 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:43:21 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:43:21 | Loaded configuration from run.json
+2025-05-30 | 15:43:21 | RUN: Starting execution.
+2025-05-30 | 15:43:21 | RUN: Processing Tab 1
+2025-05-30 | 15:43:21 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:43:31 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:43:31 | Moved mouse to (-1314,557)
+2025-05-30 | 15:43:31 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-05-30 | 15:44:05 | RUN: Starting execution.
+2025-05-30 | 15:44:05 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:44:05 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:44:05 | Loaded configuration from run.json
+2025-05-30 | 15:44:05 | RUN: Starting execution.
+2025-05-30 | 15:44:05 | RUN: Processing Tab 1
+2025-05-30 | 15:44:05 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:44:15 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:44:15 | Moved mouse to (-1314,557)
+2025-05-30 | 15:44:16 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-05-30 | 15:45:21 | RUN: Starting execution.
+2025-05-30 | 15:45:21 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:45:21 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:45:21 | Loaded configuration from run.json
+2025-05-30 | 15:45:21 | RUN: Starting execution.
+2025-05-30 | 15:45:21 | RUN: Processing Tab 1
+2025-05-30 | 15:45:21 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:45:31 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:45:31 | Moved mouse to (-1314,557)
+2025-05-30 | 15:45:32 | Clicked 1× left at (-1314,557)
+2025-05-30 | 15:45:32 | Sleeping 3.0s after click…
+2025-05-30 | 15:45:35 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:45:35 | Input step: No position specified for mouse click.
+2025-05-30 | 15:45:35 | RUN: Execution completed.
+2025-05-30 | 15:45:35 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:45:35 | RUN: Execution completed.
+2025-05-30 | 15:45:35 | Window restored.
+2025-05-30 | 15:46:05 | RUN: Starting execution.
+2025-05-30 | 15:46:05 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:46:05 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:46:05 | Loaded configuration from run.json
+2025-05-30 | 15:46:05 | RUN: Starting execution.
+2025-05-30 | 15:46:05 | RUN: Processing Tab 1
+2025-05-30 | 15:46:05 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:46:15 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:46:15 | Moved mouse to (-1314,557)
+2025-05-30 | 15:46:16 | Clicked 1× left at (-1314,557)
+2025-05-30 | 15:46:16 | Sleeping 3.0s after click…
+2025-05-30 | 15:46:19 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:46:19 | Input step: No position specified for mouse click.
+2025-05-30 | 15:46:19 | RUN: Execution completed.
+2025-05-30 | 15:46:19 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:46:19 | RUN: Execution completed.
+2025-05-30 | 15:46:19 | Window restored.
+2025-05-30 | 15:48:14 | RUN: Starting execution.
+2025-05-30 | 15:48:14 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:48:14 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:48:14 | Loaded configuration from run.json
+2025-05-30 | 15:48:14 | RUN: Starting execution.
+2025-05-30 | 15:48:14 | RUN: Processing Tab 1
+2025-05-30 | 15:48:14 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:48:24 | ⚠️ Image not found within timeout (10.0s) at confidence≥0.8
+2025-05-30 | 15:48:24 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:48:24 | Input step: No position specified for mouse click.
+2025-05-30 | 15:48:24 | RUN: Execution completed.
+2025-05-30 | 15:48:24 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:48:24 | RUN: Execution completed.
+2025-05-30 | 15:48:24 | Window restored.
+2025-05-30 | 15:48:37 | RUN: Starting execution.
+2025-05-30 | 15:48:37 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:48:37 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:48:38 | Loaded configuration from run.json
+2025-05-30 | 15:48:38 | RUN: Starting execution.
+2025-05-30 | 15:48:38 | RUN: Processing Tab 1
+2025-05-30 | 15:48:38 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:48:48 | ✅ Found on monitor 2 → logical=(-1582,428) size=(536×259)
+2025-05-30 | 15:48:48 | Moved mouse to (-1314,557)
+2025-05-30 | 15:48:48 | Clicked 1× left at (-1314,557)
+2025-05-30 | 15:48:48 | Sleeping 3.0s after click…
+2025-05-30 | 15:48:51 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:48:51 | Input step: No position specified for mouse click.
+2025-05-30 | 15:48:51 | RUN: Execution completed.
+2025-05-30 | 15:48:51 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:48:51 | RUN: Execution completed.
+2025-05-30 | 15:48:52 | Window restored.
+2025-05-30 | 15:53:20 | RUN: Starting execution.
+2025-05-30 | 15:53:21 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:53:21 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:53:21 | Loaded configuration from run.json
+2025-05-30 | 15:53:21 | RUN: Starting execution.
+2025-05-30 | 15:53:21 | RUN: Processing Tab 1
+2025-05-30 | 15:53:21 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/testimg.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:53:32 | ⚠️ Image not found within timeout (10.0s) at confidence≥0.8
+2025-05-30 | 15:53:32 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:53:32 | Input step: No position specified for mouse click.
+2025-05-30 | 15:53:32 | RUN: Execution completed.
+2025-05-30 | 15:53:32 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:53:32 | RUN: Execution completed.
+2025-05-30 | 15:53:32 | Window restored.
+2025-05-30 | 15:54:30 | RUN: Starting execution.
+2025-05-30 | 15:54:30 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:54:30 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:54:31 | Loaded configuration from run.json
+2025-05-30 | 15:54:31 | RUN: Starting execution.
+2025-05-30 | 15:54:31 | RUN: Processing Tab 1
+2025-05-30 | 15:54:31 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '10', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:54:42 | ⚠️ Image not found within timeout (10.0s) at confidence≥0.8
+2025-05-30 | 15:54:42 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:54:42 | Input step: No position specified for mouse click.
+2025-05-30 | 15:54:42 | RUN: Execution completed.
+2025-05-30 | 15:54:42 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:54:42 | RUN: Execution completed.
+2025-05-30 | 15:54:42 | Window restored.
+2025-05-30 | 15:55:04 | RUN: Starting execution.
+2025-05-30 | 15:55:04 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:55:04 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:55:05 | Loaded configuration from run.json
+2025-05-30 | 15:55:05 | RUN: Starting execution.
+2025-05-30 | 15:55:05 | RUN: Processing Tab 1
+2025-05-30 | 15:55:05 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:55:16 | ✅ Found on monitor 2 → logical=(-1581,429) size=(527×252)
+2025-05-30 | 15:55:17 | Moved mouse to (-1318,555)
+2025-05-30 | 15:55:17 | Clicked 1× left at (-1318,555)
+2025-05-30 | 15:55:17 | Sleeping 3.0s after click…
+2025-05-30 | 15:55:20 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:55:20 | Input step: No position specified for mouse click.
+2025-05-30 | 15:55:20 | RUN: Execution completed.
+2025-05-30 | 15:55:20 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:55:20 | RUN: Execution completed.
+2025-05-30 | 15:55:20 | Window restored.
+2025-05-30 | 15:55:30 | RUN: Starting execution.
+2025-05-30 | 15:55:30 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:55:30 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:55:30 | Loaded configuration from run.json
+2025-05-30 | 15:55:30 | RUN: Starting execution.
+2025-05-30 | 15:55:30 | RUN: Processing Tab 1
+2025-05-30 | 15:55:30 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:55:42 | ✅ Found on monitor 2 → logical=(-1581,429) size=(527×252)
+2025-05-30 | 15:55:42 | Moved mouse to (-1318,555)
+2025-05-30 | 15:55:43 | Clicked 1× left at (-1318,555)
+2025-05-30 | 15:55:43 | Sleeping 3.0s after click…
+2025-05-30 | 15:55:46 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:55:46 | Input step: No position specified for mouse click.
+2025-05-30 | 15:55:46 | RUN: Execution completed.
+2025-05-30 | 15:55:46 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:55:46 | RUN: Execution completed.
+2025-05-30 | 15:55:46 | Window restored.
+2025-05-30 | 15:57:39 | RUN: Starting execution.
+2025-05-30 | 15:57:39 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:57:39 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:57:40 | Loaded configuration from run.json
+2025-05-30 | 15:57:40 | RUN: Starting execution.
+2025-05-30 | 15:57:40 | RUN: Processing Tab 1
+2025-05-30 | 15:57:40 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:57:52 | ✅ Found on monitor 2 → logical=(-1581,429) size=(527×252)
+2025-05-30 | 15:57:52 | Moved mouse to (-1318,555)
+2025-05-30 | 15:57:52 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-05-30 | 15:59:17 | RUN: Starting execution.
+2025-05-30 | 15:59:17 | RUN: Configuration saved to run.json.
+2025-05-30 | 15:59:17 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 15:59:18 | Loaded configuration from run.json
+2025-05-30 | 15:59:18 | RUN: Starting execution.
+2025-05-30 | 15:59:18 | RUN: Processing Tab 1
+2025-05-30 | 15:59:18 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 15:59:29 | ✅ Found on monitor 2 → logical=(-1581,429) size=(527×252)
+2025-05-30 | 15:59:29 | Moved mouse to (-1318,555)
+2025-05-30 | 15:59:31 | Clicked 1× left at (-1318,555)
+2025-05-30 | 15:59:31 | Sleeping 3.0s after click…
+2025-05-30 | 15:59:34 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 15:59:34 | Input step: No position specified for mouse click.
+2025-05-30 | 15:59:34 | RUN: Execution completed.
+2025-05-30 | 15:59:34 | RUN: run_module.py executed successfully.
+2025-05-30 | 15:59:34 | RUN: Execution completed.
+2025-05-30 | 15:59:34 | Window restored.
+2025-05-30 | 16:01:57 | RUN: Starting execution.
+2025-05-30 | 16:01:57 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:01:57 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:01:57 | RUN: Error executing run_module.py: Command '['/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/envClicker/bin/python', 'run_module.py', 'run.json']' returned non-zero exit status 1.
+2025-05-30 | 16:02:38 | RUN: Starting execution.
+2025-05-30 | 16:02:38 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:02:38 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:02:39 | Loaded configuration from run.json
+2025-05-30 | 16:02:39 | RUN: Starting execution.
+2025-05-30 | 16:02:39 | RUN: Processing Tab 1
+2025-05-30 | 16:02:39 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:02:50 | ✅ Found on monitor 2 → logical=(-1581,429) size=(527×252)
+2025-05-30 | 16:02:50 | Moved mouse to (-1318,555)
+2025-05-30 | 16:02:51 | Clicked 1× left at (-1318,555)
+2025-05-30 | 16:02:51 | Sleeping 3.0s after click…
+2025-05-30 | 16:02:54 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:02:54 | Input step: No position specified for mouse click.
+2025-05-30 | 16:02:54 | RUN: Execution completed.
+2025-05-30 | 16:02:54 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:02:54 | RUN: Execution completed.
+2025-05-30 | 16:02:54 | Window restored.
+2025-05-30 | 16:03:08 | RUN: Starting execution.
+2025-05-30 | 16:03:08 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:03:08 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:03:09 | Loaded configuration from run.json
+2025-05-30 | 16:03:09 | RUN: Starting execution.
+2025-05-30 | 16:03:09 | RUN: Processing Tab 1
+2025-05-30 | 16:03:09 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:03:20 | ✅ Found on monitor 2 → logical=(-1581,429) size=(527×252)
+2025-05-30 | 16:03:20 | Moved mouse to (-1318,555)
+2025-05-30 | 16:03:21 | Clicked 1× left at (-1318,555)
+2025-05-30 | 16:03:21 | Sleeping 3.0s after click…
+2025-05-30 | 16:03:24 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:03:24 | Input step: No position specified for mouse click.
+2025-05-30 | 16:03:24 | RUN: Execution completed.
+2025-05-30 | 16:03:24 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:03:24 | RUN: Execution completed.
+2025-05-30 | 16:03:24 | Window restored.
+2025-05-30 | 16:03:37 | RUN: Starting execution.
+2025-05-30 | 16:03:37 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:03:37 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:03:37 | Loaded configuration from run.json
+2025-05-30 | 16:03:37 | RUN: Starting execution.
+2025-05-30 | 16:03:37 | RUN: Processing Tab 1
+2025-05-30 | 16:03:37 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:03:49 | ✅ Found on monitor 2 → logical=(-1581,429) size=(527×252)
+2025-05-30 | 16:03:49 | Moved mouse to (-1318,555)
+2025-05-30 | 16:03:50 | Clicked 1× left at (-1318,555)
+2025-05-30 | 16:03:50 | Sleeping 3.0s after click…
+2025-05-30 | 16:03:53 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:03:53 | Input step: No position specified for mouse click.
+2025-05-30 | 16:03:53 | RUN: Execution completed.
+2025-05-30 | 16:03:53 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:03:53 | RUN: Execution completed.
+2025-05-30 | 16:03:53 | Window restored.
+2025-05-30 | 16:04:37 | RUN: Starting execution.
+2025-05-30 | 16:04:37 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:04:37 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:04:37 | Loaded configuration from run.json
+2025-05-30 | 16:04:37 | RUN: Starting execution.
+2025-05-30 | 16:04:37 | RUN: Processing Tab 1
+2025-05-30 | 16:04:37 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:04:49 | ✅ Found on monitor 2 → logical=(-1581,429) size=(527×252)
+2025-05-30 | 16:04:49 | Moved mouse to (-1318,555)
+2025-05-30 | 16:04:49 | Clicked 1× left at (-1318,555)
+2025-05-30 | 16:04:49 | Sleeping 3.0s after click…
+2025-05-30 | 16:04:52 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:04:52 | Input step: No position specified for mouse click.
+2025-05-30 | 16:04:52 | RUN: Execution completed.
+2025-05-30 | 16:04:52 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:04:52 | RUN: Execution completed.
+2025-05-30 | 16:04:52 | Window restored.
+2025-05-30 | 16:08:50 | RUN: Starting execution.
+2025-05-30 | 16:08:50 | RUN: Configuration saved to run.json.
+2025-05-30 | 16:08:50 | RUN: Executing run_module.py with run.json as argument. This may take up to an hour...
+2025-05-30 | 16:08:50 | Loaded configuration from run.json
+2025-05-30 | 16:08:50 | RUN: Starting execution.
+2025-05-30 | 16:08:50 | RUN: Processing Tab 1
+2025-05-30 | 16:08:50 | [Tab Tab 1 | Step 1] IMAGE → {'image_click': True, 'image_click_LR': 'Left', 'image_confidence': '0.80', 'image_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/imgm2.png', 'image_sleep': '3', 'image_timeout': '0', 'image_wait': False, 'image_wait_sleep': '2'}
+2025-05-30 | 16:09:02 | ✅ Found on monitor 2 → logical=(-1581,429) size=(527×252)
+2025-05-30 | 16:09:02 | Moved mouse to (-1318,555)
+2025-05-30 | 16:09:02 | Clicked 1× left at (-1318,555)
+2025-05-30 | 16:09:02 | Sleeping 3.0s after click…
+2025-05-30 | 16:09:05 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-30 | 16:09:05 | ⚠️ No position specified – using current mouse position (-1318,555)
+2025-05-30 | 16:09:05 | Mouse clicked at (-1318, 555) 2× left
+2025-05-30 | 16:09:05 | RUN: Execution completed.
+2025-05-30 | 16:09:05 | RUN: run_module.py executed successfully.
+2025-05-30 | 16:09:05 | RUN: Execution completed.
+2025-05-30 | 16:09:05 | Window restored.
