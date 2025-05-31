@@ -19,7 +19,8 @@ from modals.data_modal import open_data_modal
 from image_engine import find_image
 
 import logging
-# logging.getLogger("PIL").setLevel(logging.DEBUG)
+logging.getLogger("PIL").setLevel(logging.WARNING)
+logging.getLogger("PIL.PngImagePlugin").setLevel(logging.WARNING)
 
 # -----------------------------
 # Global configuration (will be loaded from run.json if it exists)
