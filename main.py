@@ -819,4 +819,31 @@ def initialize_imkclient():
     root.focus_force()
 
 root.after(100, initialize_imkclient)
-root.mainloop() 
+#root.mainloop() 
+
+if __name__ == "__main__":
+    import subprocess
+    import os
+
+    # If exactly one CLI argument is provided, run run_module.py with it and exit
+    if len(sys.argv) == 2:
+        config_path = sys.argv[1]
+        if not os.path.isfile(config_path):
+            print(f"Error: JSON file not found: {config_path}")
+            sys.exit(1)
+
+        # Launch run_module.py via subprocess so stdout/stderr are forwarded
+        proc = subprocess.Popen(
+            [sys.executable, "-u", "run_module.py", config_path],
+            stdout=sys.stdout,
+            stderr=sys.stderr,
+            text=True,
+            encoding="utf-8",
+            errors="replace"
+        )
+        proc.communicate()
+        sys.exit(proc.returncode)
+
+    # Otherwise (no arguments), open the GUI
+    else:
+        root.mainloop()
