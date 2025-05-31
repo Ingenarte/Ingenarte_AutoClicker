@@ -1,22 +1,17 @@
 {
-    "repetition": {
-        "hours": 0,
-        "minutes": 0,
-        "seconds": 3
-    },
     "tab_n": {
         "Tab 1": {
             "step_1": {
-                "input": {
-                    "input_from": "Mouse",
-                    "input_sleep": "0",
-                    "keyboard_ascii": "",
-                    "keyboard_repeat": "",
-                    "mouse_click_qty": "One",
-                    "mouse_event": "Left",
-                    "mouse_movement": "0"
-                },
-                "position": "-1817x-21"
+                "image": {
+                    "image_click": true,
+                    "image_click_LR": "Right",
+                    "image_confidence": "0.95",
+                    "image_path": "/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/Screenshot 2025-05-31 at 11.01.00 am.png",
+                    "image_sleep": "0",
+                    "image_timeout": "0",
+                    "image_wait": false,
+                    "image_wait_sleep": "0"
+                }
             }
         }
     }

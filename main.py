@@ -59,7 +59,7 @@ def _on_key_press(key):
         and (keyboard.Key.shift in _current_mods or keyboard.Key.shift_r in _current_mods)
         and getattr(key, "char", "").lower() == "q"):
         stop_event.set()
-        return False  # detiene el listener
+
 
 def _on_key_release(key):
     if key in _current_mods:
@@ -496,13 +496,19 @@ def log_action(message):
 
 
 def run_script():
-    # 1) Oculta la UI y limpia el flag de cancelación
+    global in_repeater_mode
+
+    # Sólo limpiamos stop_event si NO estamos en modo repetidor.
+    # De este modo, cuando in_repeater_mode == True, no borramos la señal de Ctrl+Shift+Q.
+    if not in_repeater_mode:
+        stop_event.clear()
+
+    # Ocultamos la UI y arrancamos la ejecución
     root.withdraw()
     root.update()
-    stop_event.clear()
     log_action("RUN: Starting execution.")
 
-    # 2) Guarda la configuración a run.json
+    # 1) Guardar configuración a run.json
     run_filename = "run.json"
     try:
         with open(run_filename, "w", encoding="utf-8") as f:
@@ -513,46 +519,49 @@ def run_script():
         root.deiconify()
         return
 
-    # 3) Último chequeo antes de lanzar
+    # 2) Último chequeo antes de lanzar: si ya se pulsó Ctrl+Shift+Q, volvemos a la UI
     if stop_event.is_set():
         log_action("🚩 Cancelled by hotkey before launch — returning to UI")
         root.deiconify()
         return
 
-    # 4) Lanza run_module.py sin búfer (-u) y con stderr→stdout
+    # 3) Lanza run_module.py con stdout+stderr unidos, sin buffering
     log_action("RUN: Launching run_module.py …")
     proc = subprocess.Popen(
         [sys.executable, "-u", "run_module.py", run_filename],
         stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,   # <-- stderr unido a stdout
+        stderr=subprocess.STDOUT,
         text=True,
-        bufsize=1                   # <-- line-buffered
+        bufsize=1
     )
 
-    # 5) Lee la salida en vivo y vigila la tecla mágica
-    for line in iter(proc.stdout.readline, ''):   # sale '' cuando el pipe se cierra
+    # 4) Leer la salida en vivo y vigilar el hotkey
+    for line in iter(proc.stdout.readline, ''):
+        # Si en cualquier momento se presiona Ctrl+Shift+Q, detenemos el subproceso
         if stop_event.is_set():
             log_action("🚩 Hotkey pressed — terminating run_module.py")
             proc.terminate()
             break
         log_action("OUT: " + line.rstrip())
 
-    # 6) Espera a que el sub-proceso termine del todo
     proc.stdout.close()
     try:
         proc.wait(timeout=5)
     except subprocess.TimeoutExpired:
         proc.kill()
 
-    # 7) Código de retorno
+    # 5) Informar código de retorno
     if proc.returncode != 0:
         log_action(f"RUN: run_module.py exited with code {proc.returncode}")
     else:
         log_action("RUN: run_module.py executed successfully.")
 
-    # 8) Restaura la ventana principal
+    # 6) Restaurar la ventana principal
     root.deiconify()
     log_action("Window restored.")
+
+
+
 # -----------------------------
 # "Save Config" functionality – open Save As dialog and write JSON file.
 # -----------------------------
@@ -638,42 +647,63 @@ def set_schedule_time(scheduled_datetime):
     print(f"Program scheduled for {scheduled_datetime}.")
 
 
+in_repeater_mode = False
 
 
 def set_repetition_time(repetition_seconds):
-    global global_repetition_interval, global_repetition_btn, repetition_thread, stop_repetition_event
+    global global_repetition_interval, global_repetition_btn
+    global repetition_thread, stop_repetition_event, in_repeater_mode
+
     global_repetition_interval = repetition_seconds
 
-    # Actualiza apariencia del botón
+    # Update the button’s appearance
     if global_repetition_btn:
         if repetition_seconds is None:
             global_repetition_btn.configure(fg_color="#1F6AA5")
         else:
             global_repetition_btn.configure(fg_color="green")
 
-    # Si ya había un hilo de repetición corriendo, detenlo
+    # If there is already a repetition thread running, stop it
     if 'repetition_thread' in globals() and repetition_thread.is_alive():
         stop_repetition_event.set()
         repetition_thread.join()
 
-    # Si se definió un intervalo válido, arrancamos un nuevo hilo que vuelque run_script() cada N segundos
+    # If a valid interval was provided, start a new thread that calls run_script() every N seconds
     if repetition_seconds:
         stop_repetition_event = threading.Event()
+
         def repeater():
-            # Mientras no se dispare el evento de parada, esperar e invocar run_script
+            global in_repeater_mode
+
+            # Enter “repeater mode” so run_script() does NOT clear stop_event
+            in_repeater_mode = True
+
             while not stop_repetition_event.is_set():
-                log_action(f"Repetition: esperando {repetition_seconds}s para la próxima ejecución…")
-                # Usamos wait() en vez de sleep para poder interrumpir con el evento
+                # If the user pressed Ctrl+Shift+Q at any time, break out
+                if stop_event.is_set():
+                    break
+
+                log_action(f"Repetition: waiting {repetition_seconds}s for the next execution…")
+                # Wait N seconds or until stop_repetition_event is set
                 if stop_repetition_event.wait(timeout=repetition_seconds):
                     break
+
+                # Before running, check the hotkey again
+                if stop_event.is_set():
+                    break
+
+                # Call run_script(). Because in_repeater_mode == True, stop_event will not be cleared inside run_script()
                 run_script()
-            log_action("Repetition: hilo de repetición detenido.")
+
+            # When exiting the loop, leave “repeater mode”
+            in_repeater_mode = False
+            log_action("Repetition: stopped with Ctrl + Shift + Q.")
 
         repetition_thread = threading.Thread(target=repeater, daemon=True)
         repetition_thread.start()
-        log_action(f"Repetition: iniciado con intervalo {repetition_seconds}s.")
+        log_action(f"Repetition: started with interval {repetition_seconds}s.")
     else:
-        log_action("Repetition: intervalo nulo, no se iniciará repetición.")
+        log_action("Repetition: null interval, will not start repetition.")
 
 
 # -----------------------------
