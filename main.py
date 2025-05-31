@@ -76,8 +76,6 @@ start_master_listener()
 
 
 
-
-
 # -----------------------------
 # CustomTkinter configuration
 # -----------------------------
@@ -88,6 +86,17 @@ ctk.set_default_color_theme("blue")
 # Main window
 # -----------------------------
 root = ctk.CTk()
+
+
+# Esto le da a “root” el método que CustomTkinter espera encontrar:
+def _stub_block_update_dimensions_event():
+    # simplemente no hace nada; evita el AttributeError
+    pass
+
+# Lo pegamos en el objeto. A partir de ahora, si CustomTkinter invoca
+# root.block_update_dimensions_event(), existirá y no hará nada.
+root.block_update_dimensions_event = _stub_block_update_dimensions_event
+
 root.update_idletasks()
 icon_image = tk.PhotoImage(file="public/ingenarte_icon.png")
 root.iconphoto(False, icon_image)
