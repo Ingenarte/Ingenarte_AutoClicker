@@ -104,7 +104,12 @@ root.iconphoto(False, icon_image)
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 window_width = int(screen_width * 0.35)   # 35% of screen width
-window_height = int(screen_height * 0.70)  # 70% of screen height
+
+if sys.platform == "win32":
+    window_height = int(screen_height * 0.75)
+else:
+    window_height = int(screen_height * 0.70)
+
 pos_x = int(screen_width * 0.60)           # 60% from left edge
 pos_y = int(screen_height * 0.20)          # 20% from top
 root.geometry(f"{window_width}x{window_height}+{pos_x}+{pos_y}")
