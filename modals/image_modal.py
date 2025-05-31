@@ -4,6 +4,7 @@ from tkinter import filedialog
 from tkinterdnd2 import DND_FILES,TkinterDnD  # Requires tkinterdnd2 package
 from components.utils import get_next_id
 from components.switch_component import CustomSwitch
+import sys
 
 # Dummy implementation for LabelCheckbox.
 # Replace this with your own if available.
@@ -28,7 +29,15 @@ def open_image_modal(step_id, callback, existing_data=None):
     modal = TkinterDnD.Tk()
     open_image_modals[step_id] = modal
     modal.title("Image Modal " + str(step_id))
-    modal.geometry("600x500")
+    
+    if sys.platform == "win32":
+    # En Windows, le sumamos 130 píxeles extra de alto
+        modal.geometry("600x630")
+    else:
+        modal.geometry("600x500")
+
+
+
     try:
         modal.grab_set()
     except tk.TclError as e:

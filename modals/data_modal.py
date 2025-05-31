@@ -6,6 +6,7 @@ from components.utils import get_next_id
 from components.switch_component import CustomSwitch
 import traceback
 import logging
+import sys
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -31,7 +32,12 @@ def open_data_modal(step_id, callback, existing_data=None):
         modal = TkinterDnD.Tk()
         open_data_modals[step_id] = modal
         modal.title("Data Modal " + str(step_id))
-        modal.geometry("500x400")
+        if sys.platform == "win32":
+         # En Windows, le sumamos 30 píxeles extra de alto
+            modal.geometry("500x430")
+        else:
+            modal.geometry("500x400")
+
         modal.grab_set()
 
         logging.debug(f"Modal created for step {step_id}")
