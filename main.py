@@ -722,14 +722,32 @@ def set_repetition_time(repetition_seconds):
 # Recursivity functionality
 # -----------------------------
 def open_recursivity():
-    # Pass previous rec configuration (if any) to the modal via an attribute.
+    # Pass the previous recursivity settings (if any) to the modal
     recursivity_modal.open_recursivity_modal.prev_rec = global_config.get("recursivity", {})
-    # Aggregate all steps data from all tabs.
+
+    # Collect all steps data from every tab to send into the modal
     steps_data_all = global_config.get("tab_n", {})
-    result = recursivity_modal.open_recursivity_modal(steps_data_all, recursivity_modal.open_recursivity_modal.prev_rec)
-    if result:
+
+    # Open the recursivity modal and retrieve the user’s input
+    result = recursivity_modal.open_recursivity_modal(
+        steps_data_all,
+        recursivity_modal.open_recursivity_modal.prev_rec
+    )
+
+    # Define the “empty” default recursivity configuration that should not count as “set”
+    default_rec = {"r_repeat": 1, "r_steps": ""}
+
+    # Only store a new recursivity config if the user actually selected at least one step (r_steps != "")
+    if result and result.get("r_steps", "") != "":
         global_config["recursivity"] = result
-        update_steps_view()
+    else:
+        # If the result is the default (or empty), remove any existing key
+        if "recursivity" in global_config:
+            del global_config["recursivity"]
+
+    # Refresh the UI so the Recursivity button’s color updates correctly
+    update_steps_view()
+
 
 # -----------------------------
 # Load Config functionality
