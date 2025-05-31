@@ -1,6 +1,30 @@
+import sys
+import ctypes
+
+# ─── Windows: Per‐monitor DPI awareness + UTF-8 console ────────────────────
+if sys.platform == "win32":
+    # 1) Per‐monitor DPI awareness (para que múltiples monitores no reescalen las coordenadas)
+    try:
+        ctypes.windll.shcore.SetProcessDpiAwareness(2)  # PER_MONITOR_DPI_AWARE
+    except Exception:
+        print("Warning: Could not set DPI awareness.")
+
+    # 2) Forzar stdout/stderr a UTF-8 (para evitar UnicodeEncodeError)
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except AttributeError:
+        # Python < 3.7: envolvemos manualmente para que use errors="replace"
+        import io
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+
+
+import pyautogui
+pyautogui.FAILSAFE = False
+
 import customtkinter as ctk
 import time 
-import pyautogui
 import pyperclip
 from pynput import mouse
 import threading
@@ -10,7 +34,6 @@ from tkinter import filedialog
 import datetime
 import os
 import subprocess
-import sys
 from openpyxl import load_workbook  
 from modals import recursivity_modal
 from modals.modal_input import open_input_modal 
@@ -21,19 +44,6 @@ from image_engine import find_image
 import logging
 logging.getLogger("PIL").setLevel(logging.WARNING)
 logging.getLogger("PIL.PngImagePlugin").setLevel(logging.WARNING)
-
-# Force UTF-8 encoding for stdout and stderr on Windows
-if sys.platform == "win32":
-    try:
-        # Python 3.7+: use reconfigure() to change encoding
-        sys.stdout.reconfigure(encoding="utf-8")
-        sys.stderr.reconfigure(encoding="utf-8")
-    except AttributeError:
-        # For Python < 3.7: wrap the streams manually
-        import io
-        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
-        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
-
 
 # -----------------------------
 # Global configuration (will be loaded from run.json if it exists)

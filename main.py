@@ -1,5 +1,4 @@
 import customtkinter as ctk
-import pyautogui
 import pyperclip
 from pynput import mouse
 import threading
@@ -10,16 +9,13 @@ import threading
 from modals.schedule_modal import open_schedule_modal
 from modals.schedule_runner import schedule_runner
 from modals import recursivity_modal
-from modals.modal_input import open_input_modal  # Your modal implementations
+from modals.modal_input import open_input_modal  
 from modals.image_modal import open_image_modal
 from modals.data_modal import open_data_modal
 from modals.repetition_modal import open_repetition_modal
 import subprocess
 import sys
 import datetime
-import os
-import time
-
 
 
 

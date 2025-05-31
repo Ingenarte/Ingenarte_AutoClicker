@@ -24589,3 +24589,161 @@ IT
 2025-05-31 | 20:18:53 | OUT: 2025-05-31 | 20:18:53 | RUN: Execution completed.
 2025-05-31 | 20:18:53 | RUN: run_module.py executed successfully.
 2025-05-31 | 20:18:53 | Window restored.
+2025-05-31 | 20:27:22 | RUN: Starting execution.
+2025-05-31 | 20:27:22 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:27:22 | RUN: Launching run_module.py …
+2025-05-31 | 20:27:23 | Loaded configuration from run.json
+2025-05-31 | 20:27:23 | RUN: Starting execution.
+2025-05-31 | 20:27:23 | OUT: 2025-05-31 | 20:27:23 | Loaded configuration from run.json
+2025-05-31 | 20:27:23 | RUN: Processing Tab 1
+2025-05-31 | 20:27:23 | [Tab Tab 1 | Step 1] Processing position: -3895x427
+2025-05-31 | 20:27:23 | OUT: 2025-05-31 | 20:27:23 | RUN: Starting execution.
+2025-05-31 | 20:27:23 | OUT: 2025-05-31 | 20:27:23 | RUN: Processing Tab 1
+2025-05-31 | 20:27:23 | OUT: 2025-05-31 | 20:27:23 | [Tab Tab 1 | Step 1] Processing position: -3895x427
+2025-05-31 | 20:27:23 | Moved mouse to (-3895, 427).
+2025-05-31 | 20:27:23 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:27:23 | OUT: 2025-05-31 | 20:27:23 | Moved mouse to (-3895, 427).
+2025-05-31 | 20:27:23 | Moved by offset (0,0) → (-3895,427)
+2025-05-31 | 20:27:23 | OUT: 2025-05-31 | 20:27:23 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:27:23 | OUT: 2025-05-31 | 20:27:23 | Moved by offset (0,0) → (-3895,427)
+2025-05-31 | 20:27:23 | Mouse clicked at (-3895,427) 1× left interval=0.2s
+2025-05-31 | 20:27:23 | RUN: Execution completed.
+2025-05-31 | 20:27:23 | OUT: 2025-05-31 | 20:27:23 | Mouse clicked at (-3895,427) 1× left interval=0.2s
+2025-05-31 | 20:27:23 | OUT: 2025-05-31 | 20:27:23 | RUN: Execution completed.
+2025-05-31 | 20:27:23 | RUN: run_module.py executed successfully.
+2025-05-31 | 20:27:23 | Window restored.
+2025-05-31 | 20:28:42 | RUN: Starting execution.
+2025-05-31 | 20:28:42 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:28:42 | RUN: Launching run_module.py …
+2025-05-31 | 20:28:43 | Loaded configuration from run.json
+2025-05-31 | 20:28:43 | RUN: Starting execution.
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | Loaded configuration from run.json
+2025-05-31 | 20:28:43 | [Tab Tab 1 | Step 1] Processing position: -3895x427
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | RUN: Starting execution.
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | RUN: Processing Tab 1
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | [Tab Tab 1 | Step 1] Processing position: -3895x427
+2025-05-31 | 20:28:43 | Moved mouse to (-3895, 427).
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | Moved mouse to (-3895, 427).
+2025-05-31 | 20:28:43 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:28:43 | Moved by offset (0,0) → (-3895,427)
+ | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | Moved by offset (0,0) → (-3895,427)
+2025-05-31 | 20:28:43 | Mouse clicked at (-3895,427) 1× left interval=0.2s
+2025-05-31 | 20:28:43 | [Tab Tab 1 | Step 2] Processing position: -927x361
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | Mouse clicked at (-3895,427) 1× left interval=0.2s
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | [Tab Tab 1 | Step 2] Processing position: -927x361
+2025-05-31 | 20:28:43 | Moved mouse to (-927, 361).
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | Moved mouse to (-927, 361).
+2025-05-31 | 20:28:43 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:28:43 | Moved by offset (0,0) → (-927,361)
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:28:43 | OUT: 2025-05-31 | 20:28:43 | Moved by offset (0,0) → (-927,361)
+2025-05-31 | 20:28:44 | Mouse double‐clicked at (-927,361) interval=0.2s
+2025-05-31 | 20:28:44 | RUN: Execution completed.
+2025-05-31 | 20:28:44 | OUT: 2025-05-31 | 20:28:44 | Mouse double‐clicked at (-927,361) interval=0.2s
+2025-05-31 | 20:28:44 | OUT: 2025-05-31 | 20:28:44 | RUN: Execution completed.
+2025-05-31 | 20:28:44 | RUN: run_module.py executed successfully.
+2025-05-31 | 20:28:44 | Window restored.
+2025-05-31 | 20:40:43 | RUN: Starting execution.
+2025-05-31 | 20:40:43 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:40:43 | RUN: Launching run_module.py …
+2025-05-31 | 20:40:44 | Loaded configuration from run.json
+2025-05-31 | 20:40:44 | RUN: Starting execution.
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | Loaded configuration from run.json
+2025-05-31 | 20:40:44 | RUN: Processing Tab 1
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | RUN: Starting execution.
+2025-05-31 | 20:40:44 | [Tab Tab 1 | Step 1] Processing position: -1487x1137
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | RUN: Processing Tab 1
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | [Tab Tab 1 | Step 1] Processing position: -1487x1137
+2025-05-31 | 20:40:44 | Moved mouse to (-1487, 1137).
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | Moved mouse to (-1487, 1137).
+', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:40:44 | Moved by offset (0,0) → (-1487,1137)
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | Moved by offset (0,0) → (-1487,1137)
+2025-05-31 | 20:40:44 | Mouse clicked at (-1487,1137) 1× left interval=0.2s
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | Mouse clicked at (-1487,1137) 1× left interval=0.2s
+2025-05-31 | 20:40:44 | [Tab Tab 1 | Step 2] Processing position: -2875x672
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | [Tab Tab 1 | Step 2] Processing position: -2875x672
+2025-05-31 | 20:40:44 | Moved mouse to (-2875, 672).
+2025-05-31 | 20:40:44 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | Moved mouse to (-2875, 672).
+2025-05-31 | 20:40:44 | Moved by offset (0,0) → (-2875,672)
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | Moved by offset (0,0) → (-2875,672)
+2025-05-31 | 20:40:44 | Mouse clicked at (-2875,672) 1× left interval=0.2s
+2025-05-31 | 20:40:44 | RUN: Execution completed.
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | Mouse clicked at (-2875,672) 1× left interval=0.2s
+2025-05-31 | 20:40:44 | OUT: 2025-05-31 | 20:40:44 | RUN: Execution completed.
+2025-05-31 | 20:40:44 | RUN: run_module.py executed successfully.
+2025-05-31 | 20:40:44 | Window restored.
+2025-05-31 | 20:40:50 | RUN: Starting execution.
+2025-05-31 | 20:40:50 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:40:50 | RUN: Launching run_module.py …
+2025-05-31 | 20:40:50 | Loaded configuration from run.json
+2025-05-31 | 20:40:50 | RUN: Starting execution.
+2025-05-31 | 20:40:50 | RUN: Processing Tab 1
+2025-05-31 | 20:40:50 | [Tab Tab 1 | Step 1] Processing position: -1487x1137
+2025-05-31 | 20:40:50 | OUT: 2025-05-31 | 20:40:50 | Loaded configuration from run.json
+2025-05-31 | 20:40:50 | OUT: 2025-05-31 | 20:40:50 | RUN: Starting execution.
+2025-05-31 | 20:40:50 | OUT: 2025-05-31 | 20:40:50 | RUN: Processing Tab 1
+2025-05-31 | 20:40:50 | OUT: 2025-05-31 | 20:40:50 | [Tab Tab 1 | Step 1] Processing position: -1487x1137
+2025-05-31 | 20:40:50 | Moved mouse to (-1487, 1137).
+2025-05-31 | 20:40:50 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:40:50 | OUT: 2025-05-31 | 20:40:50 | Moved mouse to (-1487, 1137).
+2025-05-31 | 20:40:50 | Moved by offset (0,0) → (-1487,1137)
+2025-05-31 | 20:40:50 | OUT: 2025-05-31 | 20:40:50 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:40:50 | OUT: 2025-05-31 | 20:40:50 | Moved by offset (0,0) → (-1487,1137)
+2025-05-31 | 20:40:50 | Mouse clicked at (-1487,1137) 1× left interval=0.2s
+2025-05-31 | 20:40:50 | [Tab Tab 1 | Step 2] Processing position: -2875x672
+2025-05-31 | 20:40:50 | OUT: 2025-05-31 | 20:40:50 | Mouse clicked at (-1487,1137) 1× left interval=0.2s
+2025-05-31 | 20:40:50 | OUT: 2025-05-31 | 20:40:50 | [Tab Tab 1 | Step 2] Processing position: -2875x672
+2025-05-31 | 20:40:51 | Moved mouse to (-2875, 672).
+2025-05-31 | 20:40:51 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:40:51 | OUT: 2025-05-31 | 20:40:51 | Moved mouse to (-2875, 672).
+2025-05-31 | 20:40:51 | Moved by offset (0,0) → (-2875,672)
+ | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:40:51 | OUT: 2025-05-31 | 20:40:51 | Moved by offset (0,0) → (-2875,672)
+2025-05-31 | 20:40:51 | Mouse clicked at (-2875,672) 1× left interval=0.2s
+2025-05-31 | 20:40:51 | RUN: Execution completed.
+2025-05-31 | 20:40:51 | OUT: 2025-05-31 | 20:40:51 | Mouse clicked at (-2875,672) 1× left interval=0.2s
+2025-05-31 | 20:40:51 | OUT: 2025-05-31 | 20:40:51 | RUN: Execution completed.
+2025-05-31 | 20:40:51 | RUN: run_module.py executed successfully.
+2025-05-31 | 20:40:51 | Window restored.
+2025-05-31 | 20:41:15 | RUN: Starting execution.
+2025-05-31 | 20:41:15 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:41:15 | RUN: Launching run_module.py …
+2025-05-31 | 20:41:16 | Loaded configuration from run.json
+2025-05-31 | 20:41:16 | RUN: Starting execution.
+2025-05-31 | 20:41:16 | OUT: 2025-05-31 | 20:41:16 | Loaded configuration from run.json
+2025-05-31 | 20:41:16 | RUN: Processing Tab 1
+2025-05-31 | 20:41:16 | OUT: 2025-05-31 | 20:41:16 | RUN: Starting execution.
+2025-05-31 | 20:41:16 | [Tab Tab 1 | Step 1] Processing position: -1854x1144
+2025-05-31 | 20:41:16 | OUT: 2025-05-31 | 20:41:16 | RUN: Processing Tab 1
+2025-05-31 | 20:41:16 | OUT: 2025-05-31 | 20:41:16 | [Tab Tab 1 | Step 1] Processing position: -1854x1144
+2025-05-31 | 20:41:16 | Moved mouse to (-1854, 1144).
+2025-05-31 | 20:41:16 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:41:16 | OUT: 2025-05-31 | 20:41:16 | Moved mouse to (-1854, 1144).
+2025-05-31 | 20:41:16 | Moved by offset (0,0) → (-1854,1144)
+2025-05-31 | 20:41:16 | OUT: 2025-05-31 | 20:41:16 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '3', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:41:16 | OUT: 2025-05-31 | 20:41:16 | Moved by offset (0,0) → (-1854,1144)
+2025-05-31 | 20:41:16 | Mouse triple‐clicked at (-1854,1144) interval=0.2s
+2025-05-31 | 20:41:16 | Waiting 3.0s after input.
+| Mouse triple‐clicked at (-1854,1144) interval=0.2s
+2025-05-31 | 20:41:16 | OUT: 2025-05-31 | 20:41:16 | Waiting 3.0s after input.
+2025-05-31 | 20:41:19 | [Tab Tab 1 | Step 2] Processing position: -3356x681
+2025-05-31 | 20:41:19 | OUT: 2025-05-31 | 20:41:19 | [Tab Tab 1 | Step 2] Processing position: -3356x681
+2025-05-31 | 20:41:20 | Moved mouse to (-3356, 681).
+2025-05-31 | 20:41:20 | OUT: 2025-05-31 | 20:41:20 | Moved mouse to (-3356, 681).
+2025-05-31 | 20:41:20 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:41:20 | OUT: 2025-05-31 | 20:41:20 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '2', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:41:20 | Moved by offset (0,0) → (-3356,681)
+2025-05-31 | 20:41:20 | OUT: 2025-05-31 | 20:41:20 | Moved by offset (0,0) → (-3356,681)
+2025-05-31 | 20:41:20 | Mouse double‐clicked at (-3356,681) interval=0.2s
+2025-05-31 | 20:41:20 | OUT: 2025-05-31 | 20:41:20 | Mouse double‐clicked at (-3356,681) interval=0.2s
+2025-05-31 | 20:41:20 | Waiting 2.0s after input.
+2025-05-31 | 20:41:20 | OUT: 2025-05-31 | 20:41:20 | Waiting 2.0s after input.
+2025-05-31 | 20:41:22 | RUN: Execution completed.
+2025-05-31 | 20:41:22 | OUT: 2025-05-31 | 20:41:22 | RUN: Execution completed.
+2025-05-31 | 20:41:22 | RUN: run_module.py executed successfully.
+2025-05-31 | 20:41:22 | Window restored.
