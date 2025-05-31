@@ -488,59 +488,91 @@ def process_data_step(step_config, step_number, tab_name):
     Expected configuration keys:
       - data_path: The Excel file path.
       - data_cell: The cell (e.g., "A3") to operate on.
-      - data_copy_paste: If equal to "Paste To" (case-insensitive), the clipboard contents are pasted into the cell.
-                         If equal to "Copy To", the cell value is copied to the clipboard.
+      - data_copy_paste: "Paste To" or "Copy From".
       - data_select_all: Boolean; if True, simulate a 'select all' keystroke.
-      - Optionally, data_sheet to specify the sheet name. If not provided, the first sheet is used.
+      - Optionally, data_sheet to specify the sheet name.
     """
     action = step_config.get("data", {})
+    # Log the incoming configuration for this data step:
     log_action(f"[Tab {tab_name} | Step {step_number}] Processing data: {action}")
 
-    file_path = action.get("data_path", "")
-    cell = action.get("data_cell", "")
-    copy_paste_action = action.get("data_copy_paste", "")
+    # 1) Extract fields from action:
+    file_path = action.get("data_path", "").strip()
+    cell = action.get("data_cell", "").strip()
+    copy_paste_action = action.get("data_copy_paste", "").strip()
     select_all = action.get("data_select_all", False)
     sheet_name = action.get("data_sheet", None)
 
-    if not file_path or not os.path.exists(file_path):
-        log_action("Data step: Invalid or missing file path.")
+    # 2) If no data_path → skip immediately
+    if not file_path:
+        log_action(f"[Tab {tab_name} | Step {step_number}] Skipping data: no data_path provided.")
         return
 
+    # 3) If the file_path does not exist on disk → skip and log
+    if not os.path.exists(file_path):
+        log_action(f"[Tab {tab_name} | Step {step_number}] Skipping data: file not found → {file_path}")
+        return
+
+    # 4) Attempt to open the workbook. If it's locked/open in Excel on Windows,
+    #    load_workbook(...) may raise PermissionError or a generic OSError(errno=13).
     try:
         wb = load_workbook(file_path)
+    except Exception as e:
+        # If it's a permission‐denied error (errno 13), treat as “file open/locked”:
+        if isinstance(e, PermissionError) or (isinstance(e, OSError) and getattr(e, "errno", None) == 13):
+            log_action(f"[Tab {tab_name} | Step {step_number}] ERROR XLSX FILE OPEN: {file_path}")
+            return
+        # Any other error opening the workbook:
+        log_action(f"[Tab {tab_name} | Step {step_number}] Error processing data step: {e}")
+        return
+
+    # 5) If we reached here, the workbook opened successfully.
+    try:
+        # 5.a) Determine which sheet to use (default → first sheet)
         if sheet_name is None:
-            # Default to the first sheet if none specified.
             sheet_name = wb.sheetnames[0]
         if sheet_name not in wb.sheetnames:
-            log_action(f"Sheet {sheet_name} not found in {file_path}.")
+            log_action(f"[Tab {tab_name} | Step {step_number}] Sheet '{sheet_name}' not found in {file_path}.")
             return
 
         sheet = wb[sheet_name]
 
+        # 5.b) Perform “Paste To” or “Copy From”
         if copy_paste_action.lower() == "paste to":
-            # Paste clipboard content into the cell.
             clipboard_value = pyperclip.paste()
             sheet[cell].value = clipboard_value
             wb.save(file_path)
-            log_action(f"Pasted clipboard value '{clipboard_value}' into cell {cell} in {sheet_name} of {file_path}.")
+            log_action(
+                f"[Tab {tab_name} | Step {step_number}] Pasted clipboard value '{clipboard_value}' "
+                f"into cell {cell} on '{sheet_name}' of {file_path}."
+            )
+
         elif copy_paste_action.lower() == "copy from":
-            # Copy the cell's value to the clipboard.
             cell_value = sheet[cell].value
             pyperclip.copy(str(cell_value))
-            log_action(f"Copied value '{cell_value}' from cell {cell} in {sheet_name} of {file_path} to clipboard.")
-        else:
-            log_action(f"Data step: Unknown data_copy_paste action '{copy_paste_action}'.")
+            log_action(
+                f"[Tab {tab_name} | Step {step_number}] Copied value '{cell_value}' from cell {cell} "
+                f"on '{sheet_name}' of {file_path} to clipboard."
+            )
 
-        # If data_select_all is True, simulate a 'select all' keystroke.
+        else:
+            # If the user provided an unrecognized action, log and skip
+            log_action(
+                f"[Tab {tab_name} | Step {step_number}] Data step: Unknown data_copy_paste action '{copy_paste_action}'."
+            )
+
+        # 5.c) If data_select_all is True, simulate a “select all” keystroke
         if select_all:
             if sys.platform == "darwin":
                 pyautogui.hotkey("command", "a")
             else:
                 pyautogui.hotkey("ctrl", "a")
-            log_action("Executed select all command.")
+            log_action(f"[Tab {tab_name} | Step {step_number}] Executed select all command.")
 
     except Exception as e:
-        log_action(f"Error processing data step: {e}")
+        # If any error occurs while reading/writing cells or saving, log it here:
+        log_action(f"[Tab {tab_name} | Step {step_number}] Error processing data step: {e}")
+        return
 
 def process_position_step(step_config, step_number, tab_name):
     pos = step_config.get("position", "")
@@ -564,7 +596,12 @@ def process_step(tab_name, step_number, step_config):
     if "image" in step_config:
         process_image_step(step_config, step_number, tab_name)
     if "data" in step_config:
-        process_data_step(step_config, step_number, tab_name)
+        data_conf = step_config["data"]
+        data_path = data_conf.get("data_path", "").strip()
+        if data_path:
+            process_data_step(step_config, step_number, tab_name)
+        else:
+            log_action(f"[{tab_name} | Step {step_number}] Skipping data: no data_path provided.")
 
 def process_recursivity(rec_config):
     r_steps_str = rec_config.get("r_steps", "")

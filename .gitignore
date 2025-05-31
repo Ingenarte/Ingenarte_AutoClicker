@@ -4,3 +4,4 @@ venv/
 *pycache*
 run-log.txt
 run*.json
+*.xls*
