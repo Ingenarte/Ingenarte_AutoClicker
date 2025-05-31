@@ -38,39 +38,49 @@ global_schedule_btn = None
 import threading
 from pynput import keyboard
 
-# ——————————————————————————————————————————————————————————————
-# Master hotkey: Ctrl+Shift+Q para cancelar la ejecución
-# ——————————————————————————————————————————————————————————————
-
 stop_event = threading.Event()
 _current_mods = set()
 
 def _on_key_press(key):
-    # guardamos modifier keys
-    if key in (keyboard.Key.ctrl_l, keyboard.Key.ctrl_r,
-               keyboard.Key.shift,  keyboard.Key.shift_r):
-        _current_mods.add(key)
-    # si están Ctrl+Shift y presionamos 'q'
-    if ((keyboard.Key.ctrl_l in _current_mods or keyboard.Key.ctrl_r in _current_mods)
-        and (keyboard.Key.shift in _current_mods or keyboard.Key.shift_r in _current_mods)
-        and getattr(key, "char", "").lower() == "q"):
-        stop_event.set()
+    # ───────── Windows: Alt+Q ────────────────────────────────────────────
+    if sys.platform == "win32":
+        # 1) Record if Alt (left or right) is pressed
+        if key in (keyboard.Key.alt_l, keyboard.Key.alt_r):
+            _current_mods.add(key)
+        # 2) If Alt is held down and the current key is "q" (lowercase or uppercase) → trigger hotkey
+        if ((keyboard.Key.alt_l in _current_mods or keyboard.Key.alt_r in _current_mods)
+            and getattr(key, "char", "").lower() == "q"):
+            # Mark the event so the rest of your application can detect it
+            #print("¡Se detectó Alt+Q en Windows!")
+            stop_event.set()
+
+    # ───────── macOS and Linux: Ctrl+Shift+Q ────────────────────────────────
+    else:
+        # 1) Record if Ctrl or Shift is pressed
+        if key in (keyboard.Key.ctrl_l, keyboard.Key.ctrl_r,
+                   keyboard.Key.shift, keyboard.Key.shift_r):
+            _current_mods.add(key)
+        # 2) If Ctrl AND Shift are held down and the current key is "q" → trigger hotkey
+        if ((keyboard.Key.ctrl_l in _current_mods or keyboard.Key.ctrl_r in _current_mods)
+            and (keyboard.Key.shift in _current_mods or keyboard.Key.shift_r in _current_mods)
+            and getattr(key, "char", "").lower() == "q"):
+            #print("¡Se detectó Ctrl+Shift+Q en macOS/Linux!")
+            stop_event.set()
 
 
 def _on_key_release(key):
+    # When any of the tracked keys are released, remove them from _current_mods
     if key in _current_mods:
         _current_mods.remove(key)
 
-def start_master_listener():
-    listener = keyboard.Listener(
-        on_press=_on_key_press,
-        on_release=_on_key_release
-    )
-    listener.daemon = True
-    listener.start()
 
-# Arrancamos el listener ANTES del mainloop
-start_master_listener()
+# Start the global listener
+listener = keyboard.Listener(
+    on_press=_on_key_press,
+    on_release=_on_key_release
+)
+listener.daemon = True
+listener.start()
 
 ### ---- Listener HotKey for process stoping and coming back to main window
 
