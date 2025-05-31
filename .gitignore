@@ -1,3 +1,6 @@
 envClicker/
 venv/
 *.venv/
+*pycache*
+*run*
+*run-log*

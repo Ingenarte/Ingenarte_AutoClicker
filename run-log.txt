@@ -24336,3 +24336,256 @@ IT
 2025-05-31 | 11:01:30 | OUT: 2025-05-31 | 11:01:30 | RUN: Execution completed.
 2025-05-31 | 11:01:30 | RUN: run_module.py executed successfully.
 2025-05-31 | 11:01:30 | Window restored.
+2025-05-31 | 20:08:08 | RUN: Starting execution.
+2025-05-31 | 20:08:08 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:08:08 | RUN: Launching run_module.py …
+2025-05-31 | 20:08:09 | Loaded configuration from run.json
+2025-05-31 | 20:08:09 | RUN: Starting execution.
+2025-05-31 | 20:08:09 | OUT: 2025-05-31 | 20:08:09 | Loaded configuration from run.json
+2025-05-31 | 20:08:09 | RUN: Processing Tab 1
+2025-05-31 | 20:08:09 | [Tab Tab 1 | Step 1] Processing position: -2803x571
+2025-05-31 | 20:08:09 | OUT: 2025-05-31 | 20:08:09 | RUN: Starting execution.
+2025-05-31 | 20:08:09 | OUT: 2025-05-31 | 20:08:09 | RUN: Processing Tab 1
+2025-05-31 | 20:08:09 | OUT: 2025-05-31 | 20:08:09 | [Tab Tab 1 | Step 1] Processing position: -2803x571
+2025-05-31 | 20:08:09 | Moved mouse to (-2803, 571).
+2025-05-31 | 20:08:09 | OUT: 2025-05-31 | 20:08:09 | Moved mouse to (-2803, 571).
+2025-05-31 | 20:08:09 | RUN: Execution completed.
+2025-05-31 | 20:08:09 | OUT: 2025-05-31 | 20:08:09 | RUN: Execution completed.
+2025-05-31 | 20:08:09 | RUN: run_module.py executed successfully.
+2025-05-31 | 20:08:09 | Window restored.
+2025-05-31 | 20:08:15 | RUN: Starting execution.
+2025-05-31 | 20:08:15 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:08:15 | RUN: Launching run_module.py …
+2025-05-31 | 20:08:16 | Loaded configuration from run.json
+2025-05-31 | 20:08:16 | RUN: Starting execution.
+2025-05-31 | 20:08:16 | OUT: 2025-05-31 | 20:08:16 | Loaded configuration from run.json
+2025-05-31 | 20:08:16 | RUN: Processing Tab 1
+2025-05-31 | 20:08:16 | OUT: 2025-05-31 | 20:08:16 | RUN: Starting execution.
+2025-05-31 | 20:08:16 | [Tab Tab 1 | Step 1] Processing position: -2803x571
+2025-05-31 | 20:08:16 | OUT: 2025-05-31 | 20:08:16 | RUN: Processing Tab 1
+2025-05-31 | 20:08:16 | OUT: 2025-05-31 | 20:08:16 | [Tab Tab 1 | Step 1] Processing position: -2803x571
+2025-05-31 | 20:08:16 | Moved mouse to (-2803, 571).
+2025-05-31 | 20:08:16 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:08:16 | OUT: 2025-05-31 | 20:08:16 | Moved mouse to (-2803, 571).
+2025-05-31 | 20:08:16 | Moved by offset (0,0) → (-2803,571)
+2025-05-31 | 20:08:16 | OUT: 2025-05-31 | 20:08:16 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:08:16 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-31 | 20:08:16 | OUT: Traceback (most recent call last):
+2025-05-31 | 20:08:16 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 219, in process_input_step
+2025-05-31 | 20:08:16 | OUT:     log_action(f"Moved by offset ({dx},{dy}) \u2192 ({x},{y})")
+2025-05-31 | 20:08:16 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 39, in log_action
+2025-05-31 | 20:08:16 | OUT:     print(log_line,flush=True)
+2025-05-31 | 20:08:16 | OUT:   File "C:\Users\francorodrigo\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+2025-05-31 | 20:08:16 | OUT:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2025-05-31 | 20:08:16 | OUT:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-31 | 20:08:16 | OUT: UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 46: character maps to <undefined>
+2025-05-31 | 20:08:16 | OUT: 
+2025-05-31 | 20:08:16 | OUT: During handling of the above exception, another exception occurred:
+2025-05-31 | 20:08:16 | OUT: 
+2025-05-31 | 20:08:16 | OUT: Traceback (most recent call last):
+2025-05-31 | 20:08:16 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 636, in <module>
+2025-05-31 | 20:08:16 | OUT:     main()
+2025-05-31 | 20:08:16 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 633, in main
+2025-05-31 | 20:08:16 | OUT:     run_script()
+2025-05-31 | 20:08:16 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 574, in run_script
+2025-05-31 | 20:08:16 | OUT:     process_step(tab_name, step_num, step_config)
+2025-05-31 | 20:08:16 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 540, in process_step
+2025-05-31 | 20:08:16 | OUT:     process_input_step(step_config, step_number, tab_name)
+2025-05-31 | 20:08:16 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 221, in process_input_step
+2025-05-31 | 20:08:16 | OUT:     log_action(f"\u26a0\ufe0f Invalid mouse_movement '{mv}' – skipping offset")
+2025-05-31 | 20:08:16 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 39, in log_action
+2025-05-31 | 20:08:16 | OUT:     print(log_line,flush=True)
+2025-05-31 | 20:08:16 | OUT:   File "C:\Users\francorodrigo\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+2025-05-31 | 20:08:16 | OUT:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2025-05-31 | 20:08:16 | OUT:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-31 | 20:08:16 | OUT: UnicodeEncodeError: 'charmap' codec can't encode characters in position 24-25: character maps to <undefined>
+2025-05-31 | 20:08:16 | RUN: run_module.py exited with code 1
+2025-05-31 | 20:08:16 | Window restored.
+2025-05-31 | 20:13:51 | RUN: Starting execution.
+2025-05-31 | 20:13:51 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:13:51 | RUN: Launching run_module.py …
+2025-05-31 | 20:13:52 | Loaded configuration from run.json
+2025-05-31 | 20:13:52 | RUN: Starting execution.
+2025-05-31 | 20:13:52 | RUN: Processing Tab 1
+2025-05-31 | 20:13:52 | OUT: 2025-05-31 | 20:13:52 | Loaded configuration from run.json
+2025-05-31 | 20:13:52 | [Tab Tab 1 | Step 1] Processing position: -2803x571
+2025-05-31 | 20:13:52 | OUT: 2025-05-31 | 20:13:52 | RUN: Starting execution.
+2025-05-31 | 20:13:52 | OUT: 2025-05-31 | 20:13:52 | RUN: Processing Tab 1
+2025-05-31 | 20:13:52 | OUT: 2025-05-31 | 20:13:52 | [Tab Tab 1 | Step 1] Processing position: -2803x571
+2025-05-31 | 20:13:52 | Moved mouse to (-2803, 571).
+2025-05-31 | 20:13:52 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:13:52 | OUT: 2025-05-31 | 20:13:52 | Moved mouse to (-2803, 571).
+2025-05-31 | 20:13:52 | Moved by offset (0,0) → (-2803,571)
+2025-05-31 | 20:13:52 | OUT: 2025-05-31 | 20:13:52 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:13:52 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-31 | 20:13:52 | OUT: Traceback (most recent call last):
+2025-05-31 | 20:13:52 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 219, in process_input_step
+2025-05-31 | 20:13:52 | OUT:     log_action(f"Moved by offset ({dx},{dy}) \u2192 ({x},{y})")
+2025-05-31 | 20:13:52 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 39, in log_action
+2025-05-31 | 20:13:52 | OUT:     print(log_line,flush=True)
+2025-05-31 | 20:13:52 | OUT:   File "C:\Users\francorodrigo\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+2025-05-31 | 20:13:52 | OUT:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2025-05-31 | 20:13:52 | OUT:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-31 | 20:13:52 | OUT: UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 46: character maps to <undefined>
+2025-05-31 | 20:13:52 | OUT: 
+2025-05-31 | 20:13:52 | OUT: During handling of the above exception, another exception occurred:
+2025-05-31 | 20:13:52 | OUT: 
+2025-05-31 | 20:13:52 | OUT: Traceback (most recent call last):
+2025-05-31 | 20:13:52 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 636, in <module>
+2025-05-31 | 20:13:52 | OUT:     main()
+2025-05-31 | 20:13:52 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 633, in main
+2025-05-31 | 20:13:52 | OUT:     run_script()
+2025-05-31 | 20:13:52 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 574, in run_script
+2025-05-31 | 20:13:52 | OUT:     process_step(tab_name, step_num, step_config)
+2025-05-31 | 20:13:52 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 540, in process_step
+2025-05-31 | 20:13:52 | OUT:     process_input_step(step_config, step_number, tab_name)
+2025-05-31 | 20:13:52 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 221, in process_input_step
+2025-05-31 | 20:13:52 | OUT:     log_action(f"\u26a0\ufe0f Invalid mouse_movement '{mv}' – skipping offset")
+2025-05-31 | 20:13:52 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 39, in log_action
+2025-05-31 | 20:13:52 | OUT:     print(log_line,flush=True)
+2025-05-31 | 20:13:52 | OUT:   File "C:\Users\francorodrigo\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+2025-05-31 | 20:13:52 | OUT:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2025-05-31 | 20:13:52 | OUT:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-31 | 20:13:52 | OUT: UnicodeEncodeError: 'charmap' codec can't encode characters in position 24-25: character maps to <undefined>
+2025-05-31 | 20:13:52 | RUN: run_module.py exited with code 1
+2025-05-31 | 20:13:52 | Window restored.
+2025-05-31 | 20:14:46 | RUN: Starting execution.
+2025-05-31 | 20:14:46 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:14:46 | RUN: Launching run_module.py …
+2025-05-31 | 20:14:47 | Loaded configuration from run.json
+2025-05-31 | 20:14:47 | OUT: 2025-05-31 | 20:14:47 | Loaded configuration from run.json
+2025-05-31 | 20:14:47 | RUN: Processing Tab 1
+:47 | RUN: Starting execution.
+2025-05-31 | 20:14:47 | OUT: 2025-05-31 | 20:14:47 | RUN: Processing Tab 1
+2025-05-31 | 20:14:47 | [Tab Tab 1 | Step 1] Processing position: -1406x867
+2025-05-31 | 20:14:47 | OUT: 2025-05-31 | 20:14:47 | [Tab Tab 1 | Step 1] Processing position: -1406x867
+2025-05-31 | 20:14:47 | Moved mouse to (-1406, 867).
+2025-05-31 | 20:14:47 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:14:47 | OUT: 2025-05-31 | 20:14:47 | Moved mouse to (-1406, 867).
+2025-05-31 | 20:14:47 | Moved by offset (0,0) → (-1406,867)
+2025-05-31 | 20:14:47 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-31 | 20:14:47 | OUT: 2025-05-31 | 20:14:47 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:14:47 | OUT: Traceback (most recent call last):
+2025-05-31 | 20:14:47 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 219, in process_input_step
+2025-05-31 | 20:14:47 | OUT:     log_action(f"Moved by offset ({dx},{dy}) \u2192 ({x},{y})")
+2025-05-31 | 20:14:47 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 39, in log_action
+2025-05-31 | 20:14:47 | OUT:     print(log_line,flush=True)
+2025-05-31 | 20:14:47 | OUT:   File "C:\Users\francorodrigo\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+2025-05-31 | 20:14:47 | OUT:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2025-05-31 | 20:14:47 | OUT:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-31 | 20:14:47 | OUT: UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 46: character maps to <undefined>
+2025-05-31 | 20:14:47 | OUT: 
+2025-05-31 | 20:14:47 | OUT: During handling of the above exception, another exception occurred:
+2025-05-31 | 20:14:47 | OUT: 
+2025-05-31 | 20:14:47 | OUT: Traceback (most recent call last):
+2025-05-31 | 20:14:47 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 636, in <module>
+2025-05-31 | 20:14:47 | OUT:     main()
+2025-05-31 | 20:14:47 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 633, in main
+2025-05-31 | 20:14:47 | OUT:     run_script()
+2025-05-31 | 20:14:47 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 574, in run_script
+2025-05-31 | 20:14:47 | OUT:     process_step(tab_name, step_num, step_config)
+2025-05-31 | 20:14:47 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 540, in process_step
+2025-05-31 | 20:14:47 | OUT:     process_input_step(step_config, step_number, tab_name)
+2025-05-31 | 20:14:47 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 221, in process_input_step
+2025-05-31 | 20:14:47 | OUT:     log_action(f"\u26a0\ufe0f Invalid mouse_movement '{mv}' � skipping offset")
+2025-05-31 | 20:14:47 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 39, in log_action
+2025-05-31 | 20:14:47 | OUT:     print(log_line,flush=True)
+2025-05-31 | 20:14:47 | OUT:   File "C:\Users\francorodrigo\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+2025-05-31 | 20:14:47 | OUT:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2025-05-31 | 20:14:47 | OUT:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-31 | 20:14:47 | OUT: UnicodeEncodeError: 'charmap' codec can't encode characters in position 24-25: character maps to <undefined>
+2025-05-31 | 20:14:47 | RUN: run_module.py exited with code 1
+2025-05-31 | 20:14:47 | Window restored.
+2025-05-31 | 20:17:00 | RUN: Starting execution.
+2025-05-31 | 20:17:00 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:17:00 | RUN: Launching run_module.py …
+2025-05-31 | 20:17:01 | Loaded configuration from run.json
+2025-05-31 | 20:17:01 | RUN: Starting execution.
+2025-05-31 | 20:17:01 | OUT: 2025-05-31 | 20:17:01 | Loaded configuration from run.json
+2025-05-31 | 20:17:01 | [Tab Tab 1 | Step 1] Processing position: -2894x483
+2025-05-31 | 20:17:01 | OUT: 2025-05-31 | 20:17:01 | RUN: Starting execution.
+2025-05-31 | 20:17:01 | OUT: 2025-05-31 | 20:17:01 | RUN: Processing Tab 1
+2025-05-31 | 20:17:01 | OUT: 2025-05-31 | 20:17:01 | [Tab Tab 1 | Step 1] Processing position: -2894x483
+2025-05-31 | 20:17:01 | Moved mouse to (-2894, 483).
+2025-05-31 | 20:17:01 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:17:01 | Moved by offset (0,0) → (-2894,483)
+2025-05-31 | 20:17:01 | OUT: 2025-05-31 | 20:17:01 | Moved mouse to (-2894, 483).
+2025-05-31 | 20:17:01 | ⚠️ Invalid mouse_movement '0' – skipping offset
+2025-05-31 | 20:17:01 | OUT: 2025-05-31 | 20:17:01 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:17:01 | OUT: Traceback (most recent call last):
+2025-05-31 | 20:17:01 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 219, in process_input_step
+2025-05-31 | 20:17:01 | OUT:     log_action(f"Moved by offset ({dx},{dy}) \u2192 ({x},{y})")
+2025-05-31 | 20:17:01 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 39, in log_action
+2025-05-31 | 20:17:01 | OUT:     print(log_line,flush=True)
+2025-05-31 | 20:17:01 | OUT:   File "C:\Users\francorodrigo\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+2025-05-31 | 20:17:01 | OUT:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2025-05-31 | 20:17:01 | OUT:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-31 | 20:17:01 | OUT: UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 46: character maps to <undefined>
+2025-05-31 | 20:17:01 | OUT: 
+2025-05-31 | 20:17:01 | OUT: During handling of the above exception, another exception occurred:
+2025-05-31 | 20:17:01 | OUT: 
+2025-05-31 | 20:17:01 | OUT: Traceback (most recent call last):
+2025-05-31 | 20:17:01 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 636, in <module>
+2025-05-31 | 20:17:01 | OUT:     main()
+2025-05-31 | 20:17:01 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 633, in main
+2025-05-31 | 20:17:01 | OUT:     run_script()
+2025-05-31 | 20:17:01 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 574, in run_script
+2025-05-31 | 20:17:01 | OUT:     process_step(tab_name, step_num, step_config)
+2025-05-31 | 20:17:01 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 540, in process_step
+2025-05-31 | 20:17:01 | OUT:     process_input_step(step_config, step_number, tab_name)
+2025-05-31 | 20:17:01 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 221, in process_input_step
+2025-05-31 | 20:17:01 | OUT:     log_action(f"\u26a0\ufe0f Invalid mouse_movement '{mv}' � skipping offset")
+2025-05-31 | 20:17:01 | OUT:   File "C:\Users\francorodrigo\Desktop\ClicketTest\Ingenarte_AutoClicker\run_module.py", line 39, in log_action
+2025-05-31 | 20:17:01 | OUT:     print(log_line,flush=True)
+2025-05-31 | 20:17:01 | OUT:   File "C:\Users\francorodrigo\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+2025-05-31 | 20:17:01 | OUT:     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2025-05-31 | 20:17:01 | OUT:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-31 | 20:17:01 | OUT: UnicodeEncodeError: 'charmap' codec can't encode characters in position 24-25: character maps to <undefined>
+2025-05-31 | 20:17:01 | RUN: run_module.py exited with code 1
+2025-05-31 | 20:17:01 | Window restored.
+2025-05-31 | 20:18:42 | RUN: Starting execution.
+2025-05-31 | 20:18:42 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:18:42 | RUN: Launching run_module.py …
+2025-05-31 | 20:18:43 | Loaded configuration from run.json
+2025-05-31 | 20:18:43 | RUN: Starting execution.
+2025-05-31 | 20:18:43 | OUT: 2025-05-31 | 20:18:43 | Loaded configuration from run.json
+2025-05-31 | 20:18:43 | RUN: Processing Tab 1
+2025-05-31 | 20:18:43 | OUT: 2025-05-31 | 20:18:43 | RUN: Starting execution.
+2025-05-31 | 20:18:43 | [Tab Tab 1 | Step 1] Processing position: -1112x441
+2025-05-31 | 20:18:43 | OUT: 2025-05-31 | 20:18:43 | RUN: Processing Tab 1
+2025-05-31 | 20:18:43 | OUT: 2025-05-31 | 20:18:43 | [Tab Tab 1 | Step 1] Processing position: -1112x441
+2025-05-31 | 20:18:43 | Moved mouse to (-1112, 441).
+2025-05-31 | 20:18:43 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:18:43 | OUT: 2025-05-31 | 20:18:43 | Moved mouse to (-1112, 441).
+2025-05-31 | 20:18:43 | Moved by offset (0,0) → (-1112,441)
+2025-05-31 | 20:18:43 | OUT: 2025-05-31 | 20:18:43 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:18:43 | OUT: 2025-05-31 | 20:18:43 | Moved by offset (0,0) → (-1112,441)
+2025-05-31 | 20:18:43 | Mouse double‐clicked at (-1112,441) interval=0.2s
+2025-05-31 | 20:18:43 | RUN: Execution completed.
+2025-05-31 | 20:18:43 | OUT: 2025-05-31 | 20:18:43 | Mouse double‐clicked at (-1112,441) interval=0.2s
+2025-05-31 | 20:18:43 | OUT: 2025-05-31 | 20:18:43 | RUN: Execution completed.
+2025-05-31 | 20:18:43 | RUN: run_module.py executed successfully.
+2025-05-31 | 20:18:43 | Window restored.
+2025-05-31 | 20:18:52 | RUN: Starting execution.
+2025-05-31 | 20:18:52 | RUN: Configuration saved to run.json.
+2025-05-31 | 20:18:52 | RUN: Launching run_module.py …
+2025-05-31 | 20:18:53 | Loaded configuration from run.json
+2025-05-31 | 20:18:53 | RUN: Starting execution.
+2025-05-31 | 20:18:53 | OUT: 2025-05-31 | 20:18:53 | Loaded configuration from run.json
+2025-05-31 | 20:18:53 | RUN: Processing Tab 1
+2025-05-31 | 20:18:53 | OUT: 2025-05-31 | 20:18:53 | RUN: Starting execution.
+2025-05-31 | 20:18:53 | [Tab Tab 1 | Step 1] Processing position: -1112x441
+2025-05-31 | 20:18:53 | OUT: 2025-05-31 | 20:18:53 | RUN: Processing Tab 1
+2025-05-31 | 20:18:53 | OUT: 2025-05-31 | 20:18:53 | [Tab Tab 1 | Step 1] Processing position: -1112x441
+2025-05-31 | 20:18:53 | Moved mouse to (-1112, 441).
+2025-05-31 | 20:18:53 | OUT: 2025-05-31 | 20:18:53 | Moved mouse to (-1112, 441).
+2025-05-31 | 20:18:53 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:18:53 | Moved by offset (0,0) → (-1112,441)
+2025-05-31 | 20:18:53 | OUT: 2025-05-31 | 20:18:53 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Three', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 20:18:53 | OUT: 2025-05-31 | 20:18:53 | Moved by offset (0,0) → (-1112,441)
+2025-05-31 | 20:18:53 | Mouse triple‐clicked at (-1112,441) interval=0.2s
+2025-05-31 | 20:18:53 | RUN: Execution completed.
+2025-05-31 | 20:18:53 | OUT: 2025-05-31 | 20:18:53 | Mouse triple‐clicked at (-1112,441) interval=0.2s
+2025-05-31 | 20:18:53 | OUT: 2025-05-31 | 20:18:53 | RUN: Execution completed.
+2025-05-31 | 20:18:53 | RUN: run_module.py executed successfully.
+2025-05-31 | 20:18:53 | Window restored.

@@ -7,8 +7,17 @@ pip install -r requirements.txt
 
 
 -- Windows PS
-if (Test-Path envClicker) { Remove-Item -Recurse -Force envClicker }
-python -m venv envClicker
+# Delete existing virtual environment if any
+if (Test-Path .\envClicker) { Remove-Item -Recurse -Force .\envClicker }
+
+# Create a new one
+py -3.11 -m venv envClicker
+
+# Temporarily allow scripts
 Set-ExecutionPolicy Unrestricted -Scope Process
-.envClicker\Scripts\Activate.ps1
+
+# Activate the virtual environment
+& .\envClicker\Scripts\Activate.ps1
+
+# Install dependencies
 pip install -r requirements.txt

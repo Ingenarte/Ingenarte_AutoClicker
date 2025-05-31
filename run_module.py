@@ -22,6 +22,19 @@ import logging
 logging.getLogger("PIL").setLevel(logging.WARNING)
 logging.getLogger("PIL.PngImagePlugin").setLevel(logging.WARNING)
 
+# Force UTF-8 encoding for stdout and stderr on Windows
+if sys.platform == "win32":
+    try:
+        # Python 3.7+: use reconfigure() to change encoding
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except AttributeError:
+        # For Python < 3.7: wrap the streams manually
+        import io
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+
+
 # -----------------------------
 # Global configuration (will be loaded from run.json if it exists)
 # -----------------------------
