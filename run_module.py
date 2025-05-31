@@ -62,6 +62,19 @@ def get_clicks(value_str):
         }
         return mapping.get(value_str.lower(), 1)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 def process_input_step(step_config, step_number, tab_name):
     """
     Processes an input step for either mouse or keyboard actions.
@@ -77,6 +90,99 @@ def process_input_step(step_config, step_number, tab_name):
 
     Finally sleeps for `input_sleep` seconds if given.
     """
+
+
+    ### Macos Double Triple Clicker 
+
+    import sys
+    import time
+    import pyautogui
+
+    if sys.platform == "darwin":
+        import Quartz
+
+    def double_click(x, y, interval=0.2, button='left'):
+        btn_q = Quartz.kCGMouseButtonLeft if button == 'left' else Quartz.kCGMouseButtonRight
+        if sys.platform == "darwin":
+            # Primer clic (clickCount = 1)
+            down1 = Quartz.CGEventCreateMouseEvent(
+                None,
+                Quartz.kCGEventLeftMouseDown if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseDown,
+                (x, y),
+                btn_q
+            )
+            Quartz.CGEventSetIntegerValueField(down1, Quartz.kCGMouseEventClickState, 1)
+            Quartz.CGEventPost(Quartz.kCGHIDEventTap, down1)
+
+            up1 = Quartz.CGEventCreateMouseEvent(
+                None,
+                Quartz.kCGEventLeftMouseUp if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseUp,
+                (x, y),
+                btn_q
+            )
+            Quartz.CGEventSetIntegerValueField(up1, Quartz.kCGMouseEventClickState, 1)
+            Quartz.CGEventPost(Quartz.kCGHIDEventTap, up1)
+
+            time.sleep(interval)
+
+            # Segundo clic (clickCount = 2)
+            down2 = Quartz.CGEventCreateMouseEvent(
+                None,
+                Quartz.kCGEventLeftMouseDown if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseDown,
+                (x, y),
+                btn_q
+            )
+            Quartz.CGEventSetIntegerValueField(down2, Quartz.kCGMouseEventClickState, 2)
+            Quartz.CGEventPost(Quartz.kCGHIDEventTap, down2)
+
+            up2 = Quartz.CGEventCreateMouseEvent(
+                None,
+                Quartz.kCGEventLeftMouseUp if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseUp,
+                (x, y),
+                btn_q
+            )
+            Quartz.CGEventSetIntegerValueField(up2, Quartz.kCGMouseEventClickState, 2)
+            Quartz.CGEventPost(Quartz.kCGHIDEventTap, up2)
+        else:
+            pyautogui.click(x=x, y=y, clicks=2, interval=interval, button=button)
+
+    def triple_click(x, y, interval=0.2, button='left'):
+        btn_q = Quartz.kCGMouseButtonLeft if button == 'left' else Quartz.kCGMouseButtonRight
+        if sys.platform == "darwin":
+            # Clic 1 (clickCount = 1)
+            for state in (1, 2, 3):
+                down = Quartz.CGEventCreateMouseEvent(
+                    None,
+                    Quartz.kCGEventLeftMouseDown if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseDown,
+                    (x, y),
+                    btn_q
+                )
+                Quartz.CGEventSetIntegerValueField(down, Quartz.kCGMouseEventClickState, state)
+                Quartz.CGEventPost(Quartz.kCGHIDEventTap, down)
+
+                up = Quartz.CGEventCreateMouseEvent(
+                    None,
+                    Quartz.kCGEventLeftMouseUp if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseUp,
+                    (x, y),
+                    btn_q
+                )
+                Quartz.CGEventSetIntegerValueField(up, Quartz.kCGMouseEventClickState, state)
+                Quartz.CGEventPost(Quartz.kCGHIDEventTap, up)
+
+                if state < 3:
+                    time.sleep(interval)
+        else:
+            pyautogui.click(x=x, y=y, clicks=3, interval=interval, button=button)
+
+    ### --------- Macos Double Triple Clicker 
+
+
+
+
+
+
+
+
     action = step_config.get("input", {})
     log_action(f"[Tab {tab_name} | Step {step_number}] Processing input: {action}")
     src = action.get("input_from", "").strip().lower()
@@ -114,10 +220,108 @@ def process_input_step(step_config, step_number, tab_name):
                 log_action(f"⚠️ Invalid mouse_movement '{mv}' – skipping offset")
 
         btn = action.get("mouse_event", "Left").strip().lower()
-        btn = "left" if btn == "left" else "right"
+        if btn not in ("left", "right", "middle"):
+            log_action(f"⚠️ Invalid mouse button '{btn}', defaulting to 'left'")
+            btn = "left"
+
         clicks = get_clicks(action.get("mouse_click_qty", "1"))
-        pyautogui.click(x=x, y=y, clicks=clicks, button=btn)
-        log_action(f"Mouse clicked at ({x},{y}) {clicks}× {btn}")
+
+        # 5) Leer intervalo entre clics (por defecto 0.2 s)
+        try:
+            intervalo = float(action.get("click_interval", "0.2") or 0.2)
+        except:
+            intervalo = 0.2
+
+        # 6) Definición de las funciones “double_click” y “triple_click” localmente,
+        #    pero sólo importamos/llamamos a Quartz si estamos en macOS:
+        if sys.platform == "darwin":
+            import Quartz
+
+            def double_click(x0, y0, interval=0.2, button='left'):
+                btn_q = Quartz.kCGMouseButtonLeft if button == 'left' else Quartz.kCGMouseButtonRight
+
+                # 1er clic (clickCount = 1)
+                e_down1 = Quartz.CGEventCreateMouseEvent(
+                    None,
+                    Quartz.kCGEventLeftMouseDown if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseDown,
+                    (x0, y0),
+                    btn_q
+                )
+                Quartz.CGEventSetIntegerValueField(e_down1, Quartz.kCGMouseEventClickState, 1)
+                Quartz.CGEventPost(Quartz.kCGHIDEventTap, e_down1)
+
+                e_up1 = Quartz.CGEventCreateMouseEvent(
+                    None,
+                    Quartz.kCGEventLeftMouseUp if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseUp,
+                    (x0, y0),
+                    btn_q
+                )
+                Quartz.CGEventSetIntegerValueField(e_up1, Quartz.kCGMouseEventClickState, 1)
+                Quartz.CGEventPost(Quartz.kCGHIDEventTap, e_up1)
+
+                time.sleep(interval)
+
+                # 2º clic (clickCount = 2)
+                e_down2 = Quartz.CGEventCreateMouseEvent(
+                    None,
+                    Quartz.kCGEventLeftMouseDown if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseDown,
+                    (x0, y0),
+                    btn_q
+                )
+                Quartz.CGEventSetIntegerValueField(e_down2, Quartz.kCGMouseEventClickState, 2)
+                Quartz.CGEventPost(Quartz.kCGHIDEventTap, e_down2)
+
+                e_up2 = Quartz.CGEventCreateMouseEvent(
+                    None,
+                    Quartz.kCGEventLeftMouseUp if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseUp,
+                    (x0, y0),
+                    btn_q
+                )
+                Quartz.CGEventSetIntegerValueField(e_up2, Quartz.kCGMouseEventClickState, 2)
+                Quartz.CGEventPost(Quartz.kCGHIDEventTap, e_up2)
+
+            def triple_click(x0, y0, interval=0.2, button='left'):
+                btn_q = Quartz.kCGMouseButtonLeft if button == 'left' else Quartz.kCGMouseButtonRight
+                for state in (1, 2, 3):
+                    e_down = Quartz.CGEventCreateMouseEvent(
+                        None,
+                        Quartz.kCGEventLeftMouseDown if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseDown,
+                        (x0, y0),
+                        btn_q
+                    )
+                    Quartz.CGEventSetIntegerValueField(e_down, Quartz.kCGMouseEventClickState, state)
+                    Quartz.CGEventPost(Quartz.kCGHIDEventTap, e_down)
+
+                    e_up = Quartz.CGEventCreateMouseEvent(
+                        None,
+                        Quartz.kCGEventLeftMouseUp if btn_q == Quartz.kCGMouseButtonLeft else Quartz.kCGEventRightMouseUp,
+                        (x0, y0),
+                        btn_q
+                    )
+                    Quartz.CGEventSetIntegerValueField(e_up, Quartz.kCGMouseEventClickState, state)
+                    Quartz.CGEventPost(Quartz.kCGHIDEventTap, e_up)
+
+                    if state < 3:
+                        time.sleep(interval)
+        else:
+            # En Windows/Linux no necesitamos Quartz, PyAutoGUI lo maneja
+            def double_click(x0, y0, interval=0.2, button='left'):
+                pyautogui.click(x=x0, y=y0, clicks=2, interval=interval, button=button)
+
+            def triple_click(x0, y0, interval=0.2, button='left'):
+                pyautogui.click(x=x0, y=y0, clicks=3, interval=interval, button=button)
+
+        # 7) Llamada al método correcto según número de clics:
+        if clicks == 2:
+            double_click(x, y, interval=intervalo, button=btn)
+            log_action(f"Mouse double‐clicked at ({x},{y}) interval={intervalo}s")
+        elif clicks == 3:
+            triple_click(x, y, interval=intervalo, button=btn)
+            log_action(f"Mouse triple‐clicked at ({x},{y}) interval={intervalo}s")
+        else:
+            pyautogui.click(x=x, y=y, clicks=clicks, interval=intervalo, button=btn)
+            log_action(f"Mouse clicked at ({x},{y}) {clicks}× {btn} interval={intervalo}s")
+
 
     # ─── KEYBOARD ────────────────────────────────────────────────────────────
     elif src == "keyboard":
