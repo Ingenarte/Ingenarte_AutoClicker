@@ -22474,3 +22474,745 @@ IT
 2025-05-31 | 06:11:27 | OUT: 2025-05-31 | 06:11:27 | RUN: Execution completed.
 2025-05-31 | 06:11:27 | RUN: run_module.py executed successfully.
 2025-05-31 | 06:11:27 | Window restored.
+2025-05-31 | 06:19:58 | RUN: Starting execution.
+2025-05-31 | 06:19:58 | RUN: Configuration saved to run.json.
+2025-05-31 | 06:19:58 | RUN: Launching run_module.py …
+2025-05-31 | 06:19:59 | Loaded configuration from run.json
+2025-05-31 | 06:19:59 | RUN: Starting execution.
+2025-05-31 | 06:19:59 | RUN: Processing Tab 1
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | Loaded configuration from run.json
+2025-05-31 | 06:19:59 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | RUN: Starting execution.
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | RUN: Processing Tab 1
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:19:59 | Moved mouse to (-621, 450).
+2025-05-31 | 06:19:59 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | Moved mouse to (-621, 450).
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:19:59 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:19:59 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:19:59 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:19:59 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:19:59 | Key combo Command + C ×1
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | Key combo Command + C ×1
+2025-05-31 | 06:19:59 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:19:59 | OUT: 2025-05-31 | 06:19:59 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:20:00 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:20:00 | Recursivity: Repeating steps 1, 2, 3, 4 3 times
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:20:00 | Recursivity iteration 1 started.
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | Recursivity: Repeating steps 1, 2, 3, 4 3 times
+2025-05-31 | 06:20:00 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | Recursivity iteration 1 started.
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:20:00 | Moved mouse to (-621, 450).
+2025-05-31 | 06:20:00 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | Moved mouse to (-621, 450).
+2025-05-31 | 06:20:00 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:20:00 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:20:00 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:20:00 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:20:00 | Key combo Command + C ×1
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | Key combo Command + C ×1
+2025-05-31 | 06:20:00 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:20:00 | OUT: 2025-05-31 | 06:20:00 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:20:01 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:20:01 | Recursivity iteration 1 completed.
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:20:01 | Recursivity iteration 2 started.
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | Recursivity iteration 1 completed.
+2025-05-31 | 06:20:01 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | Recursivity iteration 2 started.
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:20:01 | Moved mouse to (-621, 450).
+2025-05-31 | 06:20:01 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | Moved mouse to (-621, 450).
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:20:01 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:20:01 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:20:01 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:20:01 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:20:01 | Key combo Command + C ×1
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | Key combo Command + C ×1
+2025-05-31 | 06:20:01 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:20:01 | OUT: 2025-05-31 | 06:20:01 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:20:02 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:20:02 | Recursivity iteration 2 completed.
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:20:02 | Recursivity iteration 3 started.
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | Recursivity iteration 2 completed.
+2025-05-31 | 06:20:02 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | Recursivity iteration 3 started.
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:20:02 | Moved mouse to (-621, 450).
+2025-05-31 | 06:20:02 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | Moved mouse to (-621, 450).
+2025-05-31 | 06:20:02 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:20:02 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:20:02 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:20:02 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:20:02 | Key combo Command + C ×1
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | Key combo Command + C ×1
+2025-05-31 | 06:20:02 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:20:02 | OUT: 2025-05-31 | 06:20:02 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:20:03 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:20:03 | Recursivity iteration 3 completed.
+2025-05-31 | 06:20:03 | OUT: 2025-05-31 | 06:20:03 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:20:03 | RUN: Execution completed.
+2025-05-31 | 06:20:03 | OUT: 2025-05-31 | 06:20:03 | Recursivity iteration 3 completed.
+2025-05-31 | 06:20:03 | OUT: 2025-05-31 | 06:20:03 | RUN: Execution completed.
+2025-05-31 | 06:20:03 | RUN: run_module.py executed successfully.
+2025-05-31 | 06:20:03 | Window restored.
+2025-05-31 | 06:21:07 | RUN: Starting execution.
+2025-05-31 | 06:21:07 | RUN: Configuration saved to run.json.
+2025-05-31 | 06:21:07 | RUN: Launching run_module.py …
+2025-05-31 | 06:21:07 | Loaded configuration from run.json
+2025-05-31 | 06:21:07 | RUN: Starting execution.
+2025-05-31 | 06:21:07 | RUN: Processing Tab 1
+2025-05-31 | 06:21:07 | OUT: 2025-05-31 | 06:21:07 | Loaded configuration from run.json
+2025-05-31 | 06:21:07 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:21:07 | OUT: 2025-05-31 | 06:21:07 | RUN: Starting execution.
+2025-05-31 | 06:21:07 | OUT: 2025-05-31 | 06:21:07 | RUN: Processing Tab 1
+2025-05-31 | 06:21:07 | OUT: 2025-05-31 | 06:21:07 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:21:07 | Moved mouse to (-621, 450).
+2025-05-31 | 06:21:07 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:21:07 | OUT: 2025-05-31 | 06:21:07 | Moved mouse to (-621, 450).
+2025-05-31 | 06:21:07 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:21:07 | OUT: 2025-05-31 | 06:21:07 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:21:07 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:21:07 | OUT: 2025-05-31 | 06:21:07 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:21:07 | OUT: 2025-05-31 | 06:21:07 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:21:08 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:21:08 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:21:08 | Key combo Command + C ×1
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | Key combo Command + C ×1
+2025-05-31 | 06:21:08 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:21:08 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:21:08 | Recursivity: Repeating steps 1, 2, 3, 4 3 times
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:21:08 | Recursivity iteration 1 started.
+2025-05-31 | 06:21:08 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | Recursivity: Repeating steps 1, 2, 3, 4 3 times
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | Recursivity iteration 1 started.
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:21:08 | Moved mouse to (-621, 450).
+2025-05-31 | 06:21:08 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | Moved mouse to (-621, 450).
+2025-05-31 | 06:21:08 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:21:08 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:21:08 | OUT: 2025-05-31 | 06:21:08 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:21:09 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:21:09 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:21:09 | Key combo Command + C ×1
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | Key combo Command + C ×1
+2025-05-31 | 06:21:09 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:21:09 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:21:09 | Recursivity iteration 1 completed.
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:21:09 | Recursivity iteration 2 started.
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | Recursivity iteration 1 completed.
+2025-05-31 | 06:21:09 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | Recursivity iteration 2 started.
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:21:09 | Moved mouse to (-621, 450).
+2025-05-31 | 06:21:09 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | Moved mouse to (-621, 450).
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:21:09 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:21:09 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:21:09 | OUT: 2025-05-31 | 06:21:09 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:21:10 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:21:10 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:21:10 | Key combo Command + C ×1
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | Key combo Command + C ×1
+2025-05-31 | 06:21:10 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:21:10 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:21:10 | Recursivity iteration 2 completed.
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:21:10 | Recursivity iteration 3 started.
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | Recursivity iteration 2 completed.
+2025-05-31 | 06:21:10 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | Recursivity iteration 3 started.
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:21:10 | Moved mouse to (-621, 450).
+2025-05-31 | 06:21:10 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | Moved mouse to (-621, 450).
+2025-05-31 | 06:21:10 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:21:10 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:21:10 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:21:10 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:21:10 | Key combo Command + C ×1
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:21:10 | OUT: 2025-05-31 | 06:21:10 | Key combo Command + C ×1
+2025-05-31 | 06:21:11 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:21:11 | OUT: 2025-05-31 | 06:21:11 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:21:11 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:21:11 | Recursivity iteration 3 completed.
+2025-05-31 | 06:21:11 | OUT: 2025-05-31 | 06:21:11 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:21:11 | RUN: Execution completed.
+2025-05-31 | 06:21:11 | OUT: 2025-05-31 | 06:21:11 | Recursivity iteration 3 completed.
+2025-05-31 | 06:21:11 | OUT: 2025-05-31 | 06:21:11 | RUN: Execution completed.
+2025-05-31 | 06:21:11 | RUN: run_module.py executed successfully.
+2025-05-31 | 06:21:11 | Window restored.
+2025-05-31 | 06:22:15 | RUN: Starting execution.
+2025-05-31 | 06:22:15 | RUN: Configuration saved to run.json.
+2025-05-31 | 06:22:15 | RUN: Launching run_module.py …
+2025-05-31 | 06:22:15 | Loaded configuration from run.json
+2025-05-31 | 06:22:15 | RUN: Starting execution.
+2025-05-31 | 06:22:15 | RUN: Processing Tab 1
+2025-05-31 | 06:22:15 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:22:15 | OUT: 2025-05-31 | 06:22:15 | Loaded configuration from run.json
+2025-05-31 | 06:22:15 | OUT: 2025-05-31 | 06:22:15 | RUN: Starting execution.
+2025-05-31 | 06:22:15 | OUT: 2025-05-31 | 06:22:15 | RUN: Processing Tab 1
+2025-05-31 | 06:22:15 | OUT: 2025-05-31 | 06:22:15 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:22:15 | Moved mouse to (-621, 450).
+2025-05-31 | 06:22:15 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:22:15 | OUT: 2025-05-31 | 06:22:15 | Moved mouse to (-621, 450).
+2025-05-31 | 06:22:15 | OUT: 2025-05-31 | 06:22:15 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:22:15 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:22:15 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:22:15 | OUT: 2025-05-31 | 06:22:15 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:22:15 | OUT: 2025-05-31 | 06:22:15 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:22:16 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:22:16 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:22:16 | Key combo Command + C ×1
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | Key combo Command + C ×1
+2025-05-31 | 06:22:16 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:22:16 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:22:16 | Recursivity: Repeating steps 1, 2, 3, 4 3 times
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:22:16 | Recursivity iteration 1 started.
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | Recursivity: Repeating steps 1, 2, 3, 4 3 times
+2025-05-31 | 06:22:16 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | Recursivity iteration 1 started.
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:22:16 | Moved mouse to (-621, 450).
+2025-05-31 | 06:22:16 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | Moved mouse to (-621, 450).
+2025-05-31 | 06:22:16 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:22:16 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:22:16 | OUT: 2025-05-31 | 06:22:16 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:22:17 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:22:17 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:22:17 | Key combo Command + C ×1
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | Key combo Command + C ×1
+2025-05-31 | 06:22:17 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:22:17 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:22:17 | Recursivity iteration 1 completed.
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:22:17 | Recursivity iteration 2 started.
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | Recursivity iteration 1 completed.
+2025-05-31 | 06:22:17 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | Recursivity iteration 2 started.
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:22:17 | Moved mouse to (-621, 450).
+2025-05-31 | 06:22:17 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | Moved mouse to (-621, 450).
+2025-05-31 | 06:22:17 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:22:17 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:22:17 | OUT: 2025-05-31 | 06:22:17 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:22:18 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:22:18 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:22:18 | Key combo Command + C ×1
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | Key combo Command + C ×1
+2025-05-31 | 06:22:18 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:22:18 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:22:18 | Recursivity iteration 2 completed.
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:22:18 | Recursivity iteration 3 started.
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | Recursivity iteration 2 completed.
+2025-05-31 | 06:22:18 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | Recursivity iteration 3 started.
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 06:22:18 | Moved mouse to (-621, 450).
+2025-05-31 | 06:22:18 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | Moved mouse to (-621, 450).
+2025-05-31 | 06:22:18 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 06:22:18 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 06:22:18 | OUT: 2025-05-31 | 06:22:18 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 06:22:19 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:22:19 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:22:19 | OUT: 2025-05-31 | 06:22:19 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 06:22:19 | Key combo Command + C ×1
+2025-05-31 | 06:22:19 | OUT: 2025-05-31 | 06:22:19 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 06:22:19 | OUT: 2025-05-31 | 06:22:19 | Key combo Command + C ×1
+2025-05-31 | 06:22:19 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:22:19 | OUT: 2025-05-31 | 06:22:19 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 06:22:19 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:22:19 | Recursivity iteration 3 completed.
+2025-05-31 | 06:22:19 | OUT: 2025-05-31 | 06:22:19 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 06:22:19 | RUN: Execution completed.
+2025-05-31 | 06:22:19 | OUT: 2025-05-31 | 06:22:19 | Recursivity iteration 3 completed.
+2025-05-31 | 06:22:19 | OUT: 2025-05-31 | 06:22:19 | RUN: Execution completed.
+2025-05-31 | 06:22:19 | RUN: run_module.py executed successfully.
+2025-05-31 | 06:22:19 | Window restored.
+2025-05-31 | 10:32:39 | RUN: Starting execution.
+2025-05-31 | 10:32:39 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:32:39 | RUN: Launching run_module.py …
+2025-05-31 | 10:32:48 | Loaded configuration from run.json
+2025-05-31 | 10:32:48 | RUN: Starting execution.
+2025-05-31 | 10:32:48 | RUN: Processing Tab 1
+2025-05-31 | 10:32:48 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | Loaded configuration from run.json
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | RUN: Starting execution.
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | RUN: Processing Tab 1
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 10:32:48 | Moved mouse to (-621, 450).
+2025-05-31 | 10:32:48 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | Moved mouse to (-621, 450).
+2025-05-31 | 10:32:48 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:32:48 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 10:32:48 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 10:32:48 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 10:32:48 | Key combo Command + C ×1
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 10:32:48 | OUT: 2025-05-31 | 10:32:48 | Key combo Command + C ×1
+2025-05-31 | 10:32:49 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 10:32:49 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 10:32:49 | Recursivity: Repeating steps 1, 2, 3, 4 3 times
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 10:32:49 | Recursivity iteration 1 started.
+2025-05-31 | 10:32:49 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | Recursivity: Repeating steps 1, 2, 3, 4 3 times
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | Recursivity iteration 1 started.
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 10:32:49 | Moved mouse to (-621, 450).
+2025-05-31 | 10:32:49 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | Moved mouse to (-621, 450).
+2025-05-31 | 10:32:49 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:32:49 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 10:32:49 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 10:32:49 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 10:32:49 | Key combo Command + C ×1
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 10:32:49 | OUT: 2025-05-31 | 10:32:49 | Key combo Command + C ×1
+2025-05-31 | 10:32:50 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 10:32:50 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 10:32:50 | Recursivity iteration 1 completed.
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 10:32:50 | Recursivity iteration 2 started.
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | Recursivity iteration 1 completed.
+2025-05-31 | 10:32:50 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | Recursivity iteration 2 started.
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 10:32:50 | Moved mouse to (-621, 450).
+2025-05-31 | 10:32:50 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | Moved mouse to (-621, 450).
+2025-05-31 | 10:32:50 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:32:50 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 10:32:50 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 10:32:50 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 10:32:50 | Key combo Command + C ×1
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 10:32:50 | OUT: 2025-05-31 | 10:32:50 | Key combo Command + C ×1
+2025-05-31 | 10:32:51 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 10:32:51 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 10:32:51 | Recursivity iteration 2 completed.
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 10:32:51 | Recursivity iteration 3 started.
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | Recursivity iteration 2 completed.
+2025-05-31 | 10:32:51 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | Recursivity iteration 3 started.
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | [Tab Tab 1 | Step 1] Processing position: -621x450
+2025-05-31 | 10:32:51 | Moved mouse to (-621, 450).
+2025-05-31 | 10:32:51 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | Moved mouse to (-621, 450).
+2025-05-31 | 10:32:51 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | [Tab Tab 1 | Step 2] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'Two', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:32:51 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | ⚠️ No position specified – using current mouse (-621,450)
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | Moved by offset (0,0) → (-621,450)
+2025-05-31 | 10:32:51 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 10:32:51 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | Mouse double‐clicked at (-621,450) interval=0.2s
+2025-05-31 | 10:32:51 | Key combo Command + C ×1
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | [Tab Tab 1 | Step 3] Processing input: {'input_from': 'Keyboard', 'input_sleep': '0', 'keyboard_ascii': 'Command + C', 'keyboard_repeat': '0', 'mouse_click_qty': '', 'mouse_event': '', 'mouse_movement': ''}
+2025-05-31 | 10:32:51 | OUT: 2025-05-31 | 10:32:51 | Key combo Command + C ×1
+2025-05-31 | 10:32:52 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 10:32:52 | OUT: 2025-05-31 | 10:32:52 | [Tab Tab 1 | Step 4] Processing data: {'data_cell': 'B13', 'data_copy_paste': 'Paste To', 'data_path': '/Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx', 'data_select_all': False}
+2025-05-31 | 10:32:52 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 10:32:52 | Recursivity iteration 3 completed.
+2025-05-31 | 10:32:52 | OUT: 2025-05-31 | 10:32:52 | Pasted clipboard value 'night' into cell B13 in Sheet1 of /Users/francorodrigo/Dropbox2nd/Ingenarte_AutoClicker/test.xlsx.
+2025-05-31 | 10:32:52 | RUN: Execution completed.
+2025-05-31 | 10:32:52 | OUT: 2025-05-31 | 10:32:52 | Recursivity iteration 3 completed.
+2025-05-31 | 10:32:52 | OUT: 2025-05-31 | 10:32:52 | RUN: Execution completed.
+2025-05-31 | 10:32:52 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:32:52 | Window restored.
+2025-05-31 | 10:35:23 | Repetition: iniciado con intervalo 3s.
+2025-05-31 | 10:35:23 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:35:26 | RUN: Starting execution.
+2025-05-31 | 10:35:26 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:35:26 | RUN: Launching run_module.py …
+2025-05-31 | 10:35:27 | Loaded configuration from run.json
+2025-05-31 | 10:35:27 | RUN: Starting execution.
+2025-05-31 | 10:35:27 | RUN: Processing Tab 1
+2025-05-31 | 10:35:27 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:27 | OUT: 2025-05-31 | 10:35:27 | Loaded configuration from run.json
+2025-05-31 | 10:35:27 | OUT: 2025-05-31 | 10:35:27 | RUN: Starting execution.
+2025-05-31 | 10:35:27 | OUT: 2025-05-31 | 10:35:27 | RUN: Processing Tab 1
+2025-05-31 | 10:35:27 | OUT: 2025-05-31 | 10:35:27 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:27 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:27 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:27 | OUT: 2025-05-31 | 10:35:27 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:27 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:27 | OUT: 2025-05-31 | 10:35:27 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:27 | OUT: 2025-05-31 | 10:35:27 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:27 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:27 | RUN: Execution completed.
+2025-05-31 | 10:35:27 | OUT: 2025-05-31 | 10:35:27 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:27 | OUT: 2025-05-31 | 10:35:27 | RUN: Execution completed.
+2025-05-31 | 10:35:27 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:35:27 | Window restored.
+2025-05-31 | 10:35:27 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:35:30 | RUN: Starting execution.
+2025-05-31 | 10:35:30 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:35:30 | RUN: Launching run_module.py …
+2025-05-31 | 10:35:31 | Loaded configuration from run.json
+2025-05-31 | 10:35:31 | RUN: Starting execution.
+2025-05-31 | 10:35:31 | OUT: 2025-05-31 | 10:35:31 | Loaded configuration from run.json
+2025-05-31 | 10:35:31 | RUN: Processing Tab 1
+2025-05-31 | 10:35:31 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:31 | OUT: 2025-05-31 | 10:35:31 | RUN: Starting execution.
+2025-05-31 | 10:35:31 | OUT: 2025-05-31 | 10:35:31 | RUN: Processing Tab 1
+2025-05-31 | 10:35:31 | OUT: 2025-05-31 | 10:35:31 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:31 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:31 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:31 | OUT: 2025-05-31 | 10:35:31 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:31 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:31 | OUT: 2025-05-31 | 10:35:31 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:31 | OUT: 2025-05-31 | 10:35:31 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:31 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:31 | RUN: Execution completed.
+2025-05-31 | 10:35:31 | OUT: 2025-05-31 | 10:35:31 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:31 | OUT: 2025-05-31 | 10:35:31 | RUN: Execution completed.
+2025-05-31 | 10:35:31 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:35:31 | Window restored.
+2025-05-31 | 10:35:31 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:35:34 | RUN: Starting execution.
+2025-05-31 | 10:35:34 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:35:34 | RUN: Launching run_module.py …
+2025-05-31 | 10:35:35 | Loaded configuration from run.json
+2025-05-31 | 10:35:35 | RUN: Starting execution.
+2025-05-31 | 10:35:35 | OUT: 2025-05-31 | 10:35:35 | Loaded configuration from run.json
+2025-05-31 | 10:35:35 | RUN: Processing Tab 1
+2025-05-31 | 10:35:35 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:35 | OUT: 2025-05-31 | 10:35:35 | RUN: Starting execution.
+2025-05-31 | 10:35:35 | OUT: 2025-05-31 | 10:35:35 | RUN: Processing Tab 1
+2025-05-31 | 10:35:35 | OUT: 2025-05-31 | 10:35:35 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:35 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:35 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:35 | OUT: 2025-05-31 | 10:35:35 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:35 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:35 | OUT: 2025-05-31 | 10:35:35 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:35 | OUT: 2025-05-31 | 10:35:35 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:35 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:35 | RUN: Execution completed.
+2025-05-31 | 10:35:35 | OUT: 2025-05-31 | 10:35:35 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:35 | OUT: 2025-05-31 | 10:35:35 | RUN: Execution completed.
+2025-05-31 | 10:35:35 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:35:35 | Window restored.
+2025-05-31 | 10:35:35 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:35:38 | RUN: Starting execution.
+2025-05-31 | 10:35:38 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:35:38 | RUN: Launching run_module.py …
+2025-05-31 | 10:35:39 | Loaded configuration from run.json
+2025-05-31 | 10:35:39 | RUN: Starting execution.
+2025-05-31 | 10:35:39 | OUT: 2025-05-31 | 10:35:39 | Loaded configuration from run.json
+2025-05-31 | 10:35:39 | RUN: Processing Tab 1
+2025-05-31 | 10:35:39 | OUT: 2025-05-31 | 10:35:39 | RUN: Starting execution.
+2025-05-31 | 10:35:39 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:39 | OUT: 2025-05-31 | 10:35:39 | RUN: Processing Tab 1
+2025-05-31 | 10:35:39 | OUT: 2025-05-31 | 10:35:39 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:39 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:39 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:39 | OUT: 2025-05-31 | 10:35:39 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:39 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:39 | OUT: 2025-05-31 | 10:35:39 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:39 | OUT: 2025-05-31 | 10:35:39 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:39 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:39 | RUN: Execution completed.
+2025-05-31 | 10:35:39 | OUT: 2025-05-31 | 10:35:39 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:39 | OUT: 2025-05-31 | 10:35:39 | RUN: Execution completed.
+2025-05-31 | 10:35:39 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:35:39 | Window restored.
+2025-05-31 | 10:35:39 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:35:42 | RUN: Starting execution.
+2025-05-31 | 10:35:42 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:35:42 | RUN: Launching run_module.py …
+2025-05-31 | 10:35:43 | Loaded configuration from run.json
+2025-05-31 | 10:35:43 | RUN: Starting execution.
+2025-05-31 | 10:35:43 | RUN: Processing Tab 1
+2025-05-31 | 10:35:43 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:43 | OUT: 2025-05-31 | 10:35:43 | Loaded configuration from run.json
+2025-05-31 | 10:35:43 | OUT: 2025-05-31 | 10:35:43 | RUN: Starting execution.
+2025-05-31 | 10:35:43 | OUT: 2025-05-31 | 10:35:43 | RUN: Processing Tab 1
+2025-05-31 | 10:35:43 | OUT: 2025-05-31 | 10:35:43 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:43 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:43 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:43 | OUT: 2025-05-31 | 10:35:43 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:43 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:43 | OUT: 2025-05-31 | 10:35:43 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:43 | OUT: 2025-05-31 | 10:35:43 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:43 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:43 | RUN: Execution completed.
+2025-05-31 | 10:35:43 | OUT: 2025-05-31 | 10:35:43 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:43 | OUT: 2025-05-31 | 10:35:43 | RUN: Execution completed.
+2025-05-31 | 10:35:43 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:35:43 | Window restored.
+2025-05-31 | 10:35:43 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:35:46 | RUN: Starting execution.
+2025-05-31 | 10:35:46 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:35:46 | RUN: Launching run_module.py …
+2025-05-31 | 10:35:47 | Loaded configuration from run.json
+2025-05-31 | 10:35:47 | RUN: Starting execution.
+2025-05-31 | 10:35:47 | RUN: Processing Tab 1
+2025-05-31 | 10:35:47 | OUT: 2025-05-31 | 10:35:47 | Loaded configuration from run.json
+2025-05-31 | 10:35:47 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:47 | OUT: 2025-05-31 | 10:35:47 | RUN: Starting execution.
+2025-05-31 | 10:35:47 | OUT: 2025-05-31 | 10:35:47 | RUN: Processing Tab 1
+2025-05-31 | 10:35:47 | OUT: 2025-05-31 | 10:35:47 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:47 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:47 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:47 | OUT: 2025-05-31 | 10:35:47 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:47 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:47 | OUT: 2025-05-31 | 10:35:47 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:47 | OUT: 2025-05-31 | 10:35:47 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:47 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:47 | RUN: Execution completed.
+2025-05-31 | 10:35:47 | OUT: 2025-05-31 | 10:35:47 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:47 | OUT: 2025-05-31 | 10:35:47 | RUN: Execution completed.
+2025-05-31 | 10:35:48 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:35:48 | Window restored.
+2025-05-31 | 10:35:48 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:35:51 | RUN: Starting execution.
+2025-05-31 | 10:35:51 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:35:51 | RUN: Launching run_module.py …
+2025-05-31 | 10:35:51 | Loaded configuration from run.json
+2025-05-31 | 10:35:51 | RUN: Starting execution.
+2025-05-31 | 10:35:51 | RUN: Processing Tab 1
+2025-05-31 | 10:35:51 | OUT: 2025-05-31 | 10:35:51 | Loaded configuration from run.json
+2025-05-31 | 10:35:51 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:51 | OUT: 2025-05-31 | 10:35:51 | RUN: Starting execution.
+2025-05-31 | 10:35:51 | OUT: 2025-05-31 | 10:35:51 | RUN: Processing Tab 1
+2025-05-31 | 10:35:51 | OUT: 2025-05-31 | 10:35:51 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:51 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:51 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:51 | OUT: 2025-05-31 | 10:35:51 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:51 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:51 | OUT: 2025-05-31 | 10:35:51 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:51 | OUT: 2025-05-31 | 10:35:51 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:51 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:51 | RUN: Execution completed.
+2025-05-31 | 10:35:51 | OUT: 2025-05-31 | 10:35:51 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:51 | OUT: 2025-05-31 | 10:35:51 | RUN: Execution completed.
+2025-05-31 | 10:35:51 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:35:52 | Window restored.
+2025-05-31 | 10:35:52 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:35:55 | RUN: Starting execution.
+2025-05-31 | 10:35:55 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:35:55 | RUN: Launching run_module.py …
+2025-05-31 | 10:35:55 | Loaded configuration from run.json
+2025-05-31 | 10:35:55 | RUN: Starting execution.
+2025-05-31 | 10:35:55 | OUT: 2025-05-31 | 10:35:55 | Loaded configuration from run.json
+2025-05-31 | 10:35:55 | RUN: Processing Tab 1
+2025-05-31 | 10:35:55 | OUT: 2025-05-31 | 10:35:55 | RUN: Starting execution.
+2025-05-31 | 10:35:55 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:55 | OUT: 2025-05-31 | 10:35:55 | RUN: Processing Tab 1
+2025-05-31 | 10:35:55 | OUT: 2025-05-31 | 10:35:55 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:55 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:55 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:55 | OUT: 2025-05-31 | 10:35:55 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:55 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:55 | OUT: 2025-05-31 | 10:35:55 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:55 | OUT: 2025-05-31 | 10:35:55 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:55 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:55 | RUN: Execution completed.
+2025-05-31 | 10:35:55 | OUT: 2025-05-31 | 10:35:55 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:35:55 | OUT: 2025-05-31 | 10:35:55 | RUN: Execution completed.
+2025-05-31 | 10:35:56 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:35:56 | Window restored.
+2025-05-31 | 10:35:56 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:35:59 | RUN: Starting execution.
+2025-05-31 | 10:35:59 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:35:59 | RUN: Launching run_module.py …
+2025-05-31 | 10:35:59 | Loaded configuration from run.json
+2025-05-31 | 10:35:59 | RUN: Starting execution.
+2025-05-31 | 10:35:59 | OUT: 2025-05-31 | 10:35:59 | Loaded configuration from run.json
+2025-05-31 | 10:35:59 | RUN: Processing Tab 1
+2025-05-31 | 10:35:59 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:59 | OUT: 2025-05-31 | 10:35:59 | RUN: Starting execution.
+2025-05-31 | 10:35:59 | OUT: 2025-05-31 | 10:35:59 | RUN: Processing Tab 1
+2025-05-31 | 10:35:59 | OUT: 2025-05-31 | 10:35:59 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:35:59 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:59 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:59 | OUT: 2025-05-31 | 10:35:59 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:35:59 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:35:59 | OUT: 2025-05-31 | 10:35:59 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:35:59 | OUT: 2025-05-31 | 10:35:59 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:36:00 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:36:00 | RUN: Execution completed.
+2025-05-31 | 10:36:00 | OUT: 2025-05-31 | 10:36:00 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:36:00 | OUT: 2025-05-31 | 10:36:00 | RUN: Execution completed.
+2025-05-31 | 10:36:00 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:36:00 | Window restored.
+2025-05-31 | 10:36:00 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:36:03 | RUN: Starting execution.
+2025-05-31 | 10:36:03 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:36:03 | RUN: Launching run_module.py …
+2025-05-31 | 10:36:03 | Loaded configuration from run.json
+2025-05-31 | 10:36:03 | RUN: Starting execution.
+2025-05-31 | 10:36:03 | RUN: Processing Tab 1
+2025-05-31 | 10:36:03 | OUT: 2025-05-31 | 10:36:03 | Loaded configuration from run.json
+2025-05-31 | 10:36:03 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:36:03 | OUT: 2025-05-31 | 10:36:03 | RUN: Starting execution.
+2025-05-31 | 10:36:03 | OUT: 2025-05-31 | 10:36:03 | RUN: Processing Tab 1
+2025-05-31 | 10:36:03 | OUT: 2025-05-31 | 10:36:03 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:36:03 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:36:03 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:36:03 | OUT: 2025-05-31 | 10:36:03 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:36:03 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:36:03 | OUT: 2025-05-31 | 10:36:03 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:36:03 | OUT: 2025-05-31 | 10:36:03 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:36:04 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:36:04 | RUN: Execution completed.
+2025-05-31 | 10:36:04 | OUT: 2025-05-31 | 10:36:04 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:36:04 | OUT: 2025-05-31 | 10:36:04 | RUN: Execution completed.
+2025-05-31 | 10:36:04 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:36:04 | Window restored.
+2025-05-31 | 10:36:04 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:36:07 | RUN: Starting execution.
+2025-05-31 | 10:36:07 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:36:07 | RUN: Launching run_module.py …
+2025-05-31 | 10:36:07 | Loaded configuration from run.json
+2025-05-31 | 10:36:07 | RUN: Starting execution.
+2025-05-31 | 10:36:07 | OUT: 2025-05-31 | 10:36:07 | Loaded configuration from run.json
+2025-05-31 | 10:36:07 | RUN: Processing Tab 1
+2025-05-31 | 10:36:07 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:36:07 | OUT: 2025-05-31 | 10:36:07 | RUN: Starting execution.
+2025-05-31 | 10:36:07 | OUT: 2025-05-31 | 10:36:07 | RUN: Processing Tab 1
+2025-05-31 | 10:36:07 | OUT: 2025-05-31 | 10:36:07 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:36:07 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:36:07 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:36:07 | OUT: 2025-05-31 | 10:36:07 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:36:07 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:36:07 | OUT: 2025-05-31 | 10:36:07 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:36:07 | OUT: 2025-05-31 | 10:36:07 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:36:08 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:36:08 | RUN: Execution completed.
+2025-05-31 | 10:36:08 | OUT: 2025-05-31 | 10:36:08 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:36:08 | OUT: 2025-05-31 | 10:36:08 | RUN: Execution completed.
+2025-05-31 | 10:36:08 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:36:08 | Window restored.
+2025-05-31 | 10:36:08 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:36:11 | RUN: Starting execution.
+2025-05-31 | 10:36:11 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:36:11 | RUN: Launching run_module.py …
+2025-05-31 | 10:36:11 | Loaded configuration from run.json
+2025-05-31 | 10:36:11 | RUN: Starting execution.
+2025-05-31 | 10:36:11 | OUT: 2025-05-31 | 10:36:11 | Loaded configuration from run.json
+2025-05-31 | 10:36:11 | RUN: Processing Tab 1
+2025-05-31 | 10:36:11 | OUT: 2025-05-31 | 10:36:11 | RUN: Starting execution.
+2025-05-31 | 10:36:11 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:36:11 | OUT: 2025-05-31 | 10:36:11 | RUN: Processing Tab 1
+2025-05-31 | 10:36:11 | OUT: 2025-05-31 | 10:36:11 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:36:11 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:36:11 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:36:11 | OUT: 2025-05-31 | 10:36:11 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:36:11 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:36:11 | OUT: 2025-05-31 | 10:36:11 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:36:11 | OUT: 2025-05-31 | 10:36:11 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:36:12 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:36:12 | RUN: Execution completed.
+2025-05-31 | 10:36:12 | OUT: 2025-05-31 | 10:36:12 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:36:12 | OUT: 2025-05-31 | 10:36:12 | RUN: Execution completed.
+2025-05-31 | 10:36:12 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:36:12 | Window restored.
+2025-05-31 | 10:36:12 | Repetition: esperando 3s para la próxima ejecución…
+2025-05-31 | 10:36:15 | RUN: Starting execution.
+2025-05-31 | 10:36:15 | RUN: Configuration saved to run.json.
+2025-05-31 | 10:36:15 | RUN: Launching run_module.py …
+2025-05-31 | 10:36:15 | Loaded configuration from run.json
+2025-05-31 | 10:36:15 | RUN: Starting execution.
+2025-05-31 | 10:36:15 | OUT: 2025-05-31 | 10:36:15 | Loaded configuration from run.json
+2025-05-31 | 10:36:15 | RUN: Processing Tab 1
+2025-05-31 | 10:36:15 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:36:15 | OUT: 2025-05-31 | 10:36:15 | RUN: Starting execution.
+2025-05-31 | 10:36:15 | OUT: 2025-05-31 | 10:36:15 | RUN: Processing Tab 1
+2025-05-31 | 10:36:15 | OUT: 2025-05-31 | 10:36:15 | [Tab Tab 1 | Step 1] Processing position: -1817x-21
+2025-05-31 | 10:36:16 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:36:16 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:36:16 | OUT: 2025-05-31 | 10:36:16 | Moved mouse to (-1817, -21).
+2025-05-31 | 10:36:16 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:36:16 | OUT: 2025-05-31 | 10:36:16 | [Tab Tab 1 | Step 1] Processing input: {'input_from': 'Mouse', 'input_sleep': '0', 'keyboard_ascii': '', 'keyboard_repeat': '', 'mouse_click_qty': 'One', 'mouse_event': 'Left', 'mouse_movement': '0'}
+2025-05-31 | 10:36:16 | OUT: 2025-05-31 | 10:36:16 | Moved by offset (0,0) → (-1817,-21)
+2025-05-31 | 10:36:16 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:36:16 | RUN: Execution completed.
+2025-05-31 | 10:36:16 | OUT: 2025-05-31 | 10:36:16 | Mouse clicked at (-1817,-21) 1× left interval=0.2s
+2025-05-31 | 10:36:16 | OUT: 2025-05-31 | 10:36:16 | RUN: Execution completed.
+2025-05-31 | 10:36:16 | RUN: run_module.py executed successfully.
+2025-05-31 | 10:36:16 | Window restored.
+2025-05-31 | 10:36:16 | Repetition: esperando 3s para la próxima ejecución…

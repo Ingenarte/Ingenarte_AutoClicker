@@ -640,18 +640,40 @@ def set_schedule_time(scheduled_datetime):
 
 
 
-
-
 def set_repetition_time(repetition_seconds):
-    global global_repetition_interval, global_repetition_btn
+    global global_repetition_interval, global_repetition_btn, repetition_thread, stop_repetition_event
     global_repetition_interval = repetition_seconds
-    # Update the button appearance based on whether repetition is set.
+
+    # Actualiza apariencia del botón
     if global_repetition_btn:
         if repetition_seconds is None:
             global_repetition_btn.configure(fg_color="#1F6AA5")
         else:
             global_repetition_btn.configure(fg_color="green")
-    print(f"Repetition interval set to: {repetition_seconds} seconds.")
+
+    # Si ya había un hilo de repetición corriendo, detenlo
+    if 'repetition_thread' in globals() and repetition_thread.is_alive():
+        stop_repetition_event.set()
+        repetition_thread.join()
+
+    # Si se definió un intervalo válido, arrancamos un nuevo hilo que vuelque run_script() cada N segundos
+    if repetition_seconds:
+        stop_repetition_event = threading.Event()
+        def repeater():
+            # Mientras no se dispare el evento de parada, esperar e invocar run_script
+            while not stop_repetition_event.is_set():
+                log_action(f"Repetition: esperando {repetition_seconds}s para la próxima ejecución…")
+                # Usamos wait() en vez de sleep para poder interrumpir con el evento
+                if stop_repetition_event.wait(timeout=repetition_seconds):
+                    break
+                run_script()
+            log_action("Repetition: hilo de repetición detenido.")
+
+        repetition_thread = threading.Thread(target=repeater, daemon=True)
+        repetition_thread.start()
+        log_action(f"Repetition: iniciado con intervalo {repetition_seconds}s.")
+    else:
+        log_action("Repetition: intervalo nulo, no se iniciará repetición.")
 
 
 # -----------------------------
