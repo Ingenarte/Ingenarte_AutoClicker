@@ -8,3 +8,5 @@ run*.json
 build
 *.spec
 *.json
+__pycache__/
+*.pyc
