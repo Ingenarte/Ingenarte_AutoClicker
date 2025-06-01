@@ -3,21 +3,26 @@ import ctypes
 
 # ─── Windows: Per‐monitor DPI awareness + UTF-8 console ────────────────────
 if sys.platform == "win32":
-    # 1) Per‐monitor DPI awareness (para que múltiples monitores no reescalen las coordenadas)
+    # 1) Per‐monitor DPI awareness (so multiple monitors don't rescale coordinates)
     try:
         ctypes.windll.shcore.SetProcessDpiAwareness(2)  # PER_MONITOR_DPI_AWARE
     except Exception:
         print("Warning: Could not set DPI awareness.")
 
-    # 2) Forzar stdout/stderr a UTF-8 (para evitar UnicodeEncodeError)
+    # 2) Force stdout/stderr to UTF-8 (to avoid UnicodeEncodeError)
     try:
-        sys.stdout.reconfigure(encoding="utf-8")
-        sys.stderr.reconfigure(encoding="utf-8")
+        # Only reconfigure if stdout/stderr actually exist (they may be None under --windowed)
+        if sys.stdout is not None:
+            sys.stdout.reconfigure(encoding="utf-8")
+        if sys.stderr is not None:
+            sys.stderr.reconfigure(encoding="utf-8")
     except AttributeError:
-        # Python < 3.7: envolvemos manualmente para que use errors="replace"
         import io
-        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
-        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+        # Wrap only if stdout/stderr exist and have a .buffer attribute
+        if sys.stdout is not None and hasattr(sys.stdout, "buffer"):
+            sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+        if sys.stderr is not None and hasattr(sys.stderr, "buffer"):
+            sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
 
 import pyautogui
@@ -623,6 +628,30 @@ def process_recursivity(rec_config):
 # -----------------------------
 # Main processing function (run the script)
 # -----------------------------
+
+def run_from_json(config_path: str):
+    """
+    Load the JSON at config_path into global_config,
+    then call run_script() exactly as if this module were run as a subprocess.
+
+    This replace the origina subprocess due to pyinstaller problem
+    """
+    try:
+        with open(config_path, "r", encoding="utf-8") as f:
+            cfg = json.load(f)
+        # Replace or update the module‐level global_config:
+        global global_config
+        global_config = cfg
+        log_action(f"Loaded configuration from {config_path}")
+    except Exception as e:
+        log_action(f"Error loading configuration from {config_path}: {e}")
+        sys.exit(1)
+
+    # Now invoke the same runner you already have:
+    run_script()    
+
+
+
 def run_script():
     log_action("RUN: Starting execution.")
     for tab_name in sorted(global_config.get("tab_n", {}).keys(), key=lambda t: int(t.split()[1])):

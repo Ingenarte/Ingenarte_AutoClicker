@@ -16,7 +16,8 @@ from modals.repetition_modal import open_repetition_modal
 import subprocess
 import sys
 import datetime
-
+import os
+import run_module
 
 
 
@@ -108,17 +109,52 @@ def _stub_block_update_dimensions_event():
 root.block_update_dimensions_event = _stub_block_update_dimensions_event
 
 root.update_idletasks()
-icon_image = tk.PhotoImage(file="public/ingenarte_icon.png")
-root.iconphoto(False, icon_image)
+
+def resource_path(relative_path):
+    """
+    Return absolute path to a resource, works for development and for PyInstaller bundle.
+    """
+    if getattr(sys, "_MEIPASS", False):
+        base_path = sys._MEIPASS
+    else:
+        base_path = os.path.abspath(os.path.dirname(__file__))
+    return os.path.join(base_path, relative_path)
+
+# --------------------------------------------------
+# LOAD ICON (works on Windows, Linux and macOS)
+# --------------------------------------------------
+icon_file = resource_path(os.path.join("public", "ingenarte_icon.png"))
+ico_file  = resource_path(os.path.join("public", "ingenarte_icon.ico"))
+
+try:
+    # 1) Load the PNG into a PhotoImage (for Linux/macOS support)
+    icon_image = tk.PhotoImage(file=icon_file)
+
+    # 2) On Windows/Linux, iconphoto(True, …) sets the window icon
+    root.iconphoto(True, icon_image)
+
+    # 3) On macOS, we also do wm iconphoto for the dock/title bar
+    if sys.platform == "darwin":
+        root.tk.call('wm', 'iconphoto', root._w, icon_image)
+
+    # 4) On Windows, explicitly load the .ico so that the taskbar + titlebar show it
+    if sys.platform == "win32":
+        root.iconbitmap(ico_file)
+
+except Exception as e:
+    print(f"⚠️ Could not load icon '{icon_file}' or '{ico_file}': {e}")
+
 
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
-window_width = int(screen_width * 0.35)   # 35% of screen width
+
 
 if sys.platform == "win32":
-    window_height = int(screen_height * 0.75)
+    window_height = int(screen_height * 0.60)
+    window_width = int(screen_width * 0.30)
 else:
     window_height = int(screen_height * 0.70)
+    window_width = int(screen_width * 0.35)
 
 pos_x = int(screen_width * 0.60)           # 60% from left edge
 pos_y = int(screen_height * 0.20)          # 20% from top
@@ -546,37 +582,9 @@ def run_script():
         return
 
     # 3) Lanza run_module.py con stdout+stderr unidos, sin buffering
-    log_action("RUN: Launching run_module.py …")
-    proc = subprocess.Popen(
-        [sys.executable, "-u", "run_module.py", run_filename],
-        stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT,
-        text=True,
-        encoding="utf-8",             
-        errors="replace",   
-        bufsize=1
-    )
-
-    # 4) Leer la salida en vivo y vigilar el hotkey
-    for line in iter(proc.stdout.readline, ''):
-        # Si en cualquier momento se presiona Ctrl+Shift+Q, detenemos el subproceso
-        if stop_event.is_set():
-            log_action("🚩 Hotkey pressed — terminating run_module.py")
-            proc.terminate()
-            break
-        log_action("OUT: " + line.rstrip())
-
-    proc.stdout.close()
-    try:
-        proc.wait(timeout=5)
-    except subprocess.TimeoutExpired:
-        proc.kill()
-
-    # 5) Informar código de retorno
-    if proc.returncode != 0:
-        log_action(f"RUN: run_module.py exited with code {proc.returncode}")
-    else:
-        log_action("RUN: run_module.py executed successfully.")
+    log_action("RUN: Calling run_module.run_from_json(run.json) …")
+    run_module.run_from_json(run_filename)
+    log_action("RUN: run_module.run_from_json returned.")
 
     # 6) Restaurar la ventana principal
     root.deiconify()
@@ -831,18 +839,13 @@ if __name__ == "__main__":
         if not os.path.isfile(config_path):
             print(f"Error: JSON file not found: {config_path}")
             sys.exit(1)
+        try:
+            run_module.run_from_json(config_path)
+            sys.exit(0)
+        except Exception as e:
+            print(f"Error running automation: {e}")
+            sys.exit(1)
 
-        # Launch run_module.py via subprocess so stdout/stderr are forwarded
-        proc = subprocess.Popen(
-            [sys.executable, "-u", "run_module.py", config_path],
-            stdout=sys.stdout,
-            stderr=sys.stderr,
-            text=True,
-            encoding="utf-8",
-            errors="replace"
-        )
-        proc.communicate()
-        sys.exit(proc.returncode)
 
     # Otherwise (no arguments), open the GUI
     else:
