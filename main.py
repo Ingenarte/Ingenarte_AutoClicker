@@ -768,7 +768,10 @@ def set_repetition_time(repetition_seconds):
 
             # When exiting the loop, leave “repeater mode”
             in_repeater_mode = False
-            log_action("Repetition: stopped with Ctrl + Shift + Q.")
+            if sys.platform == "win32":
+                log_action("Repetition: stopped with Alt + Q.")
+            else:
+                log_action("Repetition: stopped with Ctrl + Shift + Q.")
 
         repetition_thread = threading.Thread(target=repeater, daemon=True)
         repetition_thread.start()
