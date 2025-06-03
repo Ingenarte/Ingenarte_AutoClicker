@@ -3,7 +3,7 @@
 **Cross-platform GUI + CLI automation toolkit built in Python**
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)  
-_Mac / Windows • Image-based clicking • JSON & Excel workflows • Modern CustomTkinter GUI_
+_Mac / Windows • Image-based clicking • JSON workflows • Modern CustomTkinter GUI_
 
 ---
 
@@ -13,8 +13,8 @@ Ingenarte AutoClicker lets you **record, edit and replay** complex interaction f
 
 - **Mouse & keyboard events** recorded with millisecond precision.
 - **Image recognition** (MSS + OpenCV) to click dynamic screen elements.
-- **Excel-driven runs** – parameterise flows from `.xlsx`.
-- **JSON import / export** so flows can sit in your Git repo, CI/CD or cron jobs.
+- **Excel integration** – read inputs and write results to `.xlsx` files.
+- **JSON workflows** – steps are saved and reused via portable `.json` files.
 - **Headless CLI** (`sudo IngenarteAutoClicker /path/flow.json`) for server or pipeline use.
 - **Modern GUI** written with CustomTkinter for non-technical users.
 
@@ -46,7 +46,7 @@ The project targets **macOS (Darwin 13+) and Windows 10+**. Linux is expected to
 
 | OS / Arch                     | Binary                                                                                                                | SHA-256                                                            |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Windows x64                   | [IngenarteAutoClicker.exe](https://github.com/Ingenarte/Ingenarte_AutoClicker/raw/main/dist/IngenarteAutoClicker.exe) | `〈to-be-generated〉`                                              |
+| Windows x64                   | [IngenarteAutoClicker.exe](https://github.com/Ingenarte/Ingenarte_AutoClicker/raw/main/dist/IngenarteAutoClicker.exe) | `5d86c48616f39942235ac4e4040ca64b2bca2302da06d8a12d905312786c3ffa` |
 | macOS (Universal) / Linux x64 | [IngenarteAutoClicker](https://github.com/Ingenarte/Ingenarte_AutoClicker/raw/main/dist/IngenarteAutoClicker)         | `262b120482c37272e49e8919d4000453a081d7774ca0f4356de096b3b27e7bab` |
 
 _Binaries in `dist/` are built from the latest Git tag and are signed & notarized where the platform allows._
