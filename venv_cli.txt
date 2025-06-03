@@ -1,8 +1,23 @@
 -- MacOs
 rm -rf envClicker
-python3 -m venv envClicker
+python3.11 -m venv envClicker
 source envClicker/bin/activate 
 pip install -r requirements.txt
+pip install pyinstaller
+deactivate
+source envClicker/bin/activate 
+rm -rf build IngenarteAutoClicker.spec
+pyinstaller main.py \
+   --name IngenarteAutoClicker \
+   --onefile \
+   --osx-bundle-identifier com.ingenarte.autoclicker \
+   --add-data "public:public" \
+   --add-data "modals:modals" \
+   --hidden-import pynput \
+   --hidden-import pynput.keyboard \
+   --hidden-import pynput.mouse \
+   --hidden-import pyautogui \
+   --icon public/ingenarte_icon_ico.ico
 
 
 
@@ -37,3 +52,18 @@ pyinstaller main.py `
   --add-data "public\ingenarte_icon.png;public" `
   --add-data "public\ingenarte_icon_ico.ico;public" `
   --add-data "modals;modals"
+
+
+MacOs
+rm -rf build dist IngenarteAutoClicker.spec
+pyinstaller main.py \
+   --name IngenarteAutoClicker \
+   --onefile \
+   --osx-bundle-identifier com.ingenarte.autoclicker \
+   --add-data "public:public" \
+   --add-data "modals:modals" \
+   --hidden-import pynput \
+   --hidden-import pynput.keyboard \
+   --hidden-import pynput.mouse \
+   --hidden-import pyautogui \
+   --icon public/ingenarte_icon_ico.ico

@@ -5,7 +5,6 @@ import threading
 import json
 import tkinter as tk
 from tkinter import filedialog
-import threading
 from modals.schedule_modal import open_schedule_modal
 from modals.schedule_runner import schedule_runner
 from modals import recursivity_modal
@@ -17,9 +16,32 @@ import subprocess
 import sys
 import datetime
 import os
+import time
 import run_module
 
 
+msg = "🚀 Starting program, this could take up to ⏱️ one minute..."
+for char in msg:
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(0.03)
+print("\n")
+
+
+def _get_output_dir():
+    """
+    Return the directory where run.json and run-log.txt should be saved.
+    - On macOS, when running as a PyInstaller “onefile” bundle, return the folder containing the executable.
+    - Otherwise (Windows or development), return the current working directory.
+    """
+    if sys.platform == "darwin" and getattr(sys, "frozen", False):
+        # On macOS “frozen” (PyInstaller), sys.executable points to:
+        #   MyApp.app/Contents/MacOS/MyApp
+        # We want the directory …/MyApp.app/Contents/MacOS/
+        return os.path.dirname(sys.executable)
+    else:
+        # In Windows (and during normal “python main.py” development), use cwd
+        return os.getcwd()
 
 
 
@@ -543,52 +565,68 @@ def update_steps_view():
 
 
 def log_action(message):
-    """Append a log message with timestamp to run-log.txt and print it."""
+    """Append a log message with timestamp to run-log.txt and also print it to stdout."""
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d | %H:%M:%S")
     log_line = f"{timestamp} | {message}"
-    with open("run-log.txt", "a", encoding="utf-8") as log_file:
-        log_file.write(log_line + "\n")
+
+    # Determine where to write run-log.txt
+    out_dir = _get_output_dir()
+    log_path = os.path.join(out_dir, "run-log.txt")
+
+    try:
+        # Open in append mode; create the file if it doesn’t exist
+        with open(log_path, "a", encoding="utf-8") as log_file:
+            log_file.write(log_line + "\n")
+    except Exception as e:
+        # If writing fails, output an error message to the console
+        print(f"ERROR writing to {log_path}: {e}")
+
+    # Always print the log line to stdout as well
     print(log_line)
 
 
 def run_script():
     global in_repeater_mode
 
-    # Sólo limpiamos stop_event si NO estamos en modo repetidor.
-    # De este modo, cuando in_repeater_mode == True, no borramos la señal de Ctrl+Shift+Q.
+    # Only clear stop_event if we are NOT in repeater mode.
+    # In repeater mode, we want to keep the hotkey status.
     if not in_repeater_mode:
         stop_event.clear()
 
-    # Ocultamos la UI y arrancamos la ejecución
+    # Hide the main window and begin execution
     root.withdraw()
     root.update()
     log_action("RUN: Starting execution.")
 
-    # 1) Guardar configuración a run.json
-    run_filename = "run.json"
+    # ── 1) Save configuration to run.json ───────────────────────────────────
+    out_dir = _get_output_dir()
+    run_filename = os.path.join(out_dir, "run.json")
     try:
+        # Write global_config as JSON into run.json
         with open(run_filename, "w", encoding="utf-8") as f:
             json.dump(global_config, f, ensure_ascii=False, indent=4, sort_keys=True)
         log_action(f"RUN: Configuration saved to {run_filename}.")
     except Exception as e:
+        # If saving fails, log the error and return to the UI
         log_action(f"RUN: Error saving configuration: {e}")
         root.deiconify()
         return
 
-    # 2) Último chequeo antes de lanzar: si ya se pulsó Ctrl+Shift+Q, volvemos a la UI
+    # ── 2) Final check: if the hotkey was pressed before launch, return to UI
     if stop_event.is_set():
         log_action("🚩 Cancelled by hotkey before launch — returning to UI")
         root.deiconify()
         return
 
-    # 3) Lanza run_module.py con stdout+stderr unidos, sin buffering
+    # ── 3) Launch run_module.run_from_json(run.json) ───────────────────────────
     log_action("RUN: Calling run_module.run_from_json(run.json) …")
     run_module.run_from_json(run_filename)
     log_action("RUN: run_module.run_from_json returned.")
 
-    # 6) Restaurar la ventana principal
+    # ── 4) Restore the main window when done ───────────────────────────────────
     root.deiconify()
     log_action("Window restored.")
+
 
 
 

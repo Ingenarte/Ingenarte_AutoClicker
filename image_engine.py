@@ -74,8 +74,9 @@ def _find_in_monitor(
     max_attempts: int
 ) -> Tuple[Optional[Tuple[int,int,int,int]], int]:
     """
-    Trata el haystack (una única captura) con ladder de confs+escalas.
-    Devuelve ( (x,y,w,h), nuevos_intentos ) o (None, nuevos_intentos).
+    Process a single monitor's capture (haystack) by iterating through
+    confidence levels and scale factors. Returns ((x, y, w, h), attempts)
+    if a match is found, or (None, attempts) otherwise.
     """
     attempts = attempts_start
     th, tw = template.shape[:2]
@@ -85,9 +86,20 @@ def _find_in_monitor(
             attempts += 1
             if attempts > max_attempts:
                 return None, attempts
+
+            # Resize the template according to the current scale
             resized = template if sc == 1.0 else cv2.resize(
-                template, (int(tw*sc), int(th*sc)), interpolation=cv2.INTER_AREA
+                template, (int(tw * sc), int(th * sc)), interpolation=cv2.INTER_AREA
             )
+
+            # Check that the resized template fits within the haystack image
+            hay_h, hay_w = haystack.shape[:2]
+            templ_h, templ_w = resized.shape[:2]
+            if templ_h > hay_h or templ_w > hay_w:
+                log_fn(f"⚠️ Skipping scale={sc:.2f} because template ({templ_h}×{templ_w}) > haystack ({hay_h}×{hay_w})")
+                continue
+
+            # Perform template matching only if the template fits
             res = cv2.matchTemplate(haystack, resized, cv2.TM_CCOEFF_NORMED)
             _, max_val, _, max_loc = cv2.minMaxLoc(res)
             log_fn(f"[attempt {attempts:02d}] conf≥{conf:.2f} sc={sc:.2f} → {max_val:.3f}")
@@ -95,13 +107,14 @@ def _find_in_monitor(
                 x, y = max_loc
                 h, w = resized.shape[:2]
                 return (x, y, w, h), attempts
+
     return None, attempts
 
 # ───────────────────────────── find_image() ──────────────────────────────
 def find_image(
     template_path: str | Path,
     *,
-    base_confidence: float = 0.80,
+    base_confidence: float = 1.0,
     timeout: Optional[float] = 10.0,
     poll_every: float = 0.50,
     max_attempts: int = 20,
@@ -113,27 +126,35 @@ def find_image(
     log_fn: Callable[[str], None] = _default_log,
 ) -> Optional[Tuple[int,int,int,int,int]]:
     """
-    Busca `template_path` en cada monitor por separado.
-    Devuelve (abs_x, abs_y, w, h, monitor_index) o None.
+    Search `template_path` on all connected monitors. Returns
+    (abs_x, abs_y, w, h, monitor_index) if found, or None otherwise.
+
+    - If caller provides `base_confidence` (e.g. from JSON), start exactly
+      at that value and decrement by `confidence_step` down to `min_confidence`.
+    - If no confidence is provided (uses default 1.0), start at 1.0 and
+      step down by `confidence_step` down to `min_confidence`.
     """
     template_path = Path(template_path)
     if not template_path.exists():
         log_fn(f"❌ Template not found: {template_path}")
         return None
+
     template = cv2.imread(str(template_path))
     if template is None:
         log_fn(f"❌ OpenCV failed to read {template_path}")
         return None
 
-    # construir lista de confidencias
-    confs = []
-    cur = 0.95
-    while cur >= min_confidence - 1e-6:
-        confs.append(round(cur,2)); cur -= confidence_step
-    if base_confidence not in confs:
-        confs.append(base_confidence)
+    # Build confidence ladder starting at base_confidence, decrementing by confidence_step
+    confs: List[float] = []
+    cur_conf = base_confidence
+    while cur_conf >= min_confidence - 1e-6:
+        confs.append(round(cur_conf, 2))
+        cur_conf -= confidence_step
+
+    # Ensure unique and sorted (descending)
     confs = sorted(set(confs), reverse=True)
 
+    # Build scale list [1.0, 0.9, 1.1, 0.8, 1.2, …]
     scales = _build_scales(min_scale, max_scale, scale_step)
 
     real_mons = _list_real_monitors()
@@ -141,32 +162,34 @@ def find_image(
            f"timeout={'∞' if timeout is None else timeout}s monitors={len(real_mons)}")
 
     t0 = time.time()
- 
 
     for mon_idx, mon in enumerate(real_mons, start=1):
         attempts = 0
-        # verifica timeout antes de cada monitor
-        if timeout is not None and (time.time()-t0)>=timeout:
+
+        # Check overall timeout before processing this monitor
+        if timeout is not None and (time.time() - t0) >= timeout:
             log_fn("⏱ Timeout reached before scanning all monitors.")
             return None
 
         left, top = mon["left"], mon["top"]
-        right, bottom = left+mon["width"], top+mon["height"]
+        right, bottom = left + mon["width"], top + mon["height"]
         log_fn(f"🔍 Looking in monitor {mon_idx} bounds=({left},{top})..({right},{bottom})")
-        hay = _capture_monitor(mon)
 
+        hay = _capture_monitor(mon)  # Capture BGR image of this monitor
+
+        # Search within this single monitor
         found, attempts = _find_in_monitor(
             hay, template, confs, scales, log_fn, 0, max_attempts
         )
         if found:
             x_rel, y_rel, w, h = found
             abs_x = left + x_rel
-            abs_y = top  + y_rel
+            abs_y = top + y_rel
             log_fn(f"✅ FOUND in monitor {mon_idx} at absolute ({abs_x},{abs_y}) "
                    f"size=({w}×{h})")
             return abs_x, abs_y, w, h, mon_idx
 
-        # pequeño descanso antes de siguiente monitor
+        # Small pause before next monitor
         time.sleep(poll_every)
 
     log_fn("❌ No match found in any monitor.")
