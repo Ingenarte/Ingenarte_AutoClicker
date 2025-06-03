@@ -37,7 +37,7 @@ pyinstaller main.py `
   --add-data "modals;modals"
 
 MacOs
-rm -rf build dist IngenarteAutoClicker.spec
+rm -rf build IngenarteAutoClicker.spec
 pyinstaller main.py \
    --name IngenarteAutoClicker \
    --onefile \
