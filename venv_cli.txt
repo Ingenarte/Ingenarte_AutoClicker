@@ -31,12 +31,10 @@ Windows PS
 pyinstaller main.py `
   --name IngenarteAutoClicker `
   --onefile `
-  --windowed `
   --icon "public\ingenarte_icon_ico.ico" `
   --add-data "public\ingenarte_icon.png;public" `
   --add-data "public\ingenarte_icon_ico.ico;public" `
   --add-data "modals;modals"
-
 
 MacOs
 rm -rf build dist IngenarteAutoClicker.spec

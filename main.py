@@ -20,12 +20,15 @@ import time
 import run_module
 
 
+
+
 msg = "🚀 Starting program, this could take up to ⏱️ one minute..."
-for char in msg:
-    sys.stdout.write(char)
-    sys.stdout.flush()
-    time.sleep(0.03)
-print("\n")
+if sys.stdout:
+    for char in msg:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.03)
+    print()
 
 
 def _get_output_dir():
@@ -146,7 +149,7 @@ def resource_path(relative_path):
 # LOAD ICON (works on Windows, Linux and macOS)
 # --------------------------------------------------
 icon_file = resource_path(os.path.join("public", "ingenarte_icon.png"))
-ico_file  = resource_path(os.path.join("public", "ingenarte_icon.ico"))
+ico_file  = resource_path(os.path.join("public", "ingenarte_icon_ico.ico"))
 
 try:
     # 1) Load the PNG into a PhotoImage (for Linux/macOS support)
