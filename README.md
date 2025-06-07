@@ -31,8 +31,11 @@ The project targets **macOS (Darwin 13+) and Windows 10+**. Linux is expected to
 2. **Run with elevated privileges** (required by Apple to dispatch synthetic input):
 
    ```bash
-   # Launch the GUI
-   sudo IngenarteAutoClicker
+# Grant execution permission
+chmod +x /path/to/IngenarteAutoClicker
+
+# Then run it with elevated privileges
+sudo /path/to/IngenarteAutoClicker
 
    # Run a stored workflow headless
    sudo IngenarteAutoClicker /absolute/path/to/flow.json
