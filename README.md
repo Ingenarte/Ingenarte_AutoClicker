@@ -6,9 +6,11 @@
 _Mac / Windows • Image-based clicking • JSON workflows • Modern CustomTkinter GUI_
 
 ---
-## Demo Video
 
-▶️ [Watch a demo of Ingenarte AutoClicker on YouTube](https://www.youtube.com/watch?v=fDxE6SOpuBk)
+## 🎥 Demo Video
+
+Watch Ingenarte AutoClicker in action on YouTube:  
+[![Watch the video](https://img.youtube.com/vi/fDxE6SOpuBk/hqdefault.jpg)](https://www.youtube.com/watch?v=fDxE6SOpuBk)
 
 ---
 
